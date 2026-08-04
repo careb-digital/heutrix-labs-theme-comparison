@@ -11,77 +11,77 @@ export const routes = [
     label: 'Services',
     seoTitle: 'Services | Heutrix Labs',
     metaDescription:
-      'Explore Heutrix Labs services for allied health practices and disability support providers, including workflow diagnostics, automation sprints, operations dashboards, tailored workflow systems and safe AI setup.'
+      'Compare Heutrix Labs workflow diagnostics, focused improvement sprints, operations dashboards, tailored workflow systems and Safe AI setup for care-related service providers.'
   },
   {
     path: '/allied-health',
     label: 'Allied Health',
     seoTitle: 'Workflow Systems for Allied Health Practices | Heutrix Labs',
     metaDescription:
-      'Heutrix Labs helps Australian allied health practices improve intake, referral tracking, document collection, reporting preparation, handovers, dashboards and safe AI use.'
+      'Heutrix Labs helps Australian allied health practices improve enquiry and referral tracking, document collection, reporting, onboarding, handovers and management visibility.'
   },
   {
     path: '/disability-providers',
     label: 'Disability Providers',
     seoTitle: 'Workflow Systems for Disability Support Providers | Heutrix Labs',
     metaDescription:
-      'Heutrix Labs helps Australian disability support providers improve intake tracking, evidence tracking, incident and complaint registers, staff onboarding, dashboards, reporting preparation and safe AI use.'
+      'Heutrix Labs helps Australian disability support providers improve intake, service agreement tracking, document collection, incidents, complaints, evidence, onboarding and handovers.'
   },
   {
     path: '/pricing',
     label: 'Pricing',
     seoTitle: 'Pricing | Heutrix Labs',
     metaDescription:
-      'View starting prices for Heutrix Labs workflow diagnostics, workflow automation sprints, operations dashboards, tailored workflow systems and safe AI setup.'
+      'Review indicative starting prices and scope factors for Heutrix Labs workflow diagnostics, improvement sprints, dashboards, tailored systems and Safe AI setup.'
   },
   {
     path: '/safe-ai',
     label: 'Safe AI',
     seoTitle: 'Safe AI Setup for Allied Health and Disability Providers | Heutrix Labs',
     metaDescription:
-      'Heutrix Labs helps Australian allied health practices and disability support providers set clear, privacy-aware rules for safe AI use in internal admin, drafting, reporting support and workflow guidance.'
+      'Heutrix Labs helps Australian care-related service providers define approved AI use cases, information boundaries, human review rules and practical staff guidance.'
   },
   {
     path: '/about',
     label: 'About',
     seoTitle: 'About Heutrix Labs',
     metaDescription:
-      'Heutrix Labs is an Australian workflow systems, automation, dashboard and Safe AI implementation partner for allied health practices, disability support providers and selected regulated service providers.'
+      'Learn how Heutrix Labs approaches practical workflow improvement, operational visibility, maintainable systems and responsible AI use for care-related service providers.'
   },
   {
     path: '/faq',
     label: 'FAQ',
     seoTitle: 'FAQ | Heutrix Labs',
     metaDescription:
-      'Frequently asked questions about Heutrix Labs workflow systems, automation, dashboards, safe AI setup, pricing, privacy and service boundaries.'
+      'Answers about Heutrix Labs services, project timing, existing tools, handover, pricing, privacy, Safe AI and operational service boundaries.'
   },
   {
     path: '/contact',
     label: 'Contact',
     seoTitle: 'Contact Heutrix Labs',
     metaDescription:
-      'Contact Heutrix Labs to discuss workflow diagnostics, workflow automation, operations dashboards and safe AI setup for allied health practices and disability support providers.'
+      'Contact Heutrix Labs with a general description of a workflow, tracking, dashboard or Safe AI challenge and discuss a practical next step.'
   },
   {
     path: '/privacy-and-data-handling',
     label: 'Privacy and Data Handling',
     seoTitle: 'Privacy and Data Handling | Heutrix Labs',
     metaDescription:
-      'Heutrix Labs takes a privacy-aware approach to workflow systems, automation, dashboards and Safe AI setup for allied health practices, disability support providers and regulated service providers.'
+      'Read how Heutrix Labs approaches data minimisation, access, storage, retention and AI information boundaries during workflow projects.'
   },
   {
     path: '/terms-of-use',
     label: 'Terms of Use',
     seoTitle: 'Terms of Use | Heutrix Labs',
     metaDescription:
-      'Terms of use for the Heutrix Labs website and information about service boundaries, website content and client responsibilities.'
+      'Terms for using the Heutrix Labs website, including general-information limits, service boundaries, project scopes and client responsibilities.'
   },
   {
     path: '/website-disclaimer',
     label: 'Website Disclaimer',
     seoTitle: 'Website Disclaimer | Heutrix Labs',
     metaDescription:
-      'Website disclaimer for Heutrix Labs, including service boundaries for workflow systems, automation, dashboards, Safe AI and regulated provider support.'
+      'Website disclaimer covering Heutrix Labs operational services, professional-advice limits, AI use, privacy and client responsibilities.'
   }
 ];
 
@@ -214,7 +214,7 @@ export const services = [
     icon: 'troubleshoot',
     lead: 'Find the workflow worth improving first.',
     intro:
-      'The Workflow Diagnostic is for organisations that know something is inefficient, risky or frustrating, but are not yet sure what should be fixed first.',
+      'A short, structured review for organisations that can see recurring friction, risk or delay but need a clear priority and practical next step before committing to a build.',
     sections: [
       {
         title: 'Suitable for',
@@ -230,26 +230,26 @@ export const services = [
       {
         title: 'Common problems',
         items: [
-          'Staff are working around the system',
-          'Follow-up actions are hard to monitor',
-          'Admin depends too heavily on one person',
-          'Managers lack visibility',
-          'Reporting takes too long',
-          'Handovers are inconsistent',
-          'Spreadsheets have become difficult to manage',
-          'AI is being used without clear rules'
+          'Staff use different workarounds for the same task',
+          'Follow-up actions have no consistent owner or due date',
+          'Important admin depends too heavily on one person',
+          'Managers cannot see what is waiting, overdue or blocked',
+          'Reporting requires repeated manual collation',
+          'Handovers vary between people, teams or locations',
+          'Spreadsheets have become difficult to maintain',
+          'AI tools are being used without agreed rules'
         ]
       },
       {
         title: 'What is included',
         items: [
-          'Workflow discovery session',
-          'Review of the current process',
-          'Pain point and risk mapping',
-          'Identification of duplicated effort and handover gaps',
-          'Practical improvement options',
-          'Recommended next step',
-          'Short written summary'
+          'Workflow discovery session with relevant staff',
+          'Current-state process and ownership review',
+          'Pain point, handover and visibility mapping',
+          'Identification of duplicated effort and avoidable manual steps',
+          'Prioritised improvement options',
+          'Recommended first action and suitable service pathway',
+          'Concise written findings'
         ]
       },
       {
@@ -268,7 +268,7 @@ export const services = [
       }
     ],
     outcome:
-      'You receive a clear recommendation for what should be improved first, what type of solution is suitable, and what the next step should be.',
+      'You receive a prioritised view of the workflow problem, the most useful first improvement and a practical recommendation for what to do next.',
     cta: ctas.diagnostic
   },
   {
@@ -276,7 +276,7 @@ export const services = [
     icon: 'auto_mode',
     lead: 'Improve one important admin or operational workflow.',
     intro:
-      'The Workflow Automation Sprint is a focused implementation project for one clearly defined workflow. Despite the name, not every sprint needs automation. Sometimes the best improvement is a clearer process, tracker, handover view, reminder system, reporting workflow or lightweight internal tool.',
+      'A focused implementation project, typically delivered over 2–4 weeks, for one clearly defined workflow. Automation is used only where it adds value; the right solution may instead be a clearer process, tracker, handover view, reminder system or lightweight internal tool.',
     sections: [
       {
         title: 'Suitable for workflows such as',
@@ -296,24 +296,24 @@ export const services = [
       {
         title: 'What is included',
         items: [
-          'Scope confirmation',
-          'Current workflow review',
-          'Improved workflow design',
-          'Implementation of the agreed workflow improvement',
-          'Basic testing',
-          'Handover documentation',
-          'Practical recommendations for maintenance'
+          'Agreed scope, users and success measures',
+          'Current-state workflow review',
+          'Clear future-state workflow design',
+          'Configuration or build of the agreed improvement',
+          'Practical user testing and refinement',
+          'Handover guide and staff instructions',
+          'Maintenance responsibilities and next-step recommendations'
         ]
       },
       {
         title: 'Possible deliverables',
         items: [
           'Workflow map',
-          'Tracker',
-          'Register',
-          'Form',
-          'Reminder process',
-          'Dashboard view',
+          'Status and ownership tracker',
+          'Operational register',
+          'Structured internal form',
+          'Reminder and escalation process',
+          'Management visibility view',
           'Automation between approved tools',
           'Handover guide',
           'Staff instructions'
@@ -333,7 +333,7 @@ export const services = [
       }
     ],
     outcome:
-      'Your team has one clearer, more reliable workflow with better ownership, visibility and handover.',
+      'Your team has one documented, usable workflow with clearer ownership, better visibility and a practical handover path.',
     cta: ctas.workflow
   },
   {
@@ -341,7 +341,7 @@ export const services = [
     icon: 'visibility',
     lead: 'See what needs attention without chasing updates.',
     intro:
-      'The Operations Dashboard Build is for practice managers, provider owners and operational leads who need a clearer view of work in progress, overdue items, task status, bottlenecks or reporting inputs.',
+      'A focused visibility project for managers who need a reliable view of work in progress, overdue actions, workload, bottlenecks or reporting inputs without rebuilding their core system.',
     sections: [
       {
         title: 'Suitable for',
@@ -372,19 +372,20 @@ export const services = [
       {
         title: 'What is included',
         items: [
-          'Dashboard requirements session',
+          'Dashboard purpose and audience session',
           'Review of available data sources',
-          'Dashboard structure and metric definition',
+          'Agreed status, measure and ownership definitions',
           'Dashboard build using agreed tools',
-          'Review and testing',
-          'Handover notes'
+          'Data limitation and refresh notes',
+          'Review, testing and refinement',
+          'Handover and maintenance notes'
         ]
       }
     ],
     note:
-      'A dashboard is only useful if the underlying workflow and data inputs are reliable. If the workflow is unclear, Heutrix Labs may recommend a Workflow Diagnostic before building a dashboard.',
+      'A dashboard is only useful when its workflow, definitions and data inputs are dependable. If those foundations are unclear, a Workflow Diagnostic may be the better first step.',
     outcome:
-      'Your team can see key operational information more clearly and reduce the need to chase status updates manually.',
+      'Managers have a clearer, shared view of operational status and can spend less time collecting updates manually.',
     cta: ctas.dashboard
   },
   {
@@ -392,7 +393,7 @@ export const services = [
     icon: 'verified_user',
     lead: 'Set clear rules before AI becomes part of everyday admin work.',
     intro:
-      'Safe AI Setup is for organisations that want to use AI carefully for internal admin, drafting, summarising, workflow guidance or productivity support. It is also suitable for organisations where staff are already experimenting with AI and management needs clearer boundaries.',
+      'A practical setup for organisations considering or already using commercially available AI tools for internal admin, drafting, summarising or workflow support. The focus is approved use cases, information boundaries, human review and staff accountability.',
     sections: [
       {
         title: 'Suitable AI uses may include',
@@ -433,7 +434,7 @@ export const services = [
       }
     ],
     outcome:
-      'Your organisation has clearer internal AI boundaries, safer admin use cases and practical rules for staff.',
+      'Your organisation has documented AI use boundaries, defined review responsibilities and practical guidance staff can apply in daily work.',
     cta: ctas.ai
   },
   {
@@ -441,7 +442,7 @@ export const services = [
     icon: 'dashboard_customize',
     lead: 'Create a practical internal system for work that has outgrown spreadsheets.',
     intro:
-      'Some workflows need more structure than a spreadsheet, but do not require a full custom software platform. Heutrix Labs can help design and build lightweight internal workflow systems using approved, practical tools.',
+      'For a bounded operational process that needs more structure than a spreadsheet but does not justify a large custom platform. Heutrix Labs designs lightweight internal systems around agreed users, steps, permissions and maintenance needs.',
     sections: [
       {
         title: 'Suitable for',
@@ -460,13 +461,13 @@ export const services = [
       {
         title: 'What is included',
         items: [
-          'Requirements scoping',
-          'Workflow design',
+          'Users, requirements and scope confirmation',
+          'Workflow, ownership and status design',
           'Tool selection within agreed constraints',
-          'System build',
-          'Testing',
-          'Documentation',
-          'Handover'
+          'Configured internal system build',
+          'User testing and refinement',
+          'Operating and maintenance documentation',
+          'Practical handover'
         ]
       },
       {
@@ -482,7 +483,7 @@ export const services = [
       }
     ],
     outcome:
-      'Your organisation has a more structured internal system that supports the workflow, improves visibility and reduces reliance on memory or scattered spreadsheets.',
+      'Your organisation has a maintainable internal system that supports one defined workflow and reduces reliance on memory, inboxes or scattered spreadsheets.',
     cta: ctas.tailored
   },
   {
@@ -490,7 +491,7 @@ export const services = [
     icon: 'rule',
     lead: 'Operational systems for regulated service environments.',
     intro:
-      'Heutrix Labs may support selected care-related or regulated providers with operational workflow tools, dashboards, trackers and Safe AI setup. This work is operational. It does not include NDIS registration readiness, mock audits, official audit certification, legal advice, clinical advice or regulatory approval.',
+      'Operational workflow support for selected regulated service providers that need clearer registers, trackers, dashboards, handovers or Safe AI rules. The work supports internal operations and does not provide registration, audit, legal, clinical or regulatory services.',
     sections: [
       {
         title: 'Suitable work may include',
@@ -508,57 +509,56 @@ export const services = [
       },
     ],
     outcome:
-      'The work supports operational systems only. It does not remove the client responsibility to review, approve and maintain their own processes.',
+      'The provider has a clearer operational tool or workflow while retaining responsibility for approving, maintaining and applying its own processes.',
     cta: ctas.regulated
   }
 ];
 
 export const alliedHealthContent = {
-  title: 'Workflow systems for allied health practices that have outgrown scattered admin.',
+  title: 'Clearer operational workflows for allied health practices that have outgrown scattered admin.',
   intro: [
-    'Heutrix Labs helps allied health practices improve the admin and operational workflows that sit around client care.',
-    'We support practice managers, owners and operational leads with clearer workflows, practical trackers, dashboards, automations, handover systems and safe AI rules.'
+    'Heutrix Labs helps allied health practices improve the operational work around client care without replacing the practice management system clinicians already use.',
+    'We work with practice managers, owners and operational leads to create clearer ownership, practical tracking, useful management visibility and safer rules for AI-assisted admin.'
   ],
   audienceTitle: 'Who this is for',
   audienceIntro:
-    'This page is for allied health practices that need better visibility and consistency across everyday operations without replacing their core practice management software.',
+    'This support is suited to practices that need more consistency across everyday admin, clearer handovers and better visibility over work that sits between people or systems.',
   audienceItems: [
     'Psychology practices',
     'Physiotherapy practices',
     'Occupational therapy practices',
     'Speech pathology practices',
     'Dietetics and other allied health practices',
-    'Multidisciplinary clinics',
-    'Practice managers and owners managing growth, admin pressure or reporting workload'
+    'Multidisciplinary and multi-site clinics',
+    'Practice managers and owners managing growth, admin pressure, handovers or reporting workload'
   ],
   problemsTitle: 'Common allied health workflow problems',
   problemsLead: 'You may be dealing with:',
   problems: [
-    'Intake and enquiry follow-up handled differently by different staff',
-    'Referral tracking spread across inboxes, spreadsheets and practice notes',
-    'Appointment or document follow-up that depends on memory',
-    'Reports, letters or admin tasks that are hard to track from request to completion',
-    'Clinician and admin handovers that are inconsistent or person-dependent',
-    'Staff onboarding steps that are not documented clearly',
+    'New enquiries and intake follow-up handled differently by different staff',
+    'Referral status and next actions spread across inboxes, spreadsheets and practice notes',
+    'Appointment, recall or document follow-up that depends on memory',
+    'Reports, letters or admin requests that are hard to track from request to completion',
+    'Clinician and admin handovers that vary by person or location',
+    'Staff onboarding steps that lack clear owners, due dates or completion visibility',
     'Managers lacking visibility over work in progress, overdue items or bottlenecks',
     'Reporting preparation taking too long because information is scattered',
     'Staff using AI tools without clear privacy, suitability or review rules'
   ],
   improvementsTitle: 'Workflows we can help improve',
-  improvementsLead: 'Practical improvements may include:',
+  improvementsLead: 'A scoped improvement may include:',
   improvements: [
-    'Intake workflow improvements',
-    'Referral trackers',
-    'Enquiry follow-up workflows',
-    'Document collection workflows',
-    'Report and letter tracking workflows',
-    'Review or recall follow-up workflows, where relevant',
-    'Staff onboarding checklists',
-    'Clinician and admin handover guides',
-    'Admin task registers',
-    'Practice manager dashboards',
-    'Reporting preparation workflows',
-    'Safe AI rules for internal admin, drafting and workflow support'
+    'Enquiry and intake status tracking',
+    'Referral ownership and follow-up trackers',
+    'Document request and collection workflows',
+    'Report and letter request tracking',
+    'Review, waitlist or recall follow-up workflows where relevant',
+    'Staff onboarding and role-transition checklists',
+    'Clinician-to-admin handover guides',
+    'Shared admin task and escalation registers',
+    'Practice manager workload and status dashboards',
+    'Reporting preparation checklists and views',
+    'Approved AI use cases and review rules for internal admin'
   ],
   examplesTitle: 'Example allied health projects',
   examples: [
@@ -576,61 +576,71 @@ export const alliedHealthContent = {
       title: 'Staff onboarding',
       before: 'New starter tasks depend on memory and repeated reminders.',
       after: 'The practice has a structured onboarding checklist with task ownership, due dates and handover notes.'
+    },
+    {
+      title: 'Enquiry and intake follow-up',
+      before: 'Phone, email and website enquiries are recorded in different places, so contact attempts and next actions are easy to miss.',
+      after: 'The practice has one intake view showing enquiry source, owner, contact status, next action and outcome.'
+    },
+    {
+      title: 'Document collection',
+      before: 'Referral documents, consent forms and other required information are chased through inbox searches and informal reminders.',
+      after: 'The practice uses a document checklist showing what is required, what has arrived, who owns follow-up and when it is due.'
     }
   ],
   startingPoints: ['Workflow Diagnostic', 'Workflow Automation Sprint', 'Operations Dashboard Build', 'Safe AI Setup'],
   startingNote:
-    'If the problem is clear but the best fix is not, start with a Workflow Diagnostic. If the workflow is already well-defined, Heutrix Labs can move straight into a scoped sprint, dashboard build or Safe AI setup.',
+    'Choose a Workflow Diagnostic when the priority is unclear. When the workflow and desired outcome are already defined, a focused sprint, dashboard build or Safe AI Setup may be a better starting point.',
   boundary:
-    'Heutrix Labs provides workflow, automation, dashboard and safe AI support. It does not provide clinical advice, legal advice or regulatory approval.',
+    'Heutrix Labs supports operational workflows around service delivery. Clinical decisions, legal obligations, professional standards and regulatory approvals remain the responsibility of the practice and its qualified advisers.',
   finalTitle: 'Make one allied health workflow easier to manage.'
 };
 
 export const disabilityContent = {
-  title: 'Workflow systems for disability support providers managing admin, evidence and handovers.',
+  title: 'Clearer operational workflows for disability support providers managing intake, evidence, incidents and handovers.',
   intro: [
-    'Heutrix Labs helps disability support providers improve the internal systems that support service delivery, admin visibility and safer information handling.',
-    'We focus on operational workflow support, including trackers, registers, dashboards, handover systems, reporting preparation workflows and safe AI rules.'
+    'Heutrix Labs helps disability support providers improve the internal workflows that support consistent service delivery, timely follow-up and management visibility.',
+    'We focus on practical operational systems such as trackers, registers, dashboards, onboarding workflows, handover views and safer rules for AI-assisted admin.'
   ],
   audienceTitle: 'Who this is for',
   audienceIntro:
-    'This page is for disability support providers that need clearer operational workflows without positioning the work as NDIS registration readiness, audit support or regulatory advice.',
+    'This support is suited to providers that need clearer ownership, more reliable records and better visibility across operational work without replacing their core client management platform.',
   audienceItems: [
     'Small-to-mid-sized disability support providers',
     'Provider owners managing growth or admin risk',
     'Operations managers and team leaders',
     'Providers relying on spreadsheets, folders and inboxes to track important work',
-    'Teams needing clearer evidence, incident, complaint, onboarding or handover workflows'
+    'Teams needing clearer intake, service agreement, incident, complaint, evidence, onboarding or handover workflows'
   ],
   problemsTitle: 'Common disability provider workflow problems',
   problemsLead: 'You may be dealing with:',
   problems: [
-    'Intake and enquiry follow-up spread across emails and spreadsheets',
-    'Service agreement workflows that are difficult to track end to end',
-    'Participant document collection steps that depend on memory or repeated reminders',
-    'Incident, complaint, risk or evidence records stored inconsistently',
-    'Staff onboarding and role changes managed through informal checklists',
-    'Shift, task or handover visibility depending too heavily on one person',
+    'Intake and enquiry follow-up spread across emails, messages and spreadsheets',
+    'Service agreement drafting, approval, renewal or storage that is difficult to track end to end',
+    'Participant document collection that depends on memory and repeated reminders',
+    'Incident, complaint, risk or evidence records stored across inconsistent locations',
+    'Staff onboarding and role changes managed through copied or informal checklists',
+    'Shift, task or handover visibility depending too heavily on one coordinator',
     'Reporting preparation taking too long because information is scattered',
     'Managers lacking visibility over what is waiting, overdue or unresolved',
     'AI tools being used without clear privacy, suitability or review rules'
   ],
   improvementsTitle: 'Workflows we can help improve',
-  improvementsLead: 'Practical improvements may include:',
+  improvementsLead: 'A scoped improvement may include:',
   improvements: [
-    'Intake trackers',
-    'Service agreement workflow trackers',
-    'Participant document collection workflows',
-    'Incident registers',
-    'Complaint registers',
-    'Risk registers',
-    'Evidence tracking tools',
-    'Staff onboarding workflows',
-    'Internal task registers',
-    'Shift, task or handover visibility views',
-    'Operational dashboards',
-    'Reporting preparation workflows',
-    'Safe AI rules for internal admin use'
+    'Intake status and ownership trackers',
+    'Service agreement preparation and renewal trackers',
+    'Participant document request checklists',
+    'Incident follow-up registers',
+    'Complaint acknowledgement and action registers',
+    'Operational risk and action registers',
+    'Evidence location and review trackers',
+    'Staff onboarding and role-transition workflows',
+    'Internal task, escalation and handover registers',
+    'Shift, task or coordinator visibility views',
+    'Management dashboards for open and overdue work',
+    'Reporting preparation checklists and views',
+    'Approved AI use cases and review rules for internal admin'
   ],
   examplesTitle: 'Example disability provider projects',
   examples: [
@@ -652,6 +662,16 @@ export const disabilityContent = {
       title: 'Staff onboarding',
       before: 'Onboarding tasks vary by manager and are tracked through memory, messages or copied checklists.',
       after: 'The provider has a clearer onboarding workflow with required steps, owners, due dates and handover notes.'
+    },
+    {
+      title: 'Service agreement tracking',
+      before: 'Drafts, approvals, signed versions and renewal dates are tracked across inboxes, folders and individual calendars.',
+      after: 'The provider has one workflow view showing agreement status, owner, key dates, next action and the approved document location.'
+    },
+    {
+      title: 'Participant document collection',
+      before: 'Required documents arrive through different channels, and missing items are often discovered late in the intake process.',
+      after: 'The provider uses a consistent checklist showing required items, receipt status, follow-up owner, due date and secure location.'
     }
   ],
   startingPoints: [
@@ -662,38 +682,38 @@ export const disabilityContent = {
     'Safe AI Setup'
   ],
   startingNote:
-    'If the problem is clear but the best fix is not, start with a Workflow Diagnostic. If the workflow is already well-defined, Heutrix Labs can move straight into a scoped sprint, dashboard build, tailored workflow system or Safe AI setup.',
+    'Choose a Workflow Diagnostic when the priority is unclear. When the workflow and desired outcome are already defined, a focused sprint, dashboard build, tailored system or Safe AI Setup may be a better starting point.',
   boundary:
-    'Heutrix Labs supports operational workflow systems. It does not provide NDIS registration readiness, mock audits, official audit certification, legal advice, clinical advice or regulatory approval. Any compliance-related workflow, register or dashboard should support the provider responsibilities but does not remove the provider obligation to review, approve and maintain its own processes.',
+    'Heutrix Labs supports operational workflow systems. It does not provide NDIS registration readiness, mock audits, audit certification, legal advice, clinical advice or regulatory approval. Each provider remains responsible for approving, applying and maintaining its own processes and obligations.',
   finalTitle: 'Make one disability support workflow easier to manage.'
 };
 
 export const pricingRows = [
-  ['Workflow Diagnostic', '$950 + GST', 'Finding the best workflow to improve first'],
-  ['Workflow Automation Sprint', '$2,500 + GST', 'Improving one defined workflow'],
-  ['Operations Dashboard Build', '$3,500 + GST', 'Improving visibility across tasks, status or reporting'],
-  ['Safe AI Setup', '$1,800 + GST', 'Setting clear AI use rules for internal admin work'],
-  ['Tailored Internal Workflow System', '$4,500 + GST', 'Building a more structured workflow tool or internal system']
+  ['Workflow Diagnostic', '$950 + GST', 'Prioritising the first workflow improvement'],
+  ['Workflow Automation Sprint', '$2,500 + GST', 'Designing and implementing one defined workflow'],
+  ['Operations Dashboard Build', '$3,500 + GST', 'Creating shared visibility across status, workload or reporting'],
+  ['Safe AI Setup', '$1,800 + GST', 'Defining approved use cases, boundaries and human review'],
+  ['Tailored Internal Workflow System', '$4,500 + GST', 'Building a lightweight system for one bounded operational process']
 ];
 
 export const priceFactors = [
-  'Multiple workflows',
-  'Multiple teams or sites',
-  'Unclear current processes',
-  'Complex data sources',
-  'Sensitive information handling requirements',
-  'Integrations between tools',
-  'Custom dashboard requirements',
-  'Staff training or documentation',
-  'Testing and review cycles',
-  'Higher privacy, access control or governance needs'
+  'Number of workflows, teams or sites',
+  'Clarity of the current process and ownership',
+  'Number and quality of data sources',
+  'Sensitive information and access requirements',
+  'Integrations between approved tools',
+  'Custom views, filters or reporting logic',
+  'User roles, permissions and training needs',
+  'Testing, review and approval cycles',
+  'Documentation and handover depth',
+  'Privacy, security or governance requirements'
 ];
 
 export const typicalProjects = [
-  ['Start small', 'A Workflow Diagnostic is often the best starting point when the organisation knows something needs improvement but does not yet know what should be changed first.'],
-  ['Fix one workflow', 'A Workflow Automation Sprint is suitable when one workflow is clearly causing repeated admin friction or visibility issues.'],
-  ['Improve management visibility', 'An Operations Dashboard Build is suitable when managers need a clearer view of work in progress, overdue items, workload or reporting inputs.'],
-  ['Set AI rules', 'Safe AI Setup is suitable when staff are using or considering AI tools and the organisation needs clear rules before AI becomes part of daily work.']
+  ['Prioritise the problem', 'Start with a Workflow Diagnostic when several issues are competing for attention or the best first improvement is unclear.'],
+  ['Improve one workflow', 'Choose a Workflow Automation Sprint when the workflow, users and desired outcome can be clearly bounded.'],
+  ['Improve management visibility', 'Choose an Operations Dashboard Build when the underlying workflow is stable but status and workload are difficult to see.'],
+  ['Set responsible AI rules', 'Choose Safe AI Setup before wider staff adoption, or when informal AI use already needs clearer boundaries and review.']
 ];
 
 export const pricingExclusions = [
@@ -705,81 +725,83 @@ export const pricingExclusions = [
   'Mock audits',
   'Replacement practice, client or case management software',
   'Large enterprise software development',
-  'Ongoing managed service support',
+  'Ongoing support unless separately scoped',
   'Sensitive data processing without an approved process'
 ];
 
 export const safeAiHelps = [
-  'Where AI may be useful',
-  'Where AI should not be used',
-  'What information must not be entered into AI tools',
-  'When human review is required',
-  'Who is responsible for approving AI-assisted work',
-  'How staff should document and check AI outputs',
-  'What rules should apply before wider use'
+  'Approved AI use cases and prohibited uses',
+  'Information that must not be entered into public AI tools',
+  'Tool-selection and access considerations',
+  'Required human review and escalation points',
+  'Responsibility for approving AI-assisted work',
+  'How staff should check and document outputs',
+  'Rules to confirm before wider rollout'
 ];
 
 export const suitableAiUses = [
-  'Drafting internal admin documents',
-  'Generating process checklist drafts',
+  'Drafting internal admin templates from non-sensitive prompts',
+  'Generating first drafts of process checklists',
   'Summarising non-sensitive internal notes',
-  'Preparing first drafts of workflow guidance',
-  'Helping structure reports for human review',
-  'Improving internal knowledge support',
+  'Preparing first drafts of internal workflow guidance',
+  'Structuring reporting templates for human review',
+  'Supporting approved internal knowledge searches',
   'Creating plain-English explanations for internal training',
-  'Helping staff organise tasks or next steps'
+  'Organising non-sensitive tasks or next-step suggestions'
 ];
 
 export const unsuitableAiUses = [
   'Replace clinical judgement',
   'Replace legal advice',
-  'Replace compliance accountability',
-  'Make clinical or safety decisions',
-  'Make final decisions about risk, incidents or complaints',
-  'Process sensitive information without an approved privacy-reviewed process',
+  'Replace organisational or compliance accountability',
+  'Make final clinical, safety, staffing, risk or compliance decisions',
+  'Determine incident or complaint outcomes without accountable human review',
+  'Enter personal or sensitive information into publicly available AI tools',
+  'Process sensitive information without a documented and approved process',
   'Generate client-facing clinical or support advice without qualified review',
   'Remove human responsibility for checking outputs'
 ];
 
 export const aiGuidanceRows = [
   ['Drafting internal admin notes from non-sensitive prompts', 'Usually suitable with review'],
-  ['Summarising internal meeting notes', 'May be suitable depending on content'],
+  ['Summarising internal meeting notes', 'Assess the content and tool before use'],
   ['Creating a first draft of a process checklist', 'Usually suitable with review'],
-  ['Writing client-facing clinical or support advice', 'Not suitable without qualified professional review'],
-  ['Entering identifiable client, patient or participant information into public AI tools', 'Not recommended'],
-  ['Using AI to make clinical, staffing, compliance or safety decisions', 'Not suitable']
+  ['Writing client-facing clinical or support advice', 'Requires qualified human authorship and review'],
+  ['Entering identifiable information into publicly available AI tools', 'Do not use'],
+  ['Using AI to make final clinical, staffing, compliance or safety decisions', 'Not suitable']
 ];
 
 export const safeAiIncluded = [
-  'Current AI use review',
+  'Current and intended AI use review',
   'AI use case mapping',
-  'Approved and prohibited use case guidance',
-  'Privacy and sensitive information rules',
-  'Human review expectations',
+  'Approved, conditional and prohibited use guidance',
+  'Information classification and input rules',
+  'Human review, approval and escalation expectations',
   'Staff AI use checklist',
-  'Prompt guidance for approved internal use',
+  'Prompt guidance for approved non-sensitive use',
   'Output review checklist',
-  'Implementation recommendations'
+  'Tool and rollout recommendations'
 ];
 
 export const beliefs = [
+  'Start with the real workflow, not the tool',
   'Support the people already doing the work',
-  'Reduce avoidable admin friction',
-  'Improve visibility for managers',
-  'Make handover easier',
+  'Reduce avoidable admin friction and duplicated effort',
+  'Make ownership, status and next actions visible',
   "Reduce dependence on one person's memory",
-  'Handle sensitive information carefully',
-  'Keep human review where it matters',
-  'Be maintainable after handover'
+  'Use the minimum information needed for the task',
+  'Keep accountable human review where it matters',
+  'Design for practical maintenance after handover'
 ];
 
 export const bestFit = [
   'Have grown beyond informal admin processes',
-  'Rely too heavily on spreadsheets or inboxes',
-  'Need clearer operational visibility',
-  'Want practical systems rather than software hype',
-  'Are considering AI and want safer rules',
-  'Value privacy, handover and responsible implementation'
+  'Rely too heavily on inboxes, spreadsheets or individual memory',
+  'Can involve the staff who understand the current workflow',
+  'Need clearer ownership and operational visibility',
+  'Want a practical, bounded improvement rather than a large platform',
+  'Are considering AI and want responsible use rules',
+  'Value documentation, handover and maintainability'
 ];
 
 export const notFor = [
@@ -791,7 +813,8 @@ export const notFor = [
   'Regulatory approval',
   'A replacement practice, client or case management system',
   'A large enterprise software build',
-  'A tool that removes human review or accountability'
+  'An AI tool that removes human review or accountability',
+  'A guaranteed efficiency, compliance, audit or registration outcome'
 ];
 
 export const faqs = [
@@ -808,12 +831,22 @@ export const faqs = [
   {
     question: 'What is the best starting point?',
     answer:
-      'If you are not sure what to fix first, start with a Workflow Diagnostic. If the workflow is already clear, a Workflow Automation Sprint, Operations Dashboard Build or Safe AI Setup may be more appropriate.'
+      'Start with a Workflow Diagnostic when the priority or best solution is unclear. If the workflow and desired outcome are already well-defined, a Workflow Automation Sprint, Operations Dashboard Build, Tailored Internal Workflow System or Safe AI Setup may be more appropriate.'
+  },
+  {
+    question: 'How long does a typical project take?',
+    answer:
+      'A Workflow Automation Sprint is typically scoped for 2–4 weeks. Timing for diagnostics, dashboards, tailored systems and Safe AI Setup depends on availability, complexity, data access, review cycles and the number of users or teams involved. The expected timeline is confirmed in the written scope.'
   },
   {
     question: 'Do you build software?',
     answer:
-      'Heutrix Labs may build lightweight internal workflow systems, trackers, dashboards, forms and automation using approved tools. We are not a generic software development shop and do not position ourselves as a SaaS platform.'
+      'Heutrix Labs may configure or build lightweight internal workflow systems, trackers, dashboards, forms and automations using agreed tools. We focus on bounded operational problems rather than large bespoke platforms or SaaS product development.'
+  },
+  {
+    question: 'Can you work with our existing tools?',
+    answer:
+      'Usually. We first review the workflow, available data, permissions and practical limits of the tools already in use. Where an integration or automation is appropriate, feasibility and access requirements are confirmed before it is included in scope.'
   },
   {
     question: 'Do you replace practice, client or case management software?',
@@ -823,17 +856,17 @@ export const faqs = [
   {
     question: 'Can you automate workflows involving sensitive information?',
     answer:
-      'Possibly, but only where the workflow, tool, access controls, permissions, data handling and privacy requirements are reviewed and approved by the client. We follow a minimum necessary data approach and do not recommend unnecessary movement of sensitive information.'
+      'Possibly, but only where the purpose, minimum necessary information, tool, permissions, access, storage, retention and review process are understood and approved by the client. De-identified or sample data should be used for design and testing where practical.'
   },
   {
     question: 'Can staff use ChatGPT or other AI tools with client, patient or participant information?',
     answer:
-      'Heutrix Labs does not recommend copying patient, participant, client, health, clinical, Medicare, NDIS, diagnostic or other sensitive information into AI tools unless there is a documented, privacy-reviewed and approved process. AI outputs should be reviewed by a suitable human before use.'
+      'Do not enter personal or sensitive information into publicly available AI tools. Any proposed AI use involving personal information needs an organisation-approved process covering the purpose, tool, access, storage, retention, privacy obligations and accountable human review.'
   },
   {
     question: 'Does AI replace staff review?',
     answer:
-      'No. AI should support internal admin, drafting, reporting support, workflow guidance and productivity. It should not replace clinical judgement, legal advice, professional responsibility, compliance accountability or human review.'
+      'No. AI may assist with approved internal admin, drafting or workflow support, but a suitable person remains responsible for checking the source information, context, accuracy, tone and final use. AI does not replace clinical judgement, legal advice, professional responsibility or organisational accountability.'
   },
   {
     question: 'Do you provide legal advice?',
@@ -856,7 +889,12 @@ export const faqs = [
   {
     question: 'How much does it cost?',
     answer:
-      'Starting prices are listed on the Pricing page. Final pricing depends on scope, workflow complexity, data requirements, integrations, testing, documentation and privacy considerations.'
+      'Indicative starting prices are listed on the Pricing page and exclude GST. Final pricing depends on scope, workflow clarity, data requirements, integrations, user roles, testing, documentation, handover and privacy or governance needs.'
+  },
+  {
+    question: 'What happens after handover?',
+    answer:
+      'The agreed handover may include operating instructions, ownership and maintenance notes, known limitations and staff guidance. Optional follow-up support or further improvements can be scoped separately when needed.'
   },
   {
     question: 'What do you need from us?',
@@ -880,14 +918,14 @@ export const privacySensitiveItems = [
 ];
 
 export const privacyProjectChecks = [
-  'What information is actually required',
-  'Whether de-identified or sample data can be used',
-  'Who needs access',
-  'Where files are stored',
-  'What tools are approved',
-  'Whether AI is involved',
-  'What review or approval process is required',
-  'What should be retained or deleted after the project'
+  'The purpose of the workflow and minimum information required',
+  'Whether de-identified, synthetic or sample data can be used',
+  'Who needs access and what each role can do',
+  'Where information is stored and processed',
+  'Which tools and vendors are approved',
+  'Whether AI, automation or external integrations are involved',
+  'What human review and approval steps are required',
+  'What must be retained, archived, returned or deleted'
 ];
 
 export const footerCopy = {
