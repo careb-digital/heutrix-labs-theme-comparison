@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import {
   aiGuidanceRows,
-  approachSteps,
   alliedHealthContent,
   beforeAfterExamples,
   beliefs,
@@ -24,7 +23,6 @@ import {
   routes,
   safeAiHelps,
   safeAiIncluded,
-  serviceSelectorRows,
   services,
   suitableAiUses,
   typicalProjects,
@@ -472,33 +470,7 @@ function HomePage() {
             <InfoCard icon="groups" title="Who we help">
               <BulletList items={whoWeHelp} />
             </InfoCard>
-            <InfoCard icon="health_and_safety" title="Privacy-aware by design">
-              <p>
-                Allied health practices and disability support providers handle sensitive information. Any workflow,
-                dashboard, automation or AI setup needs to consider privacy, confidentiality, access controls and
-                minimum necessary data use from the start.
-              </p>
-            </InfoCard>
           </div>
-        </div>
-      </Section>
-
-      <Section>
-        <div className="grid gap-xl lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-          <SectionIntro title="Which service is right for you?">
-            <p>
-              Most organisations start with either a free fit call or a Workflow Diagnostic. If the workflow is already
-              clear, we can move straight to a scoped build.
-            </p>
-          </SectionIntro>
-          <ResponsiveRows
-            columns={[
-              { label: 'Situation', width: '1.2fr' },
-              { label: 'Best starting point', width: '0.9fr' }
-            ]}
-            rows={serviceSelectorRows}
-            emphasisLast
-          />
         </div>
       </Section>
 
@@ -518,48 +490,12 @@ function HomePage() {
         </div>
       </Section>
 
-      <Section>
-        <SectionIntro title="Our approach" className="mb-xl" />
-        <div className="grid gap-lg md:grid-cols-2 lg:grid-cols-4">
-          {approachSteps.map(([title, copy]) => (
-            <InfoCard key={title} title={title}>
-              <p>{copy}</p>
-            </InfoCard>
-          ))}
-        </div>
-      </Section>
-
-      <Section className="bg-surface-container-low">
-        <div className="grid gap-lg lg:grid-cols-2">
-          <InfoCard icon="lock" title="Privacy-aware by design">
-            <p>
-              Heutrix Labs does not recommend copying patient, participant, client, health, clinical, Medicare, NDIS,
-              diagnostic or other sensitive information into AI tools unless there is a documented, privacy-reviewed and
-              approved process.
-            </p>
-          </InfoCard>
-          <InfoCard icon="rule" title="Important boundary">
-            <p>
-              Heutrix Labs provides workflow, automation, dashboard and safe AI support. It does not provide official
-              audit certification, legal advice, clinical advice, NDIS registration readiness, mock audits or
-              regulatory approval.
-            </p>
-          </InfoCard>
-        </div>
-      </Section>
-
       <HomeFitCallSection />
     </>
   );
 }
 
 function HomeFitCallSection() {
-  const fitCallTopics = [
-    'The workflow or operational issue that is hardest to manage now',
-    'Where follow-up, visibility, handover or reporting is breaking down',
-    'Whether a diagnostic, sprint, dashboard or Safe AI setup is the right next step'
-  ];
-
   return (
     <Section id="book-fit-call" className="bg-surface">
       <div className="grid gap-xxl lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
@@ -578,14 +514,9 @@ function HomeFitCallSection() {
           <motion.div variants={fadeUp} className="mb-lg rounded-xl border border-secondary/20 bg-secondary-container/30 p-lg">
             <p className="mb-xs font-label-md text-label-md text-primary">Privacy note before submitting</p>
             <p className="font-body-sm text-body-sm text-on-surface-variant">
-              Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or other
-              sensitive information in this form. A general description of the workflow is enough for the fit call.
+              Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive information
+              in this form.
             </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
-            <h3 className="mb-md font-headline-sm text-headline-sm text-primary">What we can cover</h3>
-            <BulletList items={fitCallTopics} />
           </motion.div>
         </motion.div>
 
@@ -599,10 +530,10 @@ function HomeFitCallSection() {
 
 function DiagnosticMethodSection() {
   const methodSteps = [
-    ['1', 'Diagnostic', 'Finding the workflow gaps'],
-    ['2', 'Process', 'Uncovering manual steps and handover points'],
-    ['3', 'Automation', 'Reducing repeated admin where it is sensible'],
-    ['4', 'Safe AI', 'Setting practical rules with human review']
+    ['1', 'Diagnostics', 'Understanding core problems and finding workflow gaps.'],
+    ['2', 'Triage', 'Pinpoint and prioritise crucial bottlenecks.'],
+    ['3', 'Automation', 'Automate and reduce repeated admin.'],
+    ['4', 'Handover', 'Guidance with your new solution.']
   ];
 
   const providerTypes = ['AH', 'DS', 'SP'];
@@ -622,25 +553,6 @@ function DiagnosticMethodSection() {
             dashboard, automation or AI-supported workflow, we look at what triggers the process, who is involved, where
             work gets stuck, and what risks need to be controlled. Then we recommend the simplest useful solution.
           </motion.p>
-
-          <motion.div variants={fadeUp} className="mb-xl rounded-xl border border-error/20 bg-error-container/55 p-lg text-on-error-container">
-            <div className="flex items-start gap-md">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/70 text-error">
-                <span className="material-symbols-outlined" aria-hidden="true">
-                  warning
-                </span>
-              </div>
-              <div>
-                <p className="mb-xs font-label-md text-label-md font-bold">Clear service boundaries</p>
-                <p className="font-body-sm text-body-sm">
-                  Heutrix Labs provides workflow improvement, safe AI support, operational visibility builds and
-                  operational systems. We do <strong>NOT</strong> provide clinical advice, medical advice, legal advice,
-                  financial advice, regulatory advice, official audit services, NDIS registration readiness, or
-                  mock audits.
-                </p>
-              </div>
-            </div>
-          </motion.div>
 
           <motion.div variants={fadeUp} className="flex flex-col gap-md sm:flex-row sm:items-center">
             <div className="flex -space-x-3" aria-hidden="true">
@@ -1189,18 +1101,17 @@ function ContactPage({ search }) {
           workflow systems or safe AI setup.
         </p>
         <p>
-          Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or other sensitive
+          Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive
           information in this form.
         </p>
       </PageHero>
       <Section className="bg-surface-container-low">
         <div className="grid gap-xl lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div className="space-y-lg">
-            <InfoCard icon="privacy_tip" title="Privacy note before you submit">
+            <InfoCard icon="privacy_tip" title="Privacy note before submitting">
               <p>
-                Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or other
-                sensitive information in this form. A general description of the workflow, admin issue or operational
-                problem is enough for an initial enquiry.
+                Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive
+                information in this form.
               </p>
             </InfoCard>
             <InfoCard icon="mail" title="Email">
@@ -1255,14 +1166,6 @@ function ContactForm({ search, submitLabel = 'Send enquiry' }) {
         setSubmitted(true);
       }}
     >
-      <div className="mb-lg rounded-lg border border-error/20 bg-error-container/35 p-md">
-        <p className="mb-xs font-label-md text-label-md text-on-error-container">Sensitive information warning</p>
-        <p className="font-body-sm text-body-sm text-on-surface-variant">
-          Do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or other sensitive
-          information. If the work may involve sensitive information later, we will agree an appropriate process first.
-        </p>
-      </div>
-
       <div className="grid gap-md md:grid-cols-2">
         <Field label="Name" name="name" required />
         <Field label="Email" name="email" type="email" required />
@@ -1313,14 +1216,6 @@ function ContactForm({ search, submitLabel = 'Send enquiry' }) {
           placeholder="Briefly describe the workflow, admin issue or operational problem. Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive information."
         />
       </div>
-
-      <label className="mt-md flex gap-md rounded-lg border border-outline-variant bg-surface-container-low p-md font-body-sm text-body-sm text-on-surface-variant">
-        <input type="checkbox" required className="mt-xs h-4 w-4 shrink-0 accent-secondary" />
-        <span>
-          I confirm I have not included patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive
-          information.
-        </span>
-      </label>
 
       <button
         type="submit"

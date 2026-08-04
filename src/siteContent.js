@@ -131,8 +131,7 @@ export const whoWeHelp = [
 
 export const homePainPoints = [
   'Intake, referral or enquiry follow-up handled differently by different people',
-  'Service agreements, referrals, reports or document requests that are hard to track',
-  'Staff onboarding, role changes or handovers managed through memory and repeated reminders',
+  'Service agreements, staff onboarding or handovers managed through memory and repeated manual reminders',
   'Incident, complaint, risk or evidence tracking spread across spreadsheets',
   'Managers lacking visibility over what is waiting, overdue or stuck',
   'Reporting preparation that takes too long because information is scattered',
@@ -168,7 +167,7 @@ export const homeServices = [
     icon: 'auto_mode',
     lead: 'Improve one important admin or operational workflow.',
     description:
-      'A focused sprint to improve one defined workflow such as intake tracking, referral follow-up, service agreements, document collection, incident and complaint tracking, onboarding, reporting preparation or evidence tracking.',
+      'A focused 2-4 weeks period to improve one defined workflow such as intake tracking, referral follow-up, service agreements, document collection, incident and complaint tracking, onboarding, reporting preparation or evidence tracking.',
     cta: { label: 'Learn more', href: '/services#workflow-automation-sprint' }
   },
   {
@@ -179,14 +178,6 @@ export const homeServices = [
       'A practical dashboard or visibility view for practice managers, provider owners and operational leads who need to see workload, status, overdue items, bottlenecks, incidents, complaints, evidence or reporting inputs.',
     cta: { label: 'Learn more', href: '/services#operations-dashboard-build' }
   }
-];
-
-export const serviceSelectorRows = [
-  ['We know admin is messy, but not where to start.', 'Workflow Diagnostic'],
-  ['One workflow keeps causing repeated problems.', 'Workflow Automation Sprint'],
-  ['Managers cannot see what is waiting, overdue or stuck.', 'Operations Dashboard Build'],
-  ['Staff are already experimenting with AI.', 'Safe AI Setup'],
-  ['We need something more tailored than a spreadsheet.', 'Tailored Internal Workflow System']
 ];
 
 export const beforeAfterExamples = [
@@ -215,13 +206,6 @@ export const beforeAfterExamples = [
     before: 'Staff use AI tools informally without clear rules about privacy, review or suitable use.',
     after: 'The organisation has approved AI use rules, prompt guidance, human review expectations and clear boundaries for sensitive information.'
   }
-];
-
-export const approachSteps = [
-  ['1. Understand the workflow', 'We start by mapping how the work actually happens, not how it is meant to happen on paper.'],
-  ['2. Identify the pressure points', 'We look for duplicated effort, unclear ownership, handover gaps, spreadsheet sprawl, manual reporting, tracking risks and privacy issues.'],
-  ['3. Recommend the practical fix', 'The right answer may be a process change, tracker, dashboard, automation, internal workflow system or Safe AI setup.'],
-  ['4. Build and hand over', 'Where implementation is in scope, we build the agreed workflow improvement, test it with your team and provide practical handover documentation.']
 ];
 
 export const services = [
@@ -522,16 +506,6 @@ export const services = [
           'Safe AI rules for internal admin use'
         ]
       },
-      {
-        title: 'Important boundary',
-        items: [
-          'Heutrix Labs and Heutrix Assurance are commercially connected but operationally separate',
-          'Heutrix Labs does not provide NDIS registration readiness',
-          'Heutrix Labs does not provide mock audits',
-          'Heutrix Labs does not provide official audit certification or regulatory approval'
-        ],
-        tone: 'boundary'
-      }
     ],
     outcome:
       'The work supports operational systems only. It does not remove the client responsibility to review, approve and maintain their own processes.',
