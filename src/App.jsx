@@ -666,21 +666,20 @@ function ServicesPage() {
   return (
     <>
       <PageHero
-        title="Practical workflow, dashboard and Safe AI support for care-related service providers."
+        title="Practical workflow services built around a clear operational outcome."
         actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
       >
         <p>
-          Heutrix Labs helps allied health practices, disability support providers and specialist health providers
-          improve the internal systems that support daily operations.
+          Heutrix Labs helps allied health practices, disability support providers and selected care-related service
+          providers improve the internal systems that support daily operations.
         </p>
         <p>
-          We focus on practical implementation: clearer workflows, less duplicated admin, better visibility, safer AI
-          use and more reliable handover.
+          Each engagement starts with the workflow, the people who use it and the outcome that needs to improve. The
+          solution may be a clearer process, tracker, dashboard, automation, lightweight internal system or Safe AI setup.
         </p>
         <p>
-          Most clients start with a Workflow Diagnostic when the problem is clear but the best fix is not. If the
-          workflow is already well-defined, Heutrix Labs can move straight into a scoped sprint, dashboard build or Safe
-          AI setup.
+          Start with a Workflow Diagnostic when the priority is unclear. When the workflow and desired outcome are
+          already well-defined, we can scope the most suitable implementation service directly.
         </p>
       </PageHero>
 
@@ -694,8 +693,8 @@ function ServicesPage() {
       </Section>
 
       <CtaSection
-        title="Not sure which service fits?"
-        body="Start with a free fit call. We will discuss the workflow or operational issue and recommend a practical next step."
+        title="Choose the smallest useful next step."
+        body="Share a general description of the workflow, who uses it and what is difficult to see or manage. We can then discuss the most practical starting point."
       />
     </>
   );
@@ -838,16 +837,18 @@ function PricingPage() {
         actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
         compact
       >
-        <p>Clear starting points for practical workflow improvement.</p>
+        <p>Indicative starting prices for practical, bounded workflow improvement projects.</p>
         <p>
-          Final pricing depends on workflow complexity, data access, integrations, testing needs, user numbers,
-          documentation requirements and privacy or risk controls. A written scope is confirmed before paid
-          implementation work begins.
+          Prices below exclude GST. Final pricing depends on scope, workflow clarity, data access, integrations, user
+          roles, testing, documentation, handover and privacy or governance requirements. Deliverables, assumptions and
+          timing are confirmed in writing before paid work begins.
         </p>
       </PageHero>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title="Starting prices" className="mb-xl" />
+        <SectionIntro title="Indicative starting prices" className="mb-xl">
+          <p>These figures are starting points, not fixed quotes. A final quote is based on an agreed scope.</p>
+        </SectionIntro>
         <ResponsiveRows
           columns={[
             { label: 'Service', width: '1fr' },
@@ -861,7 +862,7 @@ function PricingPage() {
       <Section>
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="What affects price?">
-            <p>Pricing may increase where the work involves additional complexity, review or governance needs.</p>
+            <p>Scope increases when more people, systems, data sources, controls or review cycles need to be considered.</p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
             <BulletList items={priceFactors} columns />
@@ -870,7 +871,9 @@ function PricingPage() {
       </Section>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title="Typical first projects" className="mb-xl" />
+        <SectionIntro title="Choosing a practical first project" className="mb-xl">
+          <p>A useful first project is narrow enough to implement and important enough to reduce recurring friction.</p>
+        </SectionIntro>
         <div className="grid gap-lg md:grid-cols-2 lg:grid-cols-4">
           {typicalProjects.map(([title, copy]) => (
             <InfoCard key={title} title={title}>
@@ -883,7 +886,7 @@ function PricingPage() {
       <Section>
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="What is not included">
-            <p>Unless specifically scoped, pricing does not include the following work.</p>
+            <p>The starting prices do not include the following services or outcomes.</p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
             <BulletList items={pricingExclusions} columns tone="boundary" />
@@ -892,8 +895,9 @@ function PricingPage() {
       </Section>
 
       <CtaSection
-        title="Not sure where to start?"
-        body="Book a free fit call. We will discuss what is happening now and whether a diagnostic, sprint, dashboard or Safe AI setup is the right next step."
+        title="Need help defining a realistic first scope?"
+        body="Book a free fit call and share the workflow, people involved, current tools and desired outcome. Please keep the initial description general and non-sensitive."
+        showPricing={false}
       />
     </>
   );
@@ -903,20 +907,26 @@ function SafeAiPage() {
   return (
     <>
       <PageHero
-        title="Safe AI Setup for care-related service providers."
+        title="Safe AI Setup for responsible day-to-day use."
         actions={<ButtonLink href={ctas.ai.href}>{ctas.ai.label}</ButtonLink>}
       >
         <p>
-          AI can be useful for internal admin, drafting, workflow guidance and productivity support. It can also create
-          privacy, quality and accountability risks if staff use it without clear rules.
+          Commercially available AI tools can support internal admin, drafting and workflow guidance. They can also create
+          privacy, quality, security and accountability risks when staff use them without approved boundaries.
         </p>
-        <p>Heutrix Labs helps organisations set practical AI boundaries before AI becomes part of everyday admin work.</p>
+        <p>
+          Heutrix Labs helps organisations turn general AI concerns into clear use cases, information rules, human review
+          responsibilities and practical staff guidance.
+        </p>
       </PageHero>
 
       <Section className="bg-surface-container-low">
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="What Safe AI Setup helps with">
-            <p>Safe AI Setup helps your organisation define clear internal rules before wider use.</p>
+            <p>
+              The goal is a usable internal position: what staff may do, what they must not do, what requires approval and
+              who remains accountable for the final output.
+            </p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
             <BulletList items={safeAiHelps} columns />
@@ -927,21 +937,23 @@ function SafeAiPage() {
       <Section>
         <div className="grid gap-lg lg:grid-cols-2">
           <InfoCard icon="check_circle" title="Suitable AI use cases">
-            <p className="mb-md">AI may be suitable for internal work such as:</p>
+            <p className="mb-md">Depending on the information, tool and review process, AI may assist with:</p>
             <BulletList items={suitableAiUses} />
             <p className="mt-md">
-              Suitability depends on the tool, the information involved, the user, the workflow and the review process.
+              Suitability must be assessed for the specific purpose, information, tool, user and review process.
             </p>
           </InfoCard>
           <InfoCard icon="block" title="Unsuitable AI use cases">
-            <p className="mb-md">AI should not be used to:</p>
+            <p className="mb-md">AI should not be used to remove qualified judgement or accountable human decisions.</p>
             <BulletList items={unsuitableAiUses} tone="boundary" />
           </InfoCard>
         </div>
       </Section>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title="AI use guidance table" className="mb-xl" />
+        <SectionIntro title="Example AI use positions" className="mb-xl">
+          <p>These examples are starting positions only. Each organisation should approve its own tools and use cases.</p>
+        </SectionIntro>
         <ResponsiveRows
           columns={[
             { label: 'AI use type', width: '1.2fr' },
@@ -956,17 +968,17 @@ function SafeAiPage() {
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="Privacy and sensitive information">
             <p>
-              Allied health practices and disability support providers must be careful with patient, participant,
-              client, health, clinical, Medicare, NDIS, diagnostic, staff and other sensitive information.
+              Personal information entered into an AI product remains subject to the organisation's privacy and data
+              handling responsibilities. Publicly available AI tools should not receive personal or sensitive information.
             </p>
             <p>
-              Heutrix Labs does not recommend copying sensitive information into AI tools unless there is a documented,
-              privacy-reviewed and approved process covering the tool, purpose, access, retention, permissions and human
-              review.
+              Any proposed AI use involving personal information needs a documented, organisation-approved process
+              covering necessity, tool suitability, access, storage, retention, permissions and accountable human review.
             </p>
           </SectionIntro>
           <InfoCard icon="rule" title="What is included">
             <BulletList items={safeAiIncluded} columns />
+            <p className="mt-md">Safe AI Setup provides operational guidance and does not replace legal, privacy, clinical or professional advice.</p>
           </InfoCard>
         </div>
       </Section>
@@ -984,24 +996,24 @@ function AboutPage() {
         actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
       >
         <p>
-          Heutrix Labs helps service providers turn messy admin, scattered spreadsheets and manual workflows into safer,
-          clearer and more reliable internal systems.
+          Heutrix Labs is a practical workflow implementation partner for service providers that have outgrown informal
+          admin, scattered spreadsheets and person-dependent handovers.
         </p>
         <p>
-          We work primarily with Australian allied health practices, disability support providers, specialist health
-          providers and small-to-mid-sized care-related service operators.
+          We work primarily with Australian allied health practices, disability support providers and selected
+          care-related service operators that want a bounded improvement their team can understand and maintain.
         </p>
       </PageHero>
 
       <Section className="bg-surface-container-low">
         <SectionIntro title="Built for practical operators, not technology hype">
           <p>
-            Many organisations do not need a large software project. They need clearer ownership, better tracking,
-            fewer duplicated steps, safer handovers and more reliable visibility over important work.
+            Many organisations do not need another large platform. They need clearer ownership, consistent status
+            definitions, fewer duplicated steps, better handovers and reliable visibility over important work.
           </p>
           <p>
-            Heutrix Labs focuses on practical implementation. We map how the work actually happens, identify what is
-            creating friction, and build improvements that staff can realistically use.
+            We map how the work actually happens, identify the smallest useful improvement, build within agreed
+            constraints and document what the team needs to operate after handover.
           </p>
         </SectionIntro>
       </Section>
@@ -1014,7 +1026,7 @@ function AboutPage() {
           <InfoCard icon="groups" title="Who we work best with">
             <BulletList items={bestFit} />
           </InfoCard>
-          <InfoCard icon="rule" title="Who we are not for">
+          <InfoCard icon="rule" title="What we do not provide">
             <BulletList items={notFor} tone="boundary" />
           </InfoCard>
         </div>
@@ -1028,12 +1040,11 @@ function AboutPage() {
               Relationship with Heutrix Assurance
             </h2>
             <p className="mb-md font-body-lg text-body-lg text-on-surface-variant">
-              Heutrix Labs and Heutrix Assurance are commercially connected but operationally separate.
+              Heutrix Labs and Heutrix Assurance are commercially connected and operate as separate service lines.
             </p>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Heutrix Labs provides workflow, automation, dashboard and safe AI support. It does not provide NDIS
-              registration readiness, mock audits, official audit certification, legal advice, clinical advice or
-              regulatory approval.
+              Work commissioned from Heutrix Labs is operational workflow support. It does not provide NDIS registration
+              readiness, mock audits, audit certification, legal advice, clinical advice or regulatory approval.
             </p>
           </div>
         </div>
@@ -1051,8 +1062,8 @@ function FaqPage() {
     <>
       <PageHero title="Frequently asked questions" compact>
         <p>
-          Questions about Heutrix Labs workflow systems, automation, dashboards, safe AI setup, pricing, privacy and
-          service boundaries.
+          Practical answers about scope, timing, existing tools, pricing, handover, privacy, Safe AI and the limits of
+          Heutrix Labs services.
         </p>
       </PageHero>
 
@@ -1086,7 +1097,7 @@ function FaqPage() {
 
       <CtaSection
         title="Have a workflow question not covered here?"
-        body="Use the contact form with a general description. Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive information."
+        body="Use the contact form with a general description of the workflow, who uses it and the outcome you want to improve. Do not include personal or sensitive information."
       />
     </>
   );
@@ -1097,8 +1108,8 @@ function ContactPage({ search }) {
     <>
       <PageHero title="Contact Heutrix Labs" compact>
         <p>
-          Use this form to ask about workflow diagnostics, workflow automation, operations dashboards, tailored internal
-          workflow systems or safe AI setup.
+          Share a general description of the workflow, tracking, dashboard or Safe AI issue you want to improve. Helpful
+          context includes who uses the process, where work gets stuck and what a better outcome would look like.
         </p>
         <p>
           Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive
@@ -1113,6 +1124,17 @@ function ContactPage({ search }) {
                 Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive
                 information in this form.
               </p>
+            </InfoCard>
+            <InfoCard icon="checklist" title="Helpful details to include">
+              <BulletList
+                items={[
+                  'The workflow or admin task causing the most friction',
+                  'The roles or teams involved',
+                  'The tools currently used',
+                  'What is difficult to track, hand over or report',
+                  'The practical outcome you want to improve'
+                ]}
+              />
             </InfoCard>
             <InfoCard icon="mail" title="Email">
               <p>hello@heutrixlabs.com</p>
@@ -1273,11 +1295,11 @@ function PrivacyPage() {
       <PageHero title="Privacy and data handling" compact>
         <p>
           Heutrix Labs works with care-related service providers where privacy, confidentiality and careful information
-          handling matter.
+          handling are part of everyday operations.
         </p>
         <p>
-          Our approach is based on minimum necessary data use, clear access boundaries, secure file handling and
-          practical review of any workflow involving sensitive information.
+          Our project approach starts with data minimisation: use the least information needed, prefer de-identified or
+          sample data where practical, define access and storage boundaries, and agree review and retention steps.
         </p>
       </PageHero>
 
@@ -1285,8 +1307,8 @@ function PrivacyPage() {
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="Information we ask you not to send through public forms">
             <p>
-              Please do not send the following through website forms, email enquiries or unsecured channels unless a
-              secure process has been agreed.
+              Do not send the following through website forms, initial email enquiries or other unsecured channels. A
+              general description of the workflow is enough to begin a conversation.
             </p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
@@ -1298,7 +1320,10 @@ function PrivacyPage() {
       <Section>
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="How we approach workflow projects">
-            <p>Where a project may involve sensitive information, Heutrix Labs considers practical data boundaries.</p>
+            <p>
+              Before using live information, we clarify the purpose, minimum data required, approved tools, user access,
+              review responsibilities and what happens to project data after handover.
+            </p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
             <BulletList items={privacyProjectChecks} columns />
@@ -1310,18 +1335,18 @@ function PrivacyPage() {
         <div className="grid gap-lg lg:grid-cols-2">
           <InfoCard icon="smart_toy" title="AI and sensitive information">
             <p>
-              Heutrix Labs does not recommend copying sensitive information into AI tools unless there is a documented,
-              privacy-reviewed and approved process.
+              Do not enter personal or sensitive information into publicly available AI tools. Any proposed AI use
+              involving personal information needs organisation-level due diligence and an approved process.
             </p>
             <p className="mt-md">
-              AI tools should be used only within approved boundaries, and outputs should be reviewed by a suitable
-              human before use.
+              The process should address purpose, necessity, tool suitability, access, storage, retention, permissions
+              and accountable human review.
             </p>
           </InfoCard>
           <InfoCard icon="fact_check" title="Client responsibility">
             <p>
-              Clients remain responsible for reviewing and approving privacy, data handling, access control, retention
-              and tool-use decisions within their own organisation.
+              Each client remains responsible for determining its privacy obligations and approving collection, use,
+              disclosure, access, storage, retention and tool-use decisions within its organisation.
             </p>
           </InfoCard>
         </div>
@@ -1334,15 +1359,14 @@ function TermsPage() {
   return (
     <>
       <PageHero title="Terms of use" compact>
-        <p>This website provides general information about Heutrix Labs services.</p>
+        <p>These terms apply to use of the Heutrix Labs website and its general service information.</p>
         <p>
-          By using this website, you acknowledge that the information provided is general in nature and does not
-          constitute legal advice, clinical advice, regulatory advice, audit certification or professional advice
-          specific to your organisation.
+          Website content is general in nature. It is not a project scope, service agreement or advice tailored to your
+          organisation, and it should not be treated as legal, clinical, privacy, employment, regulatory or audit advice.
         </p>
       </PageHero>
       <Section className="bg-surface-container-low">
-        <div className="grid gap-lg lg:grid-cols-3">
+        <div className="grid gap-lg md:grid-cols-2">
           <InfoCard icon="rule" title="Service boundary">
             <p className="mb-md">Heutrix Labs provides workflow, automation, dashboard and safe AI support.</p>
             <BulletList
@@ -1360,15 +1384,22 @@ function TermsPage() {
           </InfoCard>
           <InfoCard icon="article" title="Website information">
             <p>
-              The information on this website is provided for general guidance only. You should seek appropriate
-              professional advice before relying on any information for legal, clinical, regulatory, employment, privacy
-              or compliance decisions.
+              We aim to keep website information useful and current, but content may change and may not cover every
+              situation. Seek appropriately qualified advice before making legal, clinical, privacy, employment,
+              regulatory or compliance decisions.
             </p>
           </InfoCard>
           <InfoCard icon="person_check" title="Client responsibility">
             <p>
-              Clients are responsible for reviewing, approving and maintaining their own workflows, systems, policies,
-              procedures, privacy controls and compliance obligations.
+              Clients remain responsible for reviewing, approving and maintaining their workflows, systems, policies,
+              procedures, privacy controls, professional obligations and regulatory requirements.
+            </p>
+          </InfoCard>
+          <InfoCard icon="contract" title="Project scopes and terms">
+            <p>
+              A service engagement begins only when both parties agree to a written scope or other engagement terms.
+              Those documents define the deliverables, assumptions, responsibilities, timing, fees and project-specific
+              terms and take precedence over general website content.
             </p>
           </InfoCard>
         </div>
@@ -1382,40 +1413,41 @@ function DisclaimerPage() {
     <>
       <PageHero title="Website disclaimer" compact>
         <p>
-          Heutrix Labs provides practical workflow, automation, dashboard and safe AI support for allied health
-          practices, disability support providers and selected regulated service providers.
+          This website describes practical workflow, automation, dashboard and Safe AI support for allied health
+          practices, disability support providers and selected care-related service providers.
         </p>
       </PageHero>
       <Section className="bg-surface-container-low">
         <div className="mx-auto max-w-4xl rounded-xl border border-outline-variant bg-white p-xl shadow-sm">
           <h2 className="mb-md font-headline-md text-headline-md text-primary">Service boundaries</h2>
           <p className="mb-md font-body-lg text-body-lg text-on-surface-variant">
-            Heutrix Labs does not provide official audit certification, legal advice, clinical advice, regulatory
+            Heutrix Labs does not provide audit certification, legal advice, clinical advice, privacy advice, regulatory
             approval, NDIS registration readiness or mock audits.
           </p>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Any compliance-related system should support the client's responsibilities but does not remove the client's
-            obligation to review, approve and maintain their own processes.
+            Operational tools may support a client's processes but do not verify compliance or remove the client's
+            responsibility to obtain suitable advice and to review, approve, apply and maintain its own processes.
           </p>
           <div className="mt-lg grid gap-md md:grid-cols-2">
             <InfoCard icon="smart_toy" title="AI disclaimer">
               <p>
-                AI support from Heutrix Labs is limited to internal admin, drafting, reporting support, workflow
-                guidance, knowledge support and productivity use cases where appropriate.
+                Safe AI Setup focuses on internal operating rules, approved use cases, information boundaries and human
+                review for appropriate admin and workflow-support activities.
               </p>
               <p className="mt-md">
-                AI should not replace clinical judgement, legal advice, professional responsibility, compliance
-                accountability or human review.
+                AI outputs can be incomplete, inaccurate or unsuitable for context. A qualified and accountable person
+                must review any output before it is used, and AI must not replace clinical judgement or professional,
+                legal, safety or regulatory responsibility.
               </p>
             </InfoCard>
             <InfoCard icon="lock" title="Privacy disclaimer">
               <p>
-                Sensitive information should not be entered into AI tools or shared through unsecured channels unless
-                there is a documented, privacy-reviewed and approved process.
+                Personal or sensitive information should not be entered into publicly available AI tools or shared
+                through public forms and unsecured channels.
               </p>
               <p className="mt-md">
-                Clients remain responsible for their own privacy, confidentiality, access control, retention and data
-                handling decisions.
+                Clients remain responsible for determining their privacy obligations and approving collection, use,
+                disclosure, access, storage, retention and data-handling decisions.
               </p>
             </InfoCard>
           </div>
@@ -1425,7 +1457,7 @@ function DisclaimerPage() {
   );
 }
 
-function CtaSection({ title, body, cta = ctas.fitCall }) {
+function CtaSection({ title, body, cta = ctas.fitCall, showPricing = true }) {
   return (
     <Section className="bg-primary text-on-primary">
       <motion.div className="grid gap-lg lg:grid-cols-[1fr_auto] lg:items-center" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
@@ -1437,9 +1469,11 @@ function CtaSection({ title, body, cta = ctas.fitCall }) {
           <ButtonLink href={cta.href} variant="mint">
             {cta.label}
           </ButtonLink>
-          <ButtonLink href={ctas.pricing.href} variant="secondary" icon={null}>
-            {ctas.pricing.label}
-          </ButtonLink>
+          {showPricing ? (
+            <ButtonLink href={ctas.pricing.href} variant="secondary" icon={null}>
+              {ctas.pricing.label}
+            </ButtonLink>
+          ) : null}
         </motion.div>
       </motion.div>
     </Section>
