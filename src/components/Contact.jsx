@@ -7,66 +7,76 @@ export default function Contact() {
       <div className="max-w-container-max mx-auto">
         <div className="grid lg:grid-cols-2 gap-xxl">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, amount: 0.3 }}>
+            <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-sm block">Next step</span>
             <h2 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md">Book a free fit call.</h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-lg">We will discuss the workflow or operational issue, what is currently difficult to manage and whether Heutrix Labs is the right fit to help. The purpose of this call is to decide the best next step.</p>
             <div className="p-md bg-secondary-container/30 border border-secondary/20 rounded-xl mb-xl">
-              <p className="font-label-md text-label-md text-primary mb-xs">Privacy Note Before Submitting</p>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">Please do not include patient names, Medicare numbers, clinical details, diagnosis information, participant records, or other sensitive information in this form. A general description of the workflow is enough for the fit call.</p>
-            </div>
-            <div className="space-y-lg">
-              <div className="flex items-center gap-lg">
-                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined" data-icon="mail">mail</span>
-                </div>
-                <div>
-                  <p className="font-label-md text-label-md text-primary">Email Us</p>
-                  <p className="font-body-md text-body-md text-on-surface-variant">hello@heutrixlabs.com</p>
-                </div>
-              </div>
+              <p className="font-label-md text-label-md text-primary mb-xs">Privacy note before submitting</p>
+              <p className="font-body-sm text-body-sm text-on-surface-variant">Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive information in this form.</p>
             </div>
           </motion.div>
           
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} viewport={{ once: true, amount: 0.3 }}>
             <form className="glass-card p-xl rounded-xxl border border-slate-200 shadow-xl space-y-md" onSubmit={(e) => e.preventDefault()}>
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
                 <div className="flex flex-col gap-xs">
                   <label className="font-label-md text-label-md text-primary px-xs">Name</label>
-                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="John Doe" type="text"/>
+                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" type="text"/>
                 </div>
                 <div className="flex flex-col gap-xs">
-                  <label className="font-label-md text-label-md text-primary px-xs">Practice / Organisation Name</label>
-                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="City Dental" type="text"/>
+                  <label className="font-label-md text-label-md text-primary px-xs">Email</label>
+                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" type="email"/>
                 </div>
               </div>
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
                 <div className="flex flex-col gap-xs">
-                  <label className="font-label-md text-label-md text-primary px-xs">Email Address</label>
-                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="john@example.com" type="email"/>
+                  <label className="font-label-md text-label-md text-primary px-xs">Practice or organisation name</label>
+                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" type="text"/>
                 </div>
                 <div className="flex flex-col gap-xs">
-                  <label className="font-label-md text-label-md text-primary px-xs">Practice Type</label>
-                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="Allied Health, Dental, etc." type="text"/>
+                  <label className="font-label-md text-label-md text-primary px-xs">Role</label>
+                  <input className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" type="text"/>
                 </div>
               </div>
+
               <div className="flex flex-col gap-xs">
-                <label className="font-label-md text-label-md text-primary px-xs">Operational Status</label>
-                <div className="space-y-sm mt-xs">
-                  <label className="flex items-center gap-md p-md border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50">
-                    <input className="w-5 h-5 text-secondary rounded" type="checkbox"/>
-                    <span className="font-body-sm">Are patient, client, participant, staff or sensitive records involved?</span>
-                  </label>
-                  <label className="flex items-center gap-md p-md border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50">
-                    <input className="w-5 h-5 text-secondary rounded" type="checkbox"/>
-                    <span className="font-body-sm">Are staff currently using AI tools at work?</span>
-                  </label>
-                  <label className="flex items-center gap-md p-md bg-error-container/20 border border-error/20 rounded-lg cursor-pointer hover:bg-error-container/30">
-                    <input className="w-5 h-5 text-error rounded" type="checkbox" required/>
-                    <span className="font-body-sm font-bold text-on-surface">I confirm I have NOT included identifiable patient, clinical or sensitive information in this form.</span>
-                  </label>
-                </div>
+                <label className="font-label-md text-label-md text-primary px-xs">What would you like help with?</label>
+                <select className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none bg-white">
+                  <option>Workflow Diagnostic</option>
+                  <option>Workflow Automation Sprint</option>
+                  <option>Operations Dashboard Build</option>
+                  <option>Safe AI Setup</option>
+                  <option>Tailored Internal Workflow System</option>
+                  <option>Regulated Provider Workflow Tools</option>
+                  <option>Not sure yet</option>
+                </select>
               </div>
+
+              <div className="flex flex-col gap-xs">
+                <label className="font-label-md text-label-md text-primary px-xs">Preferred next step</label>
+                <select className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none bg-white">
+                  <option>Book a free fit call</option>
+                  <option>View Services</option>
+                  <option>View pricing</option>
+                  <option>Start with a Workflow Diagnostic</option>
+                  <option>Improve a workflow</option>
+                  <option>Build an operations dashboard</option>
+                  <option>Set up safe AI use</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-xs">
+                <label className="font-label-md text-label-md text-primary px-xs">Message</label>
+                <textarea 
+                  className="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none min-h-[120px]" 
+                  placeholder="Briefly describe the workflow, admin issue or operational problem. Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive information."
+                ></textarea>
+              </div>
+
               <button className="w-full bg-primary text-on-primary py-lg rounded-xl font-headline-sm hover:opacity-95 transition-all shadow-md mt-md">
-                Request Fit Call
+                Request fit call
               </button>
             </form>
           </motion.div>

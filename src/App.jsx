@@ -4,9 +4,7 @@ import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Services from './components/Services';
 import Methodology from './components/Methodology';
-import Checklist from './components/Checklist';
-import About from './components/About';
-import FAQ from './components/FAQ';
+import ScrollytellingSection from './components/ScrollytellingSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -45,9 +43,7 @@ function App() {
         <Problem />
         <Services />
         <Methodology />
-        <Checklist />
-        <About />
-        <FAQ />
+        <ScrollytellingSection />
         <Contact />
       </main>
 
