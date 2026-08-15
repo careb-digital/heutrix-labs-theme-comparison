@@ -40,7 +40,7 @@ export default function ScrollytellingSection() {
   ];
 
   return (
-    <section id="examples" ref={containerRef} className="bg-background-soft relative z-20" style={{ height: `${(examples.length * 100) + 100}vh` }}>
+    <section id="examples" ref={containerRef} className="bg-surface relative z-20" style={{ height: `${(examples.length * 100) + 100}vh` }}>
       
       <div className="sticky top-0 h-screen flex flex-col justify-center px-lg max-w-container-max mx-auto overflow-hidden">
         
