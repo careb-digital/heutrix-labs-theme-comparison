@@ -40,76 +40,59 @@ export default function ScrollytellingSection() {
   ];
 
   return (
-    <section id="examples" ref={containerRef} className="bg-surface relative z-20" style={{ height: `${(examples.length * 100) + 100}vh` }}>
+    <section id="examples" ref={containerRef} className="bg-surface relative z-20 py-xxl" style={{ height: `${(examples.length * 70) + 100}vh` }}>
       
-      <div className="sticky top-0 h-screen flex flex-col justify-center px-lg max-w-container-max mx-auto overflow-hidden">
+      <div className="sticky top-0 h-screen flex flex-col justify-center px-lg max-w-container-max mx-auto">
         
         <div className="text-center mb-xl">
           <h2 className="font-headline-md text-headline-md text-primary mb-sm">Before and after examples</h2>
           <p className="font-body-lg text-on-surface-variant">See how scattered processes turn into clear systems.</p>
         </div>
 
-        <div className="relative h-[60vh] max-w-5xl mx-auto w-full">
+        <div className="relative h-[60vh] max-w-5xl mx-auto w-full overflow-hidden">
           {examples.map((ex, index) => {
             const start = index / examples.length;
             const end = start + (1 / examples.length);
             
-            const opacity = useTransform(
-              smoothProgress, 
-              [Math.max(0, start - 0.1), start, end - 0.1, Math.min(1, end + 0.1)], 
-              [0, 1, 1, 0]
-            );
-            
-            const scale = useTransform(
+            // Bring card in from below and push it out above
+            const y = useTransform(
               smoothProgress,
               [Math.max(0, start - 0.1), start, end - 0.1, Math.min(1, end + 0.1)],
-              [0.9, 1, 1, 0.95]
+              [150, 0, 0, -150]
             );
 
-            // Animate Before -> After transition inside the card
-            const beforeOpacity = useTransform(
+            // Fade in and out
+            const opacity = useTransform(
               smoothProgress,
-              [start, start + 0.05, start + 0.1],
-              [1, 1, 0.3]
-            );
-            
-            const afterOpacity = useTransform(
-              smoothProgress,
-              [start + 0.05, start + 0.15],
-              [0, 1]
-            );
-            
-            const afterY = useTransform(
-              smoothProgress,
-              [start + 0.05, start + 0.15],
-              [20, 0]
+              [Math.max(0, start - 0.1), start, end - 0.1, Math.min(1, end + 0.1)],
+              [0, 1, 1, 0]
             );
 
             return (
               <motion.div 
                 key={index} 
-                style={{ opacity, scale }}
+                style={{ y, opacity, pointerEvents: opacity.get() > 0.5 ? 'auto' : 'none' }}
                 className="absolute inset-0 flex items-center justify-center"
               >
-                <div className="bg-white rounded-xxl p-xl border border-slate-200 shadow-2xl w-full flex flex-col gap-lg">
+                <div className="bg-white rounded-xxl p-xl border border-slate-200 shadow-xl w-full flex flex-col gap-lg">
                   <h3 className="font-headline-lg text-primary text-center border-b border-slate-100 pb-md">{ex.title}</h3>
                   
-                  <div className="grid md:grid-cols-2 gap-xl">
-                    <motion.div style={{ opacity: beforeOpacity }} className="bg-error-container/30 p-lg rounded-xl border border-error/10">
+                  <div className="grid md:grid-cols-2 gap-xl h-full">
+                    <div className="bg-error-container/30 p-lg rounded-xl border border-error/10 flex flex-col justify-center">
                       <div className="flex items-center gap-sm mb-sm text-error">
                         <span className="material-symbols-outlined">warning</span>
                         <span className="font-bold uppercase tracking-widest text-xs">Before</span>
                       </div>
-                      <p className="font-body-lg text-on-surface-variant">{ex.before}</p>
-                    </motion.div>
+                      <p className="font-body-lg text-on-surface-variant leading-relaxed">{ex.before}</p>
+                    </div>
                     
-                    <motion.div style={{ opacity: afterOpacity, y: afterY }} className="bg-secondary-container p-lg rounded-xl border border-secondary/20 shadow-md">
+                    <div className="bg-secondary-container p-lg rounded-xl border border-secondary/20 shadow-md flex flex-col justify-center">
                       <div className="flex items-center gap-sm mb-sm text-secondary-fixed-dim">
                         <span className="material-symbols-outlined">check_circle</span>
                         <span className="font-bold uppercase tracking-widest text-xs">After</span>
                       </div>
-                      <p className="font-body-lg text-on-surface-variant text-primary font-medium">{ex.after}</p>
-                    </motion.div>
+                      <p className="font-body-lg text-on-surface-variant text-primary font-medium leading-relaxed">{ex.after}</p>
+                    </div>
                   </div>
                 </div>
               </motion.div>
