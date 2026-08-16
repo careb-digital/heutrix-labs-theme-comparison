@@ -12,8 +12,8 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[795px] flex items-center px-lg py-xxl" id="home">
-      <div className="max-w-container-max mx-auto w-full relative z-10 grid lg:grid-cols-2 gap-xl items-center">
+    <section className="relative overflow-hidden min-h-[795px] flex items-center px-lg pt-[120px] pb-xxl lg:pt-[140px]" id="home">
+      <div className="max-w-container-max mx-auto w-full relative z-10 grid lg:grid-cols-2 gap-xl items-center mt-lg lg:mt-0">
         <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} className="min-w-0">
           <motion.div variants={item} className="inline-flex items-center gap-sm bg-secondary-container text-on-secondary-container px-md py-xs rounded-full mb-lg shadow-sm border border-on-secondary-container/10">
             <span className="material-symbols-outlined text-[18px]" data-icon="settings_suggest">settings_suggest</span>
