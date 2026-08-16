@@ -14,12 +14,12 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[795px] flex items-center px-lg py-xxl" id="home">
       <div className="max-w-container-max mx-auto w-full relative z-10 grid lg:grid-cols-2 gap-xl items-center">
-        <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
+        <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} className="min-w-0">
           <motion.div variants={item} className="inline-flex items-center gap-sm bg-secondary-container text-on-secondary-container px-md py-xs rounded-full mb-lg shadow-sm border border-on-secondary-container/10">
             <span className="material-symbols-outlined text-[18px]" data-icon="settings_suggest">settings_suggest</span>
             <span className="font-label-sm text-label-sm uppercase tracking-widest">Workflow systems for care-related service providers</span>
           </motion.div>
-          <motion.h1 variants={item} className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md leading-tight">
+          <motion.h1 variants={item} className="font-display-lg text-display-lg-mobile md:text-[40px] lg:text-display-lg text-primary mb-md leading-tight">
             Practical workflow systems for allied health practices and disability support providers.
           </motion.h1>
           <motion.p variants={item} className="font-body-lg text-body-lg text-on-surface-variant mb-md max-w-xl">
@@ -47,18 +47,18 @@ export default function Hero() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="hidden lg:block relative"
+          className="hidden lg:block relative min-w-0"
         >
           <div className="relative p-lg rounded-xxl overflow-hidden bg-white shadow-2xl border border-slate-200 h-[500px] flex flex-col">
-            <div className="border-b border-slate-100 pb-4 mb-4 flex justify-between items-end">
+            <div className="border-b border-slate-100 pb-4 mb-4 flex flex-col xl:flex-row xl:justify-between xl:items-end gap-3">
               <div>
                 <h3 className="font-headline-sm text-primary">Operations dashboard</h3>
                 <p className="text-body-sm text-on-surface-variant">Work that needs attention • Provider view</p>
               </div>
-              <div className="flex gap-2">
-                <span className="bg-error-container text-error px-3 py-1 rounded-full text-xs font-bold">Overdue — 3</span>
-                <span className="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">Needs review — 4</span>
-                <span className="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold">Waiting — 2</span>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-error-container text-error px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap">Overdue — 3</span>
+                <span className="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap">Needs review — 4</span>
+                <span className="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap">Waiting — 2</span>
               </div>
             </div>
             

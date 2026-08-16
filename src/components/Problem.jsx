@@ -18,6 +18,7 @@ export default function Problem() {
   });
 
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 20 });
+  const stickyOpacity = useTransform(smoothProgress, [0, 0.8, 1], [1, 1, 0]);
 
   return (
     <section className="bg-primary text-on-primary relative z-20" id="problem">
@@ -38,12 +39,12 @@ export default function Problem() {
           
           <div className="grid md:grid-cols-12 gap-xl">
             <div className="md:col-span-5 relative">
-              <div className="sticky top-1/3">
+              <motion.div style={{ opacity: stickyOpacity }} className="sticky top-1/3">
                 <h3 className="font-headline-lg text-headline-lg text-secondary-fixed mb-md">You may be dealing with:</h3>
                 <p className="text-on-primary-fixed-variant font-body-md max-w-sm">
                   These common pressure points create invisible friction in daily operations.
                 </p>
-              </div>
+              </motion.div>
             </div>
             
             <div className="md:col-span-7 flex flex-col gap-lg py-[20vh]">

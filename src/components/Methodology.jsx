@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const StickySection = ({ title, eyebrow, children, bgColor = "bg-surface" }) => {
+const StickySection = ({ title, eyebrow, description, children, bgColor = "bg-surface" }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -20,9 +20,10 @@ const StickySection = ({ title, eyebrow, children, bgColor = "bg-surface" }) => 
   return (
     <section ref={ref} className={`h-[250vh] ${bgColor} relative z-20`}>
       <div className="sticky top-0 h-screen flex flex-col md:flex-row items-center justify-center px-lg gap-xl max-w-container-max mx-auto overflow-hidden">
-        <motion.div style={{ opacity: titleOpacity, y: titleY }} className="flex-1">
+        <motion.div style={{ opacity: titleOpacity, y: titleY }} className="flex-1 md:pr-xl">
           {eyebrow && <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-sm block">{eyebrow}</span>}
-          <h2 className={`font-headline-md text-headline-md ${titleColor}`}>{title}</h2>
+          <h2 className={`font-headline-md text-headline-md ${titleColor} mb-lg`}>{title}</h2>
+          {description && <div className={`font-body-lg text-body-lg ${titleColor === 'text-white' ? 'text-white/80' : 'text-on-surface-variant'}`}>{description}</div>}
         </motion.div>
         <motion.div style={{ opacity: contentOpacity, y: contentY, filter: contentFilter }} className="flex-1 w-full max-w-2xl">
           {children}
@@ -59,35 +60,41 @@ export default function Methodology() {
     <div className="bg-surface relative" id="methodology">
       
       {/* Section 1: Methodology - We diagnose before we build */}
-      <StickySection eyebrow="Workflow first" title="We diagnose before we build." bgColor="bg-surface-container-low">
-        <div className="space-y-lg bg-white p-xl rounded-xxl shadow-xl border border-slate-200">
-          <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Good operational improvement starts with understanding the workflow. Before recommending a system, dashboard, automation or AI-supported workflow, we look at what triggers the process, who is involved, where work gets stuck, and what risks need to be controlled. Then we recommend the simplest useful solution.
-          </p>
-          <p className="font-label-md text-primary font-bold">Built for Australian care-related providers</p>
-          
-          <div className="mt-xl space-y-md">
-            <h3 className="font-headline-sm text-primary border-b border-slate-100 pb-sm">The Heutrix Method</h3>
-            <div className="space-y-sm">
-              {methodSteps.map((step, i) => (
-                <div key={i} className="flex items-start gap-sm">
-                  <div className="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-sm shrink-0">{i + 1}</div>
-                  <div>
-                    <span className="font-bold text-primary">{step.title}</span> <span className="text-on-surface-variant">— {step.desc}</span>
-                  </div>
+      <StickySection 
+        eyebrow="Workflow first" 
+        title="We diagnose before we build." 
+        bgColor="bg-surface-container-low"
+        description={
+          <>
+            <p className="mb-lg text-on-surface-variant">
+              Good operational improvement starts with understanding the workflow. Before recommending a system, dashboard, automation or AI-supported workflow, we look at what triggers the process, who is involved, where work gets stuck, and what risks need to be controlled. Then we recommend the simplest useful solution.
+            </p>
+            <p className="font-label-md text-primary font-bold">Built for Australian care-related providers</p>
+          </>
+        }
+      >
+        <div className="bg-white p-xl rounded-xxl shadow-xl border border-slate-200">
+          <h3 className="font-headline-sm text-primary border-b border-slate-100 pb-sm mb-lg">The Heutrix Method</h3>
+          <div className="space-y-md">
+            {methodSteps.map((step, i) => (
+              <div key={i} className="flex items-start gap-sm">
+                <div className="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-sm shrink-0">{i + 1}</div>
+                <div>
+                  <span className="font-bold text-primary">{step.title}</span> <span className="text-on-surface-variant">— {step.desc}</span>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </StickySection>
 
       {/* Section 2: What Heutrix Labs does */}
-      <StickySection title="What Heutrix Labs does" bgColor="bg-primary">
-        <div className="bg-white/10 backdrop-blur-md p-xl rounded-xxl border border-white/20">
-          <p className="font-body-lg text-white mb-xl">
-            Heutrix Labs helps care-related service providers improve the internal systems that sit around client care and service delivery. We are not here to replace your core practice, client or case management software.
-          </p>
+      <StickySection 
+        title="What Heutrix Labs does" 
+        bgColor="bg-primary"
+        description="Heutrix Labs helps care-related service providers improve the internal systems that sit around client care and service delivery. We are not here to replace your core practice, client or case management software."
+      >
+        <div className="bg-white/10 backdrop-blur-md p-xl rounded-xxl border border-white/20 shadow-2xl">
           <ul className="grid sm:grid-cols-2 gap-sm">
             {capabilities.map((item, i) => (
               <li key={i} className="flex items-start gap-xs font-body-sm text-white/90">
