@@ -12,7 +12,7 @@ export default {
         "error": "#ba1a1a",
         "on-secondary-fixed": "#002113",
         "on-secondary-fixed-variant": "#005236",
-        "on-primary-fixed-variant": "#3c475a",
+        "on-primary-fixed-variant": "#cbd5e1",
         "on-tertiary-container": "#00a292",
         "on-background": "#0b1c30",
         "surface-container": "#e5eeff",

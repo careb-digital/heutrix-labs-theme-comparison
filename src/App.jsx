@@ -35,7 +35,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-surface font-body-lg text-on-surface antialiased selection:bg-secondary/30 selection:text-primary scroll-smooth">
+    <div className="min-h-screen bg-surface font-body-lg text-on-surface antialiased selection:bg-secondary/30 selection:text-primary scroll-smooth overflow-x-hidden w-full">
       <Navbar activeSection={activeSection} />
       
       <main>

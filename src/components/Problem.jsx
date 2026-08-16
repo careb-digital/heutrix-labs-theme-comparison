@@ -27,7 +27,7 @@ export default function Problem() {
       <div className="py-xxl px-lg max-w-container-max mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, amount: 0.2 }} className="max-w-4xl mb-xl">
           <h2 className="font-headline-md text-headline-md text-white mb-md drop-shadow-lg">Does this sound familiar?</h2>
-          <p className="font-body-lg text-body-lg text-on-primary-fixed-variant">
+          <p className="font-body-lg text-body-lg text-slate-300">
             Even capable teams lose visibility when important work is spread across memory, inboxes, spreadsheets and manual reminders.
           </p>
         </motion.div>
@@ -40,7 +40,7 @@ export default function Problem() {
           <div className="relative">
             <motion.div style={{ opacity: stickyOpacity }} className="sticky top-20 md:top-1/3 z-10 md:w-5/12 bg-primary/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none py-4 -mx-lg px-lg md:mx-0 md:px-0 md:py-0 border-b border-white/10 md:border-none">
               <h3 className="font-headline-lg text-headline-lg text-secondary-fixed mb-md">You may be dealing with:</h3>
-              <p className="text-on-primary-fixed-variant font-body-md max-w-sm">
+              <p className="text-slate-300 font-body-md max-w-sm">
                 These common pressure points create invisible friction in daily operations.
               </p>
             </motion.div>
@@ -54,7 +54,7 @@ export default function Problem() {
                 const opacity = useTransform(
                   smoothProgress, 
                   [Math.max(0, start - 0.1), start + 0.05, end - 0.05, Math.min(1, end + 0.1)], 
-                  [0.3, 1, 1, 0.3]
+                  [0.6, 1, 1, 0.6]
                 );
                 
                 const scale = useTransform(
@@ -69,7 +69,7 @@ export default function Problem() {
                     style={{ opacity, scale }}
                     className="origin-left"
                   >
-                    <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-xl border border-white/20 shadow-lg w-full flex items-start gap-lg transition-colors">
+                    <div className="bg-slate-800/80 backdrop-blur-xl rounded-2xl p-xl border border-white/20 shadow-lg w-full flex items-start gap-lg transition-colors">
                       <div className="w-12 h-12 rounded-full bg-secondary-fixed/20 text-secondary-fixed flex items-center justify-center shrink-0">
                         <span className="material-symbols-outlined text-[24px]">adjust</span>
                       </div>
@@ -87,7 +87,7 @@ export default function Problem() {
       {/* Outro */}
       <div className="py-xxl px-lg max-w-container-max mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, amount: 0.2 }} className="max-w-4xl">
-          <p className="font-body-lg text-body-lg text-white font-medium border-l-4 border-secondary pl-lg">
+          <p className="font-body-lg text-body-lg text-white font-medium border-l-4 border-secondary-fixed pl-lg">
             Heutrix Labs helps turn these pressure points into clearer workflows, practical tracking systems, safer AI practices and better visibility for day-to-day decisions.
           </p>
         </motion.div>
