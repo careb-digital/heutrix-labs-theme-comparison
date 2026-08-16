@@ -39,17 +39,19 @@ export default function ScrollytellingSection() {
     }
   ];
 
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 768;
+
   return (
-    <section id="examples" ref={containerRef} className="bg-surface relative z-20 py-xxl" style={{ height: `${(examples.length * 70) + 100}vh` }}>
+    <section id="examples" ref={containerRef} className="bg-surface relative z-20 py-xxl" style={isDesktop ? { height: `${(examples.length * 70) + 100}vh` } : {}}>
       
-      <div className="sticky top-0 h-screen flex flex-col justify-center px-lg max-w-container-max mx-auto">
+      <div className="md:sticky md:top-0 md:h-screen flex flex-col justify-center px-lg max-w-container-max mx-auto">
         
         <div className="text-center mb-xl">
           <h2 className="font-headline-md text-headline-md text-primary mb-sm">Before and after examples</h2>
           <p className="font-body-lg text-on-surface-variant">See how scattered processes turn into clear systems.</p>
         </div>
 
-        <div className="relative h-[60vh] max-w-5xl mx-auto w-full overflow-hidden">
+        <div className="relative md:h-[60vh] max-w-5xl mx-auto w-full md:overflow-hidden flex flex-col gap-lg md:block">
           {examples.map((ex, index) => {
             const start = index / examples.length;
             const end = start + (1 / examples.length);
@@ -68,11 +70,13 @@ export default function ScrollytellingSection() {
               [0, 1, 1, 0]
             );
 
+            const styleCard = isDesktop ? { y, opacity, pointerEvents: opacity.get() > 0.5 ? 'auto' : 'none' } : {};
+
             return (
               <motion.div 
                 key={index} 
-                style={{ y, opacity, pointerEvents: opacity.get() > 0.5 ? 'auto' : 'none' }}
-                className="absolute inset-0 flex items-center justify-center"
+                style={styleCard}
+                className="md:absolute md:inset-0 flex items-center justify-center"
               >
                 <div className="bg-white rounded-xxl p-xl border border-slate-200 shadow-xl w-full flex flex-col gap-lg">
                   <h3 className="font-headline-lg text-primary text-center border-b border-slate-100 pb-md">{ex.title}</h3>

@@ -17,15 +17,19 @@ const StickySection = ({ title, eyebrow, description, children, bgColor = "bg-su
 
   const titleColor = bgColor === "bg-primary" ? "text-white" : "text-primary";
 
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 768;
+  const styleTitle = isDesktop ? { opacity: titleOpacity, y: titleY } : {};
+  const styleContent = isDesktop ? { opacity: contentOpacity, y: contentY, filter: contentFilter } : {};
+
   return (
-    <section ref={ref} className={`h-[250vh] ${bgColor} relative z-20`}>
-      <div className="sticky top-0 h-screen flex flex-col md:flex-row items-center justify-center px-lg gap-xl max-w-container-max mx-auto overflow-hidden">
-        <motion.div style={{ opacity: titleOpacity, y: titleY }} className="flex-1 md:pr-xl">
+    <section ref={ref} className={`md:h-[250vh] ${bgColor} relative z-20 py-xxl md:py-0`}>
+      <div className="md:sticky md:top-0 md:h-screen flex flex-col md:flex-row md:items-center justify-center px-lg gap-xl max-w-container-max mx-auto md:overflow-hidden">
+        <motion.div style={styleTitle} className="flex-1 md:pr-xl">
           {eyebrow && <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-sm block">{eyebrow}</span>}
           <h2 className={`font-headline-md text-headline-md ${titleColor} mb-lg`}>{title}</h2>
           {description && <div className={`font-body-lg text-body-lg ${titleColor === 'text-white' ? 'text-white/80' : 'text-on-surface-variant'}`}>{description}</div>}
         </motion.div>
-        <motion.div style={{ opacity: contentOpacity, y: contentY, filter: contentFilter }} className="flex-1 w-full max-w-2xl">
+        <motion.div style={styleContent} className="flex-1 w-full max-w-2xl">
           {children}
         </motion.div>
       </div>

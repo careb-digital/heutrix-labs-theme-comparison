@@ -37,17 +37,15 @@ export default function Problem() {
       <div ref={containerRef} className="py-xl relative">
         <div className="px-lg max-w-container-max mx-auto">
           
-          <div className="grid md:grid-cols-12 gap-xl">
-            <div className="md:col-span-5 relative">
-              <motion.div style={{ opacity: stickyOpacity }} className="sticky top-1/3">
-                <h3 className="font-headline-lg text-headline-lg text-secondary-fixed mb-md">You may be dealing with:</h3>
-                <p className="text-on-primary-fixed-variant font-body-md max-w-sm">
-                  These common pressure points create invisible friction in daily operations.
-                </p>
-              </motion.div>
-            </div>
+          <div className="relative">
+            <motion.div style={{ opacity: stickyOpacity }} className="sticky top-20 md:top-1/3 z-10 md:w-5/12 bg-primary/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none py-4 -mx-lg px-lg md:mx-0 md:px-0 md:py-0 border-b border-white/10 md:border-none">
+              <h3 className="font-headline-lg text-headline-lg text-secondary-fixed mb-md">You may be dealing with:</h3>
+              <p className="text-on-primary-fixed-variant font-body-md max-w-sm">
+                These common pressure points create invisible friction in daily operations.
+              </p>
+            </motion.div>
             
-            <div className="md:col-span-7 flex flex-col gap-lg py-[20vh]">
+            <div className="md:w-7/12 md:ml-auto flex flex-col gap-lg py-[10vh] md:py-[20vh] mt-8 md:mt-0">
               {issues.map((issue, index) => {
                 const start = index / issues.length;
                 const end = (index + 1) / issues.length;
