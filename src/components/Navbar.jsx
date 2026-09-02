@@ -4,6 +4,7 @@ import { ctas, mainNav } from '../siteContent';
 const navIcons = {
   '/': 'home',
   '/services': 'settings',
+  '/workflow-transformation': 'account_tree',
   '/allied-health': 'medical_services',
   '/disability-providers': 'diversity_3',
   '/pricing': 'payments',
@@ -75,7 +76,7 @@ export default function Navbar({ currentPath = '/' }) {
               className="whitespace-nowrap rounded-xl bg-primary px-md py-sm font-label-md text-label-md text-on-primary shadow-sm transition-opacity hover:opacity-95 lg:px-lg"
               href={ctas.fitCall.href}
             >
-              Book a Free Fit Call
+              Book a 20-minute fit call
             </a>
           </nav>
         </div>
@@ -133,7 +134,7 @@ export default function Navbar({ currentPath = '/' }) {
             href={ctas.fitCall.href}
             onClick={() => setDrawerOpen(false)}
           >
-            Book a free fit call
+            Book a 20-minute fit call
           </a>
           <a
             className="block rounded-xl bg-secondary-fixed-dim p-md text-center font-label-md text-on-secondary-fixed"

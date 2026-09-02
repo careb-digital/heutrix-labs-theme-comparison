@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { ApprovedFaqPage, ApprovedHomePage, WorkflowTransformationPage } from './components/ApprovedOfferPages';
 import {
   aiGuidanceRows,
   alliedHealthContent,
@@ -139,6 +140,8 @@ function PageRenderer({ path, search }) {
   switch (path) {
     case '/services':
       return <ServicesPage />;
+    case '/workflow-transformation':
+      return <WorkflowTransformationPage />;
     case '/allied-health':
       return <AudiencePage content={alliedHealthContent} />;
     case '/disability-providers':
@@ -150,7 +153,7 @@ function PageRenderer({ path, search }) {
     case '/about':
       return <AboutPage />;
     case '/faq':
-      return <FaqPage />;
+      return <ApprovedFaqPage />;
     case '/contact':
       return <ContactPage search={search} />;
     case '/privacy-and-data-handling':
@@ -160,7 +163,7 @@ function PageRenderer({ path, search }) {
     case '/website-disclaimer':
       return <DisclaimerPage />;
     default:
-      return <HomePage />;
+      return <ApprovedHomePage />;
   }
 }
 
@@ -1152,6 +1155,9 @@ function ContactForm({ search, submitLabel = 'Send enquiry' }) {
   const defaultHelp = useMemo(() => {
     const params = new URLSearchParams(search);
     const service = params.get('service');
+    if (service === 'heutrix-diagnostics') return 'Heutrix Diagnostics';
+    if (service === 'heutrix-workflow-transformation') return 'Heutrix Workflow Transformation';
+    if (service === 'heutrix-ai-guardrails') return 'Heutrix AI Guardrails';
     if (service === 'workflow-diagnostic') return 'Workflow Diagnostic';
     if (service === 'workflow-automation-sprint') return 'Workflow Automation Sprint';
     if (service === 'operations-dashboard-build') return 'Operations Dashboard Build';
@@ -1160,7 +1166,11 @@ function ContactForm({ search, submitLabel = 'Send enquiry' }) {
     if (service === 'regulated-provider-workflow-tools') return 'Regulated Provider Workflow Tools';
     return 'Not sure yet';
   }, [search]);
-  const defaultNext = 'Book a free fit call';
+  const defaultNext = useMemo(() => {
+    const next = new URLSearchParams(search).get('next');
+    if (next === 'workflow-demonstration') return 'View the workflow demonstration';
+    return 'Book a 20-minute workflow fit call';
+  }, [search]);
 
   if (submitted) {
     return (
@@ -1201,12 +1211,9 @@ function ContactForm({ search, submitLabel = 'Send enquiry' }) {
           name="help"
           defaultValue={defaultHelp}
           options={[
-            'Workflow Diagnostic',
-            'Workflow Automation Sprint',
-            'Operations Dashboard Build',
-            'Safe AI Setup',
-            'Tailored Internal Workflow System',
-            'Regulated Provider Workflow Tools',
+            'Heutrix Diagnostics',
+            'Heutrix Workflow Transformation',
+            'Heutrix AI Guardrails',
             'Not sure yet'
           ]}
         />
@@ -1215,13 +1222,11 @@ function ContactForm({ search, submitLabel = 'Send enquiry' }) {
           name="nextStep"
           defaultValue={defaultNext}
           options={[
-            'Book a free fit call',
-            'View Services',
-            'View pricing',
-            'Start with a Workflow Diagnostic',
-            'Improve a workflow',
-            'Build an operations dashboard',
-            'Set up safe AI use'
+            'Book a 20-minute workflow fit call',
+            'View the workflow demonstration',
+            'Explore Heutrix Diagnostics',
+            'Transform a workflow',
+            'Put AI guardrails in place'
           ]}
         />
       </div>

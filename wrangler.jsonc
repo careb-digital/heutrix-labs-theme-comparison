@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "heutrix-labs",
+  "name": "heutrix-labs-copy-comparison",
   "compatibility_date": "2026-06-21",
   "assets": {
     "directory": "./dist",

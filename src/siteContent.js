@@ -2,9 +2,9 @@ export const routes = [
   {
     path: '/',
     label: 'Home',
-    seoTitle: 'Heutrix Labs | Workflow Systems for Allied Health and Disability Providers',
+    seoTitle: 'Heutrix Labs | Diagnostics, Workflow Transformation and AI Guardrails',
     metaDescription:
-      'Heutrix Labs helps Australian allied health practices and disability support providers improve messy admin, scattered spreadsheets, manual workflows, operations dashboards and safe AI use.'
+      'Heutrix Labs helps Australian disability providers and allied health practices diagnose operational friction, transform one bounded workflow and put practical AI guardrails in place.'
   },
   {
     path: '/services',
@@ -12,6 +12,13 @@ export const routes = [
     seoTitle: 'Services | Heutrix Labs',
     metaDescription:
       'Compare Heutrix Labs workflow diagnostics, focused improvement sprints, operations dashboards, tailored workflow systems and Safe AI setup for care-related service providers.'
+  },
+  {
+    path: '/workflow-transformation',
+    label: 'Workflow Transformation',
+    seoTitle: 'Heutrix Workflow Transformation | Heutrix Labs',
+    metaDescription:
+      'Transform one bounded operational workflow in a defined 2–4 week engagement with mapping, testing, staff guidance and client-controlled handover.'
   },
   {
     path: '/allied-health',
@@ -53,7 +60,7 @@ export const routes = [
     label: 'FAQ',
     seoTitle: 'FAQ | Heutrix Labs',
     metaDescription:
-      'Answers about Heutrix Labs services, project timing, existing tools, handover, pricing, privacy, Safe AI and operational service boundaries.'
+      'Answers about Heutrix Diagnostics, Workflow Transformation, AI Guardrails, scope, timing, handover, pricing and sensitive information.'
   },
   {
     path: '/contact',
@@ -86,16 +93,11 @@ export const routes = [
 ];
 
 export const mainNav = routes.filter((route) =>
-  ['/', '/services', '/allied-health', '/disability-providers', '/pricing', '/safe-ai', '/faq'].includes(route.path)
+  ['/', '/workflow-transformation', '/faq'].includes(route.path)
 );
 
 export const footerNav = [
-  '/services',
-  '/allied-health',
-  '/disability-providers',
-  '/pricing',
-  '/safe-ai',
-  '/about',
+  '/workflow-transformation',
   '/faq',
   '/privacy-and-data-handling',
   '/terms-of-use',
@@ -108,7 +110,7 @@ function routeMapSafe(path) {
 }
 
 export const ctas = {
-  fitCall: { label: 'Book a free fit call', href: '/contact' },
+  fitCall: { label: 'Book a 20-minute workflow fit call', href: '/contact?next=workflow-fit-call' },
   services: { label: 'View Services', href: '/services' },
   allServices: { label: 'View all services', href: '/services' },
   pricing: { label: 'View pricing', href: '/pricing' },
@@ -930,7 +932,7 @@ export const privacyProjectChecks = [
 
 export const footerCopy = {
   summary:
-    'Heutrix Labs helps Australian allied health practices and disability support providers turn messy admin, scattered spreadsheets and manual workflows into safer, clearer and more reliable internal systems.',
+    'Heutrix Labs helps Australian disability providers and allied health practices diagnose operational friction, transform one bounded workflow and put practical AI guardrails in place.',
   boundary:
-    'Heutrix Labs provides workflow, automation, dashboard and safe AI support. It does not provide official audit certification, legal advice, clinical advice, NDIS registration readiness, mock audits or regulatory approval.'
+    'Heutrix Labs provides Diagnostics, Workflow Transformation and AI Guardrails. Legal, privacy, clinical, audit, registration and regulatory responsibilities remain with the client.'
 };
