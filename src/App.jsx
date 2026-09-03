@@ -138,8 +138,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-surface font-body-lg text-on-surface antialiased selection:bg-secondary/30 selection:text-primary">
+      <a
+        className="sr-only fixed left-md top-md z-[80] rounded-lg bg-primary px-md py-sm font-label-md text-on-primary shadow-lg focus:not-sr-only"
+        href="#main-content"
+      >
+        Skip to main content
+      </a>
       <Navbar currentPath={location.path} />
-      <main ref={mainRef} tabIndex="-1" className="outline-none">
+      <main id="main-content" ref={mainRef} tabIndex="-1" className="outline-none">
         <PageRenderer path={location.path} search={location.search} />
       </main>
       <Footer />

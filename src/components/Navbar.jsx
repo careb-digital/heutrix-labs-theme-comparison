@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ctas, mainNav } from '../siteContent';
 
 const navIcons = {
@@ -15,6 +15,16 @@ const navIcons = {
 export default function Navbar({ currentPath = '/' }) {
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const drawerRef = useRef(null);
+  const openButtonRef = useRef(null);
+  const closeButtonRef = useRef(null);
+
+  const closeDrawer = (restoreFocus = false) => {
+    setDrawerOpen(false);
+    if (restoreFocus) {
+      window.requestAnimationFrame(() => openButtonRef.current?.focus());
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 24);
@@ -30,6 +40,39 @@ export default function Navbar({ currentPath = '/' }) {
     };
   }, [drawerOpen]);
 
+  useEffect(() => {
+    if (!drawerOpen) return undefined;
+
+    closeButtonRef.current?.focus();
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeDrawer(true);
+        return;
+      }
+
+      if (event.key !== 'Tab') return;
+
+      const focusableItems = Array.from(
+        drawerRef.current?.querySelectorAll('a[href], button:not([disabled])') || []
+      );
+      const firstItem = focusableItems[0];
+      const lastItem = focusableItems[focusableItems.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstItem) {
+        event.preventDefault();
+        lastItem?.focus();
+      } else if (!event.shiftKey && document.activeElement === lastItem) {
+        event.preventDefault();
+        firstItem?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [drawerOpen]);
+
   return (
     <>
       <header
@@ -41,10 +84,13 @@ export default function Navbar({ currentPath = '/' }) {
         <div className="mx-auto flex h-[84px] max-w-container-max items-center justify-between gap-md px-lg">
           <div className="flex items-center gap-md">
             <button
+              ref={openButtonRef}
               type="button"
               className="rounded-lg p-sm text-primary lg:hidden"
               onClick={() => setDrawerOpen(true)}
               aria-label="Open navigation"
+              aria-expanded={drawerOpen}
+              aria-controls="mobile-navigation"
             >
               <span className="material-symbols-outlined" aria-hidden="true">
                 menu
@@ -85,20 +131,30 @@ export default function Navbar({ currentPath = '/' }) {
         className={`fixed inset-0 z-[55] bg-primary/20 backdrop-blur-sm transition-opacity duration-300 ${
           drawerOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
-        onClick={() => setDrawerOpen(false)}
+        onClick={() => closeDrawer()}
         aria-hidden="true"
       />
       <aside
+        id="mobile-navigation"
+        ref={drawerRef}
         className={`fixed inset-y-0 left-0 z-[60] flex w-[min(320px,86vw)] transform flex-col gap-md bg-surface-container-lowest p-md shadow-2xl transition-transform duration-300 ease-in-out ${
           drawerOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         aria-label="Mobile navigation"
+        aria-hidden={!drawerOpen}
+        inert={!drawerOpen}
       >
         <div className="mb-md flex items-center justify-between">
           <a className="font-headline-sm text-headline-sm font-bold text-primary" href="/" onClick={() => setDrawerOpen(false)}>
             Heutrix Labs
           </a>
-          <button type="button" className="rounded-lg p-sm text-primary" onClick={() => setDrawerOpen(false)} aria-label="Close navigation">
+          <button
+            ref={closeButtonRef}
+            type="button"
+            className="rounded-lg p-sm text-primary"
+            onClick={() => closeDrawer(true)}
+            aria-label="Close navigation"
+          >
             <span className="material-symbols-outlined" aria-hidden="true">
               close
             </span>
