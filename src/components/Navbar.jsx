@@ -6,8 +6,8 @@ const navIcons = {
   '/services': 'settings',
   '/allied-health': 'medical_services',
   '/disability-providers': 'diversity_3',
-  '/pricing': 'payments',
-  '/safe-ai': 'verified_user',
+  '/ai-guardrails': 'verified_user',
+  '/resources': 'library_books',
   '/about': 'info',
   '/faq': 'help'
 };
@@ -75,7 +75,7 @@ export default function Navbar({ currentPath = '/' }) {
               className="whitespace-nowrap rounded-xl bg-primary px-md py-sm font-label-md text-label-md text-on-primary shadow-sm transition-opacity hover:opacity-95 lg:px-lg"
               href={ctas.fitCall.href}
             >
-              Book a Free Fit Call
+              {ctas.fitCall.label}
             </a>
           </nav>
         </div>
@@ -127,20 +127,13 @@ export default function Navbar({ currentPath = '/' }) {
           })}
         </nav>
 
-        <div className="mt-auto space-y-sm border-t border-outline-variant pt-lg">
+        <div className="mt-auto border-t border-outline-variant pt-lg">
           <a
             className="block rounded-xl bg-primary p-md text-center font-label-md text-on-primary"
             href={ctas.fitCall.href}
             onClick={() => setDrawerOpen(false)}
           >
-            Book a free fit call
-          </a>
-          <a
-            className="block rounded-xl bg-secondary-fixed-dim p-md text-center font-label-md text-on-secondary-fixed"
-            href={ctas.pricing.href}
-            onClick={() => setDrawerOpen(false)}
-          >
-            {ctas.pricing.label}
+            {ctas.fitCall.label}
           </a>
         </div>
       </aside>

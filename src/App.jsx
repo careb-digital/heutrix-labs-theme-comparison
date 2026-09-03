@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Checklist from './components/Checklist';
 import {
   aiGuidanceRows,
   alliedHealthContent,
@@ -15,23 +16,28 @@ import {
   homePainPoints,
   homeServices,
   notFor,
-  priceFactors,
-  pricingExclusions,
-  pricingRows,
   privacyProjectChecks,
   privacySensitiveItems,
+  resources,
   routes,
-  safeAiHelps,
-  safeAiIncluded,
+  aiGuardrailsHelps,
+  aiGuardrailsIncluded,
   services,
   suitableAiUses,
-  typicalProjects,
   unsuitableAiUses,
   whoWeHelp
 } from './siteContent';
 
 const routeMap = new Map(routes.map((route) => [route.path, route]));
 const knownPaths = new Set(routes.map((route) => route.path));
+const legacyRedirects = new Map([
+  ['/pricing', '/services#how-engagements-are-agreed'],
+  ['/safe-ai', '/ai-guardrails']
+]);
+const notFoundMeta = {
+  seoTitle: 'Page Not Found | Heutrix Labs',
+  metaDescription: 'The requested Heutrix Labs page could not be found.'
+};
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } }
@@ -46,6 +52,12 @@ const stagger = {
 };
 
 function readLocation() {
+  const originalPath = normalizePath(window.location.pathname);
+  const redirectTarget = legacyRedirects.get(originalPath);
+  if (redirectTarget) {
+    window.history.replaceState({}, '', redirectTarget);
+  }
+
   return {
     path: normalizePath(window.location.pathname),
     search: window.location.search,
@@ -59,7 +71,7 @@ function normalizePath(pathname) {
 }
 
 function getMeta(path) {
-  return routeMap.get(path) || routeMap.get('/');
+  return routeMap.get(path) || notFoundMeta;
 }
 
 function setMeta(page) {
@@ -140,17 +152,17 @@ function PageRenderer({ path, search }) {
     case '/services':
       return <ServicesPage />;
     case '/allied-health':
-      return <AudiencePage content={alliedHealthContent} />;
+      return <AudiencePage content={alliedHealthContent} featuredResource={resources[0]} />;
     case '/disability-providers':
-      return <AudiencePage content={disabilityContent} />;
-    case '/pricing':
-      return <PricingPage />;
-    case '/safe-ai':
-      return <SafeAiPage />;
+      return <AudiencePage content={disabilityContent} featuredResource={resources[1]} />;
+    case '/ai-guardrails':
+      return <AiGuardrailsPage />;
     case '/about':
       return <AboutPage />;
     case '/faq':
       return <FaqPage />;
+    case '/resources':
+      return <ResourcesPage />;
     case '/contact':
       return <ContactPage search={search} />;
     case '/privacy-and-data-handling':
@@ -160,7 +172,7 @@ function PageRenderer({ path, search }) {
     case '/website-disclaimer':
       return <DisclaimerPage />;
     default:
-      return <HomePage />;
+      return path === '/' ? <HomePage /> : <NotFoundPage />;
   }
 }
 
@@ -262,8 +274,8 @@ function BoundaryCard() {
       </div>
       <p className="mb-sm font-headline-sm text-headline-sm text-primary">Practical implementation partner</p>
       <p className="font-body-sm text-body-sm text-on-surface-variant">
-        Workflow, automation, dashboard and safe AI support for internal operations. Legal, clinical, audit,
-        registration and regulatory responsibilities remain with the client.
+        Heutrix Diagnostics, Workflow Transformation and AI Guardrails support internal operations. Legal, clinical,
+        audit, registration and regulatory responsibilities remain with the client.
       </p>
     </aside>
   );
@@ -271,12 +283,13 @@ function BoundaryCard() {
 
 function BulletList({ items, columns = false, tone = 'default' }) {
   const icon = tone === 'boundary' ? 'block' : 'check';
-  const iconColor = tone === 'boundary' ? 'text-error' : 'text-secondary';
+  const iconColor = tone === 'boundary' ? 'text-error' : tone === 'inverse' ? 'text-secondary-fixed' : 'text-secondary';
+  const textColor = tone === 'inverse' ? 'text-inverse-on-surface' : 'text-on-surface-variant';
 
   return (
     <ul className={`grid gap-sm ${columns ? 'sm:grid-cols-2' : ''}`}>
       {items.map((item) => (
-        <li key={item} className="flex gap-sm font-body-md text-body-md text-on-surface-variant">
+        <li key={item} className={`flex gap-sm font-body-md text-body-md ${textColor}`}>
           <span className={`material-symbols-outlined mt-[2px] text-[18px] ${iconColor}`} aria-hidden="true">
             {icon}
           </span>
@@ -303,6 +316,78 @@ function InfoCard({ icon, title, children, className = '' }) {
       <h3 className="mb-sm font-headline-sm text-headline-sm text-primary">{title}</h3>
       <div className="font-body-md text-body-md text-on-surface-variant">{children}</div>
     </motion.div>
+  );
+}
+
+function DownloadLink({ href, resourceId, format, children, variant = 'primary' }) {
+  const styles =
+    variant === 'primary'
+      ? 'border-primary bg-primary text-on-primary hover:opacity-95'
+      : 'border-primary bg-white text-primary hover:bg-primary hover:text-on-primary';
+
+  return (
+    <a
+      className={`inline-flex items-center justify-center gap-sm rounded-xl border px-md py-sm font-label-md text-label-md transition-colors ${styles}`}
+      href={href}
+      download
+      data-resource-id={resourceId}
+      data-resource-format={format}
+    >
+      <span>{children}</span>
+      <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+        {format === 'pdf' ? 'picture_as_pdf' : 'table_view'}
+      </span>
+    </a>
+  );
+}
+
+function ResourceCard({ resource }) {
+  return (
+    <motion.article
+      id={resource.id}
+      variants={fadeUp}
+      className="flex scroll-mt-[112px] flex-col rounded-xl border border-outline-variant bg-white p-lg shadow-sm transition-shadow hover:shadow-lg"
+    >
+      <div className="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-secondary-container text-on-secondary-container">
+        <span className="material-symbols-outlined" aria-hidden="true">{resource.icon}</span>
+      </div>
+      <p className="mb-sm font-label-sm text-label-sm uppercase text-secondary">{resource.audience}</p>
+      <h2 className="mb-md font-headline-md text-headline-md text-primary">{resource.title}</h2>
+      <p className="mb-md font-body-md text-body-md text-on-surface-variant">{resource.summary}</p>
+      <div className="mb-lg rounded-lg border-l-4 border-secondary bg-surface-container-low p-md">
+        <p className="font-body-sm text-body-sm text-on-surface-variant"><strong>Useful result:</strong> {resource.outcome}</p>
+      </div>
+      <div className="mb-lg flex flex-col gap-sm sm:flex-row sm:flex-wrap">
+        <DownloadLink href={resource.guideHref} resourceId={resource.id} format="pdf">
+          PDF guide
+        </DownloadLink>
+        <DownloadLink href={resource.workbookHref} resourceId={resource.id} format="xlsx" variant="secondary">
+          Workbook
+        </DownloadLink>
+      </div>
+      <p className="mt-auto border-t border-outline-variant pt-md font-body-sm text-body-sm text-on-surface-variant">
+        {resource.bridge}
+      </p>
+    </motion.article>
+  );
+}
+
+function FeaturedResource({ resource, eyebrow = 'Free, ungated starter resource' }) {
+  return (
+    <Section className="bg-surface-container-low">
+      <div className="grid gap-xl lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+        <SectionIntro eyebrow={eyebrow} title="Work through the problem before you request a call.">
+          <p>
+            Use general, synthetic or appropriately de-identified information only. A resource result is not tailored
+            advice, an organisational approval, a client outcome or permission for Heutrix to contact you.
+          </p>
+          <p>
+            The complete guide and workbook are available without an email address.
+          </p>
+        </SectionIntro>
+        <ResourceCard resource={resource} />
+      </div>
+    </Section>
   );
 }
 
@@ -352,18 +437,18 @@ function HomePage() {
         <div className="mx-auto grid max-w-container-max gap-xl lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <motion.div className="max-w-3xl" variants={stagger} initial="hidden" animate="show">
             <motion.p variants={fadeUp} className="mb-md inline-flex max-w-full whitespace-normal rounded-[999px] border border-secondary/20 bg-secondary-container px-md py-xs font-label-sm text-label-sm uppercase text-on-secondary-container">
-              Workflow systems for care-related service providers
+              Workflow improvement for Australian disability support providers
             </motion.p>
             <motion.h1 variants={fadeUp} className="mb-md break-words font-display-lg text-display-lg-mobile text-primary md:text-display-lg">
-              Practical workflow systems for allied health practices and disability support providers.
+              Fix the operational workflow your team keeps chasing.
             </motion.h1>
             <motion.p variants={fadeUp} className="mb-md font-body-lg text-body-lg text-on-surface-variant">
-              Heutrix Labs helps Australian care-related service providers clean up messy admin, scattered
-              spreadsheets, manual follow-up, reporting gaps and unsafe AI use.
+              Heutrix Labs helps disability support providers—and selected allied health practices—turn one
+              high-friction intake, referral, reporting, evidence or document workflow into a clearer, tested way of working.
             </motion.p>
             <motion.p variants={fadeUp} className="mb-lg font-body-lg text-body-lg text-on-surface-variant">
-              We map how the work actually happens, then build practical improvements such as workflow trackers,
-              dashboards, automations, handover systems, evidence registers and safe AI rules.
+              Start with Heutrix Diagnostics when the right problem is unclear, Heutrix Workflow Transformation when
+              one workflow is ready to improve, or Heutrix AI Guardrails when workplace AI needs practical boundaries.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-col gap-md sm:flex-row sm:flex-wrap">
               <ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>
@@ -372,8 +457,8 @@ function HomePage() {
               </ButtonLink>
             </motion.div>
             <motion.p variants={fadeUp} className="mt-md max-w-2xl font-body-sm text-body-sm text-on-surface-variant">
-              For practice managers, provider owners and operational leads who need clearer workflows, better
-              visibility and safer use of technology without disrupting service delivery.
+              Bring a general, non-sensitive description to a 20-minute, no-obligation workflow fit call. Heutrix
+              responds within two business days.
             </motion.p>
           </motion.div>
           <motion.div variants={fadeUp} initial="hidden" animate="show" transition={{ delay: 0.22 }}>
@@ -405,17 +490,18 @@ function HomePage() {
           ))}
         </motion.div>
         <p className="mt-xl max-w-4xl border-l-4 border-secondary-fixed pl-lg font-body-lg text-body-lg text-inverse-on-surface">
-          Heutrix Labs helps turn these pressure points into clearer workflows, practical tracking systems, safer AI
-          practices and better visibility for day-to-day decisions.
+          The aim is one tested operating improvement with clear ownership, visible status and next action, practical
+          guidance and a maintainable handover.
         </p>
       </Section>
+
+      <Checklist />
 
       <Section id="home-services" className="bg-surface">
         <SectionIntro title="Practical ways we can help." className="mx-auto mb-xl text-center">
           <p>
-            Start with one of the clearest entry points. These services are designed to help allied health practices
-            and disability support providers understand what to improve, fix one defined workflow, or see operational
-            work more clearly.
+            Three focused products help disability support providers—and selected allied health practices—decide what
+            to improve, transform one defined workflow or put responsible AI boundaries in place.
           </p>
         </SectionIntro>
         <motion.div className="grid gap-lg md:grid-cols-2 xl:grid-cols-3" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.08 }}>
@@ -423,13 +509,58 @@ function HomePage() {
             <ServiceSummaryCard key={service.title} service={service} />
           ))}
         </motion.div>
-        <motion.p variants={fadeUp} className="mx-auto mt-xl max-w-3xl text-center font-body-lg text-body-lg text-on-surface-variant">
-          Need Safe AI Setup or a tailored internal workflow system?{' '}
-          <a href={ctas.allServices.href} className="font-headline-sm text-primary underline decoration-secondary underline-offset-4">
-            {ctas.allServices.label}
-          </a>
-          .
-        </motion.p>
+      </Section>
+
+      <Section className="bg-primary text-on-primary">
+        <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <SectionIntro title="Heutrix Workflow Transformation" inverse>
+            <p className="font-label-md uppercase text-secondary-fixed">Primary implementation product</p>
+            <p>
+              In a typical 2–4 week engagement, once scope, access and decision-makers are ready, Heutrix maps,
+              redesigns, configures or builds, tests and hands over one agreed non-clinical workflow.
+            </p>
+            <p>
+              The implementation may include a clearer process, form, checklist, tracker, register, management view,
+              reminder path, automation or lightweight internal tool. These are delivery mechanisms within Workflow
+              Transformation, not separate products.
+            </p>
+            <ButtonLink href={ctas.workflow.href} variant="mint">
+              {ctas.workflow.label}
+            </ButtonLink>
+          </SectionIntro>
+          <div className="grid gap-md md:grid-cols-2">
+            <div className="rounded-xl border border-white/15 bg-white/10 p-lg">
+              <h3 className="mb-md font-headline-sm text-headline-sm text-white">What the engagement can include</h3>
+              <BulletList
+                tone="inverse"
+                items={[
+                  'Baseline and current-state workflow map',
+                  'Approved future-state design',
+                  'Written acceptance criteria and test plan',
+                  'Configuration or build in approved systems',
+                  'Synthetic or de-identified testing first where practical',
+                  'User acceptance and agreed refinements',
+                  'Staff guidance, administrator documentation and training',
+                  'Client-controlled access where agreed, limitations and handover'
+                ]}
+              />
+            </div>
+            <div className="rounded-xl border border-white/15 bg-white/10 p-lg">
+              <h3 className="mb-md font-headline-sm text-headline-sm text-white">What Heutrix needs from the client</h3>
+              <BulletList
+                tone="inverse"
+                items={[
+                  'One accountable workflow owner and one decision-maker',
+                  'Relevant staff for a 60–90-minute workshop',
+                  'Timely, lawful access to approved systems and materials',
+                  'Two focused review checkpoints',
+                  'User testing, training and final acceptance',
+                  'Internal approvals where privacy, security, legal, clinical, procurement or vendors require them'
+                ]}
+              />
+            </div>
+          </div>
+        </div>
       </Section>
 
       <DiagnosticMethodSection />
@@ -438,9 +569,8 @@ function HomePage() {
         <div className="grid gap-xl lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <SectionIntro title="What Heutrix Labs does">
             <p>
-              Heutrix Labs helps care-related service providers improve the internal systems that sit around client
-              care and service delivery. We are not here to replace your core practice, client or case management
-              software.
+              Heutrix helps improve the non-clinical workflows around service delivery. Forms, trackers, registers,
+              management views and automation may sit within Workflow Transformation; they are not separate products.
             </p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
@@ -453,8 +583,8 @@ function HomePage() {
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro title="Make your organisation easier to run without compromising trust.">
             <p>
-              Allied health practices and disability support providers do not need technology for its own sake. They
-              need systems that support the people already doing the work.
+              Disability support providers and allied health practices do not need technology for its own sake. They
+              need one important workflow to support the people already doing the work.
             </p>
             <p>
               As services grow, the operational work around client care and service delivery can become harder to
@@ -475,15 +605,17 @@ function HomePage() {
       </Section>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title="Before and after examples" className="mb-xl" />
+            <SectionIntro title="Illustrative workflow examples" className="mb-xl">
+              <p>Hypothetical examples only—not client results or promised outcomes.</p>
+            </SectionIntro>
         <div className="grid gap-lg md:grid-cols-2">
           {beforeAfterExamples.map((example) => (
             <InfoCard key={example.title} icon="sync_alt" title={example.title}>
               <p className="mb-sm">
-                <strong className="text-primary">Before:</strong> {example.before}
+                <strong className="text-primary">Current-state pattern:</strong> {example.before}
               </p>
               <p>
-                <strong className="text-primary">After:</strong> {example.after}
+                <strong className="text-primary">Possible future-state pattern:</strong> {example.after}
               </p>
             </InfoCard>
           ))}
@@ -504,11 +636,11 @@ function HomeFitCallSection() {
             Next step
           </motion.p>
           <motion.h2 variants={fadeUp} className="mb-md font-display-lg text-display-lg-mobile text-primary md:text-display-lg">
-            Book a free fit call.
+            Bring one workflow that should not be this hard.
           </motion.h2>
           <motion.p variants={fadeUp} className="mb-lg font-body-lg text-body-lg text-on-surface-variant">
-            We will discuss the workflow or operational issue, what is currently difficult to manage and whether
-            Heutrix Labs is the right fit to help. The purpose of this call is to decide the best next step.
+            In a 20-minute, no-obligation workflow fit call, we will understand the problem, assess whether Heutrix is
+            the right fit and agree the smallest useful next step. This is not unpaid workflow design.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mb-lg rounded-xl border border-secondary/20 bg-secondary-container/30 p-lg">
@@ -521,7 +653,7 @@ function HomeFitCallSection() {
         </motion.div>
 
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.12 }}>
-          <ContactForm search="" submitLabel="Request fit call" />
+          <ContactForm search="" submitLabel="Request my 20-minute call" />
         </motion.div>
       </div>
     </Section>
@@ -530,13 +662,14 @@ function HomeFitCallSection() {
 
 function DiagnosticMethodSection() {
   const methodSteps = [
-    ['1', 'Diagnostics', 'Understanding core problems and finding workflow gaps.'],
-    ['2', 'Triage', 'Pinpoint and prioritise crucial bottlenecks.'],
-    ['3', 'Automation', 'Automate and reduce repeated admin.'],
-    ['4', 'Handover', 'Guidance with your new solution.']
+    ['1', 'Map', 'Agree the workflow boundary and document how the work actually runs.'],
+    ['2', 'Design', 'Define ownership, status, next action, controls and acceptance tests.'],
+    ['3', 'Build', 'Configure the smallest useful improvement in approved systems.'],
+    ['4', 'Prove', 'Test with synthetic or de-identified information first where practical, then run user acceptance.'],
+    ['5', 'Hand over', 'Train the team and document access, administration, maintenance and known limitations.']
   ];
 
-  const providerTypes = ['AH', 'DS', 'SP'];
+  const providerTypes = ['DS', 'OP', 'AH'];
 
   return (
     <Section className="bg-surface-container-low overflow-hidden">
@@ -565,7 +698,7 @@ function DiagnosticMethodSection() {
                 </span>
               ))}
             </div>
-            <span className="font-label-md text-label-md text-on-surface-variant">Built for Australian care-related providers</span>
+            <span className="font-label-md text-label-md text-on-surface-variant">Disability providers first; allied health where the workflow fits</span>
           </motion.div>
         </motion.div>
 
@@ -666,25 +799,25 @@ function ServicesPage() {
   return (
     <>
       <PageHero
-        title="Practical workflow services built around a clear operational outcome."
+        title="Diagnose the right problem, transform one bounded workflow, or put practical AI guardrails in place."
         actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
       >
         <p>
-          Heutrix Labs helps allied health practices, disability support providers and selected care-related service
-          providers improve the internal systems that support daily operations.
+          Heutrix helps Australian disability support providers—and selected allied health practices—improve one
+          recurring non-clinical workflow at a time.
         </p>
         <p>
-          Each engagement starts with the workflow, the people who use it and the outcome that needs to improve. The
-          solution may be a clearer process, tracker, dashboard, automation, lightweight internal system or Safe AI setup.
+          Heutrix Diagnostics identifies and prioritises the right problem. Heutrix Workflow Transformation redesigns
+          and implements one bounded workflow. Heutrix AI Guardrails gives staff practical boundaries for responsible AI use.
         </p>
         <p>
-          Start with a Workflow Diagnostic when the priority is unclear. When the workflow and desired outcome are
-          already well-defined, we can scope the most suitable implementation service directly.
+          Choose the product that matches the decision in front of you, or bring the problem to a 20-minute,
+          no-obligation workflow fit call. You do not need to select a product first.
         </p>
       </PageHero>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title="Our services" className="mb-xl" />
+        <SectionIntro title="Three products" className="mb-xl" />
         <div className="space-y-xl">
           {services.map((service) => (
             <DetailedService key={service.title} service={service} />
@@ -692,9 +825,31 @@ function ServicesPage() {
         </div>
       </Section>
 
+      <Section>
+        <SectionIntro eyebrow="Free, ungated starter resources" title="Work through the problem first." className="mb-xl">
+          <p>
+            Use the resource that matches the decision in front of you. Each complete guide and workbook is available
+            without an email address and uses general, synthetic or appropriately de-identified information only.
+          </p>
+        </SectionIntro>
+        <div className="grid gap-lg lg:grid-cols-3">
+          {resources.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}
+        </div>
+      </Section>
+
+      <Section id="how-engagements-are-agreed" className="scroll-mt-[112px] bg-surface-container-low">
+        <SectionIntro title="How engagements are agreed">
+          <p>
+            Every paid engagement is agreed in writing before work begins. The written scope identifies deliverables,
+            client responsibilities, assumptions, dependencies, exclusions, timing, acceptance criteria, third-party
+            costs, change triggers and the applicable fee.
+          </p>
+        </SectionIntro>
+      </Section>
+
       <CtaSection
         title="Choose the smallest useful next step."
-        body="Share a general description of the workflow, who uses it and what is difficult to see or manage. We can then discuss the most practical starting point."
+        body="Share a general, non-sensitive description of one workflow, who uses it and what is difficult to track, hand over or report. We will assess the smallest useful next step."
       />
     </>
   );
@@ -704,7 +859,7 @@ function serviceAnchor(title) {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-function AudiencePage({ content }) {
+function AudiencePage({ content, featuredResource }) {
   return (
     <>
       <PageHero title={content.title} actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}>
@@ -749,17 +904,19 @@ function AudiencePage({ content }) {
       </Section>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title={content.examplesTitle || content.exampleTitle} className="mb-xl" />
+        <SectionIntro title={content.examplesTitle || content.exampleTitle} className="mb-xl">
+          <p>Illustrative current and possible future states only—not client results or promised outcomes.</p>
+        </SectionIntro>
         <div className="grid gap-lg lg:grid-cols-3">
           {(content.examples || [
             { title: content.exampleTitle, before: content.exampleBefore, after: content.exampleAfter }
           ]).map((example) => (
             <InfoCard key={example.title} icon="sync_alt" title={example.title}>
               <p className="mb-sm">
-                <strong className="text-primary">Before:</strong> {example.before}
+                <strong className="text-primary">Current-state pattern:</strong> {example.before}
               </p>
               <p>
-                <strong className="text-primary">After:</strong> {example.after}
+                <strong className="text-primary">Possible future-state pattern:</strong> {example.after}
               </p>
             </InfoCard>
           ))}
@@ -775,6 +932,8 @@ function AudiencePage({ content }) {
           <p>{content.boundary}</p>
         </InfoCard>
       </Section>
+
+      <FeaturedResource resource={featuredResource} />
 
       <CtaSection title={content.finalTitle} body="" />
     </>
@@ -829,85 +988,11 @@ function DetailedService({ service }) {
   );
 }
 
-function PricingPage() {
+function AiGuardrailsPage() {
   return (
     <>
       <PageHero
-        title="Pricing"
-        actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
-        compact
-      >
-        <p>Indicative starting prices for practical, bounded workflow improvement projects.</p>
-        <p>
-          Prices below exclude GST. Final pricing depends on scope, workflow clarity, data access, integrations, user
-          roles, testing, documentation, handover and privacy or governance requirements. Deliverables, assumptions and
-          timing are confirmed in writing before paid work begins.
-        </p>
-      </PageHero>
-
-      <Section className="bg-surface-container-low">
-        <SectionIntro title="Indicative starting prices" className="mb-xl">
-          <p>These figures are starting points, not fixed quotes. A final quote is based on an agreed scope.</p>
-        </SectionIntro>
-        <ResponsiveRows
-          columns={[
-            { label: 'Service', width: '1fr' },
-            { label: 'Starting from', width: '0.75fr', align: 'right' },
-            { label: 'Best for', width: '1.35fr' }
-          ]}
-          rows={pricingRows}
-        />
-      </Section>
-
-      <Section>
-        <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionIntro title="What affects price?">
-            <p>Scope increases when more people, systems, data sources, controls or review cycles need to be considered.</p>
-          </SectionIntro>
-          <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
-            <BulletList items={priceFactors} columns />
-          </div>
-        </div>
-      </Section>
-
-      <Section className="bg-surface-container-low">
-        <SectionIntro title="Choosing a practical first project" className="mb-xl">
-          <p>A useful first project is narrow enough to implement and important enough to reduce recurring friction.</p>
-        </SectionIntro>
-        <div className="grid gap-lg md:grid-cols-2 lg:grid-cols-4">
-          {typicalProjects.map(([title, copy]) => (
-            <InfoCard key={title} title={title}>
-              <p>{copy}</p>
-            </InfoCard>
-          ))}
-        </div>
-      </Section>
-
-      <Section>
-        <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionIntro title="What is not included">
-            <p>The starting prices do not include the following services or outcomes.</p>
-          </SectionIntro>
-          <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
-            <BulletList items={pricingExclusions} columns tone="boundary" />
-          </div>
-        </div>
-      </Section>
-
-      <CtaSection
-        title="Need help defining a realistic first scope?"
-        body="Book a free fit call and share the workflow, people involved, current tools and desired outcome. Please keep the initial description general and non-sensitive."
-        showPricing={false}
-      />
-    </>
-  );
-}
-
-function SafeAiPage() {
-  return (
-    <>
-      <PageHero
-        title="Safe AI Setup for responsible day-to-day use."
+        title="Heutrix AI Guardrails for responsible day-to-day use."
         actions={<ButtonLink href={ctas.ai.href}>{ctas.ai.label}</ButtonLink>}
       >
         <p>
@@ -922,14 +1007,14 @@ function SafeAiPage() {
 
       <Section className="bg-surface-container-low">
         <div className="grid gap-xl lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionIntro title="What Safe AI Setup helps with">
+          <SectionIntro title="What Heutrix AI Guardrails helps with">
             <p>
               The goal is a usable internal position: what staff may do, what they must not do, what requires approval and
               who remains accountable for the final output.
             </p>
           </SectionIntro>
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
-            <BulletList items={safeAiHelps} columns />
+            <BulletList items={aiGuardrailsHelps} columns />
           </div>
         </div>
       </Section>
@@ -977,11 +1062,13 @@ function SafeAiPage() {
             </p>
           </SectionIntro>
           <InfoCard icon="rule" title="What is included">
-            <BulletList items={safeAiIncluded} columns />
-            <p className="mt-md">Safe AI Setup provides operational guidance and does not replace legal, privacy, clinical or professional advice.</p>
+            <BulletList items={aiGuardrailsIncluded} columns />
+            <p className="mt-md">Heutrix AI Guardrails provides operational guidance and does not replace legal, privacy, clinical or professional advice.</p>
           </InfoCard>
         </div>
       </Section>
+
+      <FeaturedResource resource={resources[2]} />
 
       <CtaSection title="Set clear AI rules before staff start relying on AI at work." body="" cta={ctas.ai} />
     </>
@@ -996,24 +1083,24 @@ function AboutPage() {
         actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
       >
         <p>
-          Heutrix Labs is a practical workflow implementation partner for service providers that have outgrown informal
-          admin, scattered spreadsheets and person-dependent handovers.
+          Heutrix is a practical workflow improvement and implementation business. We help Australian disability
+          support providers—and selected allied health practices—improve one bounded non-clinical workflow at a time.
         </p>
         <p>
-          We work primarily with Australian allied health practices, disability support providers and selected
-          care-related service operators that want a bounded improvement their team can understand and maintain.
+          The work starts with how a recurring process actually runs: what triggers it, who owns each step, where
+          status or handover becomes unclear, what information is involved and what a useful result would look like.
         </p>
       </PageHero>
 
       <Section className="bg-surface-container-low">
-        <SectionIntro title="Built for practical operators, not technology hype">
+        <SectionIntro title="Workflow first. Technology second.">
           <p>
             Many organisations do not need another large platform. They need clearer ownership, consistent status
             definitions, fewer duplicated steps, better handovers and reliable visibility over important work.
           </p>
           <p>
-            We map how the work actually happens, identify the smallest useful improvement, build within agreed
-            constraints and document what the team needs to operate after handover.
+            We map how the work actually happens, define the result and acceptance criteria, use the smallest useful
+            intervention, test the agreed functions and document what the team needs to operate after handover.
           </p>
         </SectionIntro>
       </Section>
@@ -1035,22 +1122,101 @@ function AboutPage() {
       <Section className="bg-surface-container-low">
         <div className="rounded-xl border border-outline-variant bg-white p-xl shadow-sm">
           <div className="max-w-4xl">
-            <p className="mb-sm font-label-md text-label-md uppercase text-secondary">Relationship boundary</p>
+            <p className="mb-sm font-label-md text-label-md uppercase text-secondary">Verification boundary</p>
             <h2 className="mb-md font-headline-md text-headline-md text-primary">
-              Relationship with Heutrix Assurance
+              Trust and company information is still being verified.
             </h2>
             <p className="mb-md font-body-lg text-body-lg text-on-surface-variant">
-              Heutrix Labs and Heutrix Assurance are commercially connected and operate as separate service lines.
+              Founder biographies, team roles, legal entity details, insurance statements, service-area wording and
+              the relationship between “Heutrix” and “Heutrix Labs” require owner verification and approval.
             </p>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Work commissioned from Heutrix Labs is operational workflow support. It does not provide NDIS registration
-              readiness, mock audits, audit certification, legal advice, clinical advice or regulatory approval.
+              Until that work is complete, this page makes no unsupported founder, credential, client, insurance or
+              company-identity claims.
             </p>
           </div>
         </div>
       </Section>
 
+      <FeaturedResource resource={resources[0]} eyebrow="Self-guided starting point" />
+
       <CtaSection title="Want to make one workflow clearer?" body="" />
+    </>
+  );
+}
+
+function ResourcesPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Free, ungated starter resources"
+        title="Work through the problem before you buy anything."
+        actions={(
+          <DownloadLink
+            href={resources[0].guideHref}
+            resourceId={resources[0].id}
+            format="pdf"
+          >
+            Download the workflow scorecard
+          </DownloadLink>
+        )}
+      >
+        <p>
+          These practical resources help Australian disability support providers—and selected allied health practices—
+          prioritise one workflow, make enquiry-to-service-start work visible or put first AI-use boundaries in place.
+        </p>
+        <p>
+          You can download the complete guides and working files without submitting an email address. Each resource is
+          useful on its own and explains when a template is no longer enough.
+        </p>
+      </PageHero>
+
+      <Section className="bg-surface-container-low">
+        <SectionIntro title="Choose the resource that matches the decision." className="mb-xl">
+          <p>
+            Start with the operational problem. Do not choose a technology or Heutrix product before the workflow,
+            information boundary and accountable owner are clear enough.
+          </p>
+        </SectionIntro>
+        <motion.div
+          className="grid gap-lg lg:grid-cols-3"
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.08 }}
+        >
+          {resources.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}
+        </motion.div>
+      </Section>
+
+      <Section>
+        <div className="grid gap-lg lg:grid-cols-3">
+          <InfoCard icon="no_accounts" title="No email gate">
+            <p>
+              Downloads are provided directly. If you later request a fit call, that separate request follows the lead
+              and privacy process described on the contact page.
+            </p>
+          </InfoCard>
+          <InfoCard icon="privacy_tip" title="Use safe example information">
+            <p>
+              Use general, synthetic or appropriately de-identified examples. Do not enter participant, patient, worker,
+              clinical, credential or other personal or sensitive information into these files or an unapproved system.
+            </p>
+          </InfoCard>
+          <InfoCard icon="rule" title="General operational resources">
+            <p>
+              The guides and workbooks are starter templates, not legal, privacy, clinical, employment, audit,
+              registration, regulatory or compliance advice or assurance.
+            </p>
+          </InfoCard>
+        </div>
+      </Section>
+
+      <CtaSection
+        title="Found one workflow worth discussing?"
+        body="Bring a high-level, non-sensitive description to a 20-minute, no-obligation workflow fit call. The outcome may be Diagnostics, Workflow Transformation, AI Guardrails, more evidence gathering or no project."
+        cta={{ label: 'Discuss what you found', href: '/contact?source=resources' }}
+      />
     </>
   );
 }
@@ -1062,8 +1228,8 @@ function FaqPage() {
     <>
       <PageHero title="Frequently asked questions" compact>
         <p>
-          Practical answers about scope, timing, existing tools, pricing, handover, privacy, Safe AI and the limits of
-          Heutrix Labs services.
+          Practical answers about Heutrix Diagnostics, Workflow Transformation, AI Guardrails, timing, resources, privacy and the
+          limits of Heutrix Labs services.
         </p>
       </PageHero>
 
@@ -1095,6 +1261,8 @@ function FaqPage() {
         </div>
       </Section>
 
+      <FeaturedResource resource={resources[0]} eyebrow="Not ready for a call?" />
+
       <CtaSection
         title="Have a workflow question not covered here?"
         body="Use the contact form with a general description of the workflow, who uses it and the outcome you want to improve. Do not include personal or sensitive information."
@@ -1106,14 +1274,14 @@ function FaqPage() {
 function ContactPage({ search }) {
   return (
     <>
-      <PageHero title="Contact Heutrix Labs" compact>
+      <PageHero title="See where Heutrix can help" compact>
         <p>
-          Share a general description of the workflow, tracking, dashboard or Safe AI issue you want to improve. Helpful
-          context includes who uses the process, where work gets stuck and what a better outcome would look like.
+          Bring one workflow that should not be this hard. In a 20-minute, no-obligation workflow fit call, we will
+          understand one operational problem, assess whether Heutrix is the right fit and agree the smallest useful next step.
         </p>
         <p>
-          Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive
-          information in this form.
+          You do not need a process map, technical brief, screenshots or proposed solution. A general,
+          non-sensitive description is enough.
         </p>
       </PageHero>
       <Section className="bg-surface-container-low">
@@ -1136,8 +1304,11 @@ function ContactPage({ search }) {
                 ]}
               />
             </InfoCard>
-            <InfoCard icon="mail" title="Email">
-              <p>hello@heutrixlabs.com</p>
+            <InfoCard icon="schedule" title="What happens next">
+              <p>
+                Heutrix responds within two business days with scheduling details, one concise high-level question or
+                an honest no-fit response. The call itself is a fit assessment, not unpaid workflow design.
+              </p>
             </InfoCard>
           </div>
           <ContactForm search={search} />
@@ -1147,97 +1318,129 @@ function ContactPage({ search }) {
   );
 }
 
-function ContactForm({ search, submitLabel = 'Send enquiry' }) {
-  const [submitted, setSubmitted] = useState(false);
-  const defaultHelp = useMemo(() => {
-    const params = new URLSearchParams(search);
-    const service = params.get('service');
-    if (service === 'workflow-diagnostic') return 'Workflow Diagnostic';
-    if (service === 'workflow-automation-sprint') return 'Workflow Automation Sprint';
-    if (service === 'operations-dashboard-build') return 'Operations Dashboard Build';
-    if (service === 'safe-ai-setup') return 'Safe AI Setup';
-    if (service === 'tailored-internal-workflow-system') return 'Tailored Internal Workflow System';
-    if (service === 'regulated-provider-workflow-tools') return 'Regulated Provider Workflow Tools';
-    return 'Not sure yet';
-  }, [search]);
-  const defaultNext = 'Book a free fit call';
-
-  if (submitted) {
-    return (
-      <div className="rounded-xl border border-outline-variant bg-white p-xl shadow-sm">
-        <div className="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-secondary-container text-on-secondary-container">
-          <span className="material-symbols-outlined" aria-hidden="true">
-            mark_email_read
-          </span>
-        </div>
-        <h2 className="mb-md font-headline-md text-headline-md text-primary">Thank you for contacting Heutrix Labs.</h2>
-        <p className="font-body-md text-body-md text-on-surface-variant">
-          We have received your enquiry and will review whether it appears to be within scope. Please do not send
-          patient, participant, client, clinical, Medicare, NDIS, diagnostic or other sensitive information unless a
-          secure process has been agreed.
-        </p>
-      </div>
-    );
-  }
+function ContactForm({ search, submitLabel = 'Request my 20-minute call' }) {
+  const [submitError, setSubmitError] = useState(false);
+  const sourceParams = new URLSearchParams(search);
+  const sourceContext = sourceParams.get('service') || sourceParams.get('source') || '';
+  const fromResource = Boolean(sourceParams.get('source'));
 
   return (
     <form
       className="rounded-xl border border-outline-variant bg-white p-lg shadow-xl"
       onSubmit={(event) => {
         event.preventDefault();
-        setSubmitted(true);
+        setSubmitError(true);
       }}
     >
+      {sourceContext ? <input type="hidden" name="sourceContext" value={sourceContext} /> : null}
       <div className="grid gap-md md:grid-cols-2">
         <Field label="Name" name="name" required />
-        <Field label="Email" name="email" type="email" required />
-        <Field label="Practice or organisation name" name="organisation" required />
-        <Field label="Role" name="role" required />
+        <Field label="Work email" name="email" type="email" required />
+        <Field label="Organisation" name="organisation" required />
+        <SelectField
+          label="Sector"
+          name="sector"
+          defaultValue=""
+          options={['', 'Disability support provider', 'Allied health practice', 'Other']}
+        />
       </div>
 
       <div className="mt-md grid gap-md md:grid-cols-2">
         <SelectField
-          label="What would you like help with?"
-          name="help"
-          defaultValue={defaultHelp}
+          label="Which best describes your role?"
+          name="role"
+          defaultValue=""
           options={[
-            'Workflow Diagnostic',
-            'Workflow Automation Sprint',
-            'Operations Dashboard Build',
-            'Safe AI Setup',
-            'Tailored Internal Workflow System',
-            'Regulated Provider Workflow Tools',
-            'Not sure yet'
+            '',
+            'Owner or chief executive',
+            'Operations or general manager',
+            'Workflow owner or team lead',
+            'Practitioner or frontline staff',
+            'Technology or data role',
+            'Adviser or referral partner',
+            'Other'
           ]}
         />
         <SelectField
-          label="Preferred next step"
-          name="nextStep"
-          defaultValue={defaultNext}
-          options={[
-            'Book a free fit call',
-            'View Services',
-            'View pricing',
-            'Start with a Workflow Diagnostic',
-            'Improve a workflow',
-            'Build an operations dashboard',
-            'Set up safe AI use'
-          ]}
+          label="How many people or roles regularly touch this workflow?"
+          name="workflowPeople"
+          defaultValue=""
+          options={['', '1', '2–3', '4–6', '7+', 'Not sure']}
         />
       </div>
 
       <div className="mt-md">
         <label className="mb-xs block px-xs font-label-md text-label-md text-primary" htmlFor="message">
-          Message
+          Which one problem should we discuss?
         </label>
         <textarea
           id="message"
           name="message"
           required
           className="min-h-32 w-full resize-y rounded-lg border border-outline-variant bg-white p-md font-body-md text-body-md outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30"
-          placeholder="Briefly describe the workflow, admin issue or operational problem. Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive information."
+          placeholder="Briefly describe what starts the work, which roles are involved, where it becomes difficult to track, hand over or report, and what a useful improvement would change. Do not include personal or sensitive information."
         />
       </div>
+
+      {fromResource ? (
+        <div className="mt-md">
+          <label className="mb-xs block px-xs font-label-md text-label-md text-primary" htmlFor="resourceObservation">
+            What did the resource help you notice? — optional
+          </label>
+          <textarea
+            id="resourceObservation"
+            name="resourceObservation"
+            className="min-h-24 w-full resize-y rounded-lg border border-outline-variant bg-white p-md font-body-md text-body-md outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30"
+            placeholder="Share a high-level conclusion only. Do not include scores, completed workbook content, records or sensitive information."
+          />
+        </div>
+      ) : null}
+
+      <div className="mt-md grid gap-md md:grid-cols-2">
+        <Field label="Tools or systems involved at a high level — optional" name="tools" />
+        <SelectField
+          label="When would this need to improve?"
+          name="timing"
+          defaultValue=""
+          options={['', 'Within 1–3 months', 'Within 3–6 months', 'Later than 6 months', 'Exploring or no date']}
+        />
+        <SelectField
+          label="What is the decision context?"
+          name="decisionContext"
+          defaultValue=""
+          options={[
+            '',
+            'I can approve a paid next step',
+            'I will recommend it to a decision-maker',
+            'A decision-maker is already involved',
+            'We are exploring only',
+            'Not sure'
+          ]}
+        />
+      </div>
+
+      <div className="mt-md space-y-md rounded-lg border border-outline-variant bg-surface-container-low p-md">
+        <label className="flex items-start gap-sm font-body-sm text-body-sm text-on-surface-variant">
+          <input className="mt-1 h-4 w-4" type="checkbox" name="noSensitiveInformation" required />
+          <span>
+            I confirm that I have not included patient, participant, client, clinical, Medicare, NDIS, credential,
+            worker-sensitive or other personal or sensitive information.
+          </span>
+        </label>
+        <label className="flex items-start gap-sm font-body-sm text-body-sm text-on-surface-variant">
+          <input className="mt-1 h-4 w-4" type="checkbox" name="contactPermission" required />
+          <span>I agree that Heutrix Labs may contact me about this request and its direct follow-up.</span>
+        </label>
+      </div>
+
+      {submitError ? (
+        <div className="mt-md rounded-lg border border-error/30 bg-error-container p-md" role="alert" aria-live="polite">
+          <p className="font-body-sm text-body-sm text-on-error-container">
+            This request was not sent because the online lead path is not yet connected. No receipt has been recorded.
+            Please do not send sensitive information through another channel unless Heutrix confirms an appropriate process.
+          </p>
+        </div>
+      ) : null}
 
       <button
         type="submit"
@@ -1279,10 +1482,13 @@ function SelectField({ label, name, options, defaultValue }) {
         id={name}
         name={name}
         defaultValue={defaultValue}
+        required
         className="w-full rounded-lg border border-outline-variant bg-white p-md font-body-md text-body-md outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/30"
       >
         {options.map((option) => (
-          <option key={option}>{option}</option>
+          <option key={option || 'placeholder'} value={option} disabled={option === ''}>
+            {option || 'Select an option'}
+          </option>
         ))}
       </select>
     </div>
@@ -1294,8 +1500,8 @@ function PrivacyPage() {
     <>
       <PageHero title="Privacy and data handling" compact>
         <p>
-          Heutrix Labs works with care-related service providers where privacy, confidentiality and careful information
-          handling are part of everyday operations.
+          Heutrix works with disability support providers and allied health practices where privacy, confidentiality
+          and careful information handling are part of everyday operations.
         </p>
         <p>
           Our project approach starts with data minimisation: use the least information needed, prefer de-identified or
@@ -1314,6 +1520,39 @@ function PrivacyPage() {
           <div className="rounded-xl border border-outline-variant bg-white p-lg shadow-sm">
             <BulletList items={privacySensitiveItems} columns tone="boundary" />
           </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid gap-lg lg:grid-cols-3">
+          <InfoCard icon="contact_page" title="Information for the workflow fit call">
+            <p>
+              The initial request needs only a general description of the operational problem, roles involved, tools
+              used at a high level and desired result. It is used to assess fit, arrange the call and provide direct follow-up.
+            </p>
+            <p className="mt-md">
+              The live collection notice must identify the actual receiving entity, lead destination, access and
+              retention arrangements before the form is published.
+            </p>
+          </InfoCard>
+          <InfoCard icon="download" title="Resource downloads">
+            <p>
+              The complete public resources are available without an email address. A download is not contact
+              permission. If you separately request a fit call from the resources page, the request may record that
+              high-level source context as part of the approved lead record.
+            </p>
+            <p className="mt-md">
+              Do not upload or send a completed workbook. Use general, synthetic or appropriately de-identified
+              information in your working copy.
+            </p>
+          </InfoCard>
+          <InfoCard icon="admin_panel_settings" title="Project controls">
+            <p>
+              Any project using real client information requires an approved process for purpose, access, storage,
+              transfer, retention, deletion, incidents and access removal. These arrangements are confirmed before real
+              client information is accepted.
+            </p>
+          </InfoCard>
         </div>
       </Section>
 
@@ -1368,7 +1607,7 @@ function TermsPage() {
       <Section className="bg-surface-container-low">
         <div className="grid gap-lg md:grid-cols-2">
           <InfoCard icon="rule" title="Service boundary">
-            <p className="mb-md">Heutrix Labs provides workflow, automation, dashboard and safe AI support.</p>
+            <p className="mb-md">Heutrix Labs provides Diagnostics, Workflow Transformation and AI Guardrails.</p>
             <BulletList
               tone="boundary"
               items={[
@@ -1389,6 +1628,26 @@ function TermsPage() {
               regulatory or compliance decisions.
             </p>
           </InfoCard>
+          <InfoCard icon="schedule" title="Workflow fit call">
+            <p>
+              “See where Heutrix can help” is a 20-minute, no-obligation fit call. It is not a consulting workshop,
+              technical design session or tailored professional advice, and it does not create an engagement.
+            </p>
+            <p className="mt-md">
+              A request is not a confirmed booking, and a website submission is received only when the lead destination
+              confirms successful delivery.
+            </p>
+          </InfoCard>
+          <InfoCard icon="download" title="Downloads and templates">
+            <p>
+              Downloadable guides, scorecards, trackers and templates are general starter resources. They are not
+              tailored advice, organisational approval, a project scope or a promise of a particular result.
+            </p>
+            <p className="mt-md">
+              Use a separate working copy with general, synthetic or appropriately de-identified information. Do not
+              enter personal, sensitive, clinical, credential or confidential information into an unapproved system.
+            </p>
+          </InfoCard>
           <InfoCard icon="person_check" title="Client responsibility">
             <p>
               Clients remain responsible for reviewing, approving and maintaining their workflows, systems, policies,
@@ -1402,6 +1661,12 @@ function TermsPage() {
               terms and take precedence over general website content.
             </p>
           </InfoCard>
+          <InfoCard icon="gavel" title="Legal status">
+            <p>
+              This website terms copy remains subject to verification of the business particulars, legal review and
+              owner approval. It must not be represented as an approved legal instrument until that review is recorded.
+            </p>
+          </InfoCard>
         </div>
       </Section>
     </>
@@ -1413,8 +1678,8 @@ function DisclaimerPage() {
     <>
       <PageHero title="Website disclaimer" compact>
         <p>
-          This website describes practical workflow, automation, dashboard and Safe AI support for allied health
-          practices, disability support providers and selected care-related service providers.
+          This website describes Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails for
+          Australian disability support providers and selected allied health practices.
         </p>
       </PageHero>
       <Section className="bg-surface-container-low">
@@ -1429,10 +1694,32 @@ function DisclaimerPage() {
             responsibility to obtain suitable advice and to review, approve, apply and maintain its own processes.
           </p>
           <div className="mt-lg grid gap-md md:grid-cols-2">
+            <InfoCard icon="visibility" title="Illustrative examples">
+              <p>
+                Workflow views, before/after patterns, sample handovers and synthetic demonstrations are illustrative
+                unless expressly identified as verified client evidence. They do not promise the same fields, system,
+                timing or outcome.
+              </p>
+            </InfoCard>
+            <InfoCard icon="download" title="Resources and templates">
+              <p>
+                Downloadable resources are general operational starting points. A score, status or screening result is
+                not a client outcome, approved workflow, business case, service-readiness decision, approved AI use or
+                assurance of compliance.
+              </p>
+            </InfoCard>
+            <InfoCard icon="payments" title="Engagement terms and third-party systems">
+              <p>
+                Website descriptions are not quotes or project scopes. Paid work begins only after the deliverables,
+                responsibilities, assumptions, dependencies, exclusions, timing, third-party costs, acceptance criteria,
+                change triggers and applicable fee are agreed in writing. Naming a product or platform does not guarantee
+                Heutrix capability, native integration, availability or third-party performance.
+              </p>
+            </InfoCard>
             <InfoCard icon="smart_toy" title="AI disclaimer">
               <p>
-                Safe AI Setup focuses on internal operating rules, approved use cases, information boundaries and human
-                review for appropriate admin and workflow-support activities.
+                Heutrix AI Guardrails focuses on internal operating rules, approved use cases, information boundaries
+                and human review for appropriate admin and workflow-support activities.
               </p>
               <p className="mt-md">
                 AI outputs can be incomplete, inaccurate or unsuitable for context. A qualified and accountable person
@@ -1450,6 +1737,12 @@ function DisclaimerPage() {
                 disclosure, access, storage, retention and data-handling decisions.
               </p>
             </InfoCard>
+            <InfoCard icon="gavel" title="Legal status">
+              <p>
+                This disclaimer remains subject to verification of the business particulars, legal review and owner
+                approval. It must not be represented as an approved legal notice until that review is recorded.
+              </p>
+            </InfoCard>
           </div>
         </div>
       </Section>
@@ -1457,7 +1750,27 @@ function DisclaimerPage() {
   );
 }
 
-function CtaSection({ title, body, cta = ctas.fitCall, showPricing = true }) {
+function NotFoundPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Page not found"
+        title="That page is not part of the current Heutrix site."
+        actions={(
+          <>
+            <ButtonLink href="/">Return home</ButtonLink>
+            <ButtonLink href="/services" variant="secondary" icon={null}>View the three products</ButtonLink>
+          </>
+        )}
+        compact
+      >
+        <p>Use the current navigation to explore Heutrix services, free resources or the workflow fit-call request.</p>
+      </PageHero>
+    </>
+  );
+}
+
+function CtaSection({ title, body, cta = ctas.fitCall }) {
   return (
     <Section className="bg-primary text-on-primary">
       <motion.div className="grid gap-lg lg:grid-cols-[1fr_auto] lg:items-center" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
@@ -1469,11 +1782,6 @@ function CtaSection({ title, body, cta = ctas.fitCall, showPricing = true }) {
           <ButtonLink href={cta.href} variant="mint">
             {cta.label}
           </ButtonLink>
-          {showPricing ? (
-            <ButtonLink href={ctas.pricing.href} variant="secondary" icon={null}>
-              {ctas.pricing.label}
-            </ButtonLink>
-          ) : null}
         </motion.div>
       </motion.div>
     </Section>

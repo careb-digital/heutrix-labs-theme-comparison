@@ -1,86 +1,114 @@
 ---
 page: FAQ
 route: /faq
-seo_title: FAQ | Heutrix Labs
-meta_description: Answers about Heutrix Labs services, project timing, existing tools, handover, pricing, privacy, Safe AI and operational service boundaries.
+seo_title: Frequently Asked Questions | Heutrix Labs
+meta_description: Answers about Heutrix Diagnostics, Workflow Transformation, AI Guardrails, timing, free resources, information handling and service boundaries.
 ---
 
 # Frequently asked questions
 
-Practical answers about scope, timing, existing tools, pricing, handover, privacy, Safe AI and the limits of Heutrix Labs services.
+## What does Heutrix do?
 
-## What does Heutrix Labs do?
+Heutrix offers three products: **Heutrix Diagnostics** to define and prioritise the right operational problem, **Heutrix Workflow Transformation** to redesign and implement one bounded non-clinical workflow, and **Heutrix AI Guardrails** to establish practical workplace AI boundaries and accountable review.
 
-Heutrix Labs helps Australian allied health practices, disability support providers and selected care-related service providers improve internal workflows, admin processes, dashboards, tracking systems, automation and safe AI use. We focus on the operational systems around care and service delivery, not clinical decision-making.
+## Who does Heutrix work with?
 
-## Who does Heutrix Labs work with?
+Australian disability support providers are the primary launch audience. Allied health practices are a secondary fit where a recurring referral, intake, reporting, evidence or document workflow crosses people or systems and needs clearer ownership or visibility.
 
-We primarily work with allied health practices, disability support providers, specialist health providers, practice managers, provider owners and small-to-mid-sized care-related service operators. We may also support selected regulated service providers where the work is operational and within scope.
+Fit is based on workflow maturity, not a public staff-count threshold.
 
 ## What is the best starting point?
 
-Start with a Workflow Diagnostic when the priority or best solution is unclear. If the workflow and desired outcome are already well-defined, a Workflow Automation Sprint, Operations Dashboard Build, Tailored Internal Workflow System or Safe AI Setup may be more appropriate.
+Choose Heutrix Diagnostics when the priority, workflow boundary, baseline or feasible solution is unclear. Choose Heutrix Workflow Transformation when one workflow, owner, users and desired operating result can be bounded and tested. Choose Heutrix AI Guardrails when workplace AI needs approved uses, information boundaries, human review, escalation and staff guidance.
 
-## How long does a typical project take?
+If you are unsure, use **See where Heutrix can help**. You do not need to select a product before the call.
 
-A Workflow Automation Sprint is typically scoped for 2–4 weeks. Timing for diagnostics, dashboards, tailored systems and Safe AI Setup depends on availability, complexity, data access, review cycles and the number of users or teams involved. The expected timeline is confirmed in the written scope.
+## Do we need Heutrix Diagnostics first?
+
+Not always. You can move directly to Heutrix Workflow Transformation when the workflow, owner, users, desired result, systems and access path are clear enough to create a fixed scope and acceptance criteria.
+
+When priorities or feasibility are uncertain, Diagnostics creates a decision-ready plan that remains useful even if you do not proceed with Heutrix.
+
+## What happens in the 20-minute workflow fit call?
+
+We focus on one recurring operational problem, who is involved, where the work becomes difficult to track or hand over, and what a useful improvement would look like. The purpose is to assess fit and agree the smallest useful next step—not to provide unpaid workflow design or technical consulting.
+
+A general, non-sensitive description is enough. Heutrix responds to requests within two business days.
+
+## What result does Heutrix Workflow Transformation provide?
+
+The controllable result is one agreed non-clinical workflow mapped, redesigned, configured or built, tested against written acceptance criteria and handed over with the agreed staff and administrator guidance, access, maintenance responsibilities and known limitations.
+
+Heutrix does not promise compliance, revenue, clinical results, staff adoption or a fixed number of hours saved.
+
+## How long does it take?
+
+Heutrix Workflow Transformation is typically scoped for 2–4 weeks after the written scope, access, decision-makers and prerequisites are ready. Client delay, third-party changes, additional requirements or unresolved information issues may change timing through written change control.
+
+Diagnostics and AI Guardrails timing is confirmed in their written scope rather than advertised as a standard window.
+
+## How much time will our team need?
+
+A typical Workflow Transformation engagement requires one 60–90-minute workshop, two focused review checkpoints, timely access to the workflow owner and relevant staff, user acceptance testing, training and one decision-maker for final acceptance. Any additional meetings, interviews, review rounds or training are stated before work begins.
 
 ## Do you build software?
 
-Heutrix Labs may configure or build lightweight internal workflow systems, trackers, dashboards, forms and automations using agreed tools. We focus on bounded operational problems rather than large bespoke platforms or SaaS product development.
+Heutrix may configure or build a form, tracker, register, management view, automation or lightweight internal workflow tool where it is the simplest suitable intervention. These are deliverables within Workflow Transformation, not separate products or a promise to build a large bespoke platform.
 
-## Can you work with our existing tools?
+## Will we have to replace our existing software?
 
-Usually. We first review the workflow, available data, permissions and practical limits of the tools already in use. Where an integration or automation is appropriate, feasibility and access requirements are confirmed before it is included in scope.
+Usually not. Heutrix first assesses what can be improved around approved existing systems. A replacement, migration or major integration is not included unless it is separately assessed, feasible and written into scope.
 
-## Do you replace practice, client or case management software?
+## Which tools can you work with?
 
-No. Heutrix Labs does not replace your core practice, client or case management system. We help improve the operational workflows around your existing tools where appropriate.
+Every tool, integration, export, licence, permission, vendor dependency and information path must be checked before it is included. A public mention of a product does not guarantee current Heutrix capability, a native integration or support for every feature.
 
-## Can you automate workflows involving sensitive information?
+## How is sensitive information handled?
 
-Possibly, but only where the purpose, minimum necessary information, tool, permissions, access, storage, retention and review process are understood and approved by the client. De-identified or sample data should be used for design and testing where practical.
+The initial request and fit call should contain only a high-level, non-sensitive description. Project design and testing use the minimum necessary information and prefer synthetic or appropriately de-identified examples where practical.
 
-## Can staff use ChatGPT or other AI tools with client, patient or participant information?
+Any live-information use requires an approved project-specific process covering purpose, lawful authority, access, storage, transfer, retention, deletion, incidents and accountable review.
 
-Do not enter personal or sensitive information into publicly available AI tools. Any proposed AI use involving personal information needs an organisation-approved process covering the purpose, tool, access, storage, retention, privacy obligations and accountable human review.
+## Can staff put client, patient or participant information into public AI tools?
 
-## Does AI replace staff review?
+Do not enter personal or sensitive information into publicly available AI tools. Any proposed AI use involving personal information needs organisation-level due diligence and an approved process. A qualified and accountable person remains responsible for the final use of any AI-assisted output.
 
-No. AI may assist with approved internal admin, drafting or workflow support, but a suitable person remains responsible for checking the source information, context, accuracy, tone and final use. AI does not replace clinical judgement, legal advice, professional responsibility or organisational accountability.
+## Who owns the result?
 
-## Do you provide legal advice?
+Production accounts should be client-controlled where agreed. The written scope identifies administrator access, workflow maps, documentation, test records, configuration or source exports where available, maintenance responsibility and known limitations. Third-party licensing and export restrictions still apply.
 
-No. Heutrix Labs does not provide legal advice.
+## What if an agreed function fails testing?
 
-## Do you provide clinical advice?
+Acceptance is based on the written criteria. The current offer intends a 30-day path for qualifying in-scope defects, but the exact start, response targets, defect definition and third-party exclusions must be confirmed in the approved written terms for the engagement.
 
-No. Heutrix Labs does not provide clinical advice.
+New features, changed requirements, new systems or roles, additional integrations and third-party changes are not automatically defects.
 
-## Do you promise compliance outcomes?
+## What happens when we ask for something outside scope?
 
-No. Heutrix Labs does not promise compliance outcomes, audit success, registration outcomes or regulatory approval. Our work can support better operational systems, but the client remains responsible for reviewing, approving and maintaining their own processes.
+Heutrix documents the request and its effect on deliverables, timing, price and dependencies. Work proceeds only after the authorised decision-maker approves the change in writing.
 
-## Do you provide NDIS registration readiness or mock audits?
+## How are paid engagements agreed?
 
-No. Heutrix Labs does not provide NDIS registration readiness, mock audits, official audit certification or regulatory approval. Heutrix Labs may support operational workflow tools for disability support providers and other regulated providers where the work is within scope.
+After the workflow fit call, Heutrix may recommend Diagnostics, Workflow Transformation, AI Guardrails or no project. A suitable paid engagement is agreed in writing before work begins, including deliverables, responsibilities, assumptions, dependencies, exclusions, timing, third-party costs, acceptance criteria, change triggers and the applicable fee.
 
-## How much does it cost?
+## Can we use the free resources before speaking with Heutrix?
 
-Indicative starting prices are listed on the Pricing page and exclude GST. Final pricing depends on scope, workflow clarity, data requirements, integrations, user roles, testing, documentation, handover and privacy or governance needs.
+Yes. The Workflow Bottleneck Scorecard, Enquiry-to-Service-Start Visibility Starter Kit and AI Guardrails Staff Starter Pack are available as complete guides and working files without an email address.
 
-## What happens after handover?
+Use general, synthetic or appropriately de-identified information only. A resource result is not tailored advice, an organisational approval, a client outcome or permission for Heutrix to contact you.
 
-The agreed handover may include operating instructions, ownership and maintenance notes, known limitations and staff guidance. Optional follow-up support or further improvements can be scoped separately when needed.
+## Do you provide legal, privacy, clinical, audit or regulatory advice?
 
-## What do you need from us?
+No. Heutrix does not provide legal, privacy, clinical, audit, registration or regulatory advice or outcomes. It does not provide NDIS registration readiness, mock audits or audit certification.
 
-We usually need access to the people who understand the workflow, examples of current forms or trackers, a list of systems involved, and a decision-maker who can approve scope and priorities. Please do not send patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive information unless we have agreed a secure and appropriate process.
+## Where do you deliver?
+
+Projects are delivered remotely, with onsite work where the agreed scope requires it. Any location, travel, timing or onsite cost must be confirmed in the written proposal before work begins.
 
 ## Have a workflow question not covered here?
 
-Use the contact form with a general description of the workflow, who uses it and the outcome you want to improve. Do not include personal or sensitive information.
+Use the contact page with a general description of the workflow, the roles involved and what is difficult to track, hand over or report. Do not include personal or sensitive information.
 
-**Primary CTA:** Book a free fit call
+**Primary CTA:** See where Heutrix can help
 
-**Secondary CTA:** View pricing
+**Secondary CTA:** View free resources

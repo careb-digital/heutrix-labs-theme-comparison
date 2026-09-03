@@ -1,68 +1,97 @@
 ---
 page: About
 route: /about
-seo_title: About Heutrix Labs
-meta_description: Learn how Heutrix Labs approaches practical workflow improvement, operational visibility, maintainable systems and responsible AI use for care-related service providers.
+seo_title: About Heutrix Labs | Workflow-First Operational Improvement
+meta_description: Learn how Heutrix approaches bounded workflow improvement, responsible technology use, testing, documentation and maintainable handover.
 ---
 
 # About Heutrix Labs
 
-Heutrix Labs is a practical workflow implementation partner for service providers that have outgrown informal admin, scattered spreadsheets and person-dependent handovers.
+## Workflow first. Technology second.
 
-We work primarily with Australian allied health practices, disability support providers and selected care-related service operators that want a bounded improvement their team can understand and maintain.
+Heutrix is a practical workflow improvement and implementation partner. We help Australian disability support providers—and selected allied health practices—diagnose the right operational problem, transform one bounded non-clinical workflow or put practical workplace AI guardrails in place.
 
-**CTA:** Book a free fit call
+The work starts with how a recurring process actually runs: what triggers it, who owns each step, where status or handover becomes unclear, what information is involved and what a useful result would look like.
 
-## Built for practical operators, not technology hype
+Only then do we assess whether the right answer is a clearer process, a form, tracker, register, management view, automation, lightweight internal tool, AI-use rules—or no build at all.
 
-Many organisations do not need another large platform. They need clearer ownership, consistent status definitions, fewer duplicated steps, better handovers and reliable visibility over important work.
+**Primary CTA:** See where Heutrix can help
 
-We map how the work actually happens, identify the smallest useful improvement, build within agreed constraints and document what the team needs to operate after handover.
+## What Heutrix is built to do
+
+Many organisations do not need another large platform. They need one important workflow to function more clearly around the systems they already use.
+
+Heutrix focuses on bounded work that can be defined, tested and handed over:
+
+- **Heutrix Diagnostics** for a paid, decision-ready diagnosis when the right priority or solution is unclear
+- **Heutrix Workflow Transformation** for redesigning and implementing one bounded workflow
+- **Heutrix AI Guardrails** for appropriate-use boundaries, information rules, accountable review and staff guidance
+
+## How we work
+
+### Make the workflow visible
+
+Document the current state, ownership, handovers, dependencies and information involved before recommending a solution.
+
+### Define the result before building
+
+Agree the workflow boundary, success measures or baseline plan, acceptance criteria, responsibilities, exclusions and dependencies in writing.
+
+### Use the smallest useful intervention
+
+Improve approved existing systems where feasible. Do not force a replatforming or add automation where process clarification is more useful.
+
+### Prove the agreed functions
+
+Use synthetic or appropriately de-identified information first where practical, record test evidence and involve the people who will use and approve the workflow.
+
+### Hand over practical ownership
+
+Provide agreed access, documentation, guidance, maintenance responsibilities and known limitations so the client can operate the result.
 
 ## What we believe
 
-- Start with the real workflow, not the tool
-- Support the people already doing the work
-- Reduce avoidable admin friction and duplicated effort
-- Make ownership, status and next actions visible
-- Reduce dependence on one person's memory
-- Use the minimum information needed for the task
-- Keep accountable human review where it matters
-- Design for practical maintenance after handover
+- Clear ownership, status and next action are operating controls—not cosmetic fields
+- The people doing the work should be involved in discovery and testing
+- Accountable human judgement should stay visible
+- Only the minimum necessary information should be used
+- Tools, integrations, licences, permissions and data paths must be confirmed before scope
+- A sound recommendation can be “do not automate this” or “Heutrix is not the right fit”
+- Maintainability and handover matter as much as the initial build
 
 ## Who we work best with
 
-- Have grown beyond informal admin processes
-- Rely too heavily on inboxes, spreadsheets or individual memory
-- Can involve the staff who understand the current workflow
-- Need clearer ownership and operational visibility
-- Want a practical, bounded improvement rather than a large platform
-- Are considering AI and want responsible use rules
-- Value documentation, handover and maintainability
+- Australian disability support providers with a recurring non-clinical workflow that crosses people or systems
+- Allied health practices with a comparable referral, intake, reporting or document workflow
+- Owners, executives, operations leaders and workflow managers who can name the operational consequence
+- Teams able to provide a workflow owner, decision-maker, relevant staff and lawful access
+- Organisations seeking a fixed-scope improvement rather than a whole-platform replacement
 
-## What we do not provide
+## What Heutrix does not provide
 
-- Legal advice
-- Clinical advice
-- Official audit certification
-- NDIS registration readiness
-- Mock audits
-- Regulatory approval
-- A replacement practice, client or case management system
-- A large enterprise software build
-- An AI tool that removes human review or accountability
-- A guaranteed efficiency, compliance, audit or registration outcome
+- Legal, privacy, clinical, audit, registration or regulatory advice or outcomes
+- NDIS registration readiness, mock audits or audit certification
+- A replacement practice, participant, client or case-management platform
+- Unassessed integrations or guaranteed support for a named system
+- AI or automation that removes accountable human review
+- Guaranteed compliance, revenue, adoption, clinical or fixed time-saving outcomes
 
-## Relationship with Heutrix Assurance
+## Trust and company information
 
-**Eyebrow:** Relationship boundary
+Founder biographies, team roles, legal entity details, insurance statements, service-area wording and the relationship between “Heutrix” and “Heutrix Labs” remain subject to owner verification and approval. Do not publish the proposed founder trust layer or company particulars until the supporting evidence and operating commitments are recorded.
 
-Heutrix Labs and Heutrix Assurance are commercially connected and operate as separate service lines.
+Until that approval is complete, this page uses only the verified operating position and makes no unsupported founder, credential, client, insurance or company-identity claims.
 
-Work commissioned from Heutrix Labs is operational workflow support. It does not provide NDIS registration readiness, mock audits, audit certification, legal advice, clinical advice or regulatory approval.
+## Prefer to work through the problem first?
 
-## Want to make one workflow clearer?
+Use the free workflow and AI starter resources to compare recurring workflows, test an enquiry-to-service-start visibility view or set first AI-use boundaries. The complete guides and working files are available without an email address.
 
-**Primary CTA:** Book a free fit call
+**CTA:** View free resources
 
-**Secondary CTA:** View pricing
+## Bring one workflow that should work better.
+
+In a 20-minute, no-obligation workflow fit call, we will understand the problem, assess whether Heutrix is the right fit and agree the smallest useful next step.
+
+**Primary CTA:** See where Heutrix can help
+
+**Secondary CTA:** View services

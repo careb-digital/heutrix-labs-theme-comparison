@@ -1,21 +1,23 @@
 ---
-page: Safe AI
-route: /safe-ai
-seo_title: Safe AI Setup for Allied Health and Disability Providers | Heutrix Labs
-meta_description: Heutrix Labs helps Australian care-related service providers define approved AI use cases, information boundaries, human review rules and practical staff guidance.
+page: AI Guardrails
+route: /ai-guardrails
+seo_title: AI Guardrails for Disability Providers and Allied Health | Heutrix Labs
+meta_description: Heutrix AI Guardrails helps Australian disability support providers and allied health practices define approved AI uses, information boundaries, accountable review and staff guidance.
 ---
 
-# Safe AI
+# Heutrix AI Guardrails
 
-## Safe AI Setup for responsible day-to-day use.
+## Practical guardrails for responsible day-to-day AI use.
 
 Commercially available AI tools can support internal admin, drafting and workflow guidance. They can also create privacy, quality, security and accountability risks when staff use them without approved boundaries.
 
-Heutrix Labs helps organisations turn general AI concerns into clear use cases, information rules, human review responsibilities and practical staff guidance.
+Heutrix Labs helps disability support providers and allied health practices turn general AI concerns into clear use cases, information rules, human review responsibilities and practical staff guidance.
 
-**CTA:** Set up safe AI use
+**CTA:** Put AI guardrails in place
 
-## What Safe AI Setup helps with
+**Commercial position:** Paid, fixed-scope governance engagement. Timing, scope and the applicable fee are confirmed in writing after the workflow fit call.
+
+## What Heutrix AI Guardrails helps with
 
 The goal is a usable internal position: what staff may do, what they must not do, what requires approval and who remains accountable for the final output.
 
@@ -87,10 +89,30 @@ Any proposed AI use involving personal information needs a documented, organisat
 - Output review checklist
 - Tool and rollout recommendations
 
-Safe AI Setup provides operational guidance and does not replace legal, privacy, clinical or professional advice.
+Every included tool, use case, information type, user group, review point and deliverable is confirmed in writing. Naming a tool does not establish that it is approved or suitable.
+
+Heutrix AI Guardrails provides operational guidance. It does not replace legal, privacy, clinical, security, compliance or professional advice, and it does not transfer accountability away from the organisation or its qualified professionals.
+
+## Start with the staff starter pack
+
+### Give staff a practical first screen for proposed AI use.
+
+The free **AI Guardrails Staff Starter Pack** includes a guide, decision screen, staff checklists and use-case register. It helps a team record approved, conditional and prohibited starting positions while keeping actual tool and use-case approval with the organisation.
+
+Use general, synthetic or appropriately de-identified examples only. The pack is not legal or privacy advice, an approved workplace policy, a tool approval or a transfer of accountability to AI.
+
+**Primary CTA:** Download the PDF staff guide
+
+**Secondary CTA:** Download the use-case register workbook
+
+**Resources link:** View all free resources
+
+If AI use is already widespread, ownership is unclear or the starter rules are difficult to apply consistently, Heutrix AI Guardrails may be the relevant paid route.
 
 ## Set clear AI rules before staff start relying on AI at work.
 
-**Primary CTA:** Set up safe AI use
+**Primary CTA:** Put AI guardrails in place
 
-**Secondary CTA:** View pricing
+**Secondary CTA:** See where Heutrix can help
+
+**CTA support:** Not sure whether AI Guardrails is the right starting point? Bring a general, non-sensitive description to the 20-minute workflow fit call. We will assess whether AI Guardrails, another Heutrix product or no project is the smallest useful next step.

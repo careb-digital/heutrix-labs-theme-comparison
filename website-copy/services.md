@@ -1,293 +1,173 @@
 ---
 page: Services
 route: /services
-seo_title: Services | Heutrix Labs
-meta_description: Compare Heutrix Labs workflow diagnostics, focused improvement sprints, operations dashboards, tailored workflow systems and Safe AI setup for care-related service providers.
+seo_title: Diagnostics, Workflow Transformation and AI Guardrails | Heutrix Labs
+meta_description: Compare Heutrix Diagnostics, Workflow Transformation and AI Guardrails for Australian disability support providers and allied health practices.
 ---
 
 # Services
 
-## Practical workflow services built around a clear operational outcome.
+## Diagnose the right problem, transform one bounded workflow, or put practical AI guardrails in place.
 
-Heutrix Labs helps allied health practices, disability support providers and selected care-related service providers improve the internal systems that support daily operations.
+Heutrix offers three products for three different decisions. Australian disability support providers are the primary launch audience; allied health practices are a secondary fit where the same recurring non-clinical workflow pattern exists.
 
-Each engagement starts with the workflow, the people who use it and the outcome that needs to improve. The solution may be a clearer process, tracker, dashboard, automation, lightweight internal system or Safe AI setup.
+You do not need to choose a product before speaking with Heutrix. Bring one general, non-sensitive operational problem to the 20-minute workflow fit call and we will assess the smallest useful next step.
 
-Start with a Workflow Diagnostic when the priority is unclear. When the workflow and desired outcome are already well-defined, we can scope the most suitable implementation service directly.
+**Primary CTA:** See where Heutrix can help
 
-**CTA:** Book a free fit call
+## Choose by the decision in front of you
 
-## Our services
+| Your situation | Start with | Result |
+|---|---|---|
+| “We know operations are messy, but not what to fix first.” | Heutrix Diagnostics | A prioritised diagnosis and decision-ready implementation brief, including a no-build conclusion where appropriate |
+| “We know which workflow needs to work better.” | Heutrix Workflow Transformation | One bounded workflow mapped, redesigned, configured or built, tested, guided and handed over |
+| “Staff use AI, but our rules and review controls are unclear.” | Heutrix AI Guardrails | Documented AI-use boundaries, accountable review rules and practical staff guidance |
 
-### Workflow Diagnostic
+## Heutrix Diagnostics
 
-**Find the workflow worth improving first.**
+### See what is slowing the work down and what to fix first.
 
-A short, structured review for organisations that can see recurring friction, risk or delay but need a clear priority and practical next step before committing to a build.
+Heutrix Diagnostics is a paid, standalone decision product for organisations facing recurring operational friction but lacking a clear priority, workflow boundary, baseline or feasible solution.
 
-#### Suitable for
+### Best used when
 
-- Allied health practices
-- Disability support providers
-- Specialist health providers
-- Growing providers with messy admin
-- Practice managers dealing with scattered spreadsheets
-- Provider owners who want a clear improvement plan before committing to a build
+- Several problems are competing for attention
+- The root cause or workflow owner is unclear
+- Different teams describe the problem differently
+- Feasibility, access or information dependencies need to be understood
+- Leadership needs a decision-ready scope before funding implementation
 
-#### Common problems
+### What you receive
 
-- Staff use different workarounds for the same task
-- Follow-up actions have no consistent owner or due date
-- Important admin depends too heavily on one person
-- Managers cannot see what is waiting, overdue or blocked
-- Reporting requires repeated manual collation
-- Handovers vary between people, teams or locations
-- Spreadsheets have become difficult to maintain
-- AI tools are being used without agreed rules
+- A defined problem and workflow boundary
+- Current-state workflow and ownership map
+- Agreed baseline or baseline plan
+- Ranked bottlenecks, risks and dependencies
+- Feasible improvement options, including a no-build option
+- Recommended future state
+- Draft success measures and acceptance criteria
+- Decision-ready first-project scope
+- Written no-go conditions
 
-#### What is included
+The Diagnostic remains useful if you stop, use the findings internally or choose another implementer. It is not disguised sales work and its fee is not automatically credited to later implementation. Approved artefacts may be reused so the same discovery is not repeated.
 
-- Workflow discovery session with relevant staff
-- Current-state process and ownership review
-- Pain point, handover and visibility mapping
-- Identification of duplicated effort and avoidable manual steps
-- Prioritised improvement options
-- Recommended first action and suitable service pathway
-- Concise written findings
+**CTA:** Explore Heutrix Diagnostics
 
-#### What is excluded
+## Heutrix Workflow Transformation
 
-- Legal advice
-- Clinical advice
-- NDIS registration readiness
-- Mock audits
-- Official audit certification
-- Regulatory approval
-- Full workflow build unless separately scoped
-- Software procurement unless separately agreed
+**Eyebrow:** Primary implementation product
 
-#### Outcome
+### Turn one difficult workflow into a clearer, tested way of working.
 
-You receive a prioritised view of the workflow problem, the most useful first improvement and a practical recommendation for what to do next.
+Heutrix Workflow Transformation is for one important intake, referral, reporting, evidence or document workflow that can be named, bounded and owned.
 
-**CTA:** Start with a Workflow Diagnostic
+The implementation may combine process design, forms, checklists, trackers, registers, management views, reminders, automation or a lightweight internal tool. These are possible deliverables within the product, not separate public offers.
 
-### Workflow Automation Sprint
+### Best used when
 
-**Improve one important admin or operational workflow.**
+- One recurring non-clinical workflow is important enough to fix now
+- Multiple people, roles or systems touch the work
+- Ownership, status, next action or handovers are unreliable
+- A workflow owner and decision-maker are available
+- Staff can participate in discovery, testing and training
+- Access and representative materials can be provided lawfully and safely
 
-A focused implementation project, typically delivered over 2–4 weeks, for one clearly defined workflow. Automation is used only where it adds value; the right solution may instead be a clearer process, tracker, handover view, reminder system or lightweight internal tool.
+### What you receive
 
-#### Suitable for workflows such as
+- Agreed workflow boundary, users and success measures
+- Current-state and approved future-state workflow maps
+- Ownership, status, next-action, handover and escalation design
+- Written acceptance criteria and test plan
+- In-scope configuration or build in approved systems
+- Synthetic or de-identified testing first where practical
+- User acceptance and agreed refinements
+- Staff quick-start guidance and administrator runbook
+- Training, client-controlled access where agreed and practical handover
+- Maintenance, dependency and limitation notes
+- Before/after summary against the agreed baseline
+- 30-day path for qualifying in-scope defects, subject to the written terms
 
-- Intake tracking
-- Referral follow-up
-- Service agreement workflows
-- Document collection
-- Staff onboarding
-- Internal requests
-- Incident or complaint tracking
-- Risk or evidence tracking
-- Reporting preparation
-- Routine admin tracking
+### Typical timing
 
-#### What is included
+Typically 2–4 weeks after the written scope, access, decision-makers and other prerequisites are ready. Client delay, third-party changes, additional requirements or unresolved information issues may change timing through written change control.
 
-- Agreed scope, users and success measures
-- Current-state workflow review
-- Clear future-state workflow design
-- Configuration or build of the agreed improvement
-- Practical user testing and refinement
-- Handover guide and staff instructions
-- Maintenance responsibilities and next-step recommendations
+**CTA:** Transform a workflow
 
-#### Possible deliverables
+## Heutrix AI Guardrails
 
-- Workflow map
-- Status and ownership tracker
-- Operational register
-- Structured internal form
-- Reminder and escalation process
-- Management visibility view
-- Automation between approved tools
-- Handover guide
-- Staff instructions
+### Give staff clear, practical boundaries for using AI at work.
 
-#### What is excluded
+Heutrix AI Guardrails is a paid governance engagement for organisations considering or already using commercially available AI tools. It turns broad concern into an operational position people can follow.
 
-- Replacing your core practice, client or case management system
-- Large enterprise software builds
-- Clinical decision-making tools
-- Legal or compliance advice
-- Promised efficiency results
-- Uncontrolled use of sensitive information
+### Best used when
 
-#### Outcome
+- Staff are already experimenting with AI informally
+- Leadership wants approved, conditional and prohibited uses
+- Information boundaries are not clear
+- Human review, approval and escalation responsibilities need to be assigned
+- Practical staff guidance is needed before wider rollout
 
-Your team has one documented, usable workflow with clearer ownership, better visibility and a practical handover path.
+### What you receive
 
-**CTA:** Improve a workflow
+- Current and intended AI-use review
+- Approved, conditional and prohibited use-case register
+- Information classification and input rules
+- Human review, approval and escalation expectations
+- Staff AI-use checklist
+- Prompt and output-review guidance for approved use
+- Practical rollout recommendations
 
-### Operations Dashboard Build
+Heutrix AI Guardrails is operational guidance. It does not provide legal, privacy, clinical, compliance or regulatory advice and does not transfer accountability away from the organisation or its qualified professionals.
 
-**See what needs attention without chasing updates.**
+**CTA:** Put AI guardrails in place
 
-A focused visibility project for managers who need a reliable view of work in progress, overdue actions, workload, bottlenecks or reporting inputs without rebuilding their core system.
+## Shared scope boundaries
 
-#### Suitable for
+Heutrix is not a fit for:
 
-- Practice managers
-- Provider owners
-- Operations leads
-- Growing allied health practices
-- Disability support providers
-- Multi-site or multi-team providers
-- Teams relying on manual updates
+- Legal, privacy, clinical, audit, registration or regulatory advice or outcomes
+- A complete practice, participant, client, case-management or enterprise-platform replacement
+- Clinical, safety, compliance or other accountable professional decisions made by Heutrix or AI
+- A promised integration before tools, licences, permissions, vendor limits and information handling are assessed
+- A broad multi-site or enterprise rollout that cannot be bounded and supported responsibly
+- Automation or AI for its own sake
 
-#### Dashboard examples
+## Work through the problem first
 
-- Intake dashboard
-- Referral dashboard
-- Onboarding progress dashboard
-- Document collection dashboard
-- Task and overdue item dashboard
-- Incident or complaint overview
-- Risk or evidence tracking dashboard
-- Reporting preparation dashboard
-- Workflow workload view
+### Use a practical starter resource before you request a call.
 
-#### What is included
+The complete guides and working files are available without an email address. Use general, synthetic or appropriately de-identified information only.
 
-- Dashboard purpose and audience session
-- Review of available data sources
-- Agreed status, measure and ownership definitions
-- Dashboard build using agreed tools
-- Data limitation and refresh notes
-- Review, testing and refinement
-- Handover and maintenance notes
+#### Not sure what to fix first?
 
-#### Important note
+Use the **20-Minute Workflow Bottleneck Scorecard** to compare recurring workflows and identify the one that deserves closer attention.
 
-A dashboard is only useful when its workflow, definitions and data inputs are dependable. If those foundations are unclear, a Workflow Diagnostic may be the better first step.
+**CTA:** Use the Workflow Bottleneck Scorecard
 
-#### Outcome
+#### Need clearer enquiry-to-service-start visibility?
 
-Managers have a clearer, shared view of operational status and can spend less time collecting updates manually.
+Use the **Enquiry-to-Service-Start Visibility Starter Kit** to test minimum statuses, ownership, next actions, due points and exceptions without creating a duplicate client record.
 
-**CTA:** Build an operations dashboard
+**CTA:** Use the Visibility Starter Kit
 
-### Safe AI Setup
+#### Need first AI-use boundaries?
 
-**Set clear rules before AI becomes part of everyday admin work.**
+Use the **AI Guardrails Staff Starter Pack** to screen proposed uses, set information boundaries and name accountable human review.
 
-A practical setup for organisations considering or already using commercially available AI tools for internal admin, drafting, summarising or workflow support. The focus is approved use cases, information boundaries, human review and staff accountability.
+**CTA:** Use the AI Guardrails Starter Pack
 
-#### Suitable AI uses may include
+**Resources link:** View all free resources
 
-- Drafting internal admin templates
-- Summarising non-sensitive internal notes
-- Preparing first drafts of process documents
-- Generating task checklists
-- Creating workflow guidance
-- Helping structure reports for human review
-- Improving internal knowledge support
+These resources are general operational starting points. They are not tailored advice, organisational approvals, client outcomes or substitutes for an agreed Heutrix engagement.
 
-#### AI should not be used to
+## How engagements are agreed
 
-- Replace clinical judgement
-- Provide legal advice
-- Make compliance decisions
-- Make clinical, safety or risk decisions without human review
-- Process sensitive information without an approved privacy-reviewed process
-- Produce client-facing clinical or support advice without qualified review
-- Remove professional accountability
-
-#### What is included
-
-- Review of current or intended AI use
-- Suitable and unsuitable use case mapping
-- Staff AI use rules
-- Privacy and sensitive information guidance
-- Human review expectations
-- Prompt and output review guidance
-- Practical implementation recommendations
-
-#### Outcome
-
-Your organisation has documented AI use boundaries, defined review responsibilities and practical guidance staff can apply in daily work.
-
-**CTA:** Set up safe AI use
-
-### Tailored Internal Workflow System
-
-**Create a practical internal system for work that has outgrown spreadsheets.**
-
-For a bounded operational process that needs more structure than a spreadsheet but does not justify a large custom platform. Heutrix Labs designs lightweight internal systems around agreed users, steps, permissions and maintenance needs.
-
-#### Suitable for
-
-- Internal request systems
-- Multi-step admin workflows
-- Workflow trackers
-- Team handover systems
-- Evidence or document tracking
-- Incident and complaint registers
-- Onboarding workflows
-- Operational approval processes
-- AI-supported admin workflows with human review
-
-#### What is included
-
-- Users, requirements and scope confirmation
-- Workflow, ownership and status design
-- Tool selection within agreed constraints
-- Configured internal system build
-- User testing and refinement
-- Operating and maintenance documentation
-- Practical handover
-
-#### What is excluded
-
-- Large-scale SaaS product development
-- Replacement clinical, practice, client or case management software
-- Legal or clinical advice
-- Promised compliance outcomes
-- Systems that rely on unsafe handling of sensitive information
-
-#### Outcome
-
-Your organisation has a maintainable internal system that supports one defined workflow and reduces reliance on memory, inboxes or scattered spreadsheets.
-
-**CTA:** Scope a tailored workflow system
-
-### Regulated Provider Workflow Tools
-
-**Operational systems for regulated service environments.**
-
-Operational workflow support for selected regulated service providers that need clearer registers, trackers, dashboards, handovers or Safe AI rules. The work supports internal operations and does not provide registration, audit, legal, clinical or regulatory services.
-
-#### Suitable work may include
-
-- Incident tracking workflows
-- Complaint tracking workflows
-- Risk registers
-- Evidence tracking tools
-- Staff onboarding workflows
-- Internal task registers
-- Reporting preparation workflows
-- Operational dashboards
-- Safe AI rules for internal admin use
-
-#### Outcome
-
-The provider has a clearer operational tool or workflow while retaining responsibility for approving, maintaining and applying its own processes.
-
-**CTA:** Discuss regulated provider workflow tools
+Every paid engagement is agreed in writing before work begins. The written scope identifies deliverables, client responsibilities, assumptions, dependencies, exclusions, timing, acceptance criteria, third-party costs, change triggers and the applicable fee.
 
 ## Choose the smallest useful next step.
 
-Share a general description of the workflow, who uses it and what is difficult to see or manage. We can then discuss the most practical starting point.
+Tell us what is causing frustration. In a 20-minute, no-obligation workflow fit call, we will understand one problem, assess fit and agree the smallest useful next step. No patient, participant, client, clinical or other sensitive information is needed.
 
-**Primary CTA:** Book a free fit call
+**Primary CTA:** See where Heutrix can help
 
-**Secondary CTA:** View pricing
+**Secondary CTA:** View free resources

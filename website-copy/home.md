@@ -1,212 +1,212 @@
 ---
 page: Home
 route: /
-seo_title: Heutrix Labs | Workflow Systems for Allied Health and Disability Providers
-meta_description: Heutrix Labs helps Australian allied health practices and disability support providers improve messy admin, scattered spreadsheets, manual workflows, operations dashboards and safe AI use.
+seo_title: Heutrix Labs | Workflow Improvement for Disability Providers
+meta_description: Heutrix Labs helps Australian disability support providers and allied health practices diagnose operational friction, transform one bounded workflow and put practical AI guardrails in place.
 ---
 
 # Home
 
-> Reference copy only. The homepage content was not modified during this review.
-
 ## Hero
 
-**Eyebrow:** Workflow systems for care-related service providers
+**Eyebrow:** Workflow improvement for Australian disability support providers
 
-### Practical workflow systems for allied health practices and disability support providers.
+### Fix the operational workflow your team keeps chasing.
 
-Heutrix Labs helps Australian care-related service providers clean up messy admin, scattered spreadsheets, manual follow-up, reporting gaps and unsafe AI use.
+Heutrix Labs helps disability support providers—and selected allied health practices—turn one high-friction intake, referral, reporting, evidence or document workflow into a clearer, tested way of working.
 
-We map how the work actually happens, then build practical improvements such as workflow trackers, dashboards, automations, handover systems, evidence registers and safe AI rules.
+Start with Heutrix Diagnostics when the right problem is unclear, Heutrix Workflow Transformation when one workflow is ready to improve, or Heutrix AI Guardrails when workplace AI needs practical boundaries.
 
-**Primary CTA:** Book a free fit call
+**Primary CTA:** See where Heutrix can help
 
-**Secondary CTA:** View Services
+**Secondary CTA:** View the three products
 
-For practice managers, provider owners and operational leads who need clearer workflows, better visibility and safer use of technology without disrupting service delivery.
+**CTA support:** Bring a general, non-sensitive description of one workflow that is hard to track, hand over or report. In a 20-minute, no-obligation workflow fit call, we will assess fit and agree the smallest useful next step. Heutrix responds within two business days.
 
-### Operations dashboard example
+**Trust line:** One bounded workflow • Written scope and acceptance criteria • Client-controlled handover where agreed • Remote delivery, with onsite work where scope requires it
 
-**Operations dashboard**
+## Problem recognition
 
-Work that needs attention
+### Important work should not disappear between people and systems.
 
-Provider view
+An intake arrives, but the next owner is unclear. A referral waits for follow-up. Reporting inputs are collected by chasing several people. Required evidence or documents are discovered missing late.
 
-- Waiting — 2
-- Overdue — 3
-- Needs review — 4
+When work is spread across inboxes, spreadsheets, shared drives, core systems and memory, capable teams still lose visibility. The problem is not a lack of effort. The workflow does not make ownership, status and next action clear enough.
 
-| Workflow | Status | Next action |
-|---|---|---|
-| Referral tracker | Owner set | Next action due |
-| Onboarding checklist | In review | Two tasks open |
-| Reporting preparation | Inputs received | Manager review |
+### You may be dealing with
 
-**Workflow first. Technology second.**
+- Intake or referral follow-up handled differently by different people
+- Reporting preparation that depends on repeated chasing and manual collation
+- Evidence or document tracking spread across folders, inboxes and spreadsheets
+- Handovers that rely too heavily on one person's memory
+- Managers unable to see what is waiting, blocked, overdue or ready for review
+- AI tools being used without approved information boundaries or review rules
 
-Built around ownership, handover, privacy and realistic maintenance.
+## Desired outcome
 
-## Does this sound familiar?
+### One workflow your team can see, use and maintain.
 
-Even capable teams lose visibility when important work is spread across memory, inboxes, spreadsheets and manual reminders.
+The finished workflow gives staff a consistent way to handle the agreed work and gives managers a shared view of what is waiting, blocked, overdue or ready for review.
 
-### You may be dealing with:
+The goal is not more technology. It is one tested operating improvement with an agreed baseline, clear ownership, practical guidance, client-controlled access where agreed and a handover your team can maintain.
 
-- Intake, referral or enquiry follow-up handled differently by different people
-- Service agreements, staff onboarding or handovers managed through memory and repeated manual reminders
-- Incident, complaint, risk or evidence tracking spread across spreadsheets
-- Managers lacking visibility over what is waiting, overdue or stuck
-- Reporting preparation that takes too long because information is scattered
-- AI tools being used informally without clear rules for privacy, review or suitable use
+## Free workflow scorecard
 
-Heutrix Labs helps turn these pressure points into clearer workflows, practical tracking systems, safer AI practices and better visibility for day-to-day decisions.
+**Eyebrow:** Not ready for a fit call?
 
-## Practical ways we can help.
+### Score the workflows your team keeps chasing.
 
-Start with one of the clearest entry points. These services are designed to help allied health practices and disability support providers understand what to improve, fix one defined workflow, or see operational work more clearly.
+Use the free 20-Minute Workflow Bottleneck Scorecard to compare up to 12 recurring non-clinical workflows using frequency, staff effort, handoffs, delay, rework, visibility, feasibility and evidence confidence.
 
-### Workflow Diagnostic
+The guide and formula-driven workbook are available without an email address. Use general, synthetic or appropriately de-identified information only. The result is a prioritisation prompt—not a business case, automation recommendation, organisational approval or guaranteed outcome.
 
-**Find the workflow worth improving first.**
+**Primary CTA:** Download the PDF guide
 
-A structured review for organisations that know admin is messy, risky or time-consuming, but are not yet sure what should change first.
+**Secondary CTA:** Download the workbook
 
-**CTA:** Learn more
+**Resources link:** View all resources
 
-### Workflow Automation Sprint
+**Implementation note — not public copy:** Use the files listed in the lead-magnet release manifest. Do not publish the downloads until the owner and boundary review in `../lead-magnets/README.md` is recorded.
 
-**Improve one important admin or operational workflow.**
+## Primary implementation offer
 
-A focused 2-4 weeks period to improve one defined workflow such as intake tracking, referral follow-up, service agreements, document collection, incident and complaint tracking, onboarding, reporting preparation or evidence tracking.
+**Eyebrow:** Heutrix Workflow Transformation
 
-**CTA:** Learn more
+### Map, improve, prove and hand over one bounded workflow.
 
-### Operations Dashboard Build
+In a typical 2–4 week engagement, once scope, access and decision-makers are ready, Heutrix maps, redesigns, configures or builds, tests and hands over one agreed non-clinical workflow.
 
-**See what needs attention without chasing updates.**
+The implementation may include a clearer process, form, checklist, tracker, register, management view, reminder path, automation or lightweight internal tool. These are delivery mechanisms within Workflow Transformation, not separate products.
 
-A practical dashboard or visibility view for practice managers, provider owners and operational leads who need to see workload, status, overdue items, bottlenecks, incidents, complaints, evidence or reporting inputs.
+### What the engagement can include
 
-**CTA:** Learn more
+- Baseline and agreed success measures or a documented baseline plan
+- Current-state workflow and ownership map
+- Bottleneck, dependency, information and risk review
+- Approved future-state design
+- Written acceptance criteria and test plan
+- Configuration or build in approved systems
+- Synthetic or de-identified testing first where practical
+- User acceptance and the agreed refinement rounds
+- Staff quick-start guidance and administrator documentation
+- Training, client-controlled access where agreed and handover
+- Maintenance, dependency and limitation notes
+- A before/after summary against the agreed baseline
+- A 30-day path for qualifying in-scope defects, subject to the written terms
 
-Need Safe AI Setup or a tailored internal workflow system? **View all services.**
+**CTA:** Transform a workflow
 
-## We diagnose before we build.
+## Three starting points
 
-**Eyebrow:** Workflow first
+### Start with the smallest useful engagement.
 
-Good operational improvement starts with understanding the workflow. Before recommending a system, dashboard, automation or AI-supported workflow, we look at what triggers the process, who is involved, where work gets stuck, and what risks need to be controlled. Then we recommend the simplest useful solution.
+#### 1. Heutrix Diagnostics
 
-Built for Australian care-related providers
+**When you know operations are messy, but not what to fix first.**
 
-### The Heutrix Method
+Receive a defined workflow boundary, current-state map, baseline plan, ranked bottlenecks, risks and dependencies, feasible options, a recommended future state and a decision-ready implementation brief. The recommendation may be no build.
 
-1. **Diagnostics** — Understanding core problems and finding workflow gaps.
-2. **Triage** — Pinpoint and prioritise crucial bottlenecks.
-3. **Automation** — Automate and reduce repeated admin.
-4. **Handover** — Guidance with your new solution.
+**CTA:** Explore Heutrix Diagnostics
 
-## What Heutrix Labs does
+#### 2. Heutrix Workflow Transformation
 
-Heutrix Labs helps care-related service providers improve the internal systems that sit around client care and service delivery. We are not here to replace your core practice, client or case management software.
+**When one important workflow is defined and ready to improve.**
 
-- Workflow diagnostics
-- Admin process mapping
-- Workflow automation
-- Operations dashboards
-- Internal trackers and registers
-- Evidence registers
-- Incident and complaint tracking workflows
-- Staff handover systems
-- Onboarding workflows
-- Reporting preparation workflows
-- Safe AI rules and staff guidance
-- Lightweight internal workflow tools
+Heutrix maps, redesigns, configures or builds, tests, guides users and hands over the agreed improvement. This is the primary implementation product.
 
-## Make your organisation easier to run without compromising trust.
+**CTA:** Transform a workflow
 
-Allied health practices and disability support providers do not need technology for its own sake. They need systems that support the people already doing the work.
+#### 3. Heutrix AI Guardrails
 
-As services grow, the operational work around client care and service delivery can become harder to coordinate. Enquiries need follow-up. Referrals need tracking. Documents need to be collected. Staff need clear handovers. Managers need to know what is happening without chasing updates.
+**When workplace AI use needs clear boundaries and accountable review.**
 
-Heutrix Labs starts by understanding how your work actually happens, then recommends practical improvements that are safe, maintainable and useful in daily operations.
+Define approved, conditional and prohibited uses, information boundaries, human review, escalation and practical staff guidance. This operational work does not replace legal, privacy, clinical or professional advice.
 
-### Who we help
+**CTA:** Put AI guardrails in place
 
-- Allied health practices
-- Disability support providers
-- Specialist health providers
-- Multidisciplinary care teams
-- Practice managers and operations leads
-- Provider owners managing growth, admin risk or reporting pressure
+## Delivery method
 
-## Before and after examples
+### Map → Design → Build → Prove → Hand over
 
-### Referral tracking
+1. **Map:** Agree the workflow boundary and baseline, then document how the work actually runs.
+2. **Design:** Define ownership, status, next action, controls and acceptance tests.
+3. **Build:** Configure the smallest useful improvement in approved systems.
+4. **Prove:** Test with synthetic or de-identified information first where practical, then run agreed user acceptance.
+5. **Hand over:** Train the team, document administration and maintenance, transfer agreed access and close the stabilisation path.
 
-**Before:** Referral status is spread across emails, spreadsheets, inbox notes and verbal updates.
+## Client commitment
 
-**After:** The team has one referral tracker showing status, owner, next action, due date and overdue items.
+### A bounded project needs clear involvement from both sides.
 
-### Staff onboarding
+A typical Workflow Transformation engagement requires:
 
-**Before:** New starter tasks depend on memory and repeated reminders.
+- one accountable workflow owner and one decision-maker;
+- relevant staff for one 60–90-minute workshop;
+- timely access to approved systems, permissions and representative non-sensitive materials;
+- two focused review checkpoints;
+- user testing, training and final acceptance; and
+- internal privacy, security, legal, clinical, procurement or vendor approvals where required.
 
-**After:** The organisation has a clear onboarding checklist, task ownership, handover steps and visibility for managers.
+Any additional interviews, workshops, review rounds or training are stated in the written scope.
 
-### Incident and complaint tracking
+## Fit and boundaries
 
-**Before:** Incidents and complaints are recorded inconsistently across forms, folders and spreadsheets.
+### A good fit when one recurring workflow matters enough to fix.
 
-**After:** The organisation has a structured register showing status, owner, review steps, due dates and follow-up actions.
+**Good fit:** The workflow is recurring, crosses people or systems, has an accountable owner, can be accessed lawfully and safely, and is important enough to fund as a fixed-scope improvement.
 
-### Reporting preparation
+**Not a fit:** You need legal, privacy, clinical, audit, registration or regulatory advice or outcomes; a complete platform replacement; an unassessed integration; an AI system that removes accountable human judgement; or a broad enterprise rollout that cannot be bounded.
 
-**Before:** Reports take too long because information is pulled from multiple places manually.
+## Illustrative workflow view
 
-**After:** The organisation has a clearer reporting workflow with defined inputs, review steps and fewer repeated manual checks.
+**Label on every visual:** Illustrative example — not a client result
 
-### Safe AI use
+| Workflow | Status | Owner | Next action |
+|---|---|---|---|
+| Referral follow-up | Waiting | Intake lead | Confirm missing information |
+| Reporting preparation | In review | Operations manager | Review agreed inputs |
+| Evidence documents | Blocked | Workflow owner | Follow up required item |
 
-**Before:** Staff use AI tools informally without clear rules about privacy, review or suitable use.
+This example shows the type of visibility a scoped project may create. The actual fields, rules, systems and result depend on the agreed workflow and are not promised by the example.
 
-**After:** The organisation has approved AI use rules, prompt guidance, human review expectations and clear boundaries for sensitive information.
+## How an engagement begins
 
-## Book a free fit call.
+### Clear terms before paid work begins.
 
-**Eyebrow:** Next step
+After the fit call, Heutrix will recommend Heutrix Diagnostics, Heutrix Workflow Transformation, Heutrix AI Guardrails or no project. If there is a suitable paid next step, its deliverables, responsibilities, assumptions, dependencies, exclusions, timing, third-party costs, change triggers, acceptance criteria and fee are confirmed in writing before work begins.
 
-We will discuss the workflow or operational issue, what is currently difficult to manage and whether Heutrix Labs is the right fit to help. The purpose of this call is to decide the best next step.
+## Final CTA
 
-### Privacy note before submitting
+### Bring one workflow that should not be this hard.
 
-Please do not include patient, client, clinical, Medicare, NDIS, diagnostic or other sensitive information in this form.
+You do not need a process map, technical brief or proposed solution. Bring a general description of what starts the work, who is involved, where it becomes difficult to track or hand over, and what a useful result would look like.
 
-### Form labels and options
+**Primary CTA:** See where Heutrix can help
+
+**Form button until direct scheduling is live:** Request my 20-minute call
+
+**Privacy note:** Do not include patient, participant, client, clinical, Medicare, NDIS, credential, worker-sensitive or other sensitive information.
+
+### Recommended request fields
 
 - Name
-- Email
-- Practice or organisation name
+- Work email
+- Organisation
+- Sector
 - Role
-- What would you like help with?
-  - Workflow Diagnostic
-  - Workflow Automation Sprint
-  - Operations Dashboard Build
-  - Safe AI Setup
-  - Tailored Internal Workflow System
-  - Regulated Provider Workflow Tools
-  - Not sure yet
-- Preferred next step
-  - Book a free fit call
-  - View Services
-  - View pricing
-  - Start with a Workflow Diagnostic
-  - Improve a workflow
-  - Build an operations dashboard
-  - Set up safe AI use
-- Message
+- Number of people or roles that regularly touch the workflow
+- One high-level problem to discuss
+- Tools involved at a high level — optional
+- Desired timing
+- Decision context
+- Sensitive-information confirmation
+- Permission for Heutrix to contact the person about the request and its direct follow-up
 
-**Message placeholder:** Briefly describe the workflow, admin issue or operational problem. Please do not include patient, participant, client, clinical, Medicare, NDIS, diagnostic or sensitive information.
+Do not ask an unsure visitor to choose a Heutrix product or implementation technology. The fit call determines whether the right next step is Diagnostics, Workflow Transformation, AI Guardrails or no paid engagement.
 
-**Submit button:** Request fit call
+### What happens next
+
+1. Heutrix receives a general, non-sensitive description through the tested lead path.
+2. Heutrix responds within two business days with scheduling details, one concise question or an honest no-fit response.
+3. The 20-minute call assesses the problem, fit and smallest useful next step; it is not unpaid workflow design.
+4. The outcome may be a paid Heutrix product, a later review, limited high-level information needed, or a no-fit/no-build recommendation.
