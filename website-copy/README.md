@@ -2,11 +2,11 @@
 
 This directory contains the controlled copy source for every public page on the Heutrix Labs website. Each Markdown file maps to one route and records the intended content hierarchy, visible labels, calls to action and supporting copy.
 
-The consolidated cross-site decisions, migration rules, resource journeys and acceptance criteria are in [`WEBSITE-REFINEMENT-BRIEF-2026-09-03.md`](WEBSITE-REFINEMENT-BRIEF-2026-09-03.md).
+This public copy directory mirrors the approved page-level source from the Heutrix operating workspace.
 
 **Aligned:** 3 September 2026
 **Latest decision:** Remove pricing as a public website page, navigation item and CTA.
-**Publication state:** Strategically aligned; operational, resource-release and legal gates still apply.
+**Publication state:** Version 1.0 resources approved for website release on 3 September 2026 by JD as review owner and boundary reviewer. Operational and legal gates still apply.
 
 The copy pack is aligned to the current three-product architecture:
 
@@ -32,13 +32,6 @@ Australian disability support providers are the primary launch audience. Allied 
 | Privacy and Data Handling | `/privacy-and-data-handling` | [privacy-and-data-handling.md](privacy-and-data-handling.md) |
 | Terms of Use | `/terms-of-use` | [terms-of-use.md](terms-of-use.md) |
 | Website Disclaimer | `/website-disclaimer` | [website-disclaimer.md](website-disclaimer.md) |
-
-## Implementation copy packs
-
-| Workstream | Deliverable |
-|---|---|
-| B3 — Founder and delivery trust layer | [founder-trust-layer.md](founder-trust-layer.md) |
-| H3 — “See where Heutrix can help” call and sales process | [see-where-heutrix-can-help-and-sales-process.md](see-where-heutrix-can-help-and-sales-process.md) |
 
 ## Shared site copy
 
@@ -123,13 +116,6 @@ Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails a
 
 The complete PDF guides and workbooks remain ungated. A download is not permission to contact the visitor and is not evidence of a client outcome, approved workflow or approved AI use.
 
-## Release dependencies
+## Release controls
 
-Before publication, confirm the active site against:
-
-- [`00-control/VERIFIED-FACTS.md`](../../00-control/VERIFIED-FACTS.md);
-- [`00-control/RISKS-AND-BLOCKERS.md`](../../00-control/RISKS-AND-BLOCKERS.md);
-- the [owner validation register](../../02-market-and-offers/offers/offer-strategy-2026-09/05-owner-validation-register.md);
-- the [legal review register](../../05-legal-privacy-risk/review-register/LEGAL-REVIEW-REGISTER.md);
-- the [lead-magnet release gate](../lead-magnets/README.md); and
-- the tested lead, scheduling, privacy and confirmation path.
+The resource files are approved for version 1.0 website release. They remain ungated and must not activate analytics or contact permission. The website continues to use truthful request-mode form behaviour while the lead destination and scheduling workflow remain unconnected, and its legal notices must not be represented as legally approved.
