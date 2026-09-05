@@ -86,7 +86,7 @@ export const routes = [
   }
 ];
 
-export const mainNav = ['/services', '/case-studies', '/resources', '/about'].map(
+export const mainNav = ['/', '/services', '/case-studies', '/resources', '/about', '/faq'].map(
   (path) => routeMapSafe(path)
 );
 
