@@ -1,0 +1,27 @@
+name: Verify refined comparison
+on:
+  push:
+    branches: [codex/refined-comparison-2026-09-05]
+    paths: ['apps/website/**', '.github/workflows/comparison.yml']
+  pull_request:
+    paths: ['apps/website/**', '.github/workflows/comparison.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/website
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/website/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm run check
+      - run: npx wrangler deploy --dry-run
