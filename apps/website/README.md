@@ -25,7 +25,7 @@ The comparison deliberately has no custom-domain route and uses `noindex, nofoll
 - All six download files are unchanged from the approved 3 September 2026 resource release. `content/download-manifest.json` captures their SHA-256 values; `npm run check` verifies them. Covers are previews of the actual guides.
 - The hero photograph was generated for this website and is labelled illustrative; it does not depict actual staff or clients. Fonts are self-hosted from their licensed Fontsource packages.
 
-- On 5 September 2026 Janith confirmed publication of the founder names and scoped experience summaries (workflow implementation/provider-business experience, project delivery/provider operations, data and analytics, backend engineering/infrastructure), and the origin in running a disability and allied health services organisation. About and Home use these approved claims. No portraits, employer histories, tenure or new delivery commitments are implied. The About diagrams summarise cases 3, 6 and 13 and link to their complete evidence.
+- On 5 September 2026 Janith confirmed publication of the founder names and scoped experience summaries (workflow implementation/provider-business experience, project delivery/provider operations, data and analytics, backend engineering/infrastructure), and the origin in running a disability and allied health services organisation. About and Home use these approved claims. At the owner’s request, these are presented as one shared Heutrix origin story rather than individual founder profiles. No portraits, employer histories, tenure or new delivery commitments are implied. The About diagrams summarise cases 3, 6 and 13 and link to their complete evidence.
 
 ## Release checks and limits
 
