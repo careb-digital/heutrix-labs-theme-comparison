@@ -206,7 +206,7 @@ export const homeServices = [
     primary: true,
     lead: 'Turn one difficult workflow into a clearer, usable operating system.',
     description:
-      'The primary implementation product: map, redesign, configure or build, test, guide users and hand over one bounded operational workflow.',
+      'Map, redesign, build and test one operational workflow, with practical guidance for the team who will use it.',
     cta: { label: 'Learn more', href: '/services#heutrix-workflow-transformation' }
   },
   {
@@ -338,7 +338,7 @@ export const services = [
     primary: true,
     lead: 'Turn one difficult workflow into a clearer, usable operating system.',
     intro:
-      'The primary implementation product for one clearly defined non-clinical workflow. Heutrix maps, redesigns, configures or builds, tests, guides users and hands over the agreed improvement.',
+      'Practical implementation for one clearly defined non-clinical workflow. Heutrix maps, redesigns, configures or builds, tests, guides users and hands over the agreed improvement.',
     sections: [
       {
         title: 'Suitable for workflows such as',
@@ -458,7 +458,7 @@ export const alliedHealthContent = {
   ],
   audienceTitle: 'Who this is for',
   audienceIntro:
-    'Allied health is a secondary Heutrix launch segment. Fit depends on the workflow, an accountable owner and decision-maker, staff participation, lawful access and a problem important enough to fund as a fixed-scope improvement.',
+    'We help selected allied health practices improve recurring administrative work. A good starting point is a clear problem, a person responsible for it and a team ready to help shape the improvement.',
   audienceItems: [
     'Psychology practices',
     'Physiotherapy practices',
@@ -540,7 +540,7 @@ export const disabilityContent = {
   ],
   audienceTitle: 'Who this is for',
   audienceIntro:
-    'Fit is based on recurring workflow volume, cross-role complexity, an accountable owner and decision-maker, staff participation, lawful access and a problem important enough to fund—not a public staff-count threshold.',
+    'A good fit is a recurring workflow that crosses people or systems, has a clear owner and is worth improving. Your team needs time to participate and appropriate access to the information involved.',
   audienceItems: [
     'Provider owners managing growth or admin risk',
     'Operations managers and team leaders',
@@ -712,7 +712,7 @@ export const faqs = [
   {
     question: 'Who does Heutrix Labs work with?',
     answer:
-      'Australian disability support providers are the primary launch audience. Allied health practices are a secondary fit where a recurring intake, referral, reporting, evidence or document workflow crosses people or systems and needs clearer ownership or visibility. Fit is based on workflow maturity, not a public staff-count threshold.'
+      'We primarily work with Australian disability support providers, and with selected allied health practices. We can help where recurring intake, referral, reporting or document work crosses people or systems and needs clearer ownership or visibility. The workflow and your team’s readiness matter more than organisation size.'
   },
   {
     question: 'What is the best starting point?',

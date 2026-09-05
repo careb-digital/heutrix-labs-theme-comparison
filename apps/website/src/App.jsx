@@ -1,4 +1,4 @@
-import { RefinedHome, CaseStudiesPage, CaseStudyPage, ConsultationPage } from './RefinedPages';
+import { RefinedHome, RefinedAbout, CaseStudiesPage, CaseStudyPage, ConsultationPage } from './RefinedPages';
 import caseStudies from './caseStudies.json';
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, MotionConfig } from 'framer-motion';
@@ -933,68 +933,7 @@ function AiGuardrailsPage() {
   );
 }
 
-function AboutPage() {
-  return (
-    <>
-      <PageHero
-        title="About Heutrix Labs"
-        actions={<ButtonLink href={ctas.fitCall.href}>{ctas.fitCall.label}</ButtonLink>}
-      >
-        <p>
-          Heutrix is a practical workflow improvement and implementation business. We help Australian disability
-          support providers—and selected allied health practices—improve one bounded non-clinical workflow at a time.
-        </p>
-        <p>
-          The work starts with how a recurring process actually runs: what triggers it, who owns each step, where
-          status or handover becomes unclear, what information is involved and what a useful result would look like.
-        </p>
-      </PageHero>
-
-      <Section className="bg-surface-container-low">
-        <SectionIntro title="Workflow first. Technology second.">
-          <p>
-            Many organisations do not need another large platform. They need clearer ownership, consistent status
-            definitions, fewer duplicated steps, better handovers and reliable visibility over important work.
-          </p>
-          <p>
-            We map how the work actually happens, define the result and acceptance criteria, use the smallest useful
-            intervention, test the agreed functions and document what the team needs to operate after handover.
-          </p>
-        </SectionIntro>
-      </Section>
-
-      <Section>
-        <div className="grid gap-lg lg:grid-cols-3">
-          <InfoCard icon="task_alt" title="What we believe">
-            <BulletList items={beliefs} />
-          </InfoCard>
-          <InfoCard icon="groups" title="Who we work best with">
-            <BulletList items={bestFit} />
-          </InfoCard>
-          <InfoCard icon="rule" title="What we do not provide">
-            <BulletList items={notFor} tone="boundary" />
-          </InfoCard>
-        </div>
-      </Section>
-
-      <Section className="bg-surface-container-low">
-        <div className="rounded-xl border border-outline-variant bg-white p-xl shadow-sm">
-          <div className="max-w-4xl">
-            <p className="mb-sm font-label-md text-label-md uppercase text-secondary">Heutrix delivery experience</p>
-            <h2 className="mb-md font-headline-md text-headline-md text-primary">The detail is where the work changes.</h2>
-            <p className="mb-md font-body-lg text-body-lg text-on-surface-variant">Our case-study collection documents onboarding, invoicing, reconciliation, incident tracking and structured shift-note workflows delivered by Heutrix for an Australian disability support provider.</p>
-            <p className="mb-md font-body-md text-body-md text-on-surface-variant">The 15 stories describe one connected body of work. Each sets out the intervention, approximate operating impact and evidence limits; none is an independently audited result or a promise for future work.</p>
-            <ButtonLink href="/case-studies">Explore the case studies</ButtonLink>
-          </div>
-        </div>
-      </Section>
-
-      <FeaturedResource resource={resources[0]} eyebrow="Self-guided starting point" />
-
-      <CtaSection title="Want to make one workflow clearer?" body="" />
-    </>
-  );
-}
+function AboutPage() { return <RefinedAbout/>; }
 
 function ResourcesPage() {
   return (
@@ -1159,7 +1098,7 @@ function PrivacyPage() {
               used at a high level and desired result. It is used to assess fit, arrange the call and provide direct follow-up.
             </p>
             <p className="mt-md">
-              This comparison site opens an email draft to hello@heutrix.com.au. You review and send it in your email app; the website does not collect or store form submissions. Keep your enquiry general and non-sensitive.
+              This website opens an email draft to hello@heutrix.com.au. You review and send it in your email app; the website does not collect or store form submissions. Keep your enquiry general and non-sensitive.
             </p>
           </InfoCard>
           <InfoCard icon="download" title="Resource downloads">
@@ -1290,8 +1229,8 @@ function TermsPage() {
           </InfoCard>
           <InfoCard icon="gavel" title="Legal status">
             <p>
-              This website terms copy remains subject to verification of the business particulars, legal review and
-              owner approval. It must not be represented as an approved legal instrument until that review is recorded.
+              These website terms are a draft pending confirmation of business details and legal review.
+              They have not yet been approved.
             </p>
           </InfoCard>
         </div>
@@ -1366,8 +1305,8 @@ function DisclaimerPage() {
             </InfoCard>
             <InfoCard icon="gavel" title="Legal status">
               <p>
-                This disclaimer remains subject to verification of the business particulars, legal review and owner
-                approval. It must not be represented as an approved legal notice until that review is recorded.
+                This disclaimer is a draft pending confirmation of business details and legal review.
+                It has not yet been approved.
               </p>
             </InfoCard>
           </div>

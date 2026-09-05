@@ -25,6 +25,8 @@ The comparison deliberately has no custom-domain route and uses `noindex, nofoll
 - All six download files are unchanged from the approved 3 September 2026 resource release. `content/download-manifest.json` captures their SHA-256 values; `npm run check` verifies them. Covers are previews of the actual guides.
 - The hero photograph was generated for this website and is labelled illustrative; it does not depict actual staff or clients. Fonts are self-hosted from their licensed Fontsource packages.
 
+- On 5 September 2026 Janith confirmed publication of the founder names and scoped experience summaries (workflow implementation/provider-business experience, project delivery/provider operations, data and analytics, backend engineering/infrastructure), and the origin in running a disability and allied health services organisation. About and Home use these approved claims. No portraits, employer histories, tenure or new delivery commitments are implied. The About diagrams summarise cases 3, 6 and 13 and link to their complete evidence.
+
 ## Release checks and limits
 
 The production build and content checks pass. Local Worker checks cover 28 routes, six byte-identical downloads, legacy redirects, real 404 responses, rejected POST requests, comparison crawler restrictions and security headers. Browser checks cover desktop/mobile layouts, menu opening/closing and Escape behaviour, workflow switching, case-study filtering, full article loading, resources and consultation links. Dependency audit reports zero known vulnerabilities at build time.
