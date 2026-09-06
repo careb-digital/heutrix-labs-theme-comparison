@@ -5,7 +5,7 @@ Compare the original repository's navy/mint, blue-tinted, dashboard-led design w
 - Comparison: https://heutrix-labs-original-theme.janith.workers.dev/
 - Reference: https://heutrix-labs-refined.janith.workers.dev/
 - Upstream: https://github.com/shashaneRanasinghe/heutrix-labs
-- Fork: https://github.com/careb-digital/heutrix-labs
+- Fork: https://github.com/careb-digital/heutrix-labs-theme-comparison
 - Branch: `codex/original-theme-current-content-2026-09-06`
 
 The account already had a GitHub fork of the requested repository. This branch reuses that fork and starts from upstream main at `fc323b99341c6ca94192b2ac39482450dae7fd4d`. Neither default branch nor the existing refined deployment is changed.
@@ -60,3 +60,4 @@ Release verification on 6 September 2026 passed all 11 tests, all 32 Worker rout
 Consultation/referral forms validate input and send it to the local `/api/requests` mock endpoint. It returns an explicitly labelled DEMO reference and discards the data. It does not deliver enquiries, store leads, send email or book calls. Email fallback remains available at `hello@heutrix.com.au`. No real external messages are sent during verification.
 
 Provider connection settings remain empty in `src/leadMagnets/integrations.js`, matching the live reference. See `LEAD-MAGNETS.md` for the inherited implementation and source-release notes.
+
