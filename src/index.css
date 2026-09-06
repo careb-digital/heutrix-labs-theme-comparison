@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     display: inline-block;
     vertical-align: middle;
@@ -35,5 +46,47 @@
 }
 
 body {
-  min-height: max(884px, 100dvh);
+  min-height: 100dvh;
+}
+
+:where(a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 3px solid #006c49;
+  outline-offset: 3px;
+}
+
+:where(input, select, textarea)[aria-invalid="true"] {
+  border-color: #ba1a1a;
+  box-shadow: 0 0 0 2px rgba(186, 26, 26, 0.18);
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+/* Anchor jumps now account for the fixed header used by the updated nav. */
+section[id] {
+  scroll-margin-top: 104px;
+}
+
+@media (min-width: 768px) {
+  .responsive-table-header,
+  .responsive-table-row {
+    grid-template-columns: var(--row-columns);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
