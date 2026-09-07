@@ -55,6 +55,14 @@ The existing browser journey script checks all three tools, action-plan download
 
 Release verification on 6 September 2026 passed all 11 tests, all 32 Worker routes and six download hashes, and desktop/mobile assessment and form journeys. All 32 rendered pages matched the live reference's main-content text exactly. Layout checks passed at 1440, 390 and 320 pixels without horizontal overflow or browser runtime errors.
 
+## Pressure-point interaction — 7 September 2026
+
+The homepage `#problem` section adapts the original upstream “Does this sound familiar?” gadget. It replaces the three static problem cards with six readable pressure points, scroll-based highlighting, a sticky desktop introduction, numbered navigation, previous/next controls and relevant tool/case-study links. Mobile and short screens use a natural stacked layout. Reduced-motion preferences disable animated navigation. Content stays readable independently of the active highlight.
+
+Implementation: `src/components/WorkflowPressurePoints.jsx` and its scoped stylesheet. Run `node scripts/check-pressure-points-browser.mjs` using the same `PLAYWRIGHT_MODULE`, `CHROME_PATH`, `CHECK_ORIGIN` and `QA_OUTPUT` settings as the other browser checks. The check covers all six scroll states, direct navigation, keyboard focus, arrow boundaries, skip link, destination routes and layouts at 1440×1000, 390×844, 320×700 with reduced motion, and 1100×600.
+
+The 6 September content-parity verification above describes that initial release. The homepage pressure-point section now intentionally includes this refined interaction and next-step copy.
+
 ## Forms retain the live site's test mode
 
 Consultation/referral forms validate input and send it to the local `/api/requests` mock endpoint. It returns an explicitly labelled DEMO reference and discards the data. It does not deliver enquiries, store leads, send email or book calls. Email fallback remains available at `hello@heutrix.com.au`. No real external messages are sent during verification.

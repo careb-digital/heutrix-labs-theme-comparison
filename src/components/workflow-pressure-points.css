@@ -1,0 +1,58 @@
+.r-page .pressure-points { background: #091426; color: #fff; padding: 80px 24px 40px; }
+.pressure-layout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 80px; align-items: start; }
+.pressure-intro { position: sticky; top: 120px; padding-bottom: 24px; }
+.r-page .pressure-eyebrow { color: #6ffbbe; text-transform: uppercase; letter-spacing: 1.5px; font-size: 12px; font-weight: 600; margin: 0 0 22px; }
+.r-page .pressure-intro h2 { color: #fff; font-size: clamp(32px, 3.4vw, 48px); line-height: 1.15; margin-bottom: 24px; }
+.r-page .pressure-lead { color: #cbd5e1; font-size: 18px; line-height: 1.75; max-width: 440px; }
+.r-page .pressure-instruction { color: #a6b6cb; font-size: 14px; margin: 28px 0 16px; }
+.pressure-navigation { display: flex; flex-wrap: wrap; gap: 8px; }
+.pressure-navigation button, .pressure-arrows button { border: 1px solid #526075; border-radius: 8px; width: 44px; height: 44px; background: transparent; color: #d7e2f0; font-size: 13px; font-weight: 600; cursor: pointer; }
+.pressure-navigation button[aria-current] { background: #6ffbbe; border-color: #6ffbbe; color: #091426; }
+.pressure-navigation button:hover, .pressure-arrows button:hover:not(:disabled) { border-color: #6ffbbe; }
+.pressure-progress { background: #28384f; height: 3px; margin: 24px 0 14px; max-width: 380px; overflow: hidden; }
+.pressure-progress span { background: #6ffbbe; display: block; height: 100%; transition: width .25s ease; }
+.pressure-position { display: flex; align-items: center; gap: 18px; color: #cbd5e1; font-size: 13px; }
+.pressure-position strong { color: #6ffbbe; font-size: 20px; font-weight: 600; }
+.pressure-arrows { display: flex; align-items: center; gap: 8px; margin-top: 22px; }
+.pressure-arrows button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.pressure-arrows button:disabled { opacity: .35; cursor: default; }
+.pressure-arrows span { color: #b8c6d9; font-size: 12px; max-width: 180px; margin-left: 8px; }
+.pressure-skip { display: inline-flex; align-items: center; gap: 8px; color: #b8c6d9; font-size: 12px; margin-top: 20px; min-height: 44px; }
+.pressure-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.pressure-card { border: 1px solid #40516a; background: #122035; border-radius: 12px; padding: 28px 32px; position: relative; scroll-margin-top: 110px; transition: border-color .2s, background .2s, box-shadow .2s; }
+.pressure-card.is-active { border-color: #6ffbbe; background: #1c2c40; box-shadow: inset 4px 0 #6ffbbe, 0 8px 32px #0000001f; }
+.pressure-card-label { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #b4c5db; font-size: 11px; font-weight: 600; letter-spacing: .9px; text-transform: uppercase; margin-bottom: 18px; }
+.pressure-card-label svg { color: #7fae9a; flex-shrink: 0; }
+.pressure-card.is-active .pressure-card-label, .pressure-card.is-active .pressure-card-label svg { color: #6ffbbe; }
+.r-page .pressure-card h3 { margin: 0 0 24px; font-size: 22px; font-weight: 600; line-height: 1.45; color: #fff; }
+.pressure-card h3 button { background: none; border: 0; padding: 0; text-align: left; color: inherit; font: inherit; width: 100%; cursor: pointer; }
+.pressure-next-step { border-top: 1px solid #40516a; padding-top: 18px; }
+.pressure-next-step > span { display: flex; align-items: center; gap: 8px; color: #9dddbd; font-size: 12px; font-weight: 600; margin-bottom: 8px; }
+.r-page .pressure-next-step p { font-size: 15px; line-height: 1.7; color: #cbd5e1; margin: 0 0 14px; }
+.pressure-card > a { display: inline-flex; align-items: center; gap: 10px; color: #6ffbbe; font-size: 13px; font-weight: 600; min-height: 44px; }
+.pressure-card > a svg { flex-shrink: 0; }
+.pressure-card > a:hover, .pressure-skip:hover { text-decoration: underline; text-underline-offset: 4px; }
+.pressure-points :is(a, button):focus-visible { outline: 3px solid #6ffbbe; outline-offset: 5px; border-radius: 4px; }
+.pressure-points .pressure-outro { margin-top: 48px; padding-top: 28px; border-top: 1px solid #40516a; display: flex; justify-content: space-between; gap: 24px; align-items: center; scroll-margin-top: 110px; }
+.r-page .pressure-outro p { color: #d7e2f0; font-size: 17px; margin: 0; }
+.pressure-outro a { color: #6ffbbe; display: inline-flex; gap: 10px; align-items: center; font-size: 14px; min-height: 44px; }
+@media (max-width: 1100px) { .pressure-layout { gap: 36px; } .pressure-card { padding: 24px; } }
+@media (max-width: 760px), (max-height: 740px) { .pressure-intro { position: static; } }
+@media (max-height: 740px) { .pressure-position, .pressure-progress, .pressure-arrows { display: none; } }
+@media (max-width: 760px) {
+  .r-page .pressure-points { padding: 48px 20px 32px; }
+  .pressure-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .pressure-intro { padding: 0; }
+  .r-page .pressure-intro h2 { font-size: 34px; }
+  .r-page .pressure-lead { font-size: 16px; }
+  .pressure-navigation { gap: 6px; }
+  .pressure-navigation button { width: 40px; min-height: 44px; }
+  .pressure-position, .pressure-progress, .pressure-arrows, .pressure-skip { display: none; }
+  .pressure-list { gap: 16px; }
+  .pressure-card { padding: 24px 20px; }
+  .r-page .pressure-card h3 { font-size: 20px; }
+  .pressure-card-label { font-size: 10px; letter-spacing: .6px; }
+  .pressure-card > a { font-size: 13px; }
+  .pressure-points .pressure-outro { flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 32px; }
+}
+@media (prefers-reduced-motion: reduce) { .pressure-card, .pressure-progress span { transition: none; } }
