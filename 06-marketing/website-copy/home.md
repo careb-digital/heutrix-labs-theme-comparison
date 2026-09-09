@@ -8,11 +8,11 @@ seo_title: Heutrix Labs | Workflow Improvement for Disability Providers
 
 # Homepage copy
 
-Current homepage copy, aligned with the [9 September execution brief](implementation-prompts/heutrix-homepage-execution-prompt-2026-09-08.md). Implemented in [RefinedPages.jsx](../../apps/website/src/RefinedPages.jsx) and [homepageContent.js](../../apps/website/src/homepageContent.js); the six cards remain in [WorkflowPressurePoints.jsx](../../apps/website/src/components/WorkflowPressurePoints.jsx). Shared pages, resources and manual email-draft delivery are unchanged. The previous homepage version was deployed following the owner request on 9 September 2026 to https://heutrix-labs-original-theme.janith.workers.dev/ (Worker version 22d29e04-bd1d-4a61-ae89-b2e5251a47a4). This homepage release does not close the separate outreach, onboarding or integration gates.
+Current homepage copy, aligned with the [9 September execution brief](implementation-prompts/heutrix-homepage-execution-prompt-2026-09-08.md). Implemented in [RefinedPages.jsx](../../apps/website/src/RefinedPages.jsx) and [homepageContent.js](../../apps/website/src/homepageContent.js); the six cards remain in [WorkflowPressurePoints.jsx](../../apps/website/src/components/WorkflowPressurePoints.jsx). Shared pages, resources and manual email-draft delivery are unchanged. The current version was deployed and verified on 9 September 2026 at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `e7c5e57c-d3c8-4e5c-a344-aac43c7a99ea`. This homepage release does not close the separate outreach, onboarding or integration gates.
 
-Team section revised on 9 September 2026 using owner-supplied copy: collective capability cards replace homepage founder names. Deployed and verified at the public origin on 9 September 2026 as Cloudflare Worker version `0839ceda-f592-4257-879c-9077e704cd2b`; the About Heutrix link points to `/about`.
+Team section revised on 9 September 2026 using owner-supplied copy: collective capability cards replace homepage founder names. The About Heutrix link points to `/about`.
 
-Evidence: [approved reporting case](../case-studies-and-assets/09-power-bi-invoice-reconciliation.md), [publication and claim limits](../case-studies-and-assets/PROOF-ASSET-REGISTER.md), and [approved short founder summaries](../../00-control/VERIFIED-FACTS.md#approved-public-founder-summaries--5-september-2026). The image and workflow view remain labelled illustrative and synthetic.
+Evidence: [approved reporting case](../case-studies-and-assets/09-power-bi-invoice-reconciliation.md), [publication and claim limits](../case-studies-and-assets/PROOF-ASSET-REGISTER.md), and [approved short founder summaries](../../00-control/VERIFIED-FACTS.md#approved-public-founder-summaries--5-september-2026). Owner-directed 9 September follow-up removes the homepage photograph, its generated-image label, the auxiliary synthetic-data sentence and the separate proof callout. The workflow demonstration remains labelled “Illustrative view”; the approved case-study wording and attribution to client feedback are unchanged.
 
 Operational improvement for disability service providers
 
@@ -25,8 +25,6 @@ Heutrix helps Australian disability service providers, including NDIS providers,
 [See How It Works](/#heutrix-method)
 
 Start with a free 20-minute introductory conversation. No obligation.
-
-Illustrative AI-generated image
 
 ---
 
@@ -179,8 +177,6 @@ In practice
 An Australian disability support provider reviewed contractor invoices and QuickBooks time records in separate sources. Heutrix aligned the reporting model and delivered a cloud-connected Power BI reconciliation report so reviewers could filter the same information and investigate differences in one place. Client feedback supported approximately 1–2 hours less reconciliation and investigation effort per discrepancy.
 
 [View Transformations](/services#heutrix-workflow-transformation)
-
-Anonymised Heutrix delivery. The approximate efficiency range is supported by client feedback, not an audited time study. It is not a promise of future results.
 
 ---
 
