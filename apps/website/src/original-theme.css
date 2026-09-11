@@ -154,7 +154,8 @@
 .r-home .home-why { background: #eff4ff; }
 .r-home .home-engagement .r-method-list li { background: white; border-color: #c5c6cd; }
 .r-home .home-engagement .r-method-list li > span { color: #006c49; }
-.r-home .home-engagement .home-step-note { margin-top: 12px; font-weight: 600; }
+.r-home .home-engagement .home-step-label { margin: 0 0 12px; font-size: 14px; font-weight: 600; color: #006c49; }
+.r-home .home-engagement .home-step-note { margin-top: 12px; font-size: 14px; }
 .r-home .home-scorecard-grid { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap: 48px; align-items: center; }
 .r-home .home-scorecard-action { background: #eff4ff; }
 .r-home .home-resource-points { padding-left: 22px; list-style: disc; color: var(--r-muted); }
