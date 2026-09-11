@@ -60,23 +60,25 @@ export const homeWhy = [
 ];
 export const homeEngagement = [
   [
-    "Introductory conversation — free",
-    "Start with a free 20-minute conversation about your organisation, the operational challenge and what you would like to improve.",
-    "This is an introductory conversation — not a Heutrix Diagnostic."
+    "Start with a conversation",
+    "Tell us about your organisation, what is getting in the way and what you would like to improve. We will explore whether Heutrix can help.",
+    "This is an introduction, not a diagnostic assessment.",
+    "Free · 20 minutes"
   ],
   [
-    "Determine the right next step",
-    "If there is a clear opportunity for Heutrix to help, we will explain the most appropriate way forward and what it involves.",
+    "Understand your options",
+    "We explain the most suitable approach and what it involves. That may mean a closer assessment, improving a defined workflow or establishing clearer controls around AI use.",
     null
   ],
   [
-    "Diagnose where required",
-    "Where the priority or feasible solution is unclear, Heutrix Diagnostics is a separate, standalone paid engagement. It maps the workflow, ranks bottlenecks and options, and provides an implementation brief that remains useful even if you do not proceed with a build.",
-    null
+    "Get clarity where needed",
+    "Heutrix Diagnostics maps the workflow, prioritises bottlenecks and assesses possible solutions. You receive a practical implementation brief that remains useful even without a further engagement.",
+    null,
+    "Optional · Paid"
   ],
   [
-    "Improve",
-    "Where implementation is appropriate, agree the scope, responsibilities, timing, acceptance criteria and fee in writing. Heutrix Workflow Transformation implements one defined non-clinical workflow, with testing, guidance and handover. Where AI-use controls are the issue, Heutrix AI Guardrails may be the appropriate route instead.",
+    "Put the plan into action",
+    "When workflow implementation is the right next step, we agree the scope, responsibilities, timing and fee in writing. We then improve the agreed non-clinical workflow, with testing, practical guidance and handover.",
     null
   ]
 ];

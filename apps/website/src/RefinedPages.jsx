@@ -49,9 +49,28 @@ export function RefinedHome(){return <div className="r-page r-home">
   <Section className="home-why" id="home-why"><Eyebrow>Why Heutrix</Eyebrow><h2>Operational improvement built around how your organisation actually works.</h2><p className="home-intro">Disability service providers do not need more technology for its own sake. They need workflows that are easier to operate, easier to understand and better equipped to support growth.</p>
     <div className="r-problem-grid home-four-grid">{homeWhy.map(([title,body])=><div key={title}><h3>{title}</h3><p>{body}</p></div>)}</div>
   </Section>
-  <Section className="home-engagement" id="home-engagement"><div className="r-method-grid"><div><Eyebrow>What happens next</Eyebrow><h2>A clear path from conversation to improvement.</h2><p>You do not need to know which Heutrix service you need before getting in touch.</p></div>
-    <ol className="r-method-list">{homeEngagement.map(([title,body,note],i)=><li key={title}><span>0{i+1}</span><div><h3>{title}</h3><p>{body}</p>{note&&<p className="home-step-note">{note}</p>}</div></li>)}</ol>
-    </div><div className="r-actions"><LinkButton/></div><p className="r-micro">Free 20-minute introductory conversation · No obligation · Diagnostics are quoted separately.</p>
+  <Section className="home-engagement" id="home-engagement">
+    <div className="r-method-grid">
+      <div>
+        <Eyebrow>WHAT HAPPENS NEXT</Eyebrow>
+        <h2>A clear path to practical improvement.</h2>
+        <p>You do not need to know which Heutrix service you need. Start with the challenge you would like to solve, and we will help you work out the next step.</p>
+        <div className="r-actions"><LinkButton/></div>
+      </div>
+      <ol className="r-method-list" role="list">
+        {homeEngagement.map(([title,body,note,label],i)=>(
+          <li key={title}>
+            <span>0{i+1}</span>
+            <div>
+              <h3>{title}</h3>
+              {label&&<p className="home-step-label">{label}</p>}
+              <p>{body}</p>
+              {note&&<p className="home-step-note">{note}</p>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
   </Section>
   <Section className="r-resources" id="home-scorecard"><div className="home-scorecard-grid"><div><Eyebrow>Free workflow scorecard</Eyebrow><h2>Where is operational friction slowing you down?</h2><p>Use the online Workflow Bottleneck Scorecard to assess one recurring non-clinical workflow. Review the friction, evidence, feasibility and control questions, then get a practical next step to discuss with your team.</p>
     <ul className="home-resource-points"><li>Review manual effort, handovers, delay, rework and visibility.</li><li>Check how strong the evidence is and whether a change is feasible.</li><li>Identify control questions that need attention before implementation.</li><li>Save an action plan or discuss the selected result with Heutrix.</li></ul>
