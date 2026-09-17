@@ -1,0 +1,11 @@
+I’m introducing Heutrix: practical workflow improvement for Australian disability support providers. We also support allied health practices with similar operational needs.
+
+Our starting point is a simple question: can the next responsible person see what needs to happen without rebuilding the story from inboxes and memory?
+
+Sometimes the answer is a clearer process. Sometimes it is better use of existing systems or a scoped build. A useful recommendation can also be no build.
+
+Workflow first. Technology second.
+
+Over the next few weeks, I’ll share practical questions about intake, handovers and responsible administrative AI. If you work in provider operations, I would welcome your general perspective. Please leave personal and confidential details out.
+
+#DisabilitySupport #WorkflowImprovement

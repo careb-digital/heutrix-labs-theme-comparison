@@ -1,0 +1,250 @@
+[
+  {
+    "id": "P02",
+    "headline": "Before another tool,\nfive questions.",
+    "rows": [
+      [
+        "Trigger",
+        "What starts the work?"
+      ],
+      [
+        "Owner",
+        "Who acts next?"
+      ],
+      [
+        "Information",
+        "What is needed, and where?"
+      ],
+      [
+        "Exception",
+        "What happens when the path breaks?"
+      ],
+      [
+        "Finish",
+        "Who confirms it is done?"
+      ]
+    ],
+    "label": "FIELD NOTES / WORKFLOW",
+    "footer": "Start with one workflow."
+  },
+  {
+    "id": "P03",
+    "headline": "Does the work\nlive in memory?",
+    "rows": [
+      [
+        "Updates need chasing",
+        "People reconstruct the story."
+      ],
+      [
+        "One person is away",
+        "The next action becomes unclear."
+      ],
+      [
+        "Done means different things",
+        "Closure depends on who you ask."
+      ]
+    ],
+    "label": "FIELD NOTES / VISIBILITY",
+    "footer": "Check one workflow this week."
+  },
+  {
+    "id": "P04",
+    "headline": "Make intake\nhandover visible.",
+    "rows": [
+      [
+        "Owner",
+        "Who is accountable?"
+      ],
+      [
+        "Status",
+        "What is happening now?"
+      ],
+      [
+        "Waiting for",
+        "What is missing?"
+      ],
+      [
+        "Next action",
+        "What happens next?"
+      ],
+      [
+        "Review date",
+        "When will someone check again?"
+      ]
+    ],
+    "label": "DISABILITY PROVIDER OPERATIONS",
+    "footer": "Keep sensitive records in approved systems."
+  },
+  {
+    "id": "P05",
+    "headline": "Starting soon\nis not a status.",
+    "rows": [
+      [
+        "Vague",
+        "Almost ready. Starting soon."
+      ],
+      [
+        "Useful",
+        "Owner, status, next action, review date."
+      ],
+      [
+        "Accountable",
+        "A named person confirms readiness."
+      ]
+    ],
+    "label": "ILLUSTRATIVE OPERATING VIEW",
+    "footer": "Not compliance or service-readiness assurance."
+  },
+  {
+    "id": "P06",
+    "headline": "Sometimes the answer\nis no build.",
+    "rows": [
+      [
+        "Clarify the rule",
+        "What does complete mean?"
+      ],
+      [
+        "Name the owner",
+        "Who decides exceptions?"
+      ],
+      [
+        "Check the baseline",
+        "Is the rule stable enough to automate?"
+      ]
+    ],
+    "label": "ILLUSTRATIVE / NOT A CLIENT RESULT",
+    "footer": "The value is the decision."
+  },
+  {
+    "id": "P07",
+    "headline": "Three problems.\nThree starting points.",
+    "rows": [
+      [
+        "Heutrix Diagnostics",
+        "Paid clarity on what to fix first."
+      ],
+      [
+        "Heutrix Workflow Transformation",
+        "One workflow needs to work better."
+      ],
+      [
+        "Heutrix AI Guardrails",
+        "AI boundaries and review are unclear."
+      ]
+    ],
+    "label": "HOW HEUTRIX HELPS",
+    "footer": "Independent entry points. No mandatory sequence."
+  },
+  {
+    "id": "P08",
+    "headline": "Go live is not\nthe finish line.",
+    "rows": [
+      [
+        "Diagnose",
+        "Map the workflow and baseline."
+      ],
+      [
+        "Triage",
+        "Design responsibilities and acceptance."
+      ],
+      [
+        "Build",
+        "Implement and test the improvement."
+      ],
+      [
+        "Handover",
+        "Guide the team and transfer ownership."
+      ]
+    ],
+    "label": "HEUTRIX WORKFLOW TRANSFORMATION",
+    "footer": "One bounded workflow. Written scope."
+  },
+  {
+    "id": "P09",
+    "headline": "Handover means\nthe team can run it.",
+    "rows": [
+      [
+        "Operate",
+        "Normal steps and exceptions."
+      ],
+      [
+        "Own",
+        "Access, responsibilities and dependencies."
+      ],
+      [
+        "Maintain",
+        "Testing, limitations and change rules."
+      ]
+    ],
+    "label": "FIELD NOTES / HANDOVER",
+    "footer": "What can the team run, explain and maintain?"
+  },
+  {
+    "id": "P10",
+    "headline": "Five questions\nbefore workplace AI.",
+    "rows": [
+      [
+        "Use",
+        "What exact task is approved?"
+      ],
+      [
+        "Information",
+        "What may enter the tool?"
+      ],
+      [
+        "Tool",
+        "Which account and settings?"
+      ],
+      [
+        "Review",
+        "Who checks the output?"
+      ],
+      [
+        "Record",
+        "Where does the final version belong?"
+      ]
+    ],
+    "label": "ADMINISTRATIVE AI",
+    "footer": "Use non-sensitive or synthetic inputs for assessment."
+  },
+  {
+    "id": "P11",
+    "headline": "Can I use AI\nfor this task?",
+    "rows": [
+      [
+        "Approved",
+        "Assessed, recorded and bounded."
+      ],
+      [
+        "Prohibited",
+        "Outside the organisation’s boundaries."
+      ],
+      [
+        "Conditional / review required",
+        "Resolve the open questions before use."
+      ]
+    ],
+    "label": "ILLUSTRATIVE DECISION FRAMEWORK",
+    "footer": "Unassessed use stays in review."
+  },
+  {
+    "id": "P12",
+    "headline": "Removing a name\nis not a privacy check.",
+    "rows": [
+      [
+        "Context matters",
+        "Details may still identify a person."
+      ],
+      [
+        "Check the use",
+        "Purpose, information, tool and reviewer."
+      ],
+      [
+        "Start with safe inputs",
+        "Use non-sensitive or synthetic information."
+      ]
+    ],
+    "label": "RESPONSIBLE ADMINISTRATIVE AI",
+    "footer": "Read the OAIC guidance linked in the caption."
+  }
+]

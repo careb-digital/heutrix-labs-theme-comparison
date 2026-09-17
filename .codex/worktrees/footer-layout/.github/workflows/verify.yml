@@ -1,0 +1,52 @@
+name: Website checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Build and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run check
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium webkit
+      - name: Verify routes, downloads and launch journeys
+        shell: bash
+        run: |
+          npx --no-install wrangler dev --port 4173 > /tmp/heutrix-worker.log 2>&1 &
+          worker_pid=$!
+          trap 'kill "$worker_pid" 2>/dev/null || true' EXIT
+          ready=false
+          for attempt in {1..45}; do
+            if curl --fail --silent http://127.0.0.1:4173/ > /dev/null; then
+              ready=true
+              break
+            fi
+            sleep 1
+          done
+          if [ "$ready" != true ]; then cat /tmp/heutrix-worker.log; exit 1; fi
+          CHECK_ORIGIN=http://127.0.0.1:4173 npm run check
+          CHECK_ORIGIN=http://127.0.0.1:4173 npm run test:launch
+          CHECK_ORIGIN=http://127.0.0.1:4173 npm run test:footer
+          CHECK_ORIGIN=http://127.0.0.1:4173 npm run test:webkit

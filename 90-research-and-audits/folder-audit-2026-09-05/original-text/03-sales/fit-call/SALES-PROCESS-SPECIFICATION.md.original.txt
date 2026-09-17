@@ -1,0 +1,1042 @@
+# H3 — “See where Heutrix can help” call and sales-process specification
+
+**Purpose:** A low-friction, consistent journey from the “See where Heutrix can help” CTA to a clear commercial or no-fit outcome  
+**Applies to:** Home, service and sector CTAs; `/contact` or future booking page; scheduler; email/calendar messages; 20-minute calls; CRM; analytics  
+**Prepared:** 1 September 2026  
+**Last aligned:** 2 September 2026 against the approved three-product offer, verified facts and lead-handling standard  
+**Status:** Decision-ready. Do not publish square-bracketed text or any item marked **Owner approval required**.
+
+## Operating principles
+
+1. Use **See where Heutrix can help** as the public CTA. Use **Book**, **Choose a time** or similar mechanism wording only when a visitor can select an available time and receive a confirmed calendar event; otherwise the form button must say **Request my 20-minute call**.
+2. “See where Heutrix can help” is a 20-minute, no-obligation fit assessment—not a free workflow audit, consulting session or technical design workshop.
+3. Discuss one recurring, non-clinical operational workflow. Do not request or accept patient, participant, client, clinical, Medicare, NDIS, credential or other sensitive information.
+4. The call should determine fit and the smallest useful next step. It should not produce a free process map, tool architecture, integration design, implementation plan or quantified business case.
+5. Give an honest no-build recommendation when the problem does not justify paid work.
+6. No paid work begins until scope, responsibilities, assumptions, exclusions, acceptance criteria, timing, third-party costs, change triggers and price are agreed in writing.
+7. Do not create urgency from unverified capacity or deadlines. Use the buyer's actual operational consequences and timing.
+
+---
+
+# 1. Verified facts and release gates
+
+## Facts supported by the approved offer
+
+| Fact | Status | Public treatment |
+|---|---|---|
+| The “See where Heutrix can help” call lasts 20 minutes. | Confirmed by owner in the offer validation register. | May be published. |
+| The call is no obligation. | Confirmed by the owner in the H3 copy direction. | May be published. Do not imply that the call provides free consulting. |
+| The intended end state is directly bookable. | Confirmed by owner. | Publish **Book** only after a working scheduler is live and tested. |
+| The human response commitment is within two business days. | Confirmed by owner. | The trigger and coverage still need approval; see decisions below. |
+| The offer may lead to Heutrix Diagnostics, Heutrix Workflow Transformation, Heutrix AI Guardrails, or no project. | Current three-product architecture. | May be published in plain language. |
+| Delivery work is founder-shared across Janith, Rochelle, Sach and Shash. | Supplied in the B3 trust brief; founder approval remains required. | Do not imply that all four attend calls. |
+| The specific caller and backup are named. | Not supplied. | **Publication blocker.** Use `[CALLER NAME]` and `[BACKUP CALLER]` internally only. |
+| The call is video or phone. | Not supplied. | **Publication blocker.** Do not name a channel or platform yet. |
+| Scheduler, public availability, timezone and rescheduling rules are set. | Not supplied; no scheduler exists in the inspected source. | **Implementation and publication blocker.** |
+
+## Current implementation decision
+
+The inspected site still routes an old booking label to a local form that does not submit or schedule. Therefore:
+
+- **Public CTA in both modes:** See where Heutrix can help.
+- **Current request-mode form button:** Request my 20-minute call.
+- **Future booking-mode form button after production QA:** Continue to available times.
+- Do not show “received,” display a calendar, send reminders or record a conversion until the relevant backend or scheduler confirms the action.
+- Do not use **free** in the CTA. Use **20-minute, no-obligation call** in supporting copy so visitors understand the commitment without expecting free consulting.
+
+## Recommended interpretation of the two-business-day commitment
+
+**Owner approval required:** Apply the confirmed interval to both:
+
+1. a human response to a request-mode submission; and
+2. the written recommendation or agreed next step after an attended “See where Heutrix can help” call.
+
+Automated booking confirmation and the calendar invitation should be immediate. A human response should never be described as same-day or one-business-day.
+
+---
+
+# 2. End-to-end journey map
+
+| Stage | Visitor experience | Operating action | CRM status / event | Failure or exception path |
+|---|---|---|---|---|
+| 1. Intent | Sees **See where Heutrix can help** beside the 20-minute, no-obligation promise, agenda and privacy microcopy. | Preserve page, source and selected offer context. | `help_call_cta_click` | The next screen must make clear whether the visitor is requesting a call or choosing a real time. |
+| 2. Qualification | Answers a short set of mostly structured questions about organisation, role, team context, one workflow, tools, timing and decision context. | Validate server-side; store only necessary lead information; create one lead record. | `help_call_form_start`, `help_call_form_submit_success` | On failure, preserve safe inputs, show a truthful error and provide monitored email fallback. Never claim receipt. |
+| 3A. Request mode | Sees a verified receipt and learns when a human will respond. | Review against hard no-fit criteria and respond within the approved interval. | Lead status: `New Request` | Ask one concise high-level question, offer scheduling, or send a respectful no-fit response. |
+| 3B. Book mode | Moves directly to real available times after the lead record is created. | Pass only contact and high-level qualification fields to the scheduler. | `help_call_calendar_view` | If the scheduler fails or has no suitable times, offer the request path and monitored email. |
+| 4. Booking | Selects a time shown in Australia/Sydney and receives an immediate confirmation. | Create calendar event, assign named caller, attach meeting/phone instructions and write booking ID to CRM. | Lead status: `Booked`; `help_call_booking_confirmed` | Never count calendar view or button click as a booking. |
+| 5. Preparation | Receives a concise agenda, privacy reminder and one preparation prompt. | Send confirmation immediately, then reminders 24 hours and 1 hour before the call. | Reminder delivery timestamps | If email bounces, alert the owner and use only an approved alternative contact path. |
+| 6. “See where Heutrix can help” call | Knows the caller, 20-minute limit, no-obligation position and decision purpose. | Run the 20-minute guide; stop sensitive-data disclosure; record evidence and qualification outcome. | `help_call_attended` | If no-show, send one easy rebooking message and one close-the-loop follow-up. |
+| 7. Recommendation | Hears a clear verbal recommendation: no fit, nurture, Heutrix Diagnostics, Workflow Transformation, AI Guardrails or limited information needed. | Do not design the solution on the call. Agree who will do what next. | Lead outcome and reason code | If evidence is insufficient, use `Information Needed`, not an invented recommendation. |
+| 8. Written follow-up | Receives the agreed next step within the approved human-response interval. | Send the relevant template; create tasks and due dates; record consent for any nurture. | `help_call_outcome_set` | If the promised follow-up cannot be met, notify the prospect before the deadline with a revised date. |
+| 9. Commercial path | Receives a fixed-scope product proposal only when fit is established. | Create an opportunity; state deliverables, dependencies, acceptance, timing and price. | Opportunity stages begin | No proposal should imply approval, capability or integration feasibility that has not been checked. |
+| 10. Close / learn | Gets a respectful close whether proceeding or not. | Record won/lost/no-fit reason, source, value and next review date where consented. | `closed_won`, `closed_lost` or `No Fit` | Do not leave stale open records or place unconsented leads in marketing sequences. |
+
+---
+
+# 3. Website and booking copy pack
+
+## 3.1 Site-wide CTA labels
+
+### Public CTA in both modes
+
+- **Primary CTA:** See where Heutrix can help
+- **Short CTA where space is tight:** See if we can help
+- **Link with selected context:** See where Heutrix can help with [WORKFLOW OR PROBLEM]
+
+The public CTA is intentionally neutral about the mechanism. The next action must still be explicit:
+
+- **Request-mode form button:** Request my 20-minute call
+- **Booking-mode form button after scheduler QA:** Continue to available times
+- **Scheduler button:** Choose this time
+
+### Avoid
+
+- Any superseded call label or any use of **book** without a working scheduler—wording that creates the wrong expectation.
+- Get a free strategy session — promises unpaid consulting.
+- Claim your spot / Limited spots / Apply now — pressure language without verified scarcity.
+- Submit / Send enquiry — does not describe the next step.
+
+## 3.2 Compact CTA section for Home and service pages
+
+**Eyebrow:** 20 minutes • No obligation
+
+## Bring one workflow that should not be this hard.
+
+Tell us what is causing frustration. In a 20-minute, no-obligation call, we will understand the problem, see whether Heutrix is the right fit and agree the smallest useful next step. You may leave with a recommendation for Heutrix Diagnostics, Workflow Transformation or AI Guardrails, a request for limited high-level information, or an honest no-fit or no-build recommendation.
+
+No patient, participant, client, clinical, Medicare, NDIS, credential or other sensitive information is needed.
+
+**Caller line — publication blocked until assigned:** Your call will be with **[CALLER NAME]**, **[APPROVED PUBLIC ROLE OR CONTRIBUTION AREA]**, who **[APPROVED ROLE IN THE NEXT STEP]**.
+
+**Primary CTA:** See where Heutrix can help
+
+**Trust line:** 20 minutes • No obligation • One operational problem • No sensitive care information
+
+## 3.3 Contact / booking page
+
+**SEO title:** See Where Heutrix Can Help | Heutrix Labs  
+**Meta description:** Tell Heutrix Labs what is causing frustration. In a 20-minute, no-obligation call, we will understand the problem and see whether Heutrix is the right fit.
+
+# See where Heutrix can help
+
+Tell us what is causing frustration. In a 20-minute, no-obligation call, we will understand one recurring operational problem, see whether Heutrix is the right fit and agree the smallest useful next step. It is not a consulting workshop or a technical design session, and you do not need to prepare a process map.
+
+### Your call
+
+- **With:** [CALLER NAME], [APPROVED PUBLIC TITLE OR CONTRIBUTION AREA]
+- **Length:** 20 minutes
+- **Obligation:** None—there is no requirement to proceed with Heutrix
+- **Format:** [VIDEO / PHONE — OWNER DECISION]
+- **Availability:** Choose from the live times shown in Australia/Sydney. [ADD PHONE RULE IF APPROVED.]
+- **Follow-up:** [APPROVED APPLICATION OF THE TWO-BUSINESS-DAY COMMITMENT]
+
+### What we will cover
+
+1. Identify one workflow that is difficult to track, hand over or report.
+2. Understand the operational effect at a high level.
+3. Check ownership, access, timing, decision context and delivery fit.
+4. Agree the smallest useful next step—or say when paid work is not justified.
+
+### What to bring
+
+Bring the name of the workflow, the roles involved, the tools used at a high level and the outcome you want. Do not upload or send records, screenshots or examples containing patient, participant, client, clinical, Medicare, NDIS, credential, staff-sensitive or other sensitive information.
+
+### Possible outcomes
+
+- Heutrix Diagnostics when the problem, priority or feasible solution needs to be defined.
+- Heutrix Workflow Transformation when one workflow, owner, users, systems, access path, desired result and acceptance basis are clear enough.
+- Heutrix AI Guardrails when the immediate need is approved AI uses, information boundaries, human review and staff guidance.
+- A later review when the need is credible but timing, ownership or prerequisites are not ready.
+- A no-fit or no-build recommendation, with a useful DIY resource or referral category where appropriate.
+
+**Primary CTA:** See where Heutrix can help  
+**Request-mode form button:** Request my 20-minute call  
+**Booking-mode form button after scheduler QA:** Continue to available times
+
+## 3.4 Form privacy and consent copy
+
+**Privacy notice above the workflow field:**
+
+Describe the workflow only at a general level. Do not include names, record numbers, diagnoses, clinical details, incident details, participant or patient records, staff-sensitive information, credentials, screenshots or files. Heutrix does not need that information to assess fit.
+
+**Required confirmation:**
+
+I confirm that I have not included personal, health, clinical, participant, patient, credential or other sensitive information in this form.
+
+**Required contact permission:**
+
+I agree that Heutrix Labs may contact me about this call request and its direct follow-up. See the [privacy collection notice].
+
+**Separate optional nurture permission, if used:**
+
+Send me occasional Heutrix workflow resources. I can unsubscribe at any time.
+
+Do not bundle the optional nurture permission into the required call-request contact permission.
+
+## 3.5 Request-mode receipt
+
+Show only after the server confirms successful receipt.
+
+## Your call request has been received.
+
+Heutrix will review the high-level workflow summary and respond within two business days with available times, one concise question or an honest no-fit response.
+
+Display a masked-email delivery statement only when the system has actually sent and confirmed the visitor copy.
+
+Please do not reply with sensitive information unless a suitable process has been agreed.
+
+## 3.6 Scheduler introduction
+
+## Choose a 20-minute time with [CALLER NAME].
+
+Times are shown in **Australia/Sydney**. After you choose a time, you will receive an immediate email and calendar invitation with **[VIDEO / PHONE]** instructions, the agenda and a reschedule link.
+
+No suitable time? **Request another time** and Heutrix will respond using the approved two-business-day commitment.
+
+## 3.7 Booking confirmation page
+
+## Your 20-minute Heutrix call is booked.
+
+**When:** [DATE, TIME AND TIMEZONE]  
+**With:** [CALLER NAME], [APPROVED PUBLIC TITLE OR CONTRIBUTION AREA]  
+**Format:** [VIDEO LINK / PHONE INSTRUCTIONS]  
+**Length:** 20 minutes
+
+We will focus on one recurring operational workflow, assess fit and agree the smallest useful next step. Please bring only a general description of the workflow, roles involved, current tools and desired operating result. No patient, participant or other sensitive information is needed.
+
+Check your email for the calendar invitation. If plans change, use the reschedule or cancel link rather than missing the call.
+
+**Links:** Add to calendar • Reschedule • Cancel
+
+## 3.8 Fit / not-fit microcopy beside the form
+
+**Usually a good fit**
+
+- One recurring non-clinical workflow can be named.
+- Several people, roles or systems touch the work.
+- A workflow owner and a decision-maker can participate.
+- The problem matters enough to consider a properly scoped paid improvement.
+- The team can provide lawful, approved access and participate in testing.
+
+**Usually not a fit**
+
+- Legal, clinical, audit, registration, compliance or regulatory advice or guarantees.
+- Replacement of a whole practice, participant, case-management or enterprise platform.
+- Automation that removes accountable human decisions.
+- A one-off inconvenience with no credible benefit case.
+- A project with no owner, no approval path or no safe access to the people and systems involved.
+
+---
+
+# 4. Qualification form
+
+Use a two-step layout so the form feels short. Keep the progress state if the scheduler fails. Do not ask prospects to choose among six old service names.
+
+## Step 1 — Who the call is for
+
+| Field | Required | Suggested control and options | CRM field |
+|---|---:|---|---|
+| Name | Yes | Single line | `contact_name` |
+| Work email | Yes | Email | `work_email` |
+| Organisation | Yes | Single line | `organisation_name` |
+| Sector | Yes | Disability support provider; allied health practice; other | `sector` |
+
+## Step 2 — One workflow and the buying context
+
+| Field | Required | Website-ready question / options | CRM field |
+|---|---:|---|---|
+| Role and relationship to the decision | Yes | **Which best describes your role?** Owner/CEO; operations/general manager; workflow owner/team lead; practitioner/frontline staff; technology/data role; adviser/referral partner; other | `contact_role_group` |
+| Team context | Yes | **How many people or roles regularly touch this workflow?** 1; 2–3; 4–6; 7+; not sure | `workflow_participant_band` |
+| Workflow problem | Yes | **Which one workflow should we discuss?** Briefly describe what starts it, where it becomes hard to track, hand over or report, and what a useful improvement would change. Maximum 600 characters. | `workflow_summary` |
+| Current tools | No | **What tools are involved at a high level?** For example: email, spreadsheets, shared drive, forms, practice/care system. Do not include account names, links, files or credentials. Maximum 250 characters. | `current_tools_summary` |
+| Timing | Yes | **When would this need to improve?** Within 1–3 months; within 3–6 months; later than 6 months; exploring/no date | `urgency_band` |
+| Decision context | Yes | **What is the decision context?** I can approve a paid next step; I will recommend it to a decision-maker; a decision-maker is already involved; we are exploring only; not sure | `decision_context` |
+| Sensitive-data confirmation | Yes | Exact checkbox in section 3.4 | `sensitive_data_confirmation_at` |
+| Direct-contact permission | Yes | Exact checkbox in section 3.4 | `contact_consent_at` |
+| Resource/nurture permission | No | Separate checkbox only | `marketing_consent_at` |
+
+## Form behaviour
+
+- Accept a general workflow description, not uploaded files.
+- Do not add phone as a required field. Collect it only when a phone call is selected or the prospect asks for phone contact.
+- Do not ask for exact revenue, participant numbers, diagnoses, plan details, record examples or other care information.
+- Do not ask the visitor to diagnose the solution or choose among the three products. Recommending the right route is part of the 20-minute call.
+- Carry source, landing page, selected starting point and UTMs invisibly into the CRM record; never place form answers in analytics event parameters.
+- If prohibited information is detected or noticed, restrict visibility, notify the privacy owner and follow the approved deletion/remediation procedure. Do not copy it into call notes.
+
+---
+
+# 5. Fit, no-fit and route criteria
+
+## Six qualification gates
+
+Record each as **Green**, **Yellow**, **Red** or **Unknown**, with a one-sentence evidence note.
+
+| Gate | Green | Yellow | Red |
+|---|---|---|---|
+| Problem fit | Recurring, non-clinical operational workflow in the launch sectors. | Adjacent sector or mixed operational/advisory need that can be separated. | Legal, clinical, regulatory, audit, registration or accountable professional decision-making is central. |
+| Boundary | One workflow can be named and bounded. | Priority or boundary needs paid clarification. | Whole-platform replacement, broad transformation or undefined “automate everything” request. |
+| Operational value | Repeated delay, chasing, rework, weak ownership or poor visibility creates a credible reason to act. | Effect is plausible but unmeasured. | One-off or minor inconvenience that does not justify paid work. |
+| People and decision | Workflow owner, relevant staff and decision-maker are available or can be named. | One is missing but there is a credible plan to involve them. | No owner, no approval path or unwillingness to involve users. |
+| Access and feasibility | Lawful access, permissions, representative non-sensitive materials and testing participation appear possible. | Vendor, security, data or integration facts need Heutrix Diagnostics or a specialist check. | Required access is unavailable or the buyer demands an unassessed integration/outcome guarantee. |
+| Commercial and timing fit | Buyer can consider a four- or five-figure fixed-scope project and has a real decision window. | Valid need but later timing, budget cycle or prerequisite. | Expects a low-cost task, unpaid design, immediate emergency delivery or unsupported enterprise capability. |
+
+## Route rules
+
+### Heutrix Diagnostics
+
+Recommend when the operational problem is credible but any of these remain unclear:
+
+- which workflow should be addressed first;
+- current-state boundary or ownership;
+- baseline and benefit case;
+- feasible options, dependencies or data path;
+- acceptance criteria; or
+- whether a build is justified at all.
+
+The diagnostic must remain useful if the buyer does not proceed with Heutrix. Do not promise an automatic fee credit; reuse approved diagnostic artefacts in later scope so discovery is not duplicated.
+
+### Heutrix Workflow Transformation
+
+Recommend direct scoping only when all of these are sufficiently clear:
+
+- one workflow and owner;
+- users and roles;
+- desired operating result;
+- current systems and plausible access path;
+- representative safe test inputs;
+- acceptance basis;
+- decision-maker and buyer participation; and
+- fixed-scope commercial seriousness.
+
+The 20-minute call may confirm this route, but detailed solution design and technical feasibility belong in paid or written scoping work. Dashboards, trackers, forms, handovers, lightweight internal tools and automation are deliverable types within this product, not separate public offers.
+
+### Heutrix AI Guardrails
+
+Use when the immediate problem is informal or planned workplace AI use and the organisation needs approved and prohibited uses, information boundaries, accountable human review, escalation and practical staff guidance. Route broader or unclear operational problems to Heutrix Diagnostics.
+
+### Nurture / revisit
+
+Use when the need fits but timing, budget cycle, internal ownership, system access or another prerequisite is not ready. Agree a specific review month or trigger. Add resources or marketing only with the relevant permission.
+
+### No fit / no build
+
+Use one respectful outcome:
+
+- **DIY resource:** the issue is simple, low-risk and unlikely to justify paid work. Share only an approved resource, not custom design.
+- **Referral category:** another discipline is needed, such as legal, privacy, clinical, cybersecurity, enterprise platform or change advice. Name a provider only when a real, approved referral exists; otherwise state the type of adviser to seek.
+- **No-build recommendation:** the existing process or tool can be clarified without new software, the benefit case is weak, or the proposed change would add unnecessary complexity.
+- **Capability no-fit:** the scope, platform, enterprise requirements, geography or support expectation is outside verified Heutrix capability.
+
+## Hard-stop handling
+
+If the prospect begins sharing sensitive care details, interrupt respectfully:
+
+> I’m going to pause you there so we do not bring sensitive information into this call. A general description is enough—for example, “a document is missing” rather than who it relates to or what it contains.
+
+If the call centres on legal, clinical, regulatory or compliance advice:
+
+> That decision needs an appropriately qualified adviser and sits outside Heutrix's workflow-implementation role. We can assess a separate operational workflow only if it can be clearly separated from that advice.
+
+---
+
+# 6. Twenty-minute call guide
+
+## Before the call
+
+- Review the form and source page.
+- Check for a hard no-fit or sensitive-data issue.
+- Confirm caller, format and link/phone instructions.
+- Open the CRM record and note the one workflow to test.
+- Do not research a solution or prepare unpaid architecture.
+
+## 0:00–2:00 — Opening and boundary
+
+> Thanks for making the time. We have 20 minutes and there is no obligation to proceed. My aim is to understand one recurring operational workflow, check whether Heutrix is a sensible fit and agree the smallest useful next step. This is not a design workshop, so we will stay at a high level and will not need patient, participant or other sensitive information. I may pause us to keep to time or protect that boundary. Does that work for you?
+
+Then confirm:
+
+- caller and attendee roles;
+- whether the person can approve a next step or who else is involved; and
+- the one workflow to discuss.
+
+## 2:00–6:00 — Current workflow
+
+Ask no more than three questions:
+
+1. What starts this workflow, and what should be true when it is complete?
+2. Which roles touch it, and where is ownership or handover least clear?
+3. At a high level, which tools hold the work today?
+
+Do not map every step or troubleshoot live.
+
+## 6:00–10:00 — Operational effect and desired result
+
+1. What happens when the workflow does not run well—delay, chasing, missing items, rework or weak visibility?
+2. How often does that happen, using their own observation rather than an industry assumption?
+3. What would a useful, observable improvement look like for staff and managers?
+4. Why is this being considered now?
+
+Do not calculate a promised ROI on the call. If evidence is weak, record a baseline plan as a Heutrix Diagnostics need.
+
+## 10:00–14:00 — Qualification
+
+1. Who owns the workflow and who approves a change?
+2. Can the relevant staff participate in a workshop, two focused reviews, testing and training?
+3. Are the current systems, permissions and representative non-sensitive materials likely to be available?
+4. Are there vendor, security, privacy, integration or procurement questions that must be checked?
+5. If there is a sensible case, is a four- or five-figure fixed-scope engagement within the range the organisation can consider?
+6. What decision window is real, and what must happen before a project could start?
+
+## 14:00–17:00 — Summary and fit statement
+
+> Let me check that I have this right. The workflow is [BOUNDARY]. The main operational issue is [EFFECT]. A useful result would be [OBSERVABLE RESULT]. [OWNER/DECISION-MAKER] would need to be involved, and the main unknowns are [UNKNOWNS].
+
+Ask: **What have I missed or misunderstood?**
+
+Then state one of:
+
+- **Likely fit:** “This appears consistent with the kind of bounded operational workflow Heutrix assesses.”
+- **Possible fit, evidence needed:** “The need may fit, but I do not have enough evidence to recommend implementation yet.”
+- **No fit:** “This sits outside Heutrix's role because [PLAIN REASON].”
+
+## 17:00–19:00 — Recommendation
+
+Choose one route only.
+
+**Heutrix Diagnostics**
+
+> The smallest useful next step is Heutrix Diagnostics. The value is deciding what to fix, what not to build and what a decision-ready first scope should contain. I will send the proposed deliverables, assumptions and price in writing.
+
+**Heutrix Workflow Transformation**
+
+> The workflow appears clear enough to consider Heutrix Workflow Transformation, subject to written feasibility, access and acceptance checks. I will send the limited information needed to prepare a fixed-scope proposal. We will not start design or build until that scope is agreed.
+
+**Heutrix AI Guardrails**
+
+> The immediate need is a practical set of workplace AI boundaries. I will confirm the high-level use cases, tools, information types and accountable roles needed before proposing Heutrix AI Guardrails.
+
+**Nurture**
+
+> The need appears credible, but [PREREQUISITE/TIMING] is not ready. The smallest useful next step is to revisit this in [AGREED MONTH/TRIGGER].
+
+**No fit / no build**
+
+> I do not recommend paid Heutrix work for this at present because [REASON]. The most useful next move is [APPROVED DIY RESOURCE / TYPE OF SPECIALIST / SIMPLE NO-BUILD ACTION].
+
+## 19:00–20:00 — Commitments and close
+
+- Repeat the outcome and owner.
+- Confirm exactly what Heutrix will send and the approved deadline.
+- Confirm what, if anything, the prospect will provide—and repeat that it must be non-sensitive unless a suitable process is agreed.
+- Ask whether the summary can be sent to any other decision-maker; obtain their details directly rather than guessing.
+- End on time.
+
+## Call discipline: what is out of scope
+
+- no live workflow map;
+- no vendor or integration recommendation without feasibility checks;
+- no screen sharing of live records;
+- no reviewing documents or screenshots containing personal or sensitive data;
+- no technical architecture, implementation plan or custom checklist;
+- no legal, privacy, clinical, regulatory, audit or registration advice;
+- no promised savings, compliance result or delivery date; and
+- no discount negotiation before scope and value are understood.
+
+---
+
+# 7. Confirmation, reminder and follow-up messages
+
+Replace all square-bracketed text before activation. These messages assume direct booking; use the request receipt in section 3.5 before a confirmed booking exists.
+
+## 7.1 Immediate booking email
+
+**Subject:** Confirmed: See where Heutrix can help
+
+Hi [FIRST NAME],
+
+Your 20-minute, no-obligation call is confirmed for **[DATE, TIME, TIMEZONE]** with **[CALLER NAME]**, [APPROVED PUBLIC TITLE OR CONTRIBUTION AREA].
+
+**Format:** [VIDEO LINK / PHONE INSTRUCTIONS]  
+**Length:** 20 minutes
+
+We will identify one recurring operational workflow, assess whether Heutrix is a fit and agree the smallest useful next step. This may be Heutrix Diagnostics, Workflow Transformation, AI Guardrails, a later review, a request for limited high-level information or a no-fit/no-build recommendation.
+
+Please bring only a general description of the workflow, roles involved, current tools and desired result. Do not send patient, participant, client, clinical, Medicare, NDIS, credential, staff-sensitive or other sensitive information.
+
+Reschedule: [LINK]  
+Cancel: [LINK]
+
+Regards,  
+[CALLER NAME]  
+Heutrix Labs
+
+## 7.2 Calendar event
+
+**Title:** See where Heutrix can help — [ORGANISATION]
+
+**Description:**
+
+20-minute, no-obligation call with [CALLER NAME] from Heutrix Labs.
+
+Agenda:
+
+1. Identify one recurring operational workflow.
+2. Understand the operational effect at a high level.
+3. Assess fit, ownership, timing and prerequisites.
+4. Agree the smallest useful next step.
+
+No patient, participant, client, clinical, Medicare, NDIS, credential or other sensitive information is needed. Please do not attach records, screenshots or files.
+
+[VIDEO / PHONE INSTRUCTIONS]  
+Reschedule: [LINK]  
+Cancel: [LINK]
+
+## 7.3 24-hour reminder
+
+**Subject:** Tomorrow: See where Heutrix can help
+
+Hi [FIRST NAME],
+
+A reminder that your 20-minute call with [CALLER NAME] is tomorrow at **[TIME, TIMEZONE]**.
+
+Bring one workflow, the roles involved, the tools used at a high level and the result you want. No process map or sensitive care information is needed.
+
+Join: [LINK]  
+Reschedule: [LINK]  
+Cancel: [LINK]
+
+Regards,  
+Heutrix Labs
+
+## 7.4 One-hour reminder
+
+**Subject:** In one hour: See where Heutrix can help
+
+Hi [FIRST NAME],
+
+Your 20-minute, no-obligation call with [CALLER NAME] starts at **[TIME, TIMEZONE]**.
+
+Join: [LINK]  
+Need another time? Reschedule here: [LINK]
+
+Please keep the discussion general and do not share sensitive information.
+
+## 7.5 Reschedule confirmation
+
+**Subject:** Updated: See where Heutrix can help
+
+Hi [FIRST NAME],
+
+Your call has been moved to **[NEW DATE, TIME, TIMEZONE]** with [CALLER NAME]. Your previous time has been released.
+
+Join: [LINK]  
+Reschedule again: [LINK]  
+Cancel: [LINK]
+
+The purpose and preparation are unchanged: one operational workflow, 20 minutes, no sensitive information.
+
+## 7.6 Cancellation confirmation
+
+**Subject:** Your 20-minute Heutrix call has been cancelled
+
+Hi [FIRST NAME],
+
+Your call scheduled for **[DATE, TIME, TIMEZONE]** has been cancelled. No further action is required.
+
+If the workflow becomes a priority again, you can choose a new time here: [LINK].
+
+## 7.7 No-show message — send after the missed call
+
+**Subject:** We missed you — choose another 20-minute call
+
+Hi [FIRST NAME],
+
+We were available for today's “See where Heutrix can help” call but could not connect. If the problem is still a priority, you can choose another time here: [LINK].
+
+If it is no longer relevant, no explanation is needed. You can reply **close** and we will close the enquiry.
+
+Regards,  
+[CALLER NAME]
+
+## 7.8 No-show close-the-loop — proposed two business days later
+
+**Subject:** Closing your call request for now
+
+Hi [FIRST NAME],
+
+We have not rebooked the missed call, so we will close the request for now. If the workflow becomes a priority later, you are welcome to book a new time: [LINK].
+
+Regards,  
+Heutrix Labs
+
+## 7.9 Post-call: no fit / no build
+
+**Subject:** The next step from your Heutrix call
+
+Hi [FIRST NAME],
+
+Thank you for explaining the **[WORKFLOW]** workflow. Based on what we discussed, Heutrix does not recommend a paid engagement at this stage because **[PLAIN, RESPECTFUL REASON]**.
+
+The most useful next step is **[APPROVED DIY RESOURCE / TYPE OF ADVISER / NO-BUILD ACTION]**. This is a recommendation about fit, not legal, clinical, regulatory or compliance advice.
+
+We will close the enquiry unless you reply with a factual correction.
+
+Regards,  
+[CALLER NAME]
+
+## 7.10 Post-call: nurture / revisit
+
+**Subject:** Agreed next step for [WORKFLOW]
+
+Hi [FIRST NAME],
+
+The workflow appears relevant, but **[PREREQUISITE OR TIMING]** needs to be resolved first. We agreed to revisit this **[MONTH / TRIGGER]**.
+
+Before then, the useful preparation is:
+
+- [ONE NON-SENSITIVE PREPARATION ITEM]
+- [OWNER OR DECISION-MAKER TO INVOLVE]
+
+We will contact you only as agreed. Any broader resource emails require separate permission.
+
+Regards,  
+[CALLER NAME]
+
+## 7.11 Post-call: Heutrix Diagnostics
+
+**Subject:** Recommended next step: Heutrix Diagnostics
+
+Hi [FIRST NAME],
+
+The 20-minute call confirmed a credible problem in **[WORKFLOW]**, while **[BOUNDARY / PRIORITY / FEASIBILITY / BASELINE]** still needs to be defined before implementation can be quoted responsibly.
+
+The recommended next step is Heutrix Diagnostics. Its purpose is to produce a decision-ready view of the current workflow, bottlenecks, risks, feasible options, recommended future state, draft success measures and first-project scope—including a no-build option.
+
+By **[APPROVED DEADLINE]**, Heutrix will send the proposed deliverables, client involvement, assumptions, timing and fixed price. No work begins until you approve the written scope.
+
+Regards,  
+[CALLER NAME]
+
+## 7.12 Post-call: Heutrix Workflow Transformation scoping
+
+**Subject:** Next step: scope Heutrix Workflow Transformation for [WORKFLOW]
+
+Hi [FIRST NAME],
+
+The 20-minute call indicates that **[WORKFLOW]** may be clear enough for Heutrix Workflow Transformation, subject to written access, feasibility and acceptance checks.
+
+To prepare a fixed scope, please provide only:
+
+- [LIMITED NON-SENSITIVE FACT]
+- [LIMITED NON-SENSITIVE FACT]
+- [DECISION-MAKER / WORKFLOW-OWNER CONFIRMATION]
+
+Do not send records, screenshots, credentials or sensitive information. If examples are later required, Heutrix will first agree an appropriate process.
+
+By **[APPROVED DEADLINE]**, Heutrix will either issue a fixed-scope proposal, recommend Heutrix Diagnostics or explain why the project should not proceed.
+
+Regards,  
+[CALLER NAME]
+
+## 7.13 Proposal sent
+
+**Subject:** Heutrix proposal: [WORKFLOW / ENGAGEMENT]
+
+Hi [FIRST NAME],
+
+Attached/linked is the proposed scope for **[ENGAGEMENT]**. Please review the deliverables, responsibilities, assumptions, exclusions, acceptance criteria, timing, third-party costs, change triggers and fixed price together.
+
+If it reflects the decision you are considering, reply with questions or nominate the people who need to review it. No urgency or capacity hold applies unless a real dated condition is stated in the proposal.
+
+Suggested review date: **[MUTUALLY AGREED DATE]**.
+
+Regards,  
+[CALLER NAME]
+
+## 7.14 Proposal follow-up sequence
+
+Use mutually agreed dates where possible. The following is an internal default for owner approval, not a public promise:
+
+1. **Proposal sent:** record recipient, amount, offer, scope version and agreed review date.
+2. **On the agreed review date:** ask whether the proposal is accurate, what remains unresolved and who owns the decision.
+3. **Five business days later if silent:** send one concise check-in with the option to pause or close.
+4. **Ten business days after that if still silent:** close the loop and mark `Closed Lost — No decision / no response`, unless the buyer supplied another date.
+
+Do not send daily nudges, countdowns, invented capacity warnings or automatic discounts.
+
+---
+
+# 8. Post-call path specification
+
+| Path | Entry condition | Deliverable | Timing | CRM action |
+|---|---|---|---|---|
+| No fit / no build | One or more hard red gates; paid work not justified. | Brief reason and one useful next move. | Within approved two-business-day application. | Lead status `No Fit`; set one primary and optional secondary reason. |
+| Nurture / revisit | Need fits, but timing, owner, budget cycle, access or another prerequisite is not ready. | Agreed trigger/date; at most one approved resource. | Confirm after call; next task on agreed date. | Lead status `Nurture`; set reason and `nurture_review_date`. |
+| Information needed | Fit cannot be determined from high-level evidence. | One concise list of non-sensitive facts and why each matters. | Within approved interval. | Lead status `Information Needed`; task with due date. |
+| Heutrix Diagnostics | Credible problem; priority, boundary, baseline or feasibility unclear. | Fixed-scope Diagnostics proposal. | Proposal date stated in follow-up; do not invent a turnaround. | Convert/create opportunity; route `Heutrix Diagnostics`. |
+| Heutrix Workflow Transformation | Workflow, owner, users, outcome, systems, access and acceptance basis are sufficiently clear. | Limited scoping request, then fixed-scope proposal, Diagnostics or no-go. | Proposal date stated after inputs are confirmed. | Convert/create opportunity; route `Heutrix Workflow Transformation`. |
+| Heutrix AI Guardrails | Workplace AI use needs approved boundaries, review and staff guidance. | Limited scoping request, then fixed-scope proposal or no-go. | Proposal date stated after inputs are confirmed. | Convert/create opportunity; route `Heutrix AI Guardrails`. |
+| Proposal follow-up | Written commercial scope issued. | Review, question resolution, decision or respectful close. | Mutually agreed review date preferred. | Opportunity stages `Proposal Sent` → `Decision Pending` → `Won/Lost`. |
+
+---
+
+# 9. CRM and analytics specification
+
+## 9.1 Keep three concepts separate
+
+1. **Lead lifecycle** records the person's journey from request to outcome.
+2. **Opportunity stage** begins only when a paid next step is genuinely being considered.
+3. **Activity/event status** records bookings, reminders, attendance and messages without distorting pipeline stage.
+
+## 9.2 Lead lifecycle statuses
+
+| Status | Entry definition | Required next action |
+|---|---|---|
+| New Request | Server-confirmed form receipt; no time booked. | Owner review and response deadline. |
+| Booking Pending | Fit appears plausible and scheduling is offered, or visitor opened calendar without confirming. | Booking link/task; do not call this booked. |
+| Booked | Scheduler-confirmed event and booking ID exist. | Send confirmation/reminders. |
+| Rescheduled | Existing event moved; current booking remains active. | Update CRM booking fields and reminders. |
+| No Show — Rebook Pending | Caller attended but prospect did not. | Send rebook message and close task. |
+| Attended — Outcome Pending | Call completed; outcome not yet recorded. | Set route before end of business day where practical. |
+| Information Needed | One bounded fact set is required to determine route. | Await facts; close or reroute on due date. |
+| Nurture | Valid potential need; not ready. | Set reason, consent basis and review date. |
+| No Fit | No paid Heutrix path is recommended. | Set reason and close the lead. |
+| Converted | A genuine paid opportunity exists. | Link opportunity and preserve source. |
+
+## 9.3 Opportunity stages
+
+| Stage | Definition | Exit evidence |
+|---|---|---|
+| Qualified — Heutrix Diagnostics | Diagnostics is the recommended paid path. | Proposal issued or decision not to proceed. |
+| Qualified — Workflow Transformation | Workflow Transformation scoping is supported. | Proposal issued, rerouted to Diagnostics or no-go. |
+| Qualified — AI Guardrails | AI Guardrails scoping is supported. | Proposal issued or no-go. |
+| Proposal Preparing | Heutrix is producing a written commercial scope. | Proposal sent date and version. |
+| Proposal Sent | Prospect received the proposal. | Review outcome or agreed next date. |
+| Decision Pending | Proposal is accurate and buyer-side decision remains. | Signed/accepted, declined or closed after the agreed process. |
+| Closed Won | Written agreement and required commencement condition are met. | Record value, expected gross profit and start condition/date. |
+| Closed Lost | Buyer declined or process closed without agreement. | Primary loss reason and close note. |
+
+Do not place every attended call into an opportunity. No-fit, nurture and information-needed leads remain outside the paid pipeline until a real commercial path exists.
+
+## 9.4 Minimum CRM fields
+
+### Identity and contact
+
+- `lead_id`
+- `created_at`
+- `contact_name`
+- `work_email`
+- `phone` — only when needed for an approved phone path
+- `organisation_name`
+- `sector`
+- `contact_role_group`
+- `contact_consent_at`
+- `marketing_consent_at` — nullable and separate
+
+### Qualification
+
+- `workflow_summary`
+- `workflow_category` — intake/referral; reporting; evidence/documents; visibility; AI guardrails; other
+- `workflow_participant_band`
+- `current_tools_summary`
+- `urgency_band`
+- `decision_context`
+- `workflow_owner_status` — named; can involve; absent; unknown
+- `decision_maker_status` — attendee; involved; can involve; absent; unknown
+- `commercial_range_fit` — yes; possible; no; not asked
+- `problem_fit_gate`
+- `boundary_gate`
+- `operational_value_gate`
+- `people_decision_gate`
+- `access_feasibility_gate`
+- `commercial_timing_gate`
+- `qualification_confidence` — high; medium; low
+
+### Safety and handling
+
+- `sensitive_data_confirmation_at`
+- `sensitive_data_incident_flag`
+- `sensitive_data_remediation_status`
+- `privacy_owner_task_id`
+
+Never copy sensitive content into notes to explain the flag.
+
+### Attribution
+
+- `first_touch_source`, `first_touch_medium`, `first_touch_campaign`
+- `first_touch_landing_page`
+- `last_touch_source`, `last_touch_medium`, `last_touch_campaign`
+- `last_touch_landing_page`
+- `referrer`
+- `selected_starting_point`
+- `cta_location`
+
+### Booking and call
+
+- `booking_id`
+- `booking_created_at`
+- `scheduled_start_at`
+- `booking_timezone`
+- `call_channel`
+- `caller_owner`
+- `reschedule_count`
+- `cancelled_at`
+- `attended_at`
+- `no_show_at`
+- `help_call_outcome`
+- `outcome_set_at`
+- `follow_up_due_at`
+- `follow_up_sent_at`
+- `nurture_review_date`
+
+### Commercial
+
+- `recommended_route`
+- `opportunity_id`
+- `offer_type`
+- `proposal_sent_at`
+- `proposal_value_ex_gst`
+- `proposal_version`
+- `decision_due_at`
+- `closed_at`
+- `closed_reason_primary`
+- `closed_reason_secondary`
+- `contracted_revenue_ex_gst`
+- `expected_gross_profit`
+- `actual_revenue_ex_gst`
+- `actual_gross_profit`
+
+## 9.5 Reason-code dictionary
+
+Use one primary reason and, where useful, one secondary reason. Keep the display label stable even if explanatory notes change.
+
+### No-fit / no-build
+
+| Code | Display label |
+|---|---|
+| `NF_SECTOR` | Sector outside current focus |
+| `NF_ADVISORY` | Legal, clinical, audit, registration or regulatory advice required |
+| `NF_PLATFORM_REPLACEMENT` | Whole-platform replacement required |
+| `NF_ACCOUNTABLE_DECISION` | Request would remove accountable human judgement |
+| `NF_NO_OWNER` | No workflow owner or approval path |
+| `NF_ACCESS` | Required access or participation unavailable |
+| `NF_TOO_SMALL` | Insufficient recurring value for paid work |
+| `NF_TOO_BROAD` | Scope exceeds a bounded first engagement |
+| `NF_ENTERPRISE_CAPABILITY` | Enterprise procurement, security, rollout or support need not evidenced |
+| `NF_TECH_CAPABILITY` | Tool, integration or technical capability outside verified scope |
+| `NF_GEOGRAPHY` | Service geography or onsite need outside approved coverage |
+| `NF_NO_BUILD` | Process/tool clarification is more appropriate than a build |
+| `NF_SENSITIVE_HANDLING` | Required information-handling approach cannot be supported |
+| `NF_OTHER` | Other — note required |
+
+### Nurture
+
+| Code | Display label |
+|---|---|
+| `NU_TIMING` | Priority is later |
+| `NU_BUDGET_CYCLE` | Budget cycle not ready |
+| `NU_INTERNAL_ALIGNMENT` | Internal alignment needed |
+| `NU_DECISION_MAKER` | Decision-maker not yet involved |
+| `NU_OWNER` | Workflow owner not yet assigned |
+| `NU_ACCESS` | Access or vendor prerequisite pending |
+| `NU_CHANGE_DEPENDENCY` | Another internal change must happen first |
+
+### No-show / cancellation
+
+| Code | Display label |
+|---|---|
+| `NS_UNKNOWN` | No response / unknown |
+| `NS_CONFLICT` | Timing conflict |
+| `NS_TECH` | Join or phone failure |
+| `NS_NO_LONGER_PRIORITY` | No longer a priority |
+| `NS_BAD_CONTACT` | Invalid or unreachable contact |
+| `NS_INTERNAL_ERROR` | Heutrix scheduling or reminder failure |
+
+### Closed lost
+
+| Code | Display label |
+|---|---|
+| `CL_BUDGET` | Budget unavailable |
+| `CL_PRICE_VALUE` | Price/value did not support decision |
+| `CL_PRIORITY` | Priority changed |
+| `CL_INTERNAL` | Chose internal solution |
+| `CL_COMPETITOR` | Chose another provider |
+| `CL_SCOPE` | Scope did not match need |
+| `CL_TIMELINE` | Timing could not align |
+| `CL_PROCUREMENT` | Procurement, security or legal path blocked |
+| `CL_PROOF_TRUST` | Proof or trust was insufficient |
+| `CL_NO_DECISION` | No decision / no response |
+| `CL_REROUTED_NO_GO` | Feasibility or Diagnostics produced a no-go |
+| `CL_OTHER` | Other — note required |
+
+## 9.6 Analytics events
+
+| Event | Fire only when | Key non-sensitive parameters |
+|---|---|---|
+| `help_call_cta_click` | Primary CTA is activated. | page, CTA location, selected starting point |
+| `help_call_form_start` | First field interaction occurs. | page, source category |
+| `help_call_form_validation_error` | Validation visibly blocks progress. | field name, error category; never the value |
+| `help_call_form_submit_success` | Backend confirms lead creation. | lead ID hash/reference, mode |
+| `help_call_form_submit_failure` | Submission fails. | error category, mode |
+| `help_call_calendar_view` | Real scheduler is shown after lead creation. | scheduler mode, timezone |
+| `help_call_booking_confirmed` | Scheduler returns a confirmed booking ID. | booking reference, caller, channel |
+| `help_call_rescheduled` | Scheduler confirms a changed time. | booking reference, reschedule count |
+| `help_call_cancelled` | Scheduler confirms cancellation. | booking reference |
+| `help_call_attended` | Caller records attendance. | route pending/known |
+| `help_call_no_show` | Caller records no-show. | reason when known |
+| `help_call_outcome_set` | One route is recorded. | route, primary reason code |
+| `proposal_sent` | Proposal delivery is recorded. | offer type, value band if approved |
+| `closed_won` | Written win condition is met. | offer type, source, revenue/gross-profit fields in CRM |
+| `closed_lost` | Opportunity is formally closed. | primary reason code |
+
+Analytics must not receive form field values, free-text summaries, email addresses, organisation names, sensitive-data notes or proposal documents.
+
+---
+
+# 10. Follow-up sequence and service levels
+
+## Transactional sequence
+
+| Trigger | Message / task | Timing | Owner |
+|---|---|---|---|
+| Request submitted | Verified receipt | Immediate after backend acknowledgement | System |
+| Request submitted | Human fit review / reply | Within the approved application of two business days | [LEAD REVIEW OWNER] |
+| Booking confirmed | Confirmation email and calendar event | Immediate | System |
+| Booking upcoming | 24-hour reminder | 24 hours before | System |
+| Booking upcoming | One-hour reminder | 1 hour before | System |
+| Booking changed | Updated confirmation and calendar event | Immediate | System |
+| No-show | Easy rebooking message | Shortly after caller records no-show | [CALLER / SYSTEM] |
+| No-show still unresolved | Close-the-loop message | Proposed: two business days later | [LEAD REVIEW OWNER] |
+| Call attended | Outcome recorded | Same day where practical | [CALLER] |
+| Call attended | Written recommendation / next step | Within the approved application of two business days | [CALLER] |
+| Proposal sent | Review follow-up | Mutually agreed review date | [OPPORTUNITY OWNER] |
+| Proposal silent | Pause/close option | Proposed cadence in section 7.14 | [OPPORTUNITY OWNER] |
+
+## Nurture rules
+
+- Use the agreed review date or operational trigger instead of a generic weekly drip.
+- Keep direct follow-up about the enquiry separate from ongoing marketing consent.
+- Stop outreach when the prospect declines, unsubscribes or asks for closure.
+- Do not use healthcare problem details for advertising audiences or personalisation.
+- A useful resource can support the relationship; it must not disguise repeated sales pressure.
+
+---
+
+# 11. Operating checklist
+
+## Before launch
+
+- [ ] Assign [CALLER NAME], [BACKUP CALLER], lead-review owner and opportunity owner.
+- [ ] Confirm video/phone format, platform, phone fallback and accessibility option.
+- [ ] Configure real scheduler, timezone, available hours, notice window, future booking window and reschedule/cancel rules.
+- [ ] Approve the exact trigger and coverage of the two-business-day commitment.
+- [ ] Confirm scheduler, CRM, email, reminder and calendar integrations.
+- [ ] Replace all square-bracketed placeholders.
+- [ ] Make **Request** the CTA until the complete scheduler path passes QA.
+- [ ] Test server-confirmed receipt, duplicate prevention, spam controls, rate limiting and monitored errors.
+- [ ] Test booking, calendar event, timezone, caller assignment, reminders, reschedule, cancel and no-show paths.
+- [ ] Publish a reviewed collection notice tied to the actual tools and retention process.
+- [ ] Verify that no form value or sensitive content reaches analytics.
+- [ ] Create approved DIY resource(s) and referral categories before promising them.
+
+## For every request / booking
+
+- [ ] Lead record exists once, with source and landing page.
+- [ ] Caller is named in the confirmation and calendar event.
+- [ ] Booking ID, time, timezone, channel and reminder status are present.
+- [ ] Form contains no apparent sensitive information; if it does, follow the incident/remediation path.
+- [ ] High-level qualification is reviewed before the call.
+
+## Before every call
+
+- [ ] Confirm the one workflow and likely qualification gaps.
+- [ ] Open the 20-minute guide and CRM record.
+- [ ] Check meeting link/phone instructions.
+- [ ] Do not prepare a free design or tool recommendation.
+
+## During every call
+
+- [ ] State time, purpose and sensitive-information boundary.
+- [ ] Confirm role, workflow, operational effect, owner, decision-maker, access, timing and commercial range fit.
+- [ ] Summarise evidence and unknowns.
+- [ ] Recommend one route and state who does what next.
+- [ ] End on time.
+
+## After every call
+
+- [ ] Mark attendance and outcome.
+- [ ] Complete all six qualification gates with evidence notes.
+- [ ] Set one route and reason code.
+- [ ] Create follow-up deadline and owner.
+- [ ] Send written follow-up within the approved interval.
+- [ ] Create an opportunity only for a genuine paid path.
+- [ ] Record no-fit, no-show, nurture, proposal, won or lost reason.
+
+## Weekly owner review
+
+- [ ] Requests awaiting response beyond SLA.
+- [ ] Bookings without confirmations or reminders.
+- [ ] Attended calls without outcomes.
+- [ ] No-shows without closure.
+- [ ] Nurture records without consent basis or review date.
+- [ ] Proposals without an agreed decision date.
+- [ ] Reason-code distribution and leading no-fit/lost patterns.
+- [ ] Qualified leads, booking completion, show rate, qualified-call conversion and gross profit by source.
+- [ ] Any sensitive-data incident, delivery failure, duplicate record or attribution gap.
+
+---
+
+# 12. Owner decisions still required
+
+These are operational facts, not copy preferences. The relevant owner should answer them before the booking experience is published.
+
+## Launch-blocking
+
+1. **Named caller:** Who is the primary caller for “See where Heutrix can help”? Confirm preferred public name, title/contribution area and permission to publish it.
+2. **Backup and assignment:** Who covers absences, and does the scheduler assign a specific founder before confirmation?
+3. **Call format:** Video, phone or visitor choice? Which approved platform and what phone-number handling is required?
+4. **Scheduler:** Which platform and production booking URL will be used?
+5. **Availability rules:** Confirm Australia/Sydney timezone, normal available days/hours, minimum notice, how far ahead times appear and any blackout handling.
+6. **Reschedule/cancel rules:** Confirm cut-off, rebooking limits, cancellation handling and whether two no-shows close the enquiry.
+7. **Two-business-day commitment:** Does it apply to request-mode review, booking questions, post-call written recommendations and general enquiries, or only specified items? Define the start time and holiday handling.
+8. **Lead ownership:** Who monitors the inbox/CRM, handles failures and covers the owner when unavailable?
+9. **Privacy operations:** Approve the collection notice, retention, authorised access, sensitive-data remediation and deletion process for the actual scheduler/CRM/email stack.
+
+## Needed for a consistent no-fit and nurture experience
+
+10. Which Heutrix DIY resources are approved to send without customisation?
+11. Which referral providers, if any, are approved by category? If none, approve category-only guidance.
+12. Is ongoing resource nurture offered? If yes, confirm consent wording, system, cadence and unsubscribe handling.
+13. Who may approve Diagnostics, Workflow Transformation and AI Guardrails routes, proposals and exceptions?
+14. What internal proposal turnaround can be honoured after the necessary information is complete? Do not publish one until confirmed.
+15. What constitutes the written win condition: signed agreement, deposit/payment, or another commencement gate?
+
+## Recommended answers to approve or amend
+
+These are proposals, not current facts:
+
+- Apply the two-business-day human commitment to request review and post-call written recommendation; keep booking confirmations automated and immediate.
+- Default to video, with phone available on request, if both are operationally supported.
+- Close a first no-show after one rebooking message and one two-business-day close-the-loop message; allow a fresh booking later.
+- Send no ongoing nurture without separate permission and a specific next-review reason.
+- Use category-only referrals until Heutrix has an approved, maintained referral list.
+
+---
+
+# 13. Release acceptance test
+
+The journey is ready only when a production test lead can:
+
+1. click a CTA whose wording matches the action;
+2. submit the minimal form without sensitive information;
+3. create exactly one CRM lead with source and landing page;
+4. see real availability and confirm a time when **Book** is used;
+5. receive a calendar event and email naming the caller, length, format, agenda, privacy boundary and reschedule link;
+6. receive accurate reminders;
+7. reschedule and cancel without manual confusion;
+8. be marked attended or no-show;
+9. receive one documented fit outcome and written next step within the approved interval; and
+10. produce a complete, non-sensitive CRM record with route and reason codes for the analytics workstream.
+
+Until all ten pass, keep the public CTA in **Request** mode and do not send meaningful traffic to the flow.

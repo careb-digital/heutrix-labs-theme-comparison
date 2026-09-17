@@ -1,0 +1,284 @@
+- generic [ref=f117e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=f117e3]
+      - alert
+  - dialog [ref=f117e5]:
+    - generic [ref=f117e6]: Dialog content start.
+    - button "Dismiss" [ref=f117e7] [cursor=pointer]
+    - generic [ref=f117e11]:
+      - heading "Share a document" [level=2] [ref=f117e14]
+      - generic [ref=f117e16]:
+        - generic [ref=f117e17]:
+          - generic [ref=f117e18]:
+            - generic [ref=f117e19]:
+              - generic [ref=f117e20]: Document title *
+              - button "Learn more about adding a document title" [ref=f117e23] [cursor=pointer]
+            - textbox "Document title *" [ref=f117e27]:
+              - /placeholder: Add a descriptive title to your document
+          - generic [ref=f117e28]:
+            - button "Remove uploaded document file" [active] [ref=f117e29] [cursor=pointer]
+            - generic [ref=f117e35]:
+              - alert [ref=f117e36]: Your document has finished loading
+              - iframe [ref=f117e37]:
+                - main [ref=f126e4]:
+                  - generic [ref=f126e5]: 4 pages
+                  - list [ref=f126e12]:
+                    - listitem [ref=f126e13]:
+                      - img "1"
+                    - listitem [aria-hidden] [ref=f126e14]
+                    - listitem [aria-hidden] [ref=f126e15]
+                    - listitem [aria-hidden] [ref=f126e16]
+                  - button "Go to next page of document" [ref=f126e18] [cursor=pointer]
+                  - generic [ref=f126e29]:
+                    - generic [ref=f126e31]:
+                      - generic [ref=f126e32]:
+                        - generic [ref=f126e33]: Current page
+                        - generic [ref=f126e34]: "1"
+                      - text: /
+                      - generic [ref=f126e35]:
+                        - generic [ref=f126e36]: Total pages
+                        - text: "4"
+                    - progressbar "Progress bar Slide 1/4" [ref=f126e38] [cursor=pointer]
+                    - button "Enter full screen. An accessible version of the document is available in full screen mode." [ref=f126e43] [cursor=pointer]
+          - status [ref=f117e38]:
+            - generic [ref=f117e42]:
+              - text: For accessibility purposes, LinkedIn members who can view your post will be able to download your document as a PDF.
+              - link "Learn more about LinkedIn members who can view your post will be able to download your document as a PDF" [ref=f117e43] [cursor=pointer]:
+                - /url: https://www.linkedin.com/help/linkedin/answer/97457
+                - text: Learn more
+        - generic [ref=f117e45]:
+          - button "Back" [ref=f117e46] [cursor=pointer]
+          - button "Done" [ref=f117e48] [cursor=pointer]
+    - generic [ref=f117e50]: Dialog content end.
+  - region [ref=f117e51]
+  - generic [aria-hidden] [ref=f117e52]:
+    - generic [ref=f117e54]:
+      - button [ref=f117e55] [cursor=pointer]:
+        - generic [ref=f117e56]: Skip to search
+      - button [ref=f117e57] [cursor=pointer]:
+        - generic [ref=f117e58]: Skip to main content
+      - button [ref=f117e59] [cursor=pointer]:
+        - generic [ref=f117e60]: Keyboard shortcuts
+      - button [ref=f117e61] [cursor=pointer]:
+        - generic [ref=f117e64]: Close jump menu
+    - banner [ref=f117e65]:
+      - generic [ref=f117e66]:
+        - link [ref=f117e67] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+        - combobox [ref=f117e76]
+        - navigation [ref=f117e77]:
+          - list [ref=f117e78]:
+            - listitem [ref=f117e79]:
+              - link [ref=f117e80] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=f117e81]: new feed updates notifications
+                - generic [ref=f117e90]: Home
+            - listitem [ref=f117e91]:
+              - link [ref=f117e92] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=f117e98]: My Network
+            - listitem [ref=f117e99]:
+              - link [ref=f117e100] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - generic [ref=f117e106]: Jobs
+            - listitem [ref=f117e107]:
+              - link [ref=f117e108] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - generic [ref=f117e114]: Messaging
+            - listitem [ref=f117e115]:
+              - link [ref=f117e116] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - generic [ref=f117e118]:
+                  - generic [aria-hidden] [ref=f117e119]: "5"
+                  - generic [ref=f117e120]: 5 new notifications
+                - generic [ref=f117e126]: Notifications
+            - listitem [ref=f117e127]:
+              - button [ref=f117e129] [cursor=pointer]:
+                - generic [ref=f117e131]: Me
+            - listitem [ref=f117e134]:
+              - button [ref=f117e136] [cursor=pointer]:
+                - generic [ref=f117e142]: For Business
+            - listitem [ref=f117e145]:
+              - link [ref=f117e147] [cursor=pointer]:
+                - /url: http://www.linkedin.com/premium/products/?upsellOrderOrigin=Tracking%3Av1%3Apremium_page_admin_top_nav_upsell%3ACompany+Pages+SKU%3AIn-Product&referenceId=Gy5VPbjDQa6T8bKzrPisyQ%3D%3D&companyUrn=urn%3Ali%3Afsd_company%3A123474001&isSS=false&upsellSlotId=PREMIUM_PAGE_ADMIN_TOP_NAV&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F123474001%2Fadmin%2Fpage-posts%2Fpublished%2F%3Fshare%3Dtrue
+                - generic [ref=f117e148]: Build credibility with your Page
+    - generic [ref=f117e156]:
+      - complementary [ref=f117e157]:
+        - region [ref=f117e159]:
+          - generic [ref=f117e163]:
+            - heading [level=1] [ref=f117e165]: Heutrix
+            - button [ref=f117e169] [cursor=pointer]: Verify with Premium
+            - generic [ref=f117e170]: 0 followers
+            - generic [ref=f117e171]:
+              - link [ref=f117e172] [cursor=pointer]:
+                - generic [ref=f117e175]: Create
+              - link [ref=f117e176] [cursor=pointer]:
+                - generic [ref=f117e179]: View as member
+          - navigation [ref=f117e180]:
+            - list [ref=f117e181]:
+              - listitem [ref=f117e182]:
+                - link [ref=f117e183] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/dashboard
+                  - generic [ref=f117e184]: Dashboard
+              - listitem [ref=f117e188]:
+                - link [ref=f117e189] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/page-posts/published
+                  - generic [ref=f117e190]: Page posts
+              - listitem [ref=f117e194]:
+                - link [ref=f117e195] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/analytics/updates
+                  - generic [ref=f117e196]: Analytics
+              - listitem [ref=f117e200]:
+                - link [ref=f117e201] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/feed/following
+                  - generic [ref=f117e202]: Feed
+              - listitem [ref=f117e206]:
+                - link [ref=f117e207] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/notifications/all
+                  - generic [ref=f117e208]: Activity
+              - listitem [ref=f117e212]:
+                - link [ref=f117e213] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/inbox?pageMailboxUrn=urn%3Ali%3Afsd_pageMailbox%3A95000127
+                  - generic [ref=f117e214]: Inbox
+              - listitem [ref=f117e218]:
+                - link [ref=f117e219] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/edit
+                  - generic [ref=f117e220]: Edit Page
+            - list [ref=f117e224]:
+              - listitem [ref=f117e225]:
+                - link [ref=f117e226] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/services/page/800a0a3453a1852175
+                  - generic [ref=f117e227]: Services
+              - listitem [ref=f117e231]:
+                - link [ref=f117e232] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/products
+                  - generic [ref=f117e233]: Products
+              - listitem [ref=f117e237]:
+                - link [ref=f117e238] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/posted-jobs/open
+                  - generic [ref=f117e239]: Jobs
+            - list [ref=f117e243]:
+              - listitem [ref=f117e244]:
+                - link [ref=f117e245] [cursor=pointer]:
+                  - /url: http://www.linkedin.com/premium/products/?upsellOrderOrigin=Tracking%3Av1%3Apremium_page_admin_left_rail_upsell%3ACompany+Pages+SKU%3AIn-Product&referenceId=b4DJiaWvRVepCuE%2BRNQhmw%3D%3D&companyUrn=urn%3Ali%3Afsd_company%3A123474001&isSS=false&upsellSlotId=PREMIUM_PAGE_ADMIN_LEFT_RAIL
+                  - generic [ref=f117e246]: Unlock Page features
+              - listitem [ref=f117e253]:
+                - link [ref=f117e254] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/ad-beta/new-advertiser?companyId=123474001
+                  - generic [ref=f117e255]: Advertise today
+              - listitem [ref=f117e262]:
+                - link [ref=f117e263] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/page-posts/published?invite=true
+                  - generic [ref=f117e264]: Invite to follow
+              - listitem [ref=f117e268]:
+                - link [ref=f117e269] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/settings
+                  - generic [ref=f117e270]: Settings
+      - generic [ref=f117e275]:
+        - main [ref=f117e276]:
+          - generic [ref=f117e277]:
+            - generic [ref=f117e280]:
+              - heading [level=2] [ref=f117e281]: Page posts
+              - paragraph [ref=f117e282]:
+                - text: Manage organic posts, paid ads, and collaborative posts. Analytics are only visible to you for posts initiated by your page.
+                - link [ref=f117e283] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/answer/a10950023
+                  - text: Learn more
+            - list [ref=f117e284]:
+              - listitem [ref=f117e285]:
+                - link [ref=f117e286] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/page-posts/published
+                  - generic [ref=f117e287]: Published
+              - listitem [ref=f117e291]:
+                - link [ref=f117e292] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/123474001/admin/page-posts/page-ads
+                  - generic [ref=f117e293]: Page ads
+          - generic [ref=f117e297]:
+            - generic [ref=f117e300]:
+              - button [ref=f117e303] [cursor=pointer]:
+                - generic [ref=f117e304]: Start a post
+              - generic [ref=f117e306]:
+                - button [ref=f117e307] [cursor=pointer]:
+                  - generic [ref=f117e310]: Video
+                - button [ref=f117e311] [cursor=pointer]:
+                  - generic [ref=f117e314]: Photo
+                - link [ref=f117e315] [cursor=pointer]:
+                  - /url: /article/new/?author=urn%3Ali%3Afs_normalized_company%3A123474001
+                  - generic [ref=f117e318]: Write article
+            - generic [ref=f117e323]:
+              - paragraph [ref=f117e328]: Your page doesn’t have any posts yet
+              - paragraph [ref=f117e329]: Pages that post 2x a week grow 5x faster
+              - link [ref=f117e331] [cursor=pointer]:
+                - /url: /company/123474001/admin/page-posts/published/?share=true
+                - text: Start a post
+        - complementary [ref=f117e334]:
+          - generic [ref=f117e335]:
+            - generic [ref=f117e336]:
+              - heading [level=2] [ref=f117e337]: Post highlights
+              - button [ref=f117e339] [cursor=pointer]
+            - heading [level=2] [ref=f117e342]: In the last 30 days
+            - generic [ref=f117e343]:
+              - heading [level=2] [ref=f117e344]: No highlights
+              - paragraph [ref=f117e345]: No recent post to highlight.
+          - generic [ref=f117e347]:
+            - heading [level=2] [ref=f117e350]: Grow your followers
+            - generic [ref=f117e352]:
+              - list [ref=f117e353]:
+                - listitem [ref=f117e354]
+                - listitem [ref=f117e356]
+                - listitem [ref=f117e358]
+              - generic [ref=f117e360]:
+                - paragraph [ref=f117e361]: 50/50 credits available
+                - button [ref=f117e363] [cursor=pointer]
+              - paragraph [ref=f117e366]: Build your audience and reach by inviting connections to follow your page
+              - button [ref=f117e367] [cursor=pointer]:
+                - generic [ref=f117e368]: Invite connections
+          - generic [ref=f117e370]:
+            - list [ref=f117e371]:
+              - listitem [ref=f117e372]:
+                - link [ref=f117e373] [cursor=pointer]:
+                  - /url: https://about.linkedin.com/
+                  - generic [ref=f117e374]: About
+              - listitem [ref=f117e375]:
+                - link [ref=f117e376] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/accessibility
+                  - generic [ref=f117e377]: Accessibility
+              - listitem [ref=f117e378]:
+                - link [ref=f117e379] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_company_admin
+                  - generic [ref=f117e380]: Help Center
+              - listitem [ref=f117e381]:
+                - button [ref=f117e383] [cursor=pointer]:
+                  - generic [ref=f117e384]: Privacy & Terms
+              - listitem [ref=f117e388]:
+                - link [ref=f117e389] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                  - generic [ref=f117e390]: Ad Choices
+              - listitem [ref=f117e391]:
+                - link [ref=f117e392] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                  - generic [ref=f117e393]: Advertising
+              - listitem [ref=f117e394]:
+                - button [ref=f117e396] [cursor=pointer]:
+                  - generic [ref=f117e397]: Business Services
+              - listitem [ref=f117e401]:
+                - button [ref=f117e404] [cursor=pointer]: Get the LinkedIn app
+              - listitem [ref=f117e405]:
+                - button [ref=f117e406] [cursor=pointer]: More
+            - generic [ref=f117e407]: LinkedIn Corporation © 2026
+    - generic [ref=f117e411]:
+      - generic [ref=f117e412]:
+        - button [ref=f117e417] [cursor=pointer]:
+          - generic [ref=f117e418]:
+            - generic [aria-hidden] [ref=f117e419]: Messaging
+            - generic [ref=f117e420]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - generic [ref=f117e421]:
+          - button [ref=f117e423] [cursor=pointer]
+          - button [ref=f117e427] [cursor=pointer]:
+            - generic [ref=f117e430]: Compose message
+          - button [ref=f117e431] [cursor=pointer]:
+            - generic [ref=f117e434]: You are on the messaging overlay. Press enter to open the list of conversations.
+      - link [ref=f117e435] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/123474001/admin/inbox
+        - generic [ref=f117e437]: Heutrix

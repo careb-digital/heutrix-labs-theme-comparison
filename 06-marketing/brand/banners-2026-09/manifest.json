@@ -1,0 +1,146 @@
+[
+  {
+    "name": "heutrix-facebook-cover-navy",
+    "width": 1702,
+    "height": 630,
+    "label": "Facebook cover",
+    "note": "Centre logo; preview desktop and mobile crops before saving.",
+    "bytes": 58707
+  },
+  {
+    "name": "heutrix-facebook-cover-light",
+    "width": 1702,
+    "height": 630,
+    "label": "Facebook cover",
+    "note": "Centre logo; preview desktop and mobile crops before saving.",
+    "bytes": 59550
+  },
+  {
+    "name": "heutrix-linkedin-profile-navy",
+    "width": 1584,
+    "height": 396,
+    "label": "LinkedIn personal profile",
+    "note": "Left side reserved for profile-photo overlap.",
+    "bytes": 44477
+  },
+  {
+    "name": "heutrix-linkedin-profile-light",
+    "width": 1584,
+    "height": 396,
+    "label": "LinkedIn personal profile",
+    "note": "Left side reserved for profile-photo overlap.",
+    "bytes": 45469
+  },
+  {
+    "name": "heutrix-linkedin-company-navy",
+    "width": 4200,
+    "height": 700,
+    "label": "LinkedIn company Page",
+    "note": "Wide Page cover; logo kept in the central-right area.",
+    "bytes": 125819
+  },
+  {
+    "name": "heutrix-linkedin-company-light",
+    "width": 4200,
+    "height": 700,
+    "label": "LinkedIn company Page",
+    "note": "Wide Page cover; logo kept in the central-right area.",
+    "bytes": 127371
+  },
+  {
+    "name": "heutrix-google-sites-header-navy",
+    "width": 1920,
+    "height": 480,
+    "label": "Google Sites header",
+    "note": "Flexible design size; adjust header type and focal point in Sites.",
+    "bytes": 57706
+  },
+  {
+    "name": "heutrix-google-sites-header-light",
+    "width": 1920,
+    "height": 480,
+    "label": "Google Sites header",
+    "note": "Flexible design size; adjust header type and focal point in Sites.",
+    "bytes": 58627
+  },
+  {
+    "name": "heutrix-email-signature-navy",
+    "width": 1200,
+    "height": 300,
+    "label": "Email signature strip",
+    "note": "Display at 600 × 150 or smaller, preserving proportions. Add contact details as live text separately.",
+    "bytes": 30213
+  },
+  {
+    "name": "heutrix-email-signature-light",
+    "width": 1200,
+    "height": 300,
+    "label": "Email signature strip",
+    "note": "Display at 600 × 150 or smaller, preserving proportions. Add contact details as live text separately.",
+    "bytes": 31085
+  },
+  {
+    "name": "heutrix-meet-background-navy",
+    "width": 1920,
+    "height": 1080,
+    "label": "Google Meet / video background",
+    "note": "Logo upper right; centre reserved for the speaker. Do not mirror the source file.",
+    "bytes": 87556
+  },
+  {
+    "name": "heutrix-meet-background-light",
+    "width": 1920,
+    "height": 1080,
+    "label": "Google Meet / video background",
+    "note": "Logo upper right; centre reserved for the speaker. Do not mirror the source file.",
+    "bytes": 89272
+  },
+  {
+    "name": "heutrix-universal-wide-navy",
+    "width": 1800,
+    "height": 600,
+    "label": "General profile cover",
+    "note": "Reusable 3:1 cover; check platform crop before saving.",
+    "bytes": 61725
+  },
+  {
+    "name": "heutrix-universal-wide-light",
+    "width": 1800,
+    "height": 600,
+    "label": "General profile cover",
+    "note": "Reusable 3:1 cover; check platform crop before saving.",
+    "bytes": 61700
+  },
+  {
+    "name": "heutrix-presentation-header-navy",
+    "width": 1920,
+    "height": 320,
+    "label": "Slides / document header",
+    "note": "Reusable 6:1 header for slide masters and document covers.",
+    "bytes": 38705
+  },
+  {
+    "name": "heutrix-presentation-header-light",
+    "width": 1920,
+    "height": 320,
+    "label": "Slides / document header",
+    "note": "Reusable 6:1 header for slide masters and document covers.",
+    "bytes": 39270
+  },
+  {
+    "name": "heutrix-social-landscape-navy",
+    "width": 1200,
+    "height": 630,
+    "label": "Social / sharing card",
+    "note": "General landscape brand card.",
+    "bytes": 53504
+  },
+  {
+    "name": "heutrix-social-landscape-light",
+    "width": 1200,
+    "height": 630,
+    "label": "Social / sharing card",
+    "note": "General landscape brand card.",
+    "bytes": 54490
+  }
+]

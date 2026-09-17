@@ -1,0 +1,14 @@
+{
+  "importedExistingXlsx": true,
+  "recalculation": "passed",
+  "baseline": {
+    "researched": 10,
+    "contacts": 0,
+    "incompleteRows": 0
+  },
+  "unreviewedWeek": "blank",
+  "firstResearchRow": "counted and ready",
+  "fitCallWindows": "Janith and Rochelle owner-confirmed windows preserved; availability gap cleared",
+  "formulaScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "nativeExcelInteraction": "Not performed"
+}

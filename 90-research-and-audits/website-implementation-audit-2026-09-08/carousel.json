@@ -1,0 +1,11 @@
+{
+  "slides": [
+    "01 / INTAKE & FOLLOW-UP\nIntake, referral or enquiry follow-up handled differently by different people\nA clearer next step\n\nMake the owner, next action and due date visible from the first enquiry to the service-start decision.\n\nTry the intake visibility tool",
+    "02 / ONBOARDING & HANDOVERS\nService agreements, staff onboarding or handovers managed through memory and repeated reminders\nA clearer next step\n\nDefine what “ready” means, who checks it and when the next person takes over.\n\nExplore an onboarding example",
+    "03 / TRACKING & FOLLOW-THROUGH\nIncident, complaint, risk or evidence tracking spread across spreadsheets\nA clearer next step\n\nGive each follow-up an owner, a due date and a review step, with a clear path for exceptions.\n\nExplore a follow-through example",
+    "04 / OPERATIONAL VISIBILITY\nManagers lacking visibility over what is waiting, overdue or stuck\nA clearer next step\n\nStart with one recurring bottleneck. Identify the missing information and the decision it needs to support.\n\nFind your workflow bottleneck",
+    "05 / REPORTING PREPARATION\nReporting preparation that takes too long because information is scattered\nA clearer next step\n\nAgree the source inputs, review steps and exception checks before building another report.\n\nExplore a reporting example",
+    "06 / AI USE & HUMAN REVIEW\nAI tools being used informally without clear rules for privacy, review or suitable use\nA clearer next step\n\nCheck the proposed task, information boundaries and accountable human review before using AI in the workflow.\n\nTry the AI Guardrails tool"
+  ],
+  "reportingDestination": "https://heutrix-labs-original-theme.janith.workers.dev/case-studies"
+}

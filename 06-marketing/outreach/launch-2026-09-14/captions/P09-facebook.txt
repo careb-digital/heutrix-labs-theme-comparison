@@ -1,0 +1,7 @@
+Before a project closes, the team should know how to operate the workflow, handle exceptions, manage access and understand its limitations.
+
+Useful handover helps the next responsible person run and maintain the work without reconstructing the project from memory.
+
+Ask: what can our team run, explain and maintain when the project ends?
+
+#DisabilitySupport #WorkflowImprovement

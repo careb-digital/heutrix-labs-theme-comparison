@@ -1,0 +1,678 @@
+[
+  {
+    "source": "comparison/.gitattributes",
+    "sha256": "3b0781d402d9dfe9977be544a1a9edca42d5131a46af8d73cd610d94cd43e313"
+  },
+  {
+    "source": "comparison/.github/workflows/verify.yml",
+    "sha256": "948f7492bc2ed8afd2518e6dbaddd478ca70e1e542ece32ff0c236161e0ba9aa"
+  },
+  {
+    "source": "comparison/.gitignore",
+    "sha256": "f257e780c5a240dfc3170fcbbffba1001fdfce31b31e8202f2f49282cb750791"
+  },
+  {
+    "source": "comparison/.playwright-cli/console-2026-09-06T13-21-10-636Z.log",
+    "sha256": "879dd858bb34bc5883852c60d5266934d327a70c28c3c04b35b757f01de8fd0f"
+  },
+  {
+    "source": "comparison/.playwright-cli/page-2026-09-06T13-18-08-997Z.yml",
+    "sha256": "53f00ce21308adc55506aaf026484eaee50564def3c47277463281b772df4903"
+  },
+  {
+    "source": "comparison/.playwright-cli/page-2026-09-06T13-19-10-727Z.yml",
+    "sha256": "deda9228d44a6d2fb275674134cf36f3e40b4b12861eefcdb1ab427613de3a47"
+  },
+  {
+    "source": "comparison/.playwright-cli/page-2026-09-06T13-21-11-110Z.yml",
+    "sha256": "417c600f6181f1b5995d635444379ead9091a58e28063852d3a9f73289f52d31"
+  },
+  {
+    "source": "comparison/.playwright-cli/page-2026-09-07T07-26-35-144Z.yml",
+    "sha256": "5a792b37f61d574fb4300518487b1f88882a317d0cdaf6ca580b3477493c9c35"
+  },
+  {
+    "source": "comparison/.playwright-cli/page-2026-09-07T07-38-33-553Z.yml",
+    "sha256": "ee2fe6d9044ac210d333883a10866e9521ca156838727728795b4b27ccd3f37c"
+  },
+  {
+    "source": "comparison/content/download-manifest.json",
+    "sha256": "31a672e7f5fa38316e71db347dbff5cab5e58ce284a0a172057f3c298ed9ec8c"
+  },
+  {
+    "source": "comparison/content/evidence-review/case-studies-unverified.json",
+    "sha256": "38375c560bc7d0d2501c1cf14777361912f3a1a352f43af5429a356e1f68f298"
+  },
+  {
+    "source": "comparison/CTA-STYLE-GUIDE.md",
+    "sha256": "969fb686991e25889cda0f6b16eef51e50d8e693e3a24056262f0951c39b7933"
+  },
+  {
+    "source": "comparison/design.md",
+    "sha256": "5e60c556f7ef5c88d1b94179034f0643e43ac89849de8ccaa75b8d18a92059aa"
+  },
+  {
+    "source": "comparison/GOOGLE-ENQUIRIES.md",
+    "sha256": "26f84117315b1f812320dcab8978e09955fe1effc40c853567772bb3ae656ce2"
+  },
+  {
+    "source": "comparison/home.md",
+    "sha256": "3ffac9a7557601afc99bcbf32a9ecd4fcb50594ec27e8c2262c8dce8c98b9027"
+  },
+  {
+    "source": "comparison/index.html",
+    "sha256": "a6855bc72046e1bb22f0431b73db7b316d4ee54252e98a170360ee1d25958939"
+  },
+  {
+    "source": "comparison/LEAD-MAGNETS.md",
+    "sha256": "6c4b68ef9aab37b7da358c4c4971d63382e56b96b19e535bf5c0bce009605e83"
+  },
+  {
+    "source": "comparison/package-lock.json",
+    "sha256": "b58a3931531f4e99766add70c12e465c3207185708f15932080c86f0170193e3"
+  },
+  {
+    "source": "comparison/package.json",
+    "sha256": "d518304c21a0fc9bfc828248ae3141983693b78f275750ca13faeeaf951e7bee"
+  },
+  {
+    "source": "comparison/postcss.config.js",
+    "sha256": "190c877db466995bf1482f4a16abd06e04a89ede3119341e2a86ff96e1737b27"
+  },
+  {
+    "source": "comparison/public/downloads/ai-guardrails-staff-starter-pack-guide.pdf",
+    "sha256": "2233e7cf04ca83d166f781030901af72666d30ff06b263df15eaa57c5d1e67d7"
+  },
+  {
+    "source": "comparison/public/downloads/ai-guardrails-staff-starter-pack.xlsx",
+    "sha256": "d619157942155c793f2b6baf87a36f94f817cf61db8edccabc02e1dfba4126cd"
+  },
+  {
+    "source": "comparison/public/downloads/enquiry-to-service-start-starter-kit-guide.pdf",
+    "sha256": "09c12094d8eb23388a405032d966f660ad3bb422c55d786f74ece3f1b3f89dae"
+  },
+  {
+    "source": "comparison/public/downloads/enquiry-to-service-start-starter-kit.xlsx",
+    "sha256": "1bdab1292922adf3eb906dd4e80e2ad10d98b4832de6513ce504d4daa93a4a4f"
+  },
+  {
+    "source": "comparison/public/downloads/workflow-bottleneck-scorecard-guide.pdf",
+    "sha256": "07819c5b5f3bdae038ef3f600c904ef7bef1fcf7f101c23c3d39c89972cd9d5f"
+  },
+  {
+    "source": "comparison/public/downloads/workflow-bottleneck-scorecard.xlsx",
+    "sha256": "ee218955202c931be22cd06801bd8adf40f6e4f55f0924b738c0386a563fbed6"
+  },
+  {
+    "source": "comparison/public/favicon.svg",
+    "sha256": "d70a20d9f00eff85642f0d83c0159626caa709bcdb544ad955b54f1761aa999d"
+  },
+  {
+    "source": "comparison/public/images/resource-0.webp",
+    "sha256": "a427e977e4f27d8ce2edb9e540a3f4d8c6e89183626f06ef7d2048d61af8a65f"
+  },
+  {
+    "source": "comparison/public/images/resource-1.webp",
+    "sha256": "9ce8fbe040786b05e965c7758983566eae439306a1c2d76667011204024a2c09"
+  },
+  {
+    "source": "comparison/public/images/resource-2.webp",
+    "sha256": "7aa373e3526210164801f7f116fa42039a9ea4cb7b3eb528adf47011fef103f5"
+  },
+  {
+    "source": "comparison/public/images/workflow-team.webp",
+    "sha256": "a44850cb02b33b6a696b3b40284756cfc57f1dbf334c705b9009c5faf27031e7"
+  },
+  {
+    "source": "comparison/public/_headers",
+    "sha256": "c64abd76d3873bb03bfbb7182df351268f45a6a7723bdcda6c9a74458e3bd43b"
+  },
+  {
+    "source": "comparison/public/_redirects",
+    "sha256": "7096a59e7ddc28e1bf214f89c803a2e9c03733435c2be61c240a01cb9cc22a23"
+  },
+  {
+    "source": "comparison/README.md",
+    "sha256": "9035325e9ea61a6272579817a7cd7a205b08b5840541c7f6842207fc852bf7d6"
+  },
+  {
+    "source": "comparison/scripts/check-lead-magnets-browser.mjs",
+    "sha256": "f0bed26ffb92dda260e550e69b4e961ae33d8b4bfe2548a1d7431261d12ac53d"
+  },
+  {
+    "source": "comparison/scripts/check-pressure-points-browser.mjs",
+    "sha256": "e8d599b8bc6f02320e5c2603639d1a1c084ce3918a7410bb79df62f166ef6444"
+  },
+  {
+    "source": "comparison/scripts/check-site.mjs",
+    "sha256": "13a3a2efb40081bbdc1a250a02be24c643bd3679e6e35f3b1ba0eecfe6e7bff2"
+  },
+  {
+    "source": "comparison/scripts/test-lead-magnets.mjs",
+    "sha256": "6a5edede73a0d2484fc41f9a1fff738549ec9ec5e0f3aaacb849e49460a047b8"
+  },
+  {
+    "source": "comparison/scripts/test-mock-requests.mjs",
+    "sha256": "4fd43b37f48288dd9949aeaa365e88e3fb28c7058b3437d12b5703741e180b52"
+  },
+  {
+    "source": "comparison/scripts/test-production-contract.mjs",
+    "sha256": "c8dc6520ed657e98f71011fb40a81408b8a4c4d959e459ae42ddb9aed9576c9e"
+  },
+  {
+    "source": "comparison/server/googleRequests.js",
+    "sha256": "5b12dc86a8f09c32ef84074b11c5b0ea25fba6fa02cfeb8c2abdf50e5867a0cb"
+  },
+  {
+    "source": "comparison/server/mockPlugin.js",
+    "sha256": "5e8b5ec1837bf13aa55b06f88fc4f83289aacf6a8a920a0eb781757650941a27"
+  },
+  {
+    "source": "comparison/server/mockRequests.js",
+    "sha256": "ed5cc125af3d788ae2b5890a8a4f7bbebdb126f6b6d1592fef28bb7b4576b6cf"
+  },
+  {
+    "source": "comparison/src/App.jsx",
+    "sha256": "ed2b6df04aa5cfbf810885fe1ef1fabbc2187906b28866ade34acc41eb6e469d"
+  },
+  {
+    "source": "comparison/src/ArticleMarkdown.jsx",
+    "sha256": "17b315ca30bc0d90bdc2fa1c38270609679c753d88e125c820b4f3a843312e93"
+  },
+  {
+    "source": "comparison/src/caseStudies.json",
+    "sha256": "a5724fef566b75231494284213d5769aeaf40353aa43bf03aa4d0c278da015ae"
+  },
+  {
+    "source": "comparison/src/components/About.jsx",
+    "sha256": "27447d7013a62189735b323b6920465e979da2de33cffbfa25f67479be5e45e6"
+  },
+  {
+    "source": "comparison/src/components/Checklist.jsx",
+    "sha256": "2fd6cb29b41a272559514cccbabd59ea92be0808230e00e6505a294b7ef50420"
+  },
+  {
+    "source": "comparison/src/components/Contact.jsx",
+    "sha256": "112f4bd53a39691e6bd6650fdf3742793615f8db3b3e625acc3dda844612afed"
+  },
+  {
+    "source": "comparison/src/components/FAQ.jsx",
+    "sha256": "2aa88b5f3da0d729fa008a5f9f874452bb2770415d41076c419d1f483b22bf31"
+  },
+  {
+    "source": "comparison/src/components/Footer.jsx",
+    "sha256": "02bfde164989e0d6e0fbab2f4f2404a799ec882d41cec4fd3fbfda2003d5b482"
+  },
+  {
+    "source": "comparison/src/components/Hero.jsx",
+    "sha256": "8a2d08040b2f73e484a024b3469d4f1e0cdd71d1160d3e22c4d3f7e8fb1fd2e7"
+  },
+  {
+    "source": "comparison/src/components/Methodology.jsx",
+    "sha256": "ac2dd4589948040e2239b4b0405cab164d161c5270829919d9f179235939de43"
+  },
+  {
+    "source": "comparison/src/components/Navbar.jsx",
+    "sha256": "38ded9afade4149c497dd993cfd663774397f38ac4f8540ec096e67915ac461d"
+  },
+  {
+    "source": "comparison/src/components/Pricing.jsx",
+    "sha256": "fca2822b5f81123963206cecb529100de7b254b24ead146fc6240b714c5b3321"
+  },
+  {
+    "source": "comparison/src/components/Problem.jsx",
+    "sha256": "922e551d6f91e6fe37d48379905b8abb1dbd2407ca1aa63a71afb5827deb19b6"
+  },
+  {
+    "source": "comparison/src/components/ScrollytellingSection.jsx",
+    "sha256": "3b9dc7be8274d73a92df2dff99bd1e9fbe6b066ef92b20585b2603a25513dd3a"
+  },
+  {
+    "source": "comparison/src/components/Services.jsx",
+    "sha256": "823e43b76bdcead2e4dd7deab602255316fd645697216351c68f4bdeadacf6b9"
+  },
+  {
+    "source": "comparison/src/components/workflow-pressure-points.css",
+    "sha256": "628afb60f8d67d027512f58a1ecd128d02767be1c548a85a082827a2098de53d"
+  },
+  {
+    "source": "comparison/src/components/WorkflowPressurePoints.jsx",
+    "sha256": "5ed834decdad9bc67b16d6409114c47622b9730a758867fa6bb886a4018df399"
+  },
+  {
+    "source": "comparison/src/fonts.css",
+    "sha256": "acb878812fe5c23d647d5a6b8ad70bf03e53d496350481ff925a3e17c902101c"
+  },
+  {
+    "source": "comparison/src/index.css",
+    "sha256": "1cdcedd01d20c91250f88638322bb5432d812ee7da96c4cdc22d0032de9553b8"
+  },
+  {
+    "source": "comparison/src/leadMagnets/EnquiryPage.jsx",
+    "sha256": "e066e5669e38584102c161b353b57923392d0e04dcd84976c8e78ec9ced71966"
+  },
+  {
+    "source": "comparison/src/leadMagnets/integrations.js",
+    "sha256": "5909bfaea04c87827f4acdfd14bc4dcbb2ab4fa9e9a06494bedc92c1672d03ee"
+  },
+  {
+    "source": "comparison/src/leadMagnets/InteractiveTools.jsx",
+    "sha256": "8ec608ecbe28248eb0223cc4f60e678961e3504694536f243055f0c165673c25"
+  },
+  {
+    "source": "comparison/src/leadMagnets/LeadContext.jsx",
+    "sha256": "e968ad95f82545006a49ab0c834a95d5db57e6a6d327e52c8de5604d19747bf9"
+  },
+  {
+    "source": "comparison/src/leadMagnets/leadMagnets.css",
+    "sha256": "5a606d92f1ca527efa25426aea70ff6c146eaee98c67fb63a9aed7092da5f874"
+  },
+  {
+    "source": "comparison/src/leadMagnets/model.js",
+    "sha256": "675422bf29884a9d2aab41db1925b68d0a8e7a2c9b29f2ed032f32156fff0604"
+  },
+  {
+    "source": "comparison/src/legacyCasePaths.json",
+    "sha256": "7bbfe05619257ff915a1b3c8993174490fb93fe57a2f92b6a8f37cbaf4549c82"
+  },
+  {
+    "source": "comparison/src/main.jsx",
+    "sha256": "34da2c27a34d1099e3eec6cefa757a4e19b33613466bb1b73476881fe0ea91e3"
+  },
+  {
+    "source": "comparison/src/original-theme.css",
+    "sha256": "889d5c1e4d89ebe91fba87c6f9a531f84efe85d1cb0e5a79fa506e8019578965"
+  },
+  {
+    "source": "comparison/src/refined.css",
+    "sha256": "6da440f10ae9096c41d87c8d1b6c0f5b86fda4333cd49f40ad4473eddf09d005"
+  },
+  {
+    "source": "comparison/src/RefinedPages.jsx",
+    "sha256": "efd9c64f21e43b8a288e5691cf3ffb34cc3b1bb0d107a7131396ed69e48fe9a5"
+  },
+  {
+    "source": "comparison/src/siteContent.js",
+    "sha256": "ea75560fdc74dc89af4044a01099f8fa31e2d1c5857db0406904784ce1af8226"
+  },
+  {
+    "source": "comparison/stitch_code.html",
+    "sha256": "9f5de8fda0bdf190e420d153c58c20057f5bb65492f7314ba3671ef987e2f267"
+  },
+  {
+    "source": "comparison/tailwind.config.js",
+    "sha256": "8ef7b158004b5b2051f68b001606907b3f4956dea94832f82fb54991f0f7a60b"
+  },
+  {
+    "source": "comparison/vite.config.js",
+    "sha256": "cbce8dd637d2fdde681c2274caa806a6752bf15a8b796dfb1c8f05e788f3fa54"
+  },
+  {
+    "source": "comparison/worker.js",
+    "sha256": "de728be1fdb66cd28190491899a06f826bcd9452a26c6dccdf0a8c790aa561ad"
+  },
+  {
+    "source": "comparison/wrangler.jsonc",
+    "sha256": "edb8f9ea0e3a4b944cf1cb316cc4ec94acca731296e8eabd1fcc1ca2e9e5781a"
+  },
+  {
+    "source": "refined-reference/.github/workflows/comparison.yml",
+    "sha256": "9ae6cdb3c3eeb1c4aa9de0752eae54da8c547a7e424225c8aa69c97a4e77ddbf"
+  },
+  {
+    "source": "refined-reference/.gitignore",
+    "sha256": "055614499d67b9c22f01bfbc504f79e344837f8561c26b56b9476cc445723846"
+  },
+  {
+    "source": "refined-reference/apps/website/.gitattributes",
+    "sha256": "3b0781d402d9dfe9977be544a1a9edca42d5131a46af8d73cd610d94cd43e313"
+  },
+  {
+    "source": "refined-reference/apps/website/.gitignore",
+    "sha256": "4c219b3882842c83d18fbc6136dbad4cfe6e8ad9543cc501feadf1b86b7c720d"
+  },
+  {
+    "source": "refined-reference/apps/website/content/download-manifest.json",
+    "sha256": "919bc3923006ce4f6b4511caf006c7a0bbb4ea3b2b2e7bf8e5fd5e75e4a364bf"
+  },
+  {
+    "source": "refined-reference/apps/website/index.html",
+    "sha256": "f995d357c389c6f4f7e6e58351234f0daea6157d36d385abf2d5438468044c81"
+  },
+  {
+    "source": "refined-reference/apps/website/package-lock.json",
+    "sha256": "8e6bb5586b7ba2d1112fde90f55f40adc51f372ac87c95cc12217f1bbb2d3633"
+  },
+  {
+    "source": "refined-reference/apps/website/package.json",
+    "sha256": "a9cd9e7964034477b417a0e33901390dbc749d1380d2b060d948162270453660"
+  },
+  {
+    "source": "refined-reference/apps/website/postcss.config.js",
+    "sha256": "190c877db466995bf1482f4a16abd06e04a89ede3119341e2a86ff96e1737b27"
+  },
+  {
+    "source": "refined-reference/apps/website/public/downloads/ai-guardrails-staff-starter-pack-guide.pdf",
+    "sha256": "86ca4303cace69080ace7e16563bc451257349a8296e201018cc0e00e2d0bb8a"
+  },
+  {
+    "source": "refined-reference/apps/website/public/downloads/ai-guardrails-staff-starter-pack.xlsx",
+    "sha256": "d619157942155c793f2b6baf87a36f94f817cf61db8edccabc02e1dfba4126cd"
+  },
+  {
+    "source": "refined-reference/apps/website/public/downloads/enquiry-to-service-start-starter-kit-guide.pdf",
+    "sha256": "4d875f40a7d717c19fffd2fc7a0e7bfb85a5da6dc271f6c764f7e9815212b38a"
+  },
+  {
+    "source": "refined-reference/apps/website/public/downloads/enquiry-to-service-start-starter-kit.xlsx",
+    "sha256": "1bdab1292922adf3eb906dd4e80e2ad10d98b4832de6513ce504d4daa93a4a4f"
+  },
+  {
+    "source": "refined-reference/apps/website/public/downloads/workflow-bottleneck-scorecard-guide.pdf",
+    "sha256": "b39c7f2d1bc7eae773dca649a62778af8954f6dc58c996713cdb26ff2f4363d2"
+  },
+  {
+    "source": "refined-reference/apps/website/public/downloads/workflow-bottleneck-scorecard.xlsx",
+    "sha256": "ee218955202c931be22cd06801bd8adf40f6e4f55f0924b738c0386a563fbed6"
+  },
+  {
+    "source": "refined-reference/apps/website/public/favicon.svg",
+    "sha256": "d70a20d9f00eff85642f0d83c0159626caa709bcdb544ad955b54f1761aa999d"
+  },
+  {
+    "source": "refined-reference/apps/website/public/images/resource-0.webp",
+    "sha256": "a427e977e4f27d8ce2edb9e540a3f4d8c6e89183626f06ef7d2048d61af8a65f"
+  },
+  {
+    "source": "refined-reference/apps/website/public/images/resource-1.webp",
+    "sha256": "9ce8fbe040786b05e965c7758983566eae439306a1c2d76667011204024a2c09"
+  },
+  {
+    "source": "refined-reference/apps/website/public/images/resource-2.webp",
+    "sha256": "7aa373e3526210164801f7f116fa42039a9ea4cb7b3eb528adf47011fef103f5"
+  },
+  {
+    "source": "refined-reference/apps/website/public/images/workflow-team.webp",
+    "sha256": "a44850cb02b33b6a696b3b40284756cfc57f1dbf334c705b9009c5faf27031e7"
+  },
+  {
+    "source": "refined-reference/apps/website/public/_headers",
+    "sha256": "c64abd76d3873bb03bfbb7182df351268f45a6a7723bdcda6c9a74458e3bd43b"
+  },
+  {
+    "source": "refined-reference/apps/website/public/_redirects",
+    "sha256": "7096a59e7ddc28e1bf214f89c803a2e9c03733435c2be61c240a01cb9cc22a23"
+  },
+  {
+    "source": "refined-reference/apps/website/README.md",
+    "sha256": "8027fd0486927b4f75608f8268be055eabbd272c84affc90146a77f55118101c"
+  },
+  {
+    "source": "refined-reference/apps/website/scripts/check-site.mjs",
+    "sha256": "45affb918003839804736a42fcac441c2cef6ae1607e08e61d55a76efc1d0fad"
+  },
+  {
+    "source": "refined-reference/apps/website/src/App.jsx",
+    "sha256": "f5574f3ded2ad6ee9999feb7a83928246c8ab2d6364f4fff585f331cb93a5c56"
+  },
+  {
+    "source": "refined-reference/apps/website/src/ArticleMarkdown.jsx",
+    "sha256": "17b315ca30bc0d90bdc2fa1c38270609679c753d88e125c820b4f3a843312e93"
+  },
+  {
+    "source": "refined-reference/apps/website/src/caseStudies.json",
+    "sha256": "5b25ef6f555add6a7e9a54c04da8f19ff7cdd42f219fd755ccc8b339cae81956"
+  },
+  {
+    "source": "refined-reference/apps/website/src/components/Checklist.jsx",
+    "sha256": "c004a4ddfb3047e16568d72095090a70702440e7d7ddb72f7fd15cf0e0d5cc8e"
+  },
+  {
+    "source": "refined-reference/apps/website/src/components/Footer.jsx",
+    "sha256": "2b9577ae4e808e8888d29b13216a2b087eee936fb5700292c6b0360300967369"
+  },
+  {
+    "source": "refined-reference/apps/website/src/components/Navbar.jsx",
+    "sha256": "38ded9afade4149c497dd993cfd663774397f38ac4f8540ec096e67915ac461d"
+  },
+  {
+    "source": "refined-reference/apps/website/src/fonts.css",
+    "sha256": "acb878812fe5c23d647d5a6b8ad70bf03e53d496350481ff925a3e17c902101c"
+  },
+  {
+    "source": "refined-reference/apps/website/src/index.css",
+    "sha256": "1cdcedd01d20c91250f88638322bb5432d812ee7da96c4cdc22d0032de9553b8"
+  },
+  {
+    "source": "refined-reference/apps/website/src/main.jsx",
+    "sha256": "59caa2b142b08dd613a7835072dd170ffae29ff009a82f2247c7dee379cc9d48"
+  },
+  {
+    "source": "refined-reference/apps/website/src/refined.css",
+    "sha256": "6da440f10ae9096c41d87c8d1b6c0f5b86fda4333cd49f40ad4473eddf09d005"
+  },
+  {
+    "source": "refined-reference/apps/website/src/RefinedPages.jsx",
+    "sha256": "884ac0addad30a2eb282cc585b9537f8ce03c21ff4df20a7cb6c896752277808"
+  },
+  {
+    "source": "refined-reference/apps/website/src/siteContent.js",
+    "sha256": "a6e17b4d06a5186686b620380d3ce1553cd3795fe2d0af2b806037ad226cec38"
+  },
+  {
+    "source": "refined-reference/apps/website/tailwind.config.js",
+    "sha256": "8ef7b158004b5b2051f68b001606907b3f4956dea94832f82fb54991f0f7a60b"
+  },
+  {
+    "source": "refined-reference/apps/website/vite.config.js",
+    "sha256": "f3f301990aca2b8f62df377dd1e5debbc09ab53f6959f196f6711e31cde57d11"
+  },
+  {
+    "source": "refined-reference/apps/website/worker.js",
+    "sha256": "d37b8ae80849ae85cccfd85c10f52452ffc6c198a8009d4a9c27e62856c29259"
+  },
+  {
+    "source": "refined-reference/apps/website/wrangler.jsonc",
+    "sha256": "ba04bdbfffab57ed8c7fd6266f915d9ac2839809634657a0f94e698435f130f1"
+  },
+  {
+    "source": "refined-reference/design.md",
+    "sha256": "4ec7bc71c9cf8e565fbb216b6e6fa1308505aae4f77fa10f895697ea2e45576b"
+  },
+  {
+    "source": "refined-reference/index.html",
+    "sha256": "689c9c4bcd2d68ff888561878f199d17576963ebe94725e684b632a55f149f01"
+  },
+  {
+    "source": "refined-reference/package-lock.json",
+    "sha256": "4146738151697d3ff575db1db9cc787e2fcee0133a59c73ab2b30a5e6870a1cc"
+  },
+  {
+    "source": "refined-reference/package.json",
+    "sha256": "a0460f0f27c6128e3bd7db16944fb41bb640ea55cdb6c722317693ec679912be"
+  },
+  {
+    "source": "refined-reference/postcss.config.js",
+    "sha256": "374f669f08b18e67d0a7264fa45b71228017e604fe7f6db8a5c1bd5ba27e5c98"
+  },
+  {
+    "source": "refined-reference/src/App.jsx",
+    "sha256": "3e72cf29d541b1dd46e3425d1bab0040dfe01dfb3564a8286fde980b94b6e060"
+  },
+  {
+    "source": "refined-reference/src/components/About.jsx",
+    "sha256": "a081c60551b2afa9f96ce1a6e25d86c87e238f509e5e023aa73dfcc242bfcde6"
+  },
+  {
+    "source": "refined-reference/src/components/Checklist.jsx",
+    "sha256": "52bd953c1c10b04228a8303fa3eded3f65be45c0cb52a48baa7a6301d8ad1ac4"
+  },
+  {
+    "source": "refined-reference/src/components/Contact.jsx",
+    "sha256": "0ecca480175659527a7b2392d597e6a38d00c2d4a461da155c919397e8a125c0"
+  },
+  {
+    "source": "refined-reference/src/components/FAQ.jsx",
+    "sha256": "b588c20fb3df0419e990371521ce4ee32e80bac3808406eacd5f38692c278c6a"
+  },
+  {
+    "source": "refined-reference/src/components/Footer.jsx",
+    "sha256": "aa6e59ca6511ebcedd467eea28357e09198d02292a1616b6b4f25adc771cc66d"
+  },
+  {
+    "source": "refined-reference/src/components/Hero.jsx",
+    "sha256": "77af5f1ec14b7709a892b901cf7e21f9fc15a67c430b5311f85b73d2fd87eb13"
+  },
+  {
+    "source": "refined-reference/src/components/Methodology.jsx",
+    "sha256": "1bebfbff16f29dab20213de987c1d27454c94e9f6c268d5dc658c968e9cf5dce"
+  },
+  {
+    "source": "refined-reference/src/components/Navbar.jsx",
+    "sha256": "8739d57fec00e596dfd2954fde9da0840b8d7683d786454a31c5f07fd3921259"
+  },
+  {
+    "source": "refined-reference/src/components/Pricing.jsx",
+    "sha256": "4928f1c60d2003f4f18c826d10abc5ea66198b297c533d53ea46f32549365bb1"
+  },
+  {
+    "source": "refined-reference/src/components/Problem.jsx",
+    "sha256": "31c64afe307427fded67c5867bbe7732f129c9eed549d31e67a512e1bb1941dc"
+  },
+  {
+    "source": "refined-reference/src/components/ScrollytellingSection.jsx",
+    "sha256": "5b730cabb1fa5afaf0ad57bf8e64f5c7d8efe827ca9abf0cb0e76f6796bdaa86"
+  },
+  {
+    "source": "refined-reference/src/components/Services.jsx",
+    "sha256": "369ef5b1a449c4eee412faccc8618435e4739f2f73926c45d7c8262143912cbe"
+  },
+  {
+    "source": "refined-reference/src/index.css",
+    "sha256": "9e86a4282759bf258ce2d3571da9bf629bb2a61252b9297a9d17c023ab40561a"
+  },
+  {
+    "source": "refined-reference/src/main.jsx",
+    "sha256": "6bf20ed84acf549812a5aca0ace32c7fdbbc1a9e93897e240aaa69cd10964844"
+  },
+  {
+    "source": "refined-reference/src/siteContent.js",
+    "sha256": "de848b28472570943cb5e9a11a59e5270b6fe572ad0b352518caaf96f46c824a"
+  },
+  {
+    "source": "refined-reference/stitch_code.html",
+    "sha256": "9f5de8fda0bdf190e420d153c58c20057f5bb65492f7314ba3671ef987e2f267"
+  },
+  {
+    "source": "refined-reference/tailwind.config.js",
+    "sha256": "b0b925e9fc2d3be38d26b7c72f1d8ae9bd6e9d91e4f63577afa0cdd3a8460639"
+  },
+  {
+    "source": "refined-reference/vite.config.js",
+    "sha256": "feb4908db242705ecf99d3f65a49eb6513922ea6301d27047a80deb3e4fe80d0"
+  },
+  {
+    "source": "refined-reference/website-copy/about.md",
+    "sha256": "0c4cc96514e84c2c5548074c9e9c823b96fcccdd8ad2944c26023bf926809c47"
+  },
+  {
+    "source": "refined-reference/website-copy/allied-health.md",
+    "sha256": "391543fe7f21d765a401849c13df609e15882ff8087457f2d76e0fbe1316bab1"
+  },
+  {
+    "source": "refined-reference/website-copy/contact.md",
+    "sha256": "524de9b3c92e39f3bcb5fba133987e749585e860cc421f1a21ac57372eb9118e"
+  },
+  {
+    "source": "refined-reference/website-copy/disability-providers.md",
+    "sha256": "a185f25233a1fbd49dc3594559c246d02d53a91f24cb5de33e07e32305d69bb4"
+  },
+  {
+    "source": "refined-reference/website-copy/faq.md",
+    "sha256": "7b4e91c995f62d6dcc197f372c7caf2cc88fe37b6784696b87b933fd324bf660"
+  },
+  {
+    "source": "refined-reference/website-copy/home.md",
+    "sha256": "e5b21e6f2be9ad1ec3de1c9789d6e109960a0f8fc843b26a0b80113ce70d3de1"
+  },
+  {
+    "source": "refined-reference/website-copy/pricing.md",
+    "sha256": "6cc504d183b429185e8642eae2599c7d1d9ce8a144e7ad0d66dcd8a6bc4d7ba8"
+  },
+  {
+    "source": "refined-reference/website-copy/privacy-and-data-handling.md",
+    "sha256": "6d80fefb5d394addd9debbca588c754c29038b9b18b2397d4a680dd31fcaa721"
+  },
+  {
+    "source": "refined-reference/website-copy/README.md",
+    "sha256": "700edd87afb2aef161f83e4458f20359c8a1c76a472c4d53992371a02b8e4b16"
+  },
+  {
+    "source": "refined-reference/website-copy/safe-ai.md",
+    "sha256": "b77326974cfcdea240d5e4951ebc1826243c815c85ca7ea114d636284fbfce05"
+  },
+  {
+    "source": "refined-reference/website-copy/services.md",
+    "sha256": "c21a785814af47967e4e4bf40a40ec153051c5a0ee601786fcb5b472d1ab6406"
+  },
+  {
+    "source": "refined-reference/website-copy/terms-of-use.md",
+    "sha256": "f5f2c413e424563700f3c72f064b2d2b720fb4a1c627be5dac5c004a86b5ab93"
+  },
+  {
+    "source": "refined-reference/website-copy/website-disclaimer.md",
+    "sha256": "41a98701782723ee3fc1084e7221f06a5459a0bcc1fa15f968f7c32288e11193"
+  },
+  {
+    "source": "refined-reference/wrangler.jsonc",
+    "sha256": "b16ee65150e2b0f358fa6604c1704eb6306fb379926bbf26e76c15b6e3d56d7e"
+  },
+  {
+    "source": ".playwright-mcp/console-2026-09-08T09-18-36-400Z.log",
+    "sha256": "dd222d38f4fa33b17231549cccb78650ffb4d4c1aca9564448e54e756b48af1a"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-16-21-286Z.yml",
+    "sha256": "732f80b47a52ed8d3a1b47a478602a27c62cf0f9ffc67512739fce32fd39330d"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-16-45-342Z.png",
+    "sha256": "d53f7f6782ff8aaae0ed7cb2c21cd5b0a6a6d2be9434d2e686a92af8704321c2"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-18-38-198Z.yml",
+    "sha256": "ce9552481f3d245faff9ac50f6184613864d905e3226271eb02f49d90f41ce57"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-19-45-936Z.png",
+    "sha256": "df37726be031cbad2a2789d3f6c6f304f22129c8aa3198b083465ddd551f388c"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-21-41-646Z.png",
+    "sha256": "0034f8dfa654698fa99f2252979264d2d884d96cb3d0179ec4e953bd2331ce93"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-30-39-372Z.png",
+    "sha256": "1cd188e4f607fa858a99b2981448f0c16909b7cd9412b04c54edc12e008d318a"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-38-36-457Z.yml",
+    "sha256": "1e564ae4b7d74ef6c4f52847908ea27d023e8fd1c78262bd1a79f2bf452f9d3e"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T09-39-27-790Z.png",
+    "sha256": "61e559414ee966ce58890cf4b05519a06f81a0459ff4823803ee222914b42ca3"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T10-30-57-987Z.yml",
+    "sha256": "e03b2eab4629de2e9083a45ee17782017497fc7c8b681fa7aefa0a571aa7626c"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T10-35-44-053Z.png",
+    "sha256": "f14f2b1cdb1d9406885bc0f44429e941fb15ad0affaa93e2a02fabe7761c53e6"
+  },
+  {
+    "source": ".playwright-mcp/page-2026-09-08T10-36-16-752Z.png",
+    "sha256": "66b2a197897c0ceef034973b85541cfb266127a8cf0001308b4d42d8bc8a5711"
+  }
+]

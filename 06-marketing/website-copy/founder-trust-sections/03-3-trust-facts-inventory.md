@@ -1,0 +1,44 @@
+# 3. Trust-facts inventory
+
+The scoped founder summaries and origin were approved by Janith on 5 September 2026; see [the role register](../../../01-company/founders-and-roles/ROLE-REGISTER.md). Detailed claims below remain held unless explicitly covered by those summaries.
+
+This inventory covers every substantive factual claim in the proposed founder/trust copy. “Repo” verifies only that wording exists in the current project; it does not verify the real-world fact or that an inbox/process is operational.
+
+| ID | Claim | Proposed placement | Source currently available | Status | Evidence or approval required |
+|---|---|---|---|---|---|
+| TF-01 | Heutrix Labs has four founders: Janith, Rochelle, Sach and Shash. | Home, About, service pages | B3 brief; Janith confirmation, 5 September 2026 | Approved for publication | Public short names and scoped summaries approved; see role register. |
+| TF-02 | The four founders share delivery responsibility. | Home, About | B3 brief | Ready after owner sign-off | Define actual responsibilities and approve exact wording. |
+| TF-03 | One named founder will lead each engagement from discovery through testing and handover. | Home, About, service bio | Recommended by audit/copy pack | Proposed commitment | Adopt in the sales/delivery process and reflect it in scope/proposal templates. |
+| TF-04 | Proposals/scopes will name contributing founders and responsibilities. | Home, About, service bio | Recommended by copy pack | Proposed commitment | Adopt a field in the proposal/scope template and assign an owner. |
+| TF-05 | A Heutrix founder reviews “See where Heutrix can help” requests and conducts suitable calls. | Contact/booking | Recommended by copy pack | Proposed commitment | Name the roster/owner and confirm coverage. |
+| TF-06 | Heutrix grew from first-hand experience running a disability and allied health services organisation. | Home, About | Janith confirmation, 5 September 2026 | Approved for publication | Organisation remains unnamed. |
+| TF-07 | The observed operational problems included intake, compliance administration, payroll, finance and customer-data work. | Home, About | B3 brief | Ready after owner sign-off | Confirm list and that it can be described publicly. |
+| TF-08 | Heutrix mapped bottlenecks, delivered targeted workflow improvements and supported staff handover. | Home, About | Evidence-refreshed case-study collection | Supported; final owner sign-off required | Keep Heutrix as the delivery attribution and retain the source-organisation confidentiality boundary. |
+| TF-09 | Janith has worked in complex enterprise environments. | Home, About | B3 brief | Hold — evidence needed | LinkedIn export/CV/employer source and Janith's approval. |
+| TF-10 | Janith has more than 10 years' relevant experience across large enterprises, banks and universities in Melbourne. | About bio, future trust strip | B3 brief; LinkedIn URL inaccessible behind sign-in | Hold — evidence needed | Verify roles, dates, sectors, location and relevance. |
+| TF-11 | Janith helped found and grow a disability support services business. | Home, About | B3 brief | Hold — evidence needed | Confirm title, period, entity/confidentiality and permission to publish. |
+| TF-12 | Rochelle has project-lead experience in blockchain. | About bio | B3 brief | Hold — evidence needed | CV/LinkedIn/employer source, dates and approved description. |
+| TF-13 | Rochelle led administration and operations for a disability service provider. | Home, About | B3 brief | Hold — evidence needed | Verify exact title, responsibilities, dates and confidentiality. |
+| TF-14 | Rochelle understands allied health and disability-provider day-to-day operations. | Home, About | B3 brief | Hold — evidence needed | Replace subjective “understands intricately” with evidenced responsibilities/examples. |
+| TF-15 | Sach has data and analytics experience in major Melbourne banks. | Home, About | B3 brief | Hold — evidence needed | Verify employers/sector, roles, dates and whether “major banks” may be stated. |
+| TF-16 | Sach has handled data and designed privacy-aware solutions. | Home, About | B3 brief | Hold — evidence needed | Verify responsibilities/training; avoid absolute “privacy-safe” or “secure” wording. |
+| TF-17 | Shash has delivered solutions for global businesses connected to Dubai, the United States and Singapore. | About bio | B3 brief | Hold — evidence needed | Verify employer/client relationship, locations, roles and permission. |
+| TF-18 | Shash has Go/Golang and backend infrastructure experience. | Home, About | B3 brief | Hold — evidence needed | Portfolio, CV, employer source or approved project evidence. |
+| TF-19 | Onboarding was improved across three organisations. | Future proof/case-study section | B3 brief | Hold — evidence needed | Define organisations, intervention, measurement period and publication permission. |
+| TF-20 | QuickBooks onboarding and access saved approximately 1–4 hours of onboarding effort per worker. | Anonymised case study | Case-study evidence map: process board, workbooks and client feedback | Supported; publication approval required | Retain approximate wording and the per-worker unit; do not extend to due-diligence claims not evidenced by this case. |
+| TF-21 | Heutrix delivered a controlled invoicing workflow spanning configured workbooks, reminders, status, discrepancies and reconciliation reporting. | Anonymised case-study collection | Reviewed process, workbook and Power BI artefacts | Supported; publication approval required | Do not describe the entire payroll function as automated or imply guaranteed financial accuracy. |
+| TF-22 | Contractor invoice-workspace setup saved up to approximately 2 hours per contractor. | Anonymised case study | Case-study evidence map: process board, workbooks and client feedback | Supported; publication approval required | Retain approximate wording and the per-contractor unit. |
+| TF-23 | Invoice discrepancy handling and Power BI reconciliation saved up to approximately 2 hours per discrepancy. | Anonymised case studies | Case-study evidence map: reviewed artefacts and client feedback | Supported; publication approval required | Keep the result tied to discrepancy investigation; do not claim source accuracy or a financial outcome. |
+| TF-24 | Formula-driven invoice workbooks used validation and protection controls, with client feedback supporting high data integrity in the configured workflow. | Anonymised case study | Reviewed workbook internals, process board and client feedback | Supported; publication approval required | Avoid an absolute accuracy guarantee and retain payroll, tax and award boundaries. |
+| TF-25 | The legal entity is Heutrix Pty Ltd, ABN 64 702 109 662, ACN 702 109 662. | About, footer, legal pages | [Official ABR evidence](../../../01-company/identity-and-registrations/REGISTRATION-DETAILS.md), 8 September 2026 | Verified | Active from 7 September 2026; not currently GST registered; VIC 3978. Supersedes the 1 September no-match search. Trading-name status, full address and signing authority remain open. |
+| TF-26 | `hello@heutrixlabs.com` is the public contact email. | Contact, About, footer | Current repo | Hold — operational verification needed | Send/receive test, monitored owner and response/failure process. |
+| TF-27 | Heutrix is Melbourne-based. | Home trust strip, About, footer | Audit says intended market; not confirmed in B3 answers | Hold — fact missing | Confirm accurate base/suburb wording and evidence. |
+| TF-28 | Heutrix delivers remotely across Australia. | About, service pages | Audit assumption only | Hold — fact missing | Confirm actual service area and delivery capability. |
+| TF-29 | Heutrix Labs and Heutrix Assurance are commercially connected, separate service lines. | About | Current repo | Hold — relationship verification needed | Confirm corporate relationship and align with legal/proposal wording. |
+| TF-30 | Call length is 20 minutes and the human response commitment is within two business days. | Contact/booking | Offer owner-validation register and verified-facts register | Confirmed wording; mechanism not yet operational | Publish the facts, but keep request language until lead routing and scheduling are tested. Caller, backup, channel and precise SLA trigger still require approval. |
+| TF-31 | Qualifications, certifications or memberships. | About bios/trust strip | Not supplied | Hold — fact missing | Evidence each item or publish none. |
+| TF-32 | Insurance or independent security facts. | About/footer/proposals | Not supplied | Hold — fact missing | Current policy/certificate/assessment and approved precise wording, or omit. |
+| TF-33 | Founder avatars are preferred. | Founder cards | B3 brief | Ready after asset approval | Provide/commission individual assets, consent and alt text. |
+
+---
+

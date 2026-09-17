@@ -1,0 +1,565 @@
+# Heutrix Labs founder and delivery trust layer
+
+**Workstream:** B3 — Replace the anonymous trust gap  
+**Purpose:** Page-ready founder, delivery and accountability copy for Home, About, service and Contact/booking pages  
+**Prepared:** 1 September 2026  
+**Last aligned:** 4 September 2026 against the approved three-product offer, verified-facts register and evidence-refreshed Heutrix case studies  
+**Publication state:** **Approval required.** This pack distinguishes client-supplied facts, proposed operating commitments and claims that still need evidence. Do not publish any item marked **Hold** or any square-bracketed placeholder.
+
+## Publication key
+
+| Status | Meaning | Publication rule |
+|---|---|---|
+| Ready after owner sign-off | The fact was supplied in the B3 brief and the wording does not extend beyond it. | A founder must confirm the wording and permission to publish. |
+| Proposed commitment | This is a recommended delivery or sales practice, not a confirmed current fact. | Adopt it operationally, assign an owner and then approve the copy. |
+| Hold — evidence needed | The claim needs a source, measurement record or permission before it can support public trust. | Do not publish. |
+| Placeholder | Required information has not been supplied. | Replace before publication; never expose the placeholder on the website. |
+
+---
+
+# 1. Concise fact-and-asset questionnaire
+
+The B3 brief answers part of the original questionnaire. The questions below preserve those answers and isolate what still needs a response. One founder can complete this as the approval owner, with each founder approving their own biography.
+
+## A. People, roles and accountability
+
+**Supplied:** Heutrix Labs has four founders: Janith, Rochelle, Sach and Shash. Delivery responsibility is shared.
+
+Please confirm:
+
+1. Each founder's preferred public name, full name, pronouns and approved public title.
+2. For each service, who normally:
+   - reviews the enquiry;
+   - conducts the “See where Heutrix can help” call;
+   - scopes and prices the work;
+   - leads discovery;
+   - builds or configures the solution;
+   - reviews data/privacy/security decisions;
+   - trains staff; and
+   - owns handover and post-launch follow-up.
+3. Will every proposal name one accountable delivery lead and any contributing founders?
+4. Does the person who scopes the engagement stay involved through acceptance and handover? If not always, state the honest rule.
+5. Who is the backup contact when the named lead is unavailable?
+
+## B. Experience and evidence
+
+**Supplied:** Relevant backgrounds for all four founders are summarised in the copy below.
+
+For each founder, provide one source file or public link showing the approved job title, organisation/sector and dates for every public experience claim. A LinkedIn export, CV, employer biography, qualification record or other substantiating document is suitable. Also confirm which former employers, sectors and locations may be named publicly.
+
+**Janith's LinkedIn:** `www.linkedin.com/in/janith-dharmasinghe` was supplied, but the available browser reached LinkedIn's sign-in wall and could not inspect the profile. Please provide a PDF/export or a signed-in browser view if that profile is to be used as evidence.
+
+## C. Qualifications, certifications and memberships
+
+List only items relevant to workflow improvement, implementation, care operations, data, security/privacy, engineering or change management. For each item provide:
+
+- exact qualification/certification/membership name;
+- issuing organisation;
+- year or validity period, if public;
+- credential URL or certificate; and
+- permission to publish.
+
+If there are no relevant public credentials, answer **None to publish**. Practical experience can carry the trust story without inventing badges.
+
+## D. Founder story
+
+**Supplied:** Heutrix grew from experience helping run a disability and allied health services business, where intake, compliance administration, payroll, finance, customer-data handling and other manual workflows competed with time for clients and staff. Heutrix diagnosed bottlenecks and delivered targeted process maps, controlled workbooks, reminders, workflow automation, reporting and staff handover.
+
+Please confirm:
+
+1. Whether “disability and allied health services business” is the approved public description.
+2. The business relationship must remain anonymous; confirm the final wording does not identify it indirectly.
+3. Which contributors may be named in the founder story while retaining Heutrix as the delivery attribution.
+4. Which problems and outcomes may be described publicly without exposing the source organisation.
+
+## E. Company, contact and service area
+
+**Supplied:** The legal entity is stated to be **Heutrix Pty Ltd**. The current site displays `hello@heutrixlabs.com`.
+
+**Official-register check on 1 September 2026:** An exact-name search for “Heutrix Pty Ltd” returned zero results in [ASIC Connect](https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx). An [ABN Lookup search](https://abr.business.gov.au/Search/ResultsActive?SearchText=Heutrix%20Pty%20Ltd) returned fuzzy matches but no exact Heutrix name. This does not establish that the supplied entity statement is false—the entity could be recorded under another exact name or identifier—but it means the public legal identity has **not** been corroborated. Supply the ACN, ABN or registration extract before publication and check the spelling carefully.
+
+Please provide or confirm:
+
+- exact ASIC-registered entity name;
+- ABN and permission to display it;
+- whether “Heutrix Labs” is a registered business name or trading style;
+- monitored email address and response owner;
+- public phone number, if any;
+- Melbourne base/suburb wording that is accurate and safe to publish;
+- onsite service radius, if offered;
+- whether remote delivery is available elsewhere in Victoria or Australia; and
+- an approved LinkedIn/company social profile.
+
+## F. “See where Heutrix can help” call facts
+
+The following facts are now confirmed and may be used consistently:
+
+- the call lasts 20 minutes;
+- it is no obligation;
+- Heutrix responds within two business days;
+- the intended end state is directly bookable; and
+- until a working scheduler is live and tested, the site must remain in request mode.
+
+Confirm the remaining operational facts:
+
+- founder(s) who conduct calls;
+- booking or request process;
+- call agenda;
+- possible outcomes after the call; and
+- no-fit/no-build policy.
+
+Use **See where Heutrix can help** as the public CTA in both request and booking modes. Until direct scheduling is operationally true, the next button must say **Request my 20-minute call**, not **Book** or **Choose a time**.
+
+## J. Offer and audience alignment
+
+Any approved founder story must support, rather than compete with, the current public offer:
+
+- Australian disability support providers are the primary launch audience;
+- allied health practices are the secondary launch audience;
+- Heutrix Diagnostics is a paid standalone decision product;
+- Heutrix Workflow Transformation is the primary implementation product; and
+- Heutrix AI Guardrails is the workplace AI governance product.
+
+Do not use the founder story to reintroduce GP clinics, broad healthcare positioning, public prices, unsupported tool capability, or dashboards and automation as separate products.
+
+## G. Results, confidentiality and measurement
+
+**Evidence refreshed on 4 September 2026; final publication approval remains required:**
+
+- QuickBooks onboarding and access saved approximately 1–4 hours of onboarding effort per worker;
+- configured contractor invoice workspaces saved up to approximately 2 hours per contractor;
+- pay-cycle reminders reduced out-of-cycle payment events by approximately 60%;
+- invoice discrepancy handling and Power BI reconciliation each saved up to approximately 2 hours per discrepancy; and
+- workbook formulas, validation and protection supported high data integrity in the configured workflow.
+
+These approximate outcomes are supported by client feedback recorded by the owner and the reviewed delivery artefacts. Before publication:
+
+1. approve the final range wording and the unit attached to every figure;
+2. keep the source organisation anonymous and remove source screenshots, identifiable wording and operating records;
+3. retain the limitations documented in the [case-study evidence map](../case-studies-and-assets/SOURCE-EVIDENCE-MAP.md);
+4. do not convert client feedback into a verbatim testimonial without separate permission; and
+5. do not extend a case-study result into a promise for future engagements.
+
+## H. Images and trust assets
+
+**Supplied preference:** Use founder avatars instead of portraits.
+
+Please provide:
+
+- one approved avatar for each founder, or consent and reference images to commission them;
+- permission from every founder to display their avatar, preferred name and biography;
+- optional real workspace/process photographs with no client or sensitive data visible; and
+- approval or refusal for a future real group portrait, which will generally provide stronger human proof than avatars.
+
+## I. Insurance and security
+
+List only current, relevant and documentable facts such as professional indemnity/cyber insurance, security training or independently assessed controls. Supply the policy/certificate or assessment source and approved wording. If none are relevant, omit this category rather than using generic “secure” claims.
+
+---
+
+# 2. Page-ready copy pack
+
+## 2.1 Homepage — “Why Heutrix” section
+
+**Recommended status:** Ready after owner sign-off for the founder names and origin story. The final accountability paragraph is a proposed commitment and must be adopted before publication.
+
+**Eyebrow:** Why Heutrix
+
+## Built by people who have dealt with the operational work themselves.
+
+Heutrix grew from first-hand experience inside a disability and allied health services business. As the organisation grew, intake, compliance administration, payroll, finance and customer-data work created more manual checking, chasing and handover pressure. Those systems mattered—but they also competed with the time and attention staff wanted to give clients.
+
+Heutrix began by mapping the work, finding the bottlenecks and making targeted improvements with the people using the process. That delivery experience still shapes how Heutrix works: understand the real workflow, improve the smallest useful part, keep sensitive or accountable decisions with people, and train the team that will own it after handover.
+
+### Four founders, shared responsibility for delivery.
+
+- **Janith** brings a workflow and implementation lens, including experience in complex enterprise environments and in helping build a disability support services business.
+- **Rochelle** brings project leadership and hands-on administration and operations experience from a disability service provider.
+- **Sach** brings data and analytics experience, with a focus on using business information carefully and usefully.
+- **Shash** brings backend engineering and infrastructure experience for systems used across international business environments.
+
+**Accountability copy — publish only after adopting this operating commitment:**
+
+Your written scope names the founder leading your engagement, any contributing founders, the agreed outcome and the handover responsibilities. The named lead remains accountable from discovery through testing and handover, so you know who owns the work and where to go when a decision is needed.
+
+**Primary CTA:** Meet the founders
+
+**Secondary CTA:** See where Heutrix can help
+
+**Compact trust line for cards or narrow layouts:**
+
+Founder-delivered by Janith, Rochelle, Sach and Shash, combining care-provider operations, workflow implementation, data and analytics, and backend engineering.
+
+### Homepage copy evidence notes
+
+- Founder names, shared delivery and the origin story are client-supplied facts requiring founder approval.
+- “Complex enterprise environments” is a conservative summary of Janith's supplied background; the “more than 10 years,” named sectors and Melbourne detail are intentionally withheld pending evidence.
+- The descriptions are contribution areas, not invented job titles or claims that one founder alone owns that discipline.
+- No result, qualification, client, insurance or service-area claim appears in this section.
+
+---
+
+## 2.2 About page
+
+**Recommended status:** Ready after owner sign-off, except the marked accountability commitment and individual experience facts, which require the evidence listed in the inventory.
+
+**SEO title:** About Heutrix Labs | Founder-delivered workflow improvement
+
+**Meta description:** Meet the four founders behind Heutrix Labs and see how care-provider operations, workflow implementation, data and engineering experience shape each engagement.
+
+# We built Heutrix around an operational problem we knew first-hand.
+
+Heutrix Labs helps care-related service providers improve the internal workflows around client service: the intake, follow-up, onboarding, finance, reporting and handover work that must run reliably in the background.
+
+The business grew from the founders' experience helping run a disability and allied health services organisation. They saw capable staff lose time to repeated checks, scattered information, unclear ownership and processes that became harder to manage as the organisation grew. One founder began diagnosing where work stalled, then worked with the team to introduce targeted process improvements, appropriate automation and practical staff training.
+
+Heutrix exists to make that kind of improvement accessible to other providers—without forcing a new platform, hiding important decisions inside a black box or leaving the team dependent on the builder.
+
+**Primary CTA:** See where Heutrix can help
+
+## Meet the founders
+
+Delivery responsibility is shared across Janith, Rochelle, Sach and Shash. Their backgrounds cover care-provider operations, workflow implementation, project delivery, data and analytics, and backend engineering.
+
+### Janith — workflow and implementation perspective
+
+Janith connects operational problems with practical implementation. His supplied background includes work across complex enterprise environments and experience helping found and grow a disability support services business. For buyers, that means the workflow is considered in the context of real staff pressure, operational dependencies and the work required to make a change usable.
+
+**Publication note:** Hold the “more than 10 years,” banks, universities and Melbourne wording until the LinkedIn profile or another source verifies the relevant roles and dates.
+
+### Rochelle — operations and adoption perspective
+
+Rochelle brings experience in project leadership and in leading administration and operations for a disability service provider. Her contribution keeps discovery grounded in the detail of everyday work: who completes each step, where handovers fail, what managers need to see and what staff will realistically maintain.
+
+**Publication note:** Hold until role titles, organisations/sectors and dates are evidenced and Rochelle approves the wording.
+
+### Sach — data and analytics perspective
+
+Sach brings data and analytics experience from major banking environments. His contribution is to make data useful without treating it casually: clarify what is needed, how it moves, who should see it and how a manager can interpret the result.
+
+**Publication note:** Hold the banking, data-handling and privacy-related wording until roles, dates and approved substantiation are supplied. Do not use “privacy-safe” or “secure” as an absolute claim.
+
+### Shash — engineering and infrastructure perspective
+
+Shash brings backend engineering and infrastructure experience for global businesses, including work involving Go. His contribution is to test whether a proposed solution is technically sensible, maintainable and proportionate to the operational problem—not simply the newest technology available.
+
+**Publication note:** Hold the Dubai, United States and Singapore wording until the relationship to those locations, roles and dates is verified. Confirm whether “Go” or “Golang” is preferred for the intended audience.
+
+## What clients should be able to hold us accountable for
+
+**Publish only after these practices are adopted and reflected in proposals/service agreements.**
+
+- A named founder leads the engagement and remains visible from discovery through handover.
+- The scope states the workflow, outcome, responsibilities, assumptions and exclusions in plain language.
+- We agree what will be tested before building and use synthetic or de-identified information first where practical.
+- We involve the people who use the workflow, not only the person buying the project.
+- We document access, ownership, administration and maintenance at handover.
+- We say when a build is not justified or when another adviser is needed.
+
+## Our delivery philosophy
+
+### Start with the workflow, not the software.
+
+We first understand the trigger, people, decisions, exceptions and handovers. A tool is useful only if it makes that work clearer and more reliable.
+
+### Keep responsibility visible.
+
+Automation can support repeatable administration. It should not obscure sensitive decisions, remove professional judgement or make it unclear who is accountable.
+
+### Build for the team that remains.
+
+Testing, staff guidance and handover are part of the work. The aim is a system the client can understand, operate and maintain—not a permanent dependency on Heutrix.
+
+## Company details
+
+**Display only after verification:**
+
+- **Trading name:** Heutrix Labs
+- **Legal entity:** Heutrix Pty Ltd — client supplied; verify against ASIC/ABN records
+- **ABN:** [ABN — PLACEHOLDER]
+- **Based in:** [MELBOURNE/SUBURB WORDING — PLACEHOLDER]
+- **Service area:** [ONSITE AND REMOTE SERVICE AREA — PLACEHOLDER]
+- **Email:** hello@heutrixlabs.com — confirm monitoring and response owner
+- **LinkedIn:** [APPROVED COMPANY OR FOUNDER PROFILE — PLACEHOLDER]
+
+## Relationship with Heutrix Assurance
+
+Heutrix Labs and Heutrix Assurance are commercially connected and operate as separate service lines. Work commissioned from Heutrix Labs is operational workflow support. It does not provide NDIS registration readiness, mock audits, audit certification, legal advice, clinical advice or regulatory approval.
+
+**Publication note:** Retain only after the exact corporate relationship and service boundary are approved for consistency across the site, proposal and legal documents.
+
+## Want to discuss one workflow with the people who deliver the work?
+
+Bring a general, non-sensitive description of the workflow, who uses it and what is difficult to track, hand over or report.
+
+**Primary CTA:** See where Heutrix can help
+
+**Secondary CTA:** View services
+
+---
+
+## 2.3 Short founder-team bio for service and booking pages
+
+**Recommended status:** Ready after founder approval and adoption of the named-lead commitment.
+
+### Standard version
+
+Heutrix engagements are delivered by founders Janith, Rochelle, Sach and Shash. Together, the team brings hands-on care-provider operations, workflow implementation, project delivery, data and analytics, and backend engineering experience. Your scope names the founder leading the work, who else is contributing and what each party owns through testing and handover.
+
+### Short version
+
+Founder-delivered by Janith, Rochelle, Sach and Shash, with one named lead and clear ownership from discovery through handover.
+
+### Service-card version
+
+You will know which founder is leading the work, what they are responsible for and who owns the result after handover.
+
+**Do not append qualifications, employer names, years or quantified results until the corresponding inventory row is approved.**
+
+---
+
+## 2.4 CTA-adjacent “See where Heutrix can help” microcopy
+
+**Recommended status:** Proposed sales process. Approve and operationalise before publication.
+
+### Contact-page heading
+
+# See where Heutrix can help.
+
+Tell us what is causing frustration. In a 20-minute, no-obligation call, we will understand one operational problem, see whether Heutrix is the right fit and agree the most useful next step. No patient, participant, client, clinical, Medicare, NDIS, diagnostic or other sensitive information is needed.
+
+### What happens on the call
+
+We will ask how the workflow works now, where it stalls, who owns each step and what a useful improvement would look like. The purpose is to decide whether there is a sensible, bounded next step—not to push a build before the problem is clear.
+
+After the call, we will give you one of three clear outcomes:
+
+1. a recommended first step;
+2. a request for limited, non-sensitive information needed to define fit; or
+3. an honest no-fit or no-build recommendation.
+
+### Named-caller confirmation
+
+Your call will be with **[FOUNDER NAME — DYNAMIC PLACEHOLDER]**, one of the Heutrix founders. **[FOUNDER NAME]** will **[STATE THEIR VERIFIED ROLE AFTER THE CALL — PLACEHOLDER]**.
+
+### Trust strip beside the form
+
+- A founder reviews your workflow request.
+- No sensitive client information is needed.
+- The call focuses on one operational problem and the smallest useful next step.
+- Heutrix responds within two business days.
+- The workflow fit call lasts 20 minutes.
+
+### CTA labels
+
+Use in both request and booking modes:
+
+- **Primary CTA:** See where Heutrix can help
+
+Use now, while the site has a request form:
+
+- **Form button:** Request my 20-minute call
+- **Confirmation heading after verified server receipt:** Your call request has been received.
+
+Use only when a working calendar offers a confirmed time:
+
+- **Qualification form button:** Continue to available times
+- **Calendar button:** Choose a time
+
+### Request confirmation copy
+
+**Publish only after the form backend confirms receipt.**
+
+Your call request has been received. We will review the workflow summary and respond within two business days with either scheduling details, one concise request for more general information or an honest no-fit response. Please do not send sensitive information unless an appropriate process has been agreed.
+
+---
+
+# 3. Trust-facts inventory
+
+This inventory covers every substantive factual claim in the proposed founder/trust copy. “Repo” verifies only that wording exists in the current project; it does not verify the real-world fact or that an inbox/process is operational.
+
+| ID | Claim | Proposed placement | Source currently available | Status | Evidence or approval required |
+|---|---|---|---|---|---|
+| TF-01 | Heutrix Labs has four founders: Janith, Rochelle, Sach and Shash. | Home, About, service pages | B3 brief | Ready after owner sign-off | Confirm preferred/full public names and permission from all four. |
+| TF-02 | The four founders share delivery responsibility. | Home, About | B3 brief | Ready after owner sign-off | Define actual responsibilities and approve exact wording. |
+| TF-03 | One named founder will lead each engagement from discovery through testing and handover. | Home, About, service bio | Recommended by audit/copy pack | Proposed commitment | Adopt in the sales/delivery process and reflect it in scope/proposal templates. |
+| TF-04 | Proposals/scopes will name contributing founders and responsibilities. | Home, About, service bio | Recommended by copy pack | Proposed commitment | Adopt a field in the proposal/scope template and assign an owner. |
+| TF-05 | A Heutrix founder reviews “See where Heutrix can help” requests and conducts suitable calls. | Contact/booking | Recommended by copy pack | Proposed commitment | Name the roster/owner and confirm coverage. |
+| TF-06 | Heutrix grew from experience helping run a disability and allied health services business. | Home, About | B3 brief | Ready after owner sign-off | Confirm approved organisation description and confidentiality boundary. |
+| TF-07 | The observed operational problems included intake, compliance administration, payroll, finance and customer-data work. | Home, About | B3 brief | Ready after owner sign-off | Confirm list and that it can be described publicly. |
+| TF-08 | Heutrix mapped bottlenecks, delivered targeted workflow improvements and supported staff handover. | Home, About | Evidence-refreshed case-study collection | Supported; final owner sign-off required | Keep Heutrix as the delivery attribution and retain the source-organisation confidentiality boundary. |
+| TF-09 | Janith has worked in complex enterprise environments. | Home, About | B3 brief | Hold — evidence needed | LinkedIn export/CV/employer source and Janith's approval. |
+| TF-10 | Janith has more than 10 years' relevant experience across large enterprises, banks and universities in Melbourne. | About bio, future trust strip | B3 brief; LinkedIn URL inaccessible behind sign-in | Hold — evidence needed | Verify roles, dates, sectors, location and relevance. |
+| TF-11 | Janith helped found and grow a disability support services business. | Home, About | B3 brief | Hold — evidence needed | Confirm title, period, entity/confidentiality and permission to publish. |
+| TF-12 | Rochelle has project-lead experience in blockchain. | About bio | B3 brief | Hold — evidence needed | CV/LinkedIn/employer source, dates and approved description. |
+| TF-13 | Rochelle led administration and operations for a disability service provider. | Home, About | B3 brief | Hold — evidence needed | Verify exact title, responsibilities, dates and confidentiality. |
+| TF-14 | Rochelle understands allied health and disability-provider day-to-day operations. | Home, About | B3 brief | Hold — evidence needed | Replace subjective “understands intricately” with evidenced responsibilities/examples. |
+| TF-15 | Sach has data and analytics experience in major Melbourne banks. | Home, About | B3 brief | Hold — evidence needed | Verify employers/sector, roles, dates and whether “major banks” may be stated. |
+| TF-16 | Sach has handled data and designed privacy-aware solutions. | Home, About | B3 brief | Hold — evidence needed | Verify responsibilities/training; avoid absolute “privacy-safe” or “secure” wording. |
+| TF-17 | Shash has delivered solutions for global businesses connected to Dubai, the United States and Singapore. | About bio | B3 brief | Hold — evidence needed | Verify employer/client relationship, locations, roles and permission. |
+| TF-18 | Shash has Go/Golang and backend infrastructure experience. | Home, About | B3 brief | Hold — evidence needed | Portfolio, CV, employer source or approved project evidence. |
+| TF-19 | Onboarding was improved across three organisations. | Future proof/case-study section | B3 brief | Hold — evidence needed | Define organisations, intervention, measurement period and publication permission. |
+| TF-20 | QuickBooks onboarding and access saved approximately 1–4 hours of onboarding effort per worker. | Anonymised case study | Case-study evidence map: process board, workbooks and client feedback | Supported; publication approval required | Retain approximate wording and the per-worker unit; do not extend to due-diligence claims not evidenced by this case. |
+| TF-21 | Heutrix delivered a controlled invoicing workflow spanning configured workbooks, reminders, status, discrepancies and reconciliation reporting. | Anonymised case-study collection | Reviewed process, workbook and Power BI artefacts | Supported; publication approval required | Do not describe the entire payroll function as automated or imply guaranteed financial accuracy. |
+| TF-22 | Contractor invoice-workspace setup saved up to approximately 2 hours per contractor. | Anonymised case study | Case-study evidence map: process board, workbooks and client feedback | Supported; publication approval required | Retain approximate wording and the per-contractor unit. |
+| TF-23 | Invoice discrepancy handling and Power BI reconciliation saved up to approximately 2 hours per discrepancy. | Anonymised case studies | Case-study evidence map: reviewed artefacts and client feedback | Supported; publication approval required | Keep the result tied to discrepancy investigation; do not claim source accuracy or a financial outcome. |
+| TF-24 | Formula-driven invoice workbooks used validation and protection controls, with client feedback supporting high data integrity in the configured workflow. | Anonymised case study | Reviewed workbook internals, process board and client feedback | Supported; publication approval required | Avoid an absolute accuracy guarantee and retain payroll, tax and award boundaries. |
+| TF-25 | The legal entity is Heutrix Pty Ltd. | About, footer, legal pages | B3 brief; exact-name searches on ASIC Connect and ABN Lookup on 1 September 2026 did not return an exact match | Hold — official check unresolved | Supply the ACN, ABN or registration extract; confirm exact spelling and owner approval before publication. |
+| TF-26 | `hello@heutrixlabs.com` is the public contact email. | Contact, About, footer | Current repo | Hold — operational verification needed | Send/receive test, monitored owner and response/failure process. |
+| TF-27 | Heutrix is Melbourne-based. | Home trust strip, About, footer | Audit says intended market; not confirmed in B3 answers | Hold — fact missing | Confirm accurate base/suburb wording and evidence. |
+| TF-28 | Heutrix delivers remotely across Australia. | About, service pages | Audit assumption only | Hold — fact missing | Confirm actual service area and delivery capability. |
+| TF-29 | Heutrix Labs and Heutrix Assurance are commercially connected, separate service lines. | About | Current repo | Hold — relationship verification needed | Confirm corporate relationship and align with legal/proposal wording. |
+| TF-30 | Call length is 20 minutes and the human response commitment is within two business days. | Contact/booking | Offer owner-validation register and verified-facts register | Confirmed wording; mechanism not yet operational | Publish the facts, but keep request language until lead routing and scheduling are tested. Caller, backup, channel and precise SLA trigger still require approval. |
+| TF-31 | Qualifications, certifications or memberships. | About bios/trust strip | Not supplied | Hold — fact missing | Evidence each item or publish none. |
+| TF-32 | Insurance or independent security facts. | About/footer/proposals | Not supplied | Hold — fact missing | Current policy/certificate/assessment and approved precise wording, or omit. |
+| TF-33 | Founder avatars are preferred. | Founder cards | B3 brief | Ready after asset approval | Provide/commission individual assets, consent and alt text. |
+
+---
+
+# 4. Recommended placement map
+
+| Page or surface | Placement | Content | Reason |
+|---|---|---|---|
+| Home | After the delivery method and before illustrative “before and after” examples | Full “Why Heutrix” section with four founder avatars and accountability statement | Answers “who” before the page asks visitors to rely on demonstrations or take action. |
+| Home | Directly above the “See where Heutrix can help” form | Short founder-team bio plus call microcopy | Reduces uncertainty at the highest-friction conversion point. |
+| About | Replace the anonymous philosophy-led opening | Founder story, four bios, accountability and delivery philosophy | Makes people and experience the organising structure of the page. |
+| About | Near the final CTA | Verified company details and service area | Gives a buyer a genuine entity and contact path to assess. |
+| Services overview | Between the page introduction and service list, or directly before the final CTA | Standard founder-team bio | Connects delivery capability to service choice without repeating four full bios. |
+| Individual service/sector pages | Beside the first high-intent CTA | Short founder-team bio; add the actual named lead only when assignments are stable | Keeps trust next to the decision rather than buried on About. |
+| Contact/booking | Above the form and in the left trust column | Founder-led “See where Heutrix can help” heading, 20-minute/no-obligation promise, agenda, outcomes, response time and assigned caller | Sets expectations before personal contact details are requested. |
+| Booking confirmation | After successful scheduling or verified server receipt | Dynamic founder name, role, next step and response timing | Makes accountability concrete and avoids an anonymous handoff. |
+| Footer | Legal identity line | Heutrix Pty Ltd, ABN, service area and monitored contact details after verification | Provides consistent company identity on every page. |
+| Structured data/social | Organisation/person data only after the visible copy is approved | Exact legal/trading names and approved profiles | Prevents search metadata from making claims the page cannot support. |
+
+---
+
+# 5. Image guidance
+
+## Preferred trust asset: real founder portraits
+
+A real image usually answers the human-proof question more strongly than an avatar. If the founders later approve portraits:
+
+- Photograph all four founders in the same session with consistent lighting, crop and background.
+- Use a natural head-and-shoulders or waist-up composition, direct eye contact and ordinary professional clothing; avoid staged boardroom clichés.
+- Capture one group image plus individual 4:5 portraits and square crops.
+- Export responsive WebP/AVIF versions from a high-resolution original; keep the original archived.
+- Use name-and-role captions. Alt text should identify the person and relevant context, not describe appearance unnecessarily.
+- Obtain written permission for website, social and proposal use.
+- Do not include a client workplace, client records, screens, badges or documents unless permission and redaction are confirmed.
+
+## Approved interim approach: founder avatars
+
+The stated preference is avatars. Use them as honest illustrations, not as fabricated photographic proof:
+
+- Commission four individually recognisable illustrations from founder-approved reference images.
+- Keep one consistent style, background, crop and level of detail while preserving each founder's real distinguishing features.
+- Label each image with the founder's name and contribution area; where helpful, use alt text such as “Illustrated portrait of Janith, Heutrix co-founder.”
+- Do not add invented uniforms, security badges, clinical symbols, awards, employer logos or other authority cues.
+- Do not use generic avatar-library characters or AI-generated photorealistic faces that could be mistaken for real portraits.
+- Add a real candid group/workshop photograph later if all founders consent; this can offset the lower proof value of avatars.
+
+## Optional real workspace/process photographs
+
+Useful supporting images include:
+
+- a founder facilitating a workflow-mapping session on a clean whiteboard;
+- hands arranging a process map or acceptance checklist;
+- a founder reviewing a synthetic-data dashboard with a colleague; and
+- a training or handover moment using a demonstration environment.
+
+Before shooting, replace all live information with synthetic data. Check whiteboards, browser tabs, notifications, document headers, calendars, badges and reflections for personal, client or commercially sensitive content. Do not use stock-team imagery.
+
+---
+
+# 6. Missing-fact list
+
+## Launch-blocking for this trust layer
+
+1. Preferred/full public names, titles and approvals for all four founders; resolve **Sach** versus **Sachin**.
+2. Actual responsibility map from enquiry and the “See where Heutrix can help” call through scope, build, testing, training, handover and support.
+3. Named call owner/roster, backup, channel, scheduler and the precise trigger/coverage for the confirmed two-business-day response commitment.
+4. Evidence and approved wording for each founder biography.
+5. Janith's accessible LinkedIn export or another source for the “more than 10 years,” sector and Melbourne claims.
+6. Exact legal entity, ACN/ABN, Heutrix Labs business-name/trading status and verified company relationship with Heutrix Assurance. Resolve the zero-result exact-name ASIC search before publication.
+7. Melbourne base, onsite radius and remote service area.
+8. Monitored contact details and a successful end-to-end enquiry test.
+9. Four approved avatar files and written permission to publish names, images and biographies.
+
+## Needed before quantified proof is published
+
+1. Final owner approval for the case-study claims, including the approximately 1–4-hour onboarding range, the up-to-approximately-2-hour contractor and discrepancy results, and the approximately 60% reduction in out-of-cycle payment events.
+2. Written permission to publish the approved aggregate outcomes. The source organisation must remain unnamed, and no source screenshot, record or identifying wording may be published.
+3. Confirmation that each claim retains its stated unit, context, limitations and dependencies wherever it appears.
+4. A final cross-check between the published case study, website copy and internal evidence record so the wording does not exceed the reviewed artefacts and client feedback.
+5. Separate approval for any future testimonial, quote, exact result or client-identifying detail; none is implied by approval of the anonymised case studies.
+
+## Optional credibility enhancers
+
+1. Relevant qualifications, certifications or memberships with public evidence.
+2. Professional indemnity, cyber insurance or independently assessed security facts where relevant.
+3. Approved founder/company LinkedIn profile.
+4. Real founder group portrait or candid workflow workshop photograph.
+5. Synthetic demonstration and sample deliverables clearly labelled as demonstrations, not client outcomes.
+
+---
+
+# 7. Final approval checklist
+
+## People and permission
+
+- [ ] All four founders approve their public name, title, avatar/portrait and biography.
+- [ ] **Sach** versus **Sachin** is resolved consistently.
+- [ ] Each experience statement has a dated source and named approval owner.
+- [ ] Former employer/client names, sectors and locations are used only with permission.
+- [ ] No resume claim has been broadened beyond the evidence.
+
+## Delivery accountability
+
+- [ ] “See where Heutrix can help” reviewer and caller are assigned.
+- [ ] Every proposal names one accountable delivery lead and contributors.
+- [ ] The lead's involvement from discovery through handover is operationally true.
+- [ ] Backup/absence handling is defined.
+- [ ] Scope, acceptance, ownership, training, handover and support responsibilities match contracts and delivery practice.
+- [ ] The no-fit/no-build promise is understood and supported by the sales team.
+
+## Company and contact facts
+
+- [ ] Legal entity and ABN match official records.
+- [ ] Trading/business name use is confirmed.
+- [ ] Melbourne/service-area wording is accurate.
+- [ ] Email and any phone number are monitored by a named owner.
+- [ ] The form, calendar, confirmation and failure path have been tested end to end.
+- [ ] CTA says **Request** unless a real time can be booked and confirmed.
+- [ ] Heutrix Labs/Heutrix Assurance relationship copy matches legal and proposal documents.
+
+## Claims and evidence
+
+- [ ] No quantified onboarding, invoicing, payroll or time-saving claim is live without calculation records and permission.
+- [ ] “Average,” “per candidate” and “per pay cycle” use the correct unit and sample.
+- [ ] Case evidence states its limits and does not imply guaranteed future results.
+- [ ] No absolute “secure,” “privacy-safe,” “compliant” or “data integrity” guarantee is used.
+- [ ] Qualifications, memberships, customers, awards, insurance and security statements are evidenced or omitted.
+
+## Images and accessibility
+
+- [ ] Every founder image is approved and accurately labelled.
+- [ ] Avatars are clearly illustrations and do not invent authority cues.
+- [ ] No stock-team image appears.
+- [ ] Workspace/process images contain only synthetic or fully approved information.
+- [ ] Alternative text and name/role captions are present.
+- [ ] Responsive crops have been checked on mobile and desktop.
+
+## Final copy QA
+
+- [ ] Home, About, services, Contact/booking, confirmation and footer use the same names and responsibility language.
+- [ ] All square-bracketed placeholders and publication notes are removed from public output.
+- [ ] Every public factual claim maps to an approved row in the trust-facts inventory.
+- [ ] Illustrative examples are labelled as demonstrations, not client results.
+- [ ] Initial enquiry copy continues to prohibit personal or sensitive information.
+- [ ] A founder performs a final page-by-page approval against the rendered website.
+
+---
+
+# Release recommendation
+
+The narrative, page structure and low-claim interim wording are ready for founder review and now align with the three-product offer and evidence-refreshed case studies. Publication remains blocked until the founders approve their names and biographies, adopt the named-delivery-lead practice, verify company/service-area details, name the fit-call owner and backup, operationalise the lead and scheduling path, and supply approved avatar assets. Case-study claims have documented evidence boundaries, but the prepared proof modules must remain out of public output until final claim, confidentiality and owner approval is recorded; the source organisation must remain unnamed.

@@ -1,0 +1,24 @@
+## Outcome
+What changes, why, and which folder is accountable?
+
+## Work record
+- Change brief:
+- Author:
+- Base commit:
+- Affected folders and shared source decisions:
+- Native-file reservation, if applicable:
+
+## Review and verification
+- Required reviewers / affected-owner approval evidence:
+- Checks performed and results:
+- Unresolved decisions or dependencies:
+- Source/export/distribution consistency, if applicable:
+- Reversal approach if the change fails:
+
+## Integration
+- [ ] Latest main incorporated; conflicts and cross-folder contradictions resolved.
+- [ ] Independent review recorded and Janith coordinates the merge.
+- [ ] Applicable items in the [merge checklist](../00-control/templates/MERGE-CHECKLIST.md) completed.
+- [ ] Relevant control records, links and task status updated.
+
+Merging does not approve public release, private quoting, legal use or live client onboarding.

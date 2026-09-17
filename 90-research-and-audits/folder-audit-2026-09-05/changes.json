@@ -1,0 +1,416 @@
+[
+  {
+    "action": "refine",
+    "path": "AGENTS.md"
+  },
+  {
+    "action": "refine",
+    "path": "README.md"
+  },
+  {
+    "action": "refine",
+    "path": "00-control/COLLABORATION.md"
+  },
+  {
+    "action": "refine",
+    "path": "00-control/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "00-control/templates/CHANGE-BRIEF.md"
+  },
+  {
+    "action": "refine",
+    "path": ".github/pull_request_template.md"
+  },
+  {
+    "action": "refine",
+    "path": ".rgignore"
+  },
+  {
+    "action": "refine",
+    "path": "01-company/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "01-company/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "02-market-and-offers/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "02-market-and-offers/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "03-sales/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "03-sales/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "04-delivery/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "04-delivery/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "05-legal-privacy-risk/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "05-legal-privacy-risk/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "06-marketing/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "06-marketing/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "07-finance/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "07-finance/changes/README.md"
+  },
+  {
+    "action": "refine",
+    "path": "03-sales/fit-call/SALES-PROCESS-SPECIFICATION.md"
+  },
+  {
+    "action": "split",
+    "source": "03-sales/fit-call/SALES-PROCESS-SPECIFICATION.md",
+    "originalCharacters": 56422,
+    "originalHash": "718cd0f4bbcdbe7616d5fcae767f172df45a7e120d4241cd0972874a465518fb",
+    "indexCharacters": 1818,
+    "sections": [
+      {
+        "path": "03-sales/fit-call/process-sections/00-context-and-status.md",
+        "heading": "Context and status",
+        "characters": 1853
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/01-1-verified-facts-and-release-gates.md",
+        "heading": "1. Verified facts and release gates",
+        "characters": 2677
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/02-2-end-to-end-journey-map.md",
+        "heading": "2. End-to-end journey map",
+        "characters": 3690
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/03-3-website-and-booking-copy-pack.md",
+        "heading": "3. Website and booking copy pack",
+        "characters": 7645
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/04-4-qualification-form.md",
+        "heading": "4. Qualification form",
+        "characters": 3050
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/05-5-fit-no-fit-and-route-criteria.md",
+        "heading": "5. Fit, no-fit and route criteria",
+        "characters": 4920
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/06-6-twenty-minute-call-guide.md",
+        "heading": "6. Twenty-minute call guide",
+        "characters": 5184
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/07-7-confirmation-reminder-and-follow-up-messages.md",
+        "heading": "7. Confirmation, reminder and follow-up messages",
+        "characters": 7940
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/08-8-post-call-path-specification.md",
+        "heading": "8. Post-call path specification",
+        "characters": 1958
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/09-9-crm-and-analytics-specification.md",
+        "heading": "9. CRM and analytics specification",
+        "characters": 9116
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/10-10-follow-up-sequence-and-service-levels.md",
+        "heading": "10. Follow-up sequence and service levels",
+        "characters": 1698
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/11-11-operating-checklist.md",
+        "heading": "11. Operating checklist",
+        "characters": 2994
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/12-12-owner-decisions-still-required.md",
+        "heading": "12. Owner decisions still required",
+        "characters": 2826
+      },
+      {
+        "path": "03-sales/fit-call/process-sections/13-13-release-acceptance-test.md",
+        "heading": "13. Release acceptance test",
+        "characters": 871
+      }
+    ],
+    "textPreserved": true
+  },
+  {
+    "action": "refine",
+    "path": "06-marketing/website-copy/founder-trust-layer.md"
+  },
+  {
+    "action": "split",
+    "source": "06-marketing/website-copy/founder-trust-layer.md",
+    "originalCharacters": 41482,
+    "originalHash": "a9cba7bff62c9a74aa83b1e14fd5c8ade074eb5e406ab42b870cb60c5b8b1bc5",
+    "indexCharacters": 1213,
+    "sections": [
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/00-context-and-status.md",
+        "heading": "Context and status",
+        "characters": 1354
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/01-1-concise-fact-and-asset-questionnaire.md",
+        "heading": "1. Concise fact-and-asset questionnaire",
+        "characters": 8158
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/02-2-page-ready-copy-pack.md",
+        "heading": "2. Page-ready copy pack",
+        "characters": 12754
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/03-3-trust-facts-inventory.md",
+        "heading": "3. Trust-facts inventory",
+        "characters": 8505
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/04-4-recommended-placement-map.md",
+        "heading": "4. Recommended placement map",
+        "characters": 2170
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/05-5-image-guidance.md",
+        "heading": "5. Image guidance",
+        "characters": 2459
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/06-6-missing-fact-list.md",
+        "heading": "6. Missing-fact list",
+        "characters": 2439
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/07-7-final-approval-checklist.md",
+        "heading": "7. Final approval checklist",
+        "characters": 2943
+      },
+      {
+        "path": "06-marketing/website-copy/founder-trust-sections/08-release-recommendation.md",
+        "heading": "Release recommendation",
+        "characters": 703
+      }
+    ],
+    "textPreserved": true
+  },
+  {
+    "action": "refine",
+    "path": "06-marketing/linkedin/2026-launch/06_Visual_Generation_Prompts.md"
+  },
+  {
+    "action": "split",
+    "source": "06-marketing/linkedin/2026-launch/06_Visual_Generation_Prompts.md",
+    "originalCharacters": 74392,
+    "originalHash": "02928e718cab484d58bd461fd0dd2e492a0f35d7bbce9f5b3d3bd6d4e7dbf75f",
+    "indexCharacters": 4058,
+    "sections": [
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/00-context-and-status.md",
+        "heading": "Context and status",
+        "characters": 7845
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/01-p01-launch-graphic.md",
+        "heading": "P01 — Launch graphic",
+        "characters": 2041
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/02-p02-five-workflow-questions.md",
+        "heading": "P02 — Five workflow questions",
+        "characters": 2457
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/03-p05-service-commencement-readiness-comparison.md",
+        "heading": "P05 — Service-commencement readiness comparison",
+        "characters": 2070
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/04-p06-illustrative-no-build-decision.md",
+        "heading": "P06 — Illustrative no-build decision",
+        "characters": 2497
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/05-p07-three-heutrix-starting-points.md",
+        "heading": "P07 — Three Heutrix starting points",
+        "characters": 2492
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/06-p08-map-design-build-prove-hand-over.md",
+        "heading": "P08 — Map, Design, Build, Prove, Hand over",
+        "characters": 2459
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/07-p11-ai-use-case-decision-paths.md",
+        "heading": "P11 — AI use-case decision paths",
+        "characters": 2759
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/08-p13-heutrix-diagnostics-process.md",
+        "heading": "P13 — Heutrix Diagnostics process",
+        "characters": 1961
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/09-p14-what-useful-workflow-maps-reveal.md",
+        "heading": "P14 — What useful workflow maps reveal",
+        "characters": 2596
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/10-p17-four-fields-that-make-waiting-work-visible.md",
+        "heading": "P17 — Four fields that make waiting work visible",
+        "characters": 1792
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/11-p18-optional-image-fallback-for-the-native-poll.md",
+        "heading": "P18 — Optional image fallback for the native poll",
+        "characters": 1933
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/12-p19-allied-health-referral-tracking-field-guide.md",
+        "heading": "P19 — Allied-health referral tracking field guide",
+        "characters": 2702
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/13-p21-synthetic-allied-health-referral-before-and-after.md",
+        "heading": "P21 — Synthetic allied-health referral before and after",
+        "characters": 1969
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/14-p22-enquiry-to-service-start-field-guide.md",
+        "heading": "P22 — Enquiry-to-service-start field guide",
+        "characters": 2500
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/15-p24-synthetic-service-commencement-before-and-after.md",
+        "heading": "P24 — Synthetic service-commencement before and after",
+        "characters": 2101
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/16-p27-oaic-ai-expectations-data-graphic.md",
+        "heading": "P27 — OAIC AI expectations data graphic",
+        "characters": 2234
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/17-p29-form-plus-tracker-architecture.md",
+        "heading": "P29 — Form plus tracker architecture",
+        "characters": 1985
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/18-p32-definition-of-done.md",
+        "heading": "P32 — Definition of done",
+        "characters": 2392
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/19-p34-workflow-first-method-graphic.md",
+        "heading": "P34 — Workflow-first method graphic",
+        "characters": 2192
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/20-p35-what-happens-on-a-20-minute-workflow-fit-call.md",
+        "heading": "P35 — What happens on a 20-minute workflow fit call",
+        "characters": 2705
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/21-p37-synthetic-allied-health-referral-walkthrough.md",
+        "heading": "P37 — Synthetic allied-health referral walkthrough",
+        "characters": 2651
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/22-p39-synthetic-heutrix-diagnostics-sample.md",
+        "heading": "P39 — Synthetic Heutrix Diagnostics sample",
+        "characters": 2752
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/23-p40-ai-use-case-register-template.md",
+        "heading": "P40 — AI use-case register template",
+        "characters": 2602
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/24-p42-human-review-checklist-for-ai-assisted-admin.md",
+        "heading": "P42 — Human-review checklist for AI-assisted admin",
+        "characters": 2579
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/25-p46-heutrix-diagnostics-offer-card.md",
+        "heading": "P46 — Heutrix Diagnostics offer card",
+        "characters": 1858
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/26-p48-30-day-workflow-improvement-experiment.md",
+        "heading": "P48 — 30-day workflow improvement experiment",
+        "characters": 1937
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/27-p50-optional-image-fallback-for-the-native-poll.md",
+        "heading": "P50 — Optional image fallback for the native poll",
+        "characters": 1908
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/28-p52-conditional-campaign-review-document.md",
+        "heading": "P52 — Conditional campaign-review document",
+        "characters": 3294
+      },
+      {
+        "path": "06-marketing/linkedin/2026-launch/visual-prompts/29-final-prompt-and-asset-verification.md",
+        "heading": "Final prompt and asset verification",
+        "characters": 1129
+      }
+    ],
+    "textPreserved": true
+  },
+  {
+    "action": "refine",
+    "path": "00-control/FOUNDER-COLLABORATION-RECOMMENDATION-2026-09-05.md"
+  },
+  {
+    "action": "archive-reference",
+    "source": "00-control/FOUNDER-COLLABORATION-RECOMMENDATION-2026-09-05.md",
+    "destination": "90-research-and-audits/workspace-history/FOUNDER-COLLABORATION-RECOMMENDATION-2026-09-05.md"
+  },
+  {
+    "action": "refine",
+    "path": "00-control/IMPLEMENTATION-COMPARISON.md"
+  },
+  {
+    "action": "archive-reference",
+    "source": "00-control/IMPLEMENTATION-COMPARISON.md",
+    "destination": "90-research-and-audits/workspace-history/IMPLEMENTATION-COMPARISON.md"
+  },
+  {
+    "action": "archive-directory",
+    "source": "06-marketing/case-studies-and-assets/.superseded-2026-09-04",
+    "destination": "99-archive/case-studies-2026-09-04"
+  }
+]

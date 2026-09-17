@@ -1,0 +1,21 @@
+“We have an approved AI account” does not tell a staff member whether this task is safe to do.
+
+Before AI supports a work task, answer five questions:
+
+1. Use: what exact task is approved?
+2. Information: what may—and may not—enter the tool?
+3. Tool: which product, plan, settings and account are approved for that use?
+4. Review: who checks the output, and what must they test?
+5. Record: where does the approved final version belong?
+
+The same tool may be suitable for drafting a generic checklist from non-sensitive instructions and unsuitable for participant, worker or other personal information.
+
+Start narrow. Test with non-sensitive or synthetic information. Keep a person accountable for the final output and the decision it supports.
+
+AI should assist a defined workflow—not quietly become an unreviewed step inside it.
+
+Use the free AI Guardrails Staff Starter Pack to examine one proposed administrative use. No email is required. It supports a review; it does not approve AI use or replace qualified advice.
+
+https://heutrix-website.heutrix.workers.dev/resources/ai-guardrails-staff-starter-pack
+
+#HeutrixAIGuardrails #ResponsibleAI #DisabilitySupport

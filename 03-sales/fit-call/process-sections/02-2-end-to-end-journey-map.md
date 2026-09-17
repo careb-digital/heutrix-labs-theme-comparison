@@ -1,0 +1,18 @@
+# 2. End-to-end journey map
+
+| Stage | Visitor experience | Operating action | CRM status / event | Failure or exception path |
+|---|---|---|---|---|
+| 1. Intent | Sees **See where Heutrix can help** beside the 20-minute, no-obligation promise, agenda and privacy microcopy. | Preserve page, source and selected offer context. | `help_call_cta_click` | The next screen must make clear whether the visitor is requesting a call or choosing a real time. |
+| 2. Qualification | Answers a short set of mostly structured questions about organisation, role, team context, one workflow, tools, timing and decision context. | Validate server-side; store only necessary lead information; create one lead record. | `help_call_form_start`, `help_call_form_submit_success` | On failure, preserve safe inputs, show a truthful error and provide monitored email fallback. Never claim receipt. |
+| 3A. Request mode | Sees a verified receipt and learns when a human will respond. | Review against hard no-fit criteria and respond within the approved interval. | Lead status: `New Request` | Ask one concise high-level question, offer scheduling, or send a respectful no-fit response. |
+| 3B. Book mode | Moves directly to real available times after the lead record is created. | Pass only contact and high-level qualification fields to the scheduler. | `help_call_calendar_view` | If the scheduler fails or has no suitable times, offer the request path and monitored email. |
+| 4. Booking | Selects a time shown in Australia/Sydney and receives an immediate confirmation. | Create calendar event, assign named caller, attach meeting/phone instructions and write booking ID to CRM. | Lead status: `Booked`; `help_call_booking_confirmed` | Never count calendar view or button click as a booking. |
+| 5. Preparation | Receives a concise agenda, privacy reminder and one preparation prompt. | Send confirmation immediately, then reminders 24 hours and 1 hour before the call. | Reminder delivery timestamps | If email bounces, alert the owner and use only an approved alternative contact path. |
+| 6. “See where Heutrix can help” call | Knows the caller, 20-minute limit, no-obligation position and decision purpose. | Run the 20-minute guide; stop sensitive-data disclosure; record evidence and qualification outcome. | `help_call_attended` | If no-show, send one easy rebooking message and one close-the-loop follow-up. |
+| 7. Recommendation | Hears a clear verbal recommendation: no fit, nurture, Heutrix Diagnostics, Workflow Transformation, AI Guardrails or limited information needed. | Do not design the solution on the call. Agree who will do what next. | Lead outcome and reason code | If evidence is insufficient, use `Information Needed`, not an invented recommendation. |
+| 8. Written follow-up | Receives the agreed next step within the approved human-response interval. | Send the relevant template; create tasks and due dates; record consent for any nurture. | `help_call_outcome_set` | If the promised follow-up cannot be met, notify the prospect before the deadline with a revised date. |
+| 9. Commercial path | Receives a fixed-scope product proposal only when fit is established. | Create an opportunity; state deliverables, dependencies, acceptance, timing and price. | Opportunity stages begin | No proposal should imply approval, capability or integration feasibility that has not been checked. |
+| 10. Close / learn | Gets a respectful close whether proceeding or not. | Record won/lost/no-fit reason, source, value and next review date where consented. | `closed_won`, `closed_lost` or `No Fit` | Do not leave stale open records or place unconsented leads in marketing sequences. |
+
+---
+

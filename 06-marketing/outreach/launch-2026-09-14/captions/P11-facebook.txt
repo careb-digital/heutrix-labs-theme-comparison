@@ -1,0 +1,13 @@
+Illustrative decision framework.
+
+A practical administrative AI policy needs three pathways:
+
+- Approved: the task, tool, information boundaries and human review are assessed and recorded.
+- Prohibited: the use is outside the organisation’s boundaries.
+- Conditional / review required: open questions must be resolved before use.
+
+An unassessed use stays in review. Conditional use must state what needs resolving before it can proceed.
+
+Use non-sensitive or synthetic information to assess one proposed task. Record who decided, the information boundary and when the decision will be reviewed. This is general operational guidance, not legal or privacy advice.
+
+#DisabilitySupport #ResponsibleAI

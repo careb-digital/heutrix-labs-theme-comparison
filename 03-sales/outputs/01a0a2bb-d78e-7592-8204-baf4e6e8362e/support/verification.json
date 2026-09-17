@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-15",
+  "engine": "Artifact Tool calculation and XLSX export",
+  "nativeExcelInteraction": "Not performed",
+  "sheets": 3,
+  "publicCandidates": 10,
+  "confirmedOutreachBaseline": 0,
+  "tests": [
+    "First buyer contact increments buyer and total contacts",
+    "Duplicate recipient/event counts once",
+    "Earlier event wins independently of row order",
+    "Missing required contact token remains visible",
+    "Partner contacts remain separate from buyers",
+    "Next Monday belongs to the next week",
+    "Events after the through-date are excluded",
+    "Qualified next step requires action ownership and date",
+    "Completing storage preserves real gaps while confirmed call cover stays resolved",
+    "Last reserved activity row is included"
+  ],
+  "syntheticRowsRemoved": true,
+  "formulaErrorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

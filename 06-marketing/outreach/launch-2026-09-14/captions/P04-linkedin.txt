@@ -1,0 +1,26 @@
+Participant intake rarely breaks in one dramatic moment.
+
+It becomes harder to manage through a series of small, invisible handovers.
+
+An enquiry arrives. Information is requested. A fit decision waits. Someone follows up. A start date is discussed. Another team needs to act.
+
+At each step, the same five questions matter:
+
+- What is the current status?
+- Who owns the next action?
+- What is the team waiting for?
+- When should it be reviewed again?
+- What outcome will close the item?
+
+If the answers sit across inboxes, spreadsheets, chat messages and staff memory, the team may be busy while the workflow remains difficult to see.
+
+This is not about putting every participant detail in a dashboard. A useful operating view can hold a controlled reference, owner, status, next action and review date while sensitive records remain in the approved source system.
+
+Take one recent intake and mark each handover from enquiry to outcome.
+
+Where did someone have to reconstruct the story? That is often the first design problem worth examining.
+
+Use the free Enquiry-to-Service-Start Visibility Starter Kit to examine one handover. No email is required. Keep completed working documents in your approved systems.
+https://heutrix-website.heutrix.workers.dev/resources/enquiry-to-service-start-starter-kit
+
+#DisabilitySupport #ParticipantIntake #ServiceOperations

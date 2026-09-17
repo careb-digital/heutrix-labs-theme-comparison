@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heutrix Labs | Operational Workflow Automation &amp; Safe AI</title>
+<meta content="Operational excellence for small businesses through diagnostic-led automation and secure AI implementation." name="description"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#45474c",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#002113",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "on-tertiary-container": "#00a292",
+                        "on-background": "#0b1c30",
+                        "surface-container": "#e5eeff",
+                        "on-secondary-container": "#00714d",
+                        "on-tertiary-fixed-variant": "#005048",
+                        "background": "#f8f9ff",
+                        "surface-bright": "#f8f9ff",
+                        "on-primary-container": "#8590a6",
+                        "inverse-primary": "#bcc7de",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#4fdbc8",
+                        "tertiary-fixed": "#71f8e4",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#1e293b",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#6cf8bb",
+                        "outline-variant": "#c5c6cd",
+                        "secondary-fixed-dim": "#4edea3",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#cbdbf5",
+                        "surface": "#f8f9ff",
+                        "tertiary-container": "#002f29",
+                        "surface-variant": "#d3e4fe",
+                        "surface-tint": "#545f73",
+                        "on-primary-fixed": "#111c2d",
+                        "tertiary": "#001815",
+                        "inverse-surface": "#213145",
+                        "primary-fixed-dim": "#bcc7de",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "secondary": "#006c49",
+                        "primary-fixed": "#d8e3fb",
+                        "surface-container-high": "#dce9ff",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-fixed": "#00201c",
+                        "primary": "#091426",
+                        "outline": "#75777d",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#eff4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "lg": "24px",
+                        "xl": "40px",
+                        "xxl": "64px",
+                        "container-max": "1280px",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "sm": "8px",
+                        "md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "14px", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(226, 232, 240, 0.5);
+        }
+        .scrolly-text {
+            opacity: 0.2;
+            transition: opacity 0.4s ease;
+        }
+        .scrolly-text.highlight {
+            opacity: 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300" id="main-header">
+<div class="flex justify-between items-center px-lg py-md max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-md">
+<button class="md:hidden p-sm text-primary" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<a class="font-headline-md text-headline-md font-bold text-primary tracking-tight" href="#">Heutrix Labs</a>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="#home">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#faq">FAQ</a>
+<a class="bg-primary text-on-primary px-lg py-sm rounded-xl font-label-md text-label-md hover:opacity-90 transition-all shadow-sm" href="#contact">Book a Free Fit Call</a>
+</nav>
+</div>
+</header>
+<!-- NavigationDrawer Mobile -->
+<div class="fixed inset-0 bg-primary/20 backdrop-blur-sm z-[55] hidden transition-opacity duration-300 opacity-0" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 left-0 z-[60] w-64 bg-surface-container-lowest transform -translate-x-full transition-transform duration-300 ease-in-out p-md flex flex-col gap-md" id="nav-drawer">
+<div class="flex justify-between items-center mb-lg">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Heutrix Labs</span>
+<button class="p-sm" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-xs">
+<a class="flex items-center gap-md p-md bg-secondary-container text-on-secondary-container font-bold rounded-full" href="#home" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="home">home</span> Home
+            </a>
+<a class="flex items-center gap-md p-md text-on-surface-variant hover:bg-surface-container-low rounded-xl" href="#services" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="settings">settings</span> Services
+            </a>
+<a class="flex items-center gap-md p-md text-on-surface-variant hover:bg-surface-container-low rounded-xl" href="#pricing" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="payments">payments</span> Pricing
+            </a>
+<a class="flex items-center gap-md p-md text-on-surface-variant hover:bg-surface-container-low rounded-xl" href="#about" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="info">info</span> About
+            </a>
+<a class="flex items-center gap-md p-md text-on-surface-variant hover:bg-surface-container-low rounded-xl" href="#faq" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="help">help</span> FAQ
+            </a>
+</nav>
+<div class="mt-auto pt-lg border-t border-outline-variant">
+<a class="block text-center bg-secondary-fixed-dim text-on-secondary-fixed p-md rounded-xl font-label-md" href="#checklist">Download Checklist</a>
+</div>
+</aside>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative overflow-hidden min-h-[795px] flex items-center px-lg py-xxl" id="home">
+
+<div class="max-w-container-max mx-auto w-full relative z-10 grid lg:grid-cols-2 gap-xl items-center">
+<div class="reveal">
+<div class="inline-flex items-center gap-sm bg-secondary-container text-on-secondary-container px-md py-xs rounded-full mb-lg shadow-sm border border-on-secondary-container/10">
+<span class="material-symbols-outlined text-[18px]" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Operational Excellence</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md leading-tight">
+                        Operational workflow automation and safe AI solutions for small businesses.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-xl">
+                        We move your business from spreadsheet chaos to industrial-grade reliability. Professional-grade diagnostics and AI implementation that actually respects your data privacy.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a class="flex items-center justify-center gap-sm bg-primary text-on-primary px-xl py-lg rounded-xl font-headline-sm hover:opacity-90 transition-all shadow-md group" href="#contact">
+                            Book a free fit call
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="flex items-center justify-center gap-sm border-2 border-primary text-primary px-xl py-lg rounded-xl font-headline-sm hover:bg-primary hover:text-on-primary transition-all" href="#services">
+                            View packages
+                        </a>
+</div>
+</div>
+<div class="hidden lg:block reveal delay-200">
+<div class="relative p-lg rounded-xxl overflow-hidden bg-white shadow-2xl border border-slate-200">
+<img alt="Operations Dashboard" class="rounded-xl w-full h-[500px] object-cover" data-alt="A clean, high-tech dashboard interface showing complex workflow visualizations on a minimalist screen. The background is a bright, professional office space with soft daylight and subtle architectural lines. The image aesthetic is premium and industrial, with deep navy and mint green highlights that match the Heutrix brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZE6OKQ5bJ9PCNRZbFYz_Wv9wn5UwhHvktLaV1sU0ihN5G_3ly6hMBVxeRO35AU-eyp0c7FNEBSCbSXNHUF1XcFTFi74M6xPGnkf9qhKDF__rPoWWYGTxalDg69nzb6HFMbWtYsedzAj0U_KLeiim0JKwhdi9u820K8pCe3f861GgGk-EW1Nyq8C7VojOMp0BUj7YFQsf6l0cPfFYlYXrg2LPkdbVh3aqHGnoo-sKY-TvycYmoT0mpwoDn5tBAY3NvWJKrPaus_t85"/>
+<div class="absolute bottom-12 left-12 right-12 bg-white/90 backdrop-blur-md p-lg rounded-xl border border-slate-200 shadow-xl">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">+40% Efficiency Gains</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Avg. across diagnostic-led sprints</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Scrollytelling: The Problem -->
+<section class="bg-primary text-on-primary py-xxl px-lg" id="problem">
+<div class="max-w-4xl mx-auto py-xxl">
+<div class="reveal mb-xxl text-center">
+<h2 class="font-headline-md text-headline-md mb-md">When work depends on memory, the business is at risk.</h2>
+</div>
+<div class="space-y-xxl">
+<div class="scrolly-text reveal flex gap-lg items-start">
+<span class="font-display-lg text-secondary-fixed-dim shrink-0">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-white">Duplicated Entry Fatigue</h3>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant">Entering the same client data into three different tools isn't just slow; it's where errors live.</p>
+</div>
+</div>
+<div class="scrolly-text reveal flex gap-lg items-start">
+<span class="font-display-lg text-secondary-fixed-dim shrink-0">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-white">The Spreadsheet Ceiling</h3>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant">Spreadsheets break down when more than two people need to use them simultaneously for operations.</p>
+</div>
+</div>
+<div class="scrolly-text reveal flex gap-lg items-start">
+<span class="font-display-lg text-secondary-fixed-dim shrink-0">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-white">The AI Wild West</h3>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant">Staff are already using AI. Without clear rules and safe pipelines, your intellectual property is leaking.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-xxl px-lg bg-surface" id="services">
+<div class="max-w-container-max mx-auto">
+<div class="mb-xxl text-center max-w-3xl mx-auto reveal">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md">Practical Offers for Precise Growth</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Industrial-grade solutions that focus on operational integrity, not just "cool tech."</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Workflow Diagnostic -->
+<div class="reveal glass-card p-xl rounded-xl border border-slate-200 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="troubleshoot">troubleshoot</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-primary">Workflow Diagnostic</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl">A deep audit of your current ops to identify bottleneck "spreadsheet ceilings."</p>
+<div class="mt-auto">
+<p class="font-label-md text-label-md text-secondary mb-md">Launching at $990</p>
+<a class="flex items-center gap-sm text-primary font-bold hover:underline" href="#contact">Get Started <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></a>
+</div>
+</div>
+<!-- Workflow Automation Sprint -->
+<div class="reveal delay-100 glass-card p-xl rounded-xl border border-slate-200 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="auto_mode">auto_mode</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-primary">Workflow Automation Sprint</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl">End-to-end automation of your most critical repetitive process. 2-week cycle.</p>
+<div class="mt-auto">
+<p class="font-label-md text-label-md text-secondary mb-md">From $4,500</p>
+<a class="flex items-center gap-sm text-primary font-bold hover:underline" href="#contact">View Sprint <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></a>
+</div>
+</div>
+<!-- Operations Dashboard Build -->
+<div class="reveal delay-200 glass-card p-xl rounded-xl border border-slate-200 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="dashboard">dashboard</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-primary">Operations Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl">Real-time visibility into your business health. Stop guessing, start seeing.</p>
+<div class="mt-auto">
+<p class="font-label-md text-label-md text-secondary mb-md">From $4,500</p>
+<a class="flex items-center gap-sm text-primary font-bold hover:underline" href="#contact">See Demo <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></a>
+</div>
+</div>
+<!-- AI Readiness & Safe Use Pack -->
+<div class="reveal glass-card p-xl rounded-xl border border-slate-200 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="security">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-primary">AI Readiness &amp; Safe Use</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl">Governance, policy, and a custom secure AI pipeline for your staff.</p>
+<div class="mt-auto">
+<p class="font-label-md text-label-md text-secondary mb-md">From $4,800</p>
+<a class="flex items-center gap-sm text-primary font-bold hover:underline" href="#contact">Secure Ops <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></a>
+</div>
+</div>
+<!-- NDIS Operations Workflow Pack -->
+<div class="reveal delay-100 glass-card p-xl rounded-xl border border-slate-200 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="medical_services">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-primary">NDIS Operations Pack</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl">Strictly operational workflow for service delivery and claim tracking.</p>
+<div class="mt-auto">
+<p class="font-label-md text-label-md text-secondary mb-md">From $6,500</p>
+<a class="flex items-center gap-sm text-primary font-bold hover:underline" href="#contact">Streamline Claims <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></a>
+</div>
+</div>
+<!-- Custom AI / Small App Build -->
+<div class="reveal delay-200 glass-card p-xl rounded-xl border border-slate-200 hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-on-primary mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm text-primary">Custom App Build</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-xl">When off-the-shelf tools won't cut it. Bespoke internal tools that scale.</p>
+<div class="mt-auto">
+<p class="font-label-md text-label-md text-secondary mb-md">From $9,500</p>
+<a class="flex items-center gap-sm text-primary font-bold hover:underline" href="#contact">Build Future <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-xxl px-lg bg-surface-container-low overflow-hidden" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-2 gap-xxl items-center">
+<div class="reveal">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md">"We diagnose before we build."</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                            At Heutrix Labs, we believe that technology applied to an inefficient process only magnifies the inefficiency. That's why we start with the numbers, the people, and the manual clicks.
+                        </p>
+<div class="p-lg bg-error-container text-on-error-container rounded-xl border-l-4 border-error mb-xl">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined mt-1" data-icon="warning">warning</span>
+<div>
+<p class="font-label-md text-label-md font-bold mb-xs">Legal Disclaimer</p>
+<p class="font-body-sm text-body-sm">
+                                        Heutrix Labs provides operational workflow solutions. We do **NOT** provide NDIS audit readiness, compliance assurance, or legislative advice. Our work is strictly focused on business efficiency and technical operations.
+                                    </p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-lg">
+<div class="flex -space-x-3">
+<img alt="Team 1" class="w-12 h-12 rounded-full border-2 border-white" data-alt="A professional headshot of a diverse male executive with a confident, friendly expression. The lighting is soft and natural, suggesting a modern corporate office environment with a shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_FDpeGrj83O_E8dSV8puy049SMrnZP1KWY9CICQXfQpUmnaoJ1HKMvvk7nSMZQeTk2YWrZTmzqaZpb0XPur2m7CTWjJwqOE_6xunZFl0Zh3TJwB-Lnb4rfBoh0UYbl7t3KFi0cKoWJ7MX8Kr_UBTRocorXCLTcf5GpWMlCO1-h0zbUfOXsh0JiUGt1Knp3YXEOgQSiJg-wIc5-H6EGjPOMxrek2r3LQcHyFjXOpPAIv42riwpAYGjN5H0sm3BhZ0v9NkSFlqUw7Q4"/>
+<img alt="Team 2" class="w-12 h-12 rounded-full border-2 border-white" data-alt="A high-quality studio portrait of a female technical lead in her late 30s. She has a focused yet approachable look, wearing professional attire. The background is a subtle gradient of corporate navy blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhGknVEQFeApSJYPmla1zIIqpSm2EE4GXcMy4urTBFk8J5vwy4fxcFYfoxwDGVjfd2iaQ91KChi6zOBAsQ23gPDFN81G3xrb84SHl_vzxNwhPgGQR2e-1SzuLJbiVBj6Hf1dJGM_qls2-6XBAm-75CQxqUCmZvSZdfXHLgPJyCHEZDsPr51hWKj4q9pxIOAqWal0xqSl8NF5dMK7xxTvY7-qR6kfHofYULF1k3x6jOnLzujuT6erJVyRA7HgBcxb0glIOQWWH78XUn"/>
+<img alt="Team 3" class="w-12 h-12 rounded-full border-2 border-white" data-alt="A portrait of a male data engineer in a modern, brightly lit coworking space. He is looking into the camera with a calm and capable expression. The image is clean and minimalist, matching the light-mode UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVbGk5V7d77WyI_yuJOm4CgSXeWX--jLXEPC9S9uxjX_CjzRk630OaMaoez2NtqR9wUWwllN38vlX24v0jxO0OTPuZOUMww3rEDEJgGvCU-bzTwhWWu-kHTGeYbd-rFHKRIbMjHvbkEgQFe_DCmvjmE7Jxf5XbFug5sSHGIo2LkYwbpNyToQRriSx2YFl3e8y-xxKp5Humq6Z2RPfimZ5KDr0QH1J6XN7TZzMWvaAhJ4BR-EtPSi1A9nzBZwWR92PFUho6BBLqaSVq"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Trusted by 50+ Small Businesses</span>
+</div>
+</div>
+<div class="reveal delay-200">
+<div class="relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative glass-card p-xl rounded-xxl border border-slate-200 shadow-xl overflow-hidden">
+<h4 class="font-headline-sm text-headline-sm mb-lg text-primary">The Heutrix Method</h4>
+<ul class="space-y-md">
+<li class="flex items-center gap-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">1</div>
+<p class="font-body-md text-body-md">Diagnostic: Finding the gaps</p>
+</li>
+<li class="flex items-center gap-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">2</div>
+<p class="font-body-md text-body-md">Infrastructure: Cleaning the data</p>
+</li>
+<li class="flex items-center gap-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">3</div>
+<p class="font-body-md text-body-md">Automation: Deleting the busywork</p>
+</li>
+<li class="flex items-center gap-md">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">4</div>
+<p class="font-body-md text-body-md">Safe AI: Scaling human potential</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-xxl px-lg bg-surface" id="faq">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-xxl reveal">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md">Operational Clarity</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Common questions about working with Heutrix Labs.</p>
+</div>
+<div class="space-y-md reveal">
+<!-- FAQ Item -->
+<div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm transition-all">
+<button class="w-full flex items-center justify-between p-lg text-left hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">How long does a typical automation sprint take?</span>
+<span class="material-symbols-outlined transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden p-lg pt-0 text-on-surface-variant font-body-md">
+                            Our standard Workflow Automation Sprints are designed for a 2-week turnaround. This includes discovery, build, and a 3-day testing period. Larger custom builds are quoted based on complexity.
+                        </div>
+</div>
+<div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm transition-all">
+<button class="w-full flex items-center justify-between p-lg text-left hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">Is our data safe with your AI solutions?</span>
+<span class="material-symbols-outlined transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden p-lg pt-0 text-on-surface-variant font-body-md">
+                            Yes. We do not use public ChatGPT for business operations. We implement private API pipelines where your data is NOT used for training the base models, ensuring full data sovereignty.
+                        </div>
+</div>
+<div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm transition-all">
+<button class="w-full flex items-center justify-between p-lg text-left hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary">Do you help with NDIS audits?</span>
+<span class="material-symbols-outlined transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden p-lg pt-0 text-on-surface-variant font-body-md">
+                            No. Our NDIS Operational Pack is strictly for automating service delivery, scheduling, and invoicing workflows. For compliance and audit readiness, we recommend speaking with Heutrix Assurance (a separate entity).
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Magnet Section -->
+<section class="py-xxl px-lg" id="checklist">
+<div class="max-w-container-max mx-auto bg-primary text-on-primary rounded-xxl p-xl md:p-xxl relative overflow-hidden flex flex-col md:flex-row items-center gap-xl reveal">
+
+<div class="relative z-10 flex-1">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-md">Is your business ready for automation?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-fixed-variant mb-xl">Download our "Workflow Automation Opportunity Checklist" to identify the low-hanging fruit in your operations.</p>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-xl py-lg rounded-xl font-headline-sm hover:scale-105 transition-transform flex items-center gap-md">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                        Download the Checklist
+                    </button>
+</div>
+<div class="relative z-10 flex-1 hidden lg:block">
+<div class="bg-white/10 backdrop-blur-md p-lg rounded-xl border border-white/20 rotate-3 transform shadow-2xl">
+<img alt="Checklist Preview" class="rounded-lg w-full h-auto shadow-sm" data-alt="A clean, minimalist document or checklist on a premium tablet screen. The document features high-contrast typography, checkmark icons, and structured lists. The lighting is crisp and modern, emphasizing the professional and organized nature of the content." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPEz3ronE3xNYG45Wfa7YhUbGtQXxRpenB-kBWi1Ee1A7kxMAlEKNFZXX1ECOWMM1gA4irAYTFSzFu3V0_AuViKXAF9vIOrkuMW1KZWHX8_uZGpIPtyp7mPtZFei-X58JeR8o3xayU8CmXKLCvp6ew9UPOVMblg1zwIbH1rHeE3xL-eaEWtgwMcaxr-q3i0l8oMqic0PYPeTBjA2mzCK8ACBDaB2Ic4zN-HWSX1QLT-PTEETSWDcijo7ya9hAqj05jAojImtxsCCzo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="py-xxl px-lg bg-surface" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-2 gap-xxl">
+<div class="reveal">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-md">Let's talk operational fit.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl">We don't work with everyone. We only take on projects where we can see a clear 3x+ ROI on operational efficiency.</p>
+<div class="space-y-lg">
+<div class="flex items-center gap-lg">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">Email Us</p>
+<p class="font-body-md text-body-md text-on-surface-variant">hello@heutrixlabs.com</p>
+</div>
+</div>
+<div class="flex items-center gap-lg">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">Fast Response</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Within 24 business hours</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal delay-200">
+<form class="glass-card p-xl rounded-xxl border border-slate-200 shadow-xl space-y-md" onsubmit="return false">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary px-xs">Full Name</label>
+<input class="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary px-xs">Business Name</label>
+<input class="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="Acme Corp" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary px-xs">Email Address</label>
+<input class="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="john@acme.com" type="email"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary px-xs">Website URL</label>
+<input class="p-md rounded-lg border border-slate-300 focus:ring-2 focus:ring-secondary/50 outline-none" placeholder="https://" type="url"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-primary px-xs">Operational Status</label>
+<div class="space-y-sm mt-xs">
+<label class="flex items-center gap-md p-md border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50">
+<input class="w-5 h-5 text-secondary rounded" type="checkbox"/>
+<span class="font-body-md">We depend heavily on spreadsheets</span>
+</label>
+<label class="flex items-center gap-md p-md border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50">
+<input class="w-5 h-5 text-secondary rounded" type="checkbox"/>
+<span class="font-body-md">Staff are already using AI informally</span>
+</label>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-lg rounded-xl font-headline-sm hover:opacity-95 transition-all shadow-md mt-md">
+                                Request Fit Call
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary pt-xxl pb-xl px-lg border-t border-on-primary-fixed-variant">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-lg mb-xxl">
+<div class="max-w-md">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold block mb-md">Heutrix Labs</span>
+<p class="font-body-sm text-body-sm text-on-primary-fixed-variant mb-md">
+                        Operational excellence for the modern small business. We bridge the gap between chaotic spreadsheets and industrial-grade automation.
+                    </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-xl">
+<div>
+<p class="font-label-md text-label-md text-white mb-md">Company</p>
+<ul class="space-y-sm font-body-sm text-on-primary-fixed-variant">
+<li><a class="hover:text-white transition-colors" href="#about">About</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Services</a></li>
+<li><a class="hover:text-white transition-colors" href="#faq">FAQ</a></li>
+</ul>
+</div>
+<div>
+<p class="font-label-md text-label-md text-white mb-md">Legal</p>
+<ul class="space-y-sm font-body-sm text-on-primary-fixed-variant">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Legal Disclaimer</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<p class="font-label-md text-label-md text-white mb-md">Social</p>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full bg-on-primary-fixed-variant/20 flex items-center justify-center hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-on-primary-fixed-variant pt-lg flex flex-col gap-lg">
+<div class="p-lg bg-on-primary-fixed-variant/10 rounded-xl">
+<p class="font-label-sm text-label-sm font-bold text-secondary-fixed mb-xs uppercase tracking-widest">Brand Separation Statement</p>
+<p class="font-body-sm text-body-sm text-on-primary-fixed-variant">
+                        Heutrix Labs and Heutrix Assurance are distinct business units. Heutrix Labs focuses solely on operational workflow and technical automation. We do not provide assurance, auditing, or compliance verification services. No partnership or engagement with Heutrix Labs constitutes an audit-ready status.
+                    </p>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-body-sm text-body-sm text-on-primary-fixed-variant">© 2024 Heutrix Labs. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-40 group md:hidden" href="#contact">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="absolute right-full mr-4 bg-primary text-on-primary px-md py-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-label-md pointer-events-none">Book Call</span>
+</a>
+<script>
+        // Navigation Drawer Toggle
+        function toggleDrawer() {
+            const drawer = document.getElementById('nav-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            const isOpen = !drawer.classList.contains('-translate-x-full');
+
+            if (isOpen) {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+                overlay.classList.remove('opacity-100');
+            } else {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.add('opacity-100'), 10);
+            }
+        }
+
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.material-symbols-outlined');
+            const isOpen = !content.classList.contains('hidden');
+
+            // Close all
+            document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('#faq .material-symbols-outlined').forEach(el => el.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+                button.parentElement.classList.add('border-secondary/30', 'shadow-md');
+            } else {
+                button.parentElement.classList.remove('border-secondary/30', 'shadow-md');
+            }
+        }
+
+        // Intersection Observer for animations
+        const revealCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(revealCallback, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scrollytelling Highlight
+        window.addEventListener('scroll', () => {
+            const scrollyTexts = document.querySelectorAll('.scrolly-text');
+            scrollyTexts.forEach(text => {
+                const rect = text.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3) {
+                    text.classList.add('highlight');
+                } else {
+                    text.classList.remove('highlight');
+                }
+            });
+
+            // Header Blur/Shrink
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-1', 'shadow-md');
+                header.classList.remove('py-md');
+            } else {
+                header.classList.remove('py-1', 'shadow-md');
+                header.classList.add('py-md');
+            }
+        });
+    </script>
+</body></html>

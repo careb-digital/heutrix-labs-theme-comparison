@@ -1,0 +1,17 @@
+{
+  "summary": [
+    {
+      "label": "scorecard",
+      "ndjson": "{\"kind\":\"table\",\"sheet\":\"Score My Workflows\",\"address\":\"A5:M10\",\"rows\":6,\"cols\":13,\"values\":[[\"Workflow\",\"Frequency\",\"Staff effort\",\"Handoffs\",\"Delay impact\",\"Error / rework\",\"Visibility gap\",\"Change feasibility\",\"Evidence confidence\",\"Sensitive or high-stakes?\",\"Weighted score\",\"Control flag\",\"Suggested action\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]]}"
+    },
+    {
+      "label": "dashboard",
+      "ndjson": "{\"kind\":\"table\",\"sheet\":\"Dashboard\",\"address\":\"A5:H18\",\"rows\":14,\"cols\":8,\"values\":[[\"Highest score\",null,null,null,\"Top workflow\",null,null,null],[0,null,null,null,\"Add at least one workflow\",null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[\"Control-review flags\",null,null,null,\"Next decision\",null,null,null],[0,null,null,null,\"Use the results to collect evidence and narrow one workflow before considering a project.\",null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[\"A valid outcome can be to simplify the process, gather better evidence, keep an existing tool, apply a non-technology change, or decide not to proceed.\",null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null]]}"
+    },
+    {
+      "label": "example",
+      "ndjson": "{\"kind\":\"table\",\"sheet\":\"Synthetic Example\",\"address\":\"A5:M10\",\"rows\":6,\"cols\":13,\"values\":[[\"Workflow\",\"Frequency\",\"Staff effort\",\"Handoffs\",\"Delay impact\",\"Error / rework\",\"Visibility gap\",\"Change feasibility\",\"Evidence confidence\",\"Sensitive or high-stakes?\",\"Weighted score\",\"Control flag\",\"Suggested action\"],[\"Service commencement action tracking\",5,4,4,5,3,5,4,4,\"Unsure\",87,\"Control review required\",\"Do not treat as ready - review information, authority and controls\"],[\"Monthly reporting preparation\",3,4,3,3,4,4,4,3,\"No\",71,\"Standard review\",\"Clarify boundary and feasibility\"],[\"General team meeting agenda\",2,2,2,2,1,2,5,2,\"No\",47,\"Standard review\",\"Gather better evidence before prioritising\"],[null,null,null,null,null,null,null,null,null,null,null,null,null],[\"The first workflow scores highly but carries an unresolved control flag. The example therefore requires information, authority and control review before any change is treated as ready.\",null,null,null,null,null,null,null,null,null,null,null,null]]}"
+    }
+  ],
+  "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

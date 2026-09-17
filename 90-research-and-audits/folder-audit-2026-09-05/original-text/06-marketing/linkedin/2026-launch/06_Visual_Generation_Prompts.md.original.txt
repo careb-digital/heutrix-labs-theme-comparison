@@ -1,0 +1,720 @@
+---
+created: 2026-09-03
+last_updated: 2026-09-04
+business: Heutrix
+status: production_prompts_owner_review_required
+coverage: 52_posts_reviewed
+primary_generated_assets: 26
+optional_poll_fallbacks: 2
+prompt_packs: 28
+native_polls: 2
+text_only: 24
+generator_targets: [ChatGPT Images, Gemini Nano Banana Pro]
+---
+
+# LinkedIn visual-generation prompt library
+
+This library records the visual decision for every campaign post. Every generation prompt is standalone: it contains the business context, audience, purpose, format, visual system, exact copy, information hierarchy and exclusions required for either ChatGPT Images or Gemini Nano Banana Pro.
+
+The prompts do not make an asset approved. Every output still needs word-for-word text review, source checks, accessibility review, brand approval and the human publishing checklist.
+
+## Compatibility basis
+
+The prompt structure was checked on 3 September 2026 against:
+
+- [OpenAI's current image-generation guidance](https://learn.chatgpt.com/docs/image-generation), which recommends stating purpose or audience, subject, composition, style, dimensions and exclusions, and warns that dense production typography still needs review; and
+- [Google's current Gemini image guidance](https://support.google.com/gemini/answer/14286560?hl=en), which describes prompt-led image creation and Nano Banana Pro's stronger detail, instruction following, text rendering and infographic capability.
+
+Availability, quotas and interface labels depend on the user's account and may change. These prompts are model-neutral and do not depend on a tool-specific command.
+
+## How to use the prompt packs
+
+1. Find the post in the coverage matrix.
+2. Copy the entire fenced prompt for that post into ChatGPT Images or Gemini Nano Banana Pro. Do not prepend a shared style prompt; all required context is already inside the block.
+3. For a document post, set `TARGET PAGE` to one page number and submit the full prompt once per page. Each request must produce exactly one image, never a contact sheet.
+4. If the interface does not honour exact pixels, request the stated 4:5 portrait ratio and crop or export the approved result to 1080 × 1350 px.
+5. Check every visible word against the prompt. Regenerate or correct the asset in a design tool if any word, number or label is wrong.
+6. Add the approved Heutrix logo manually. The prompts intentionally prohibit the model from inventing or redrawing it.
+7. Combine approved document pages in order as an accessible LinkedIn PDF and add the reviewed alt text.
+
+## Production rules after generation
+
+- The colours and typefaces in these prompts are working brand tokens until the owner approves the final brand pack.
+- Keep meaningful text at least 60 px from the edge, with phone-readable type and strong contrast.
+- Never use colour alone to communicate status; pair it with a word, icon or shape.
+- Keep every required **Synthetic example**, **Synthetic sample**, **Illustrative application** or **Illustrative operating view** label visible on every relevant page.
+- Never upload real participant, patient, worker, client, credential, clinical, payment or confidential information as a model reference.
+- Do not use generated people as founders, clients, participants, patients, clinicians or disability-support workers.
+- Do not treat a generated interface, statistic, diagram or process as evidence that a system exists or a result has been achieved.
+
+## Coverage matrix: all 52 posts
+
+| Post | Visual decision | Format or reason |
+|---|---|---|
+| P01 | Generate | Single launch graphic |
+| P02 | Generate | Five-page framework document; one standalone request per page |
+| P03 | Text only | Numbered copy already scans well |
+| P04 | Text only | Operator story is stronger without a generic intake illustration |
+| P05 | Generate | Two-panel readiness comparison |
+| P06 | Generate after approval | Four-page illustrative no-build document; one standalone request per page |
+| P07 | Generate | Four-page product-choice document; one standalone request per page |
+| P08 | Generate | Five-page delivery-method document; one standalone request per page |
+| P09 | Text only | Handover checklist works as a saveable text post after two documents |
+| P10 | Text only | Five-question copy is concise; P11 carries the week's visual |
+| P11 | Generate | Six-page AI decision-path document; one standalone request per page |
+| P12 | Text only | Let the authoritative OAIC source lead; avoid decorative privacy imagery |
+| P13 | Generate | Single seven-step Diagnostics process graphic |
+| P14 | Generate | Six-page workflow-mapping document; one standalone request per page |
+| P15 | Text only | The “do not automate yet” opening should stand on its own |
+| P16 | Text only | Do not create or use a dashboard screenshot; the approved post remains a de-identified narrative |
+| P17 | Generate | Single four-field operating card |
+| P18 | Native format | LinkedIn poll; optional generated question-card fallback supplied below |
+| P19 | Generate | Five-page allied-health field guide; one standalone request per page |
+| P20 | Text only | Keep the ownership argument conversational |
+| P21 | Generate | Single synthetic before/after diagram |
+| P22 | Generate | Six-page disability-provider field guide; one standalone request per page |
+| P23 | Text only | Date-to-workflow contrast is clear in copy |
+| P24 | Generate | Single synthetic before/after diagram |
+| P25 | Text only | Source-led risk-screening post; P27 supplies the data visual |
+| P26 | Text only | Who/what/when/what-if structure scans well without a graphic |
+| P27 | Generate after source check | Single three-statistic OAIC graphic |
+| P28 | Text only | Preserve nuance; avoid making spreadsheets look universally good or bad |
+| P29 | Generate | Single form-to-close architecture diagram |
+| P30 | Text only | Build-threshold criteria need the nuance of the written list |
+| P31 | Text only | The handover question is designed for discussion |
+| P32 | Generate | Six-page definition-of-done checklist; one standalone request per page |
+| P33 | Text only | “Workflow debt” is a strong standalone concept post |
+| P34 | Generate | Single workflow-first method graphic linked to approved anonymised delivery; no founder, client or source-material dependency |
+| P35 | Generate | Five-page fit-call explainer; replaces the native-video dependency |
+| P36 | Text only | Service boundaries should remain direct and easy to quote |
+| P37 | Generate | Eight-page synthetic referral walkthrough; one standalone request per page |
+| P38 | Text only | Baseline examples are more credible as plain text |
+| P39 | Generate | Four-page synthetic Diagnostics sample; one standalone request per page |
+| P40 | Generate | Three-page AI use-case register template; one standalone request per page |
+| P41 | Text only | Tool/use/information/reviewer distinction works as text |
+| P42 | Generate | Three-page human-review checklist; one standalone request per page |
+| P43 | Text only | Start a consistent three-post objection series without stock quote cards |
+| P44 | Text only | Continue the conversational objection series |
+| P45 | Text only | Complete the conversational objection series |
+| P46 | Generate | Single Heutrix Diagnostics offer card without price |
+| P47 | Text only | Self-qualification copy should feel direct, not promotional |
+| P48 | Generate | Single 30-day experiment template |
+| P49 | Text only | Ten-question planning post is already structured to save |
+| P50 | Native format | LinkedIn poll; optional generated question-card fallback supplied below |
+| P51 | Text only | Leave-coverage checklist is clear without decoration |
+| P52 | Generate only after campaign data exists | Conditional four-page campaign-review document; one standalone request per page |
+
+# Standalone generation prompts
+
+## P01 — Launch graphic
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn image for Heutrix, an Australian business that improves operational workflows using practical systems and safe AI where appropriate. The primary audience is decision-makers at Australian disability support providers; allied-health practices are secondary. The purpose is to introduce the workflow-first, technology-second point of view.
+
+Use a calm corporate-modern “quiet power” design: near-white #F8FAFC background, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 used only for the most important positive state. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans and a clean sans-serif body similar to Inter. Use strong contrast, generous whitespace, simple line icons, 8 px card corners, 1 px borders, minimal navy-tinted shadows and 60 px safe margins. Leave a clean unlabelled area at top right for the approved logo; do not create a logo or logo-like mark.
+
+Show five small abstract cards in the upper half: inbox, spreadsheet, shared folder, chat message and staff memory. Connect them with broken or fading slate lines. Resolve them in the lower half into one clean workflow line with three checkpoints labelled exactly “Owner”, “Status”, “Next action”. Highlight only “Next action” in mint.
+
+Use only this exact visible copy:
+“Workflow first. Technology second.”
+“One workflow. Clear ownership. A practical next step.”
+“Owner”
+“Status”
+“Next action”
+
+Do not add other words. Do not show people, participants, patients, workers, client records, software brands, robots, AI brains, circuits, holograms, healthcare stereotypes, NDIS or government branding, testimonials, prices, statistics or outcome claims. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Abstract inbox, spreadsheet, folder and message cards converge into a workflow labelled Owner, Status and Next action, with the words “Workflow first. Technology second.”
+
+## P02 — Five workflow questions
+
+**Format:** Five images. Submit the full prompt five times, changing only `TARGET PAGE` from 1 to 5.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a five-page LinkedIn document for Heutrix, an Australian workflow-improvement business. The audience is decision-makers at Australian disability support providers first and allied-health practices second. The purpose is to help them define a workflow before buying technology. Do not create a contact sheet, collage, PDF preview or more than one image.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use the same repeatable visual system on every possible target page: near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the final or most important action; bold geometric sans-serif headings similar to Plus Jakarta Sans; clean sans-serif body similar to Inter; generous whitespace; simple line icons; 8 px cards; 1 px borders; subtle navy shadows; high contrast; minimum 60 px margins. Use a thin five-step vertical path as the recurring motif. Add a small page marker matching the target, such as “1 / 5”. Leave a clean unlabelled top-right logo area; do not invent a logo.
+
+Render the selected page from this exact page map:
+- Page 1: “Before buying another tool, answer five workflow questions.” Show a simple tool icon held outside a five-step path.
+- Page 2: “1. Trigger — What starts the work?” and “2. Owner — Who owns the next action?” in two stacked cards.
+- Page 3: “3. Information — What is needed, and where should it live?” and “4. Exception — What happens when the normal path breaks?” in two stacked cards.
+- Page 4: “5. Finish — What does done mean, and who confirms it?” Show a clear end marker paired with a named-role icon, not a tick alone.
+- Page 5: “Unclear workflow + new technology = faster confusion.” Below it, show six equal chips: “Simplify”, “Clarify”, “Track”, “Automate”, “Build”, “No build”.
+
+Use only the exact copy assigned to the selected page plus its page marker. Do not add explanations or filler. Do not show branded software, robots, AI brains, people receiving support or care, client information, prices, statistics, testimonials or claims. Keep all words sharp and phone-readable.
+```
+
+**Alt text draft:** Five-page document explaining the trigger, owner, information, exception and finish questions to answer before choosing technology.
+
+## P05 — Service-commencement readiness comparison
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn comparison graphic for Heutrix. Heutrix helps Australian disability support providers improve bounded operational workflows; this visual concerns operational coordination before a service starts, not registration, compliance, audit or service-readiness assurance. The audience is provider owners, executives and operations leaders. The purpose is to contrast an inferred status with a defined, accountable operating view.
+
+Use a calm corporate-modern editorial style with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the final accountable decision. Use bold geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not generate a logo.
+
+Create two balanced vertical panels. Left panel title: “Starting soon”. Show three disconnected grey cards, a vague dotted path and question-mark icons around ownership and readiness. Add “Status is being inferred”. Right panel title: “Ready is defined”. Show five connected cards labelled “Owner”, “Status”, “Next action”, “Review date”, “Readiness decision”. Pair the last card with a named-person icon and highlight that card only in mint. Across the bottom place: “Illustrative operating view — not compliance or service-readiness assurance.”
+
+Use only that exact visible copy. Do not show participants, support workers, documents, client records, NDIS logos, government marks, certification ticks, fake software screens, promises, metrics, prices, robots, AI imagery or healthcare stereotypes. Keep all words sharp and phone-readable.
+```
+
+**Alt text draft:** Comparison between an unclear “Starting soon” state and a defined view with owner, status, next action, review date and a named readiness decision.
+
+## P06 — Illustrative no-build decision
+
+**Format:** Four images. Produce only after the illustrative proof asset is approved. Submit the full prompt four times, changing only `TARGET PAGE` from 1 to 4.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a four-page LinkedIn decision story for Heutrix, an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. Its purpose is to demonstrate the value of a no-build decision without pretending this is client work. Do not create a contact sheet, collage, PDF preview or more than one image.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the chosen next action. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle navy shadows and 60 px margins. Add the exact high-contrast label “Illustrative application — not a client result” and a page marker matching the target on every page. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page from this exact page map:
+- Page 1: “When not building is the better decision.” Show an automation arrow paused before an unresolved rule.
+- Page 2: Title “The request”. Add “Can we automate reminders for missing information?” Show a reminder bell beside one clean workflow line.
+- Page 3: Title “The finding”. Three cards: “Different definitions of complete”, “No owner for exceptions”, “Trigger data is inconsistent”. Connect them to “Automation would send conflicting reminders faster.”
+- Page 4: Title “The decision”. Four numbered steps: “Agree one rule”, “Name the exception owner”, “Run a non-sensitive baseline”, “Reassess automation”. End with “The value is the decision, even when the answer is not yet.”
+
+Use only the exact text assigned to the target page, the required label and page marker. Do not add a client name, people, sensitive data, result metrics, prices, testimonials, robots, brains, circuits, holograms, software brands or any statement that the work was delivered. Keep all words sharp and phone-readable.
+```
+
+**Alt text draft:** Four-page illustrative example showing why unstable rules, ownership and data can make a no-build recommendation more useful than immediate automation.
+
+## P07 — Three Heutrix starting points
+
+**Format:** Four images. Submit the full prompt four times, changing only `TARGET PAGE` from 1 to 4.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a four-page LinkedIn product-choice document for H-E-U-T-R-I-X, an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to match a reader's operating situation to the smallest useful Heutrix starting point, without price or pressure. Do not make a contact sheet, collage or multiple images.
+
+Create a 1080 × 1350 px, 4:5 portrait page using near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the key next step. Use bold geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple original line icons, 8 px cards, 1 px borders, minimal shadows and 60 px margins. Use one branching-path motif across the set and add a page marker matching the target. Leave an unlabelled logo area; do not invent a logo.
+
+Render the selected page from this exact page map:
+- Page 1: “Three problems. Three Heutrix starting points.” Show three simple paths branching from “One operating problem”.
+- Page 2: “We know operations are messy, but not what to fix first.” Product label “Heutrix Diagnostics”. Result line “A defined problem, feasible options and a decision-ready brief.” Chip “No build may be the answer”.
+- Page 3: “We know which workflow needs to work better.” Product label “Heutrix Workflow Transformation”. Result line “One bounded workflow mapped, designed, built, proved and handed over.”
+- Page 4: “Staff use AI, but our boundaries and review controls are unclear.” Product label “Heutrix AI Guardrails”. Result line “Clear use boundaries, information rules and accountable human review.” Footer “A 20-minute workflow fit call helps identify the smallest useful next step.”
+
+Use only the exact copy assigned to the target page and its page marker. Do not add prices, timelines, guarantees, client results, medical or legal claims, branded software, client logos, people, robots, AI brains or futuristic imagery. Keep all text sharp and phone-readable.
+```
+
+**Alt text draft:** Four-page document matching three operating situations to Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails.
+
+## P08 — Map, Design, Build, Prove, Hand over
+
+**Format:** Five images. Submit the full prompt five times, changing only `TARGET PAGE` from 1 to 5.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a five-page LinkedIn document explaining the Heutrix Workflow Transformation delivery method. Heutrix is an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to make a bounded, workflow-first implementation method easy to understand without promising that every engagement uses every tool. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the active stage. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. A thin five-stage progress line must run along the bottom with the target stage visually active and labelled; include a matching page marker. Add the exact footer “Heutrix Workflow Transformation”. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “Map” and “How does the work actually run?” Show a bounded start and finish plus people, information and handovers.
+- Page 2: “Design” and “What should ownership, status, exceptions and controls become?” Show a clean future-state decision path.
+- Page 3: “Build” and “What is the smallest useful improvement?” Show neutral icons for a form, tracker, register, management view and automation.
+- Page 4: “Prove” and “Does it meet written acceptance criteria?” Show a synthetic test record moving through three checks.
+- Page 5: “Hand over” and “Can the client operate and maintain it?” Show guidance, administrator notes, access and known limitations moving to a client-controlled owner.
+
+Use only the exact target-page copy, footer, progress labels and page marker. Do not add platforms, prices, timelines, guarantees, client results, personal information, robots, AI brains or healthcare stereotypes. Keep all text sharp and phone-readable.
+```
+
+**Alt text draft:** Five-page sequence showing the Map, Design, Build, Prove and Hand over stages of Heutrix Workflow Transformation.
+
+## P11 — AI use-case decision paths
+
+**Format:** Six images. Submit the full prompt six times, changing only `TARGET PAGE` from 1 to 6.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a six-page LinkedIn operational guide for assessing workplace AI use. This is for H-E-U-T-R-I-X, an Australian workflow-improvement business. The audience is decision-makers and operational staff at disability support providers first and allied-health practices second. The purpose is to help a staff member reach an approved, prohibited or review-required path with accountable human oversight. It is operational guidance, not legal, privacy, clinical or regulatory advice. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for “Approved”; show other states with labels, icons and shapes, not colour alone. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not invent a logo.
+
+Render the selected page:
+- Page 1: “Can I use AI for this task?” Show one task card reaching a three-way decision point.
+- Page 2: “Approved”. Checks: “Task”, “Tool”, “Information”, “Output use”, “Human review”. Add “All five are assessed and recorded.”
+- Page 3: “Prohibited”. Add “The use sits outside the organisation's boundary.” Examples: “Unapproved public tool + personal or sensitive information” and “Important decision without accountable human judgement.”
+- Page 4: “Conditional / review required”. Add “A question still needs an answer.” Show chips “Purpose”, “Information”, “Settings”, “Access”, “Consequence”, “Reviewer”.
+- Page 5: “Record the decision”. Show a blank card labelled “Synthetic blank template” with fields “Owner”, “Tool”, “Information boundary”, “Reviewer”, “Decision”, “Review date”. Leave every field blank rather than inventing values.
+- Page 6: “A policy works when a person can make the next safe decision.” Add “Heutrix AI Guardrails” and “Operational guidance — not legal, privacy or clinical advice”.
+
+Use only the target-page copy and page marker. Do not show real people, personal or health information, prompt text, branded tools, surveillance imagery, legal symbols, compliance ticks, robots, AI brains, circuits, holograms, guarantees or claims. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Six-page document showing approved, prohibited and conditional pathways for assessing a workplace AI use case.
+
+## P13 — Heutrix Diagnostics process
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn process graphic for H-E-U-T-R-I-X, an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to explain Heutrix Diagnostics as a paid, standalone decision product; implementation is scoped separately. Do not imply a client result, fixed public price or guaranteed implementation.
+
+Use a calm corporate-modern “quiet power” design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the final output. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans and a clean sans-serif body similar to Inter. Use strong contrast, generous whitespace, a single vertical line, simple line icons, 8 px cards, 1 px borders, subtle navy shadows and 60 px margins. Leave an unlabelled logo area; do not generate a logo.
+
+Headline: “Heutrix Diagnostics creates a decision — not a pile of diagrams.” Show seven numbered steps connected by one thin navy line:
+“1. Define the problem”
+“2. Map the current state”
+“3. Agree a baseline”
+“4. Rank bottlenecks and dependencies”
+“5. Compare feasible options”
+“6. Recommend the future state”
+“7. Produce a decision-ready brief”
+Beside step 5 add equal chips “Process only”, “Build”, “No build”. Highlight only step 7 in mint. Footer: “Paid, standalone decision product. Implementation scoped separately.”
+
+Use only that exact copy. Do not add a price, duration, discount, package tier, result, client name, testimonial, software logo, people, robots, AI brains or futuristic imagery. Keep all words sharp and phone-readable.
+```
+
+**Alt text draft:** Seven-step Heutrix Diagnostics process from defining the problem to producing a decision-ready brief, including process-only, build and no-build options.
+
+## P14 — What useful workflow maps reveal
+
+**Format:** Six images. Submit the full prompt six times, changing only `TARGET PAGE` from 1 to 6.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a six-page LinkedIn explainer for Heutrix, an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to show that a useful workflow map reveals behaviour, ownership, information, decisions, exceptions, waiting and closure rather than merely drawing task boxes. Do not produce a contact sheet, dense swimlane chart or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the key decision or finish. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, one recurring simple workflow line, line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “A workflow map should explain how the work behaves.” Add “Task boxes are not enough.”
+- Page 2: “Ownership”. Questions: “Who owns each action?” and “Who accepts the handover?” Show role icons attached to steps.
+- Page 3: “Information”. Questions: “What is needed?” and “Where should it live?” Show one protected source record and one minimal operating reference.
+- Page 4: “Decisions and exceptions”. Questions: “What changes the path?” and “What happens when information is missing?” Show a decision diamond and visible exception loop.
+- Page 5: “Waiting and closure”. Questions: “Where does work wait?” and “What counts as done?” Show a review-date marker and explicit close outcomes.
+- Page 6: “A future state makes choices”. List “Remove a step”, “Clarify a handover”, “Expose a status”, “Keep a decision human”, “Avoid unnecessary copying”. End with “The value is not drawing boxes. It is deciding how work should operate.”
+
+Use only the exact copy assigned to the target page and its page marker. Do not show people receiving care or support, real records, system logos, prices, metrics, results, compliance marks, robots or futuristic interfaces. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Six-page document showing ownership, information, decisions, exceptions, waiting and closure as the elements a useful workflow map should reveal.
+
+## P17 — Four fields that make waiting work visible
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn operating card for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is operations leaders at disability support providers first and allied-health practices second. The purpose is to give them a simple model for making waiting work visible without exposing sensitive information.
+
+Use a calm corporate-modern design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on “Next action”. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans and a clean sans-serif body similar to Inter. Use strong contrast, generous whitespace, simple line icons, four stacked sections, 8 px corners, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not generate a logo.
+
+Headline: “Pending is not a plan.” Build four clearly separated sections:
+“Status — Where is it now?” with a stage icon.
+“Owner — Who owns the next action?” with one named-role icon.
+“Next action — What must happen?” with an arrow icon.
+“Review date — When should someone look again?” with a calendar icon.
+Add one slim row labelled “Synthetic example” with exactly: “Waiting | Intake lead | Confirm missing information | Review Friday”.
+
+Use only that exact visible copy. Do not add names, real dates, participant, patient, worker or client data, fake software screens, NDIS or clinical imagery, prices, metrics, testimonials, robots, brains or circuits. Keep all words sharp and phone-readable.
+```
+
+**Alt text draft:** Four-field operating card showing Status, Owner, Next action and Review date, with the line “Pending is not a plan.”
+
+## P18 — Optional image fallback for the native poll
+
+**Primary decision:** Use LinkedIn's native poll. No image is required. Use this fallback only if the publisher deliberately changes P18 into an image-led question post; do not publish the image alongside a native poll if LinkedIn does not support that combination.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn question card for Heutrix, an Australian workflow-improvement business serving disability support providers first and allied-health practices second. The audience is operations leaders. The purpose is to ask where operational work loses clear ownership without requesting confidential examples.
+
+Use a calm corporate-modern editorial design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the small call-to-action. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not invent a logo.
+
+Headline: “Where does work disappear most often?” Show four equal answer cards with simple icons and exact labels: “Shared inboxes”, “Side spreadsheets”, “Staff handovers”, “Waiting for a decision”. Footer: “Choose the closest pattern. Keep sensitive details out of comments.”
+
+Use only that exact visible copy. Do not depict people, personal information, real records, a LinkedIn interface, fake vote counts, percentages, results, client logos, NDIS branding, robots or futuristic imagery. Do not visually imply that one option is already winning. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Question card asking where work disappears most often, with shared inboxes, side spreadsheets, staff handovers and waiting for a decision as options.
+
+## P19 — Allied-health referral tracking field guide
+
+**Format:** Five images. Submit the full prompt five times, changing only `TARGET PAGE` from 1 to 5.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a five-page LinkedIn referral-tracking field guide for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is allied-health practice owners and operations leaders. The purpose is to show a minimal operational referral view without duplicating clinical detail or presenting a clinical model. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the next action or close state. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, abstract operational line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “A referral is a journey, not an inbox item.” Add “Start with the decisions the practice needs to make.”
+- Page 2: “Core operating fields”. List “Date received”, “Service requested”, “Completeness”, “Current stage”, “Current owner”.
+- Page 3: “Make action visible”. List “Next action”, “Review date”, “Exception”, “Outcome”, “Closure date”.
+- Page 4: “Keep the operating view minimal”. Show a protected source record beside a limited workflow view. Add “Do not duplicate clinical detail because a column is available.”
+- Page 5: “Five-referral review”. Add “Synthetic data” and show columns “Reference”, “Stage”, “Owner”, “Next action”, “Review date”. Use exactly these rows: “R-001 | Review | Referral coordinator | Check completeness | Monday”; “R-002 | Waiting | Intake coordinator | Follow up missing item | Wednesday”; “R-003 | Decision | Practice manager | Confirm fit decision | Thursday”; “R-004 | Action | Admin lead | Send outcome | Friday”; “R-005 | Closed | Referral coordinator | None | Closed”. Add “Can the right person act without reading every email?”
+
+Use only the target-page copy, synthetic identifiers, generic row values and page marker. Do not use names, real dates, service types, diagnoses, clinical notes, contact details, patient imagery, professional logos, fake metrics, promises, robots or futuristic interfaces. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Five-page referral tracking guide covering core fields, next actions, data minimisation and a synthetic five-referral review.
+
+## P21 — Synthetic allied-health referral before and after
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn before-and-after workflow diagram for Heutrix. Heutrix is an Australian workflow-improvement business; the audience is allied-health practice owners and operations leaders. The purpose is to demonstrate workflow design questions using an entirely synthetic referral example, not a client case study or clinical model.
+
+Use a calm corporate-modern style with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the deliberate close state. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not create a logo.
+
+Place the exact top label “Synthetic example — not a client case study”. Make two balanced columns. Left: title “Before”; show a shared inbox branching into inconsistent flags, folders, owner questions and an unclosed waiting item with broken slate connectors. Right: title “Possible future state”; show the inbox feeding one controlled operating record with “Stage”, “Owner”, “Next action”, “Review date”, then defined paths “Missing information”, “Not a fit”, “Closed”. Beside both columns show a separate protected-source icon labelled “Restricted clinical information stays here”. Footer: “Illustrative only”.
+
+Use only that exact visible copy. Do not show people, names, diagnoses, records, contact details, clinical images, branded software, client logos, metrics, outcomes, prices, robots or AI imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Synthetic comparison of an inbox-based referral process with an illustrative future state using a controlled operating record and defined closure paths.
+
+## P22 — Enquiry-to-service-start field guide
+
+**Format:** Six images. Submit the full prompt six times, changing only `TARGET PAGE` from 1 to 6.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a six-page LinkedIn operational field guide for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is disability support provider owners, executives and operations leaders. The purpose is to make the enquiry-to-service-start path visible without showing participant details or implying registration, audit, legal, clinical or service-readiness assurance. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on an accountable action or close decision. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, whitespace, simple operational line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker and the exact footer “Operational guidance only — not registration, audit, legal or clinical advice” on every page. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “From enquiry to service start: make the path visible.” Show a bounded six-stage line.
+- Page 2: “Entry and initial fit”. Fields “Enquiry received”, “Service request”, “Location”, “Initial fit review”.
+- Page 3: “Information”. Fields “What is still needed?”, “Who owns the next contact?”, “When is it reviewed?” Show controlled status fields only.
+- Page 4: “Decision”. Fields “Decision waiting”, “Decision owner”, “Outcome recorded”, “Communication sent”.
+- Page 5: “Readiness”. Fields “Proposed start”, “Open actions”, “Exceptions”, “Named readiness decision”.
+- Page 6: “Closure”. Outcomes “Commenced”, “Paused”, “Declined”, “Closed”. Add “Can the accountable team see what is blocking the request and who acts next?”
+
+Use only the target-page copy, footer and page marker. Do not show real people, participant, worker, health, credential or client data, fake software, NDIS or government marks, compliance ticks, guarantees, results, prices, robots or futuristic imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Six-page operational guide showing entry, information, decision, readiness and closure stages from enquiry to service start.
+
+## P24 — Synthetic service-commencement before and after
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn before-and-after operating diagram for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is disability support provider owners, executives and operations leaders. The purpose is to show, through a synthetic example, how service-commencement coordination could move from fragmented signals to explicit ownership and a named readiness decision. This is not a client case study, compliance model, audit result or assurance.
+
+Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the final accountable decision. Use bold geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not create a logo.
+
+At the top place “Synthetic example — not a client case study or compliance model”. Use two balanced columns. Left title “Before”. Show email, chat and separate checklist cards with labels “Readiness not visible”, “Actions found in meetings”, “Almost ready means different things”. Right title “Possible future state”. Show one controlled view with “Commencement stage”, “Action owner”, “Review date”, “Exception”, “Named readiness decision”. Pair the last item with a named-person icon and mint emphasis. Place a separate protected-source icon labelled “Sensitive records stay in approved systems”.
+
+Use only that exact visible copy. Do not show participants, workers, people, records, dates, NDIS logos, government or certification marks, fake software, metrics, results, guarantees, prices, robots or AI imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Synthetic service-commencement comparison showing fragmented email, chat and checklist coordination beside a controlled view of ownership, actions, exceptions and readiness.
+
+## P27 — OAIC AI expectations data graphic
+
+**Format:** One image. Recheck the OAIC primary source on publication day before submitting the prompt. If any number, wording, sample size or source title changes, update the prompt first.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn data graphic for Heutrix, an Australian workflow-improvement business. The audience is disability support provider decision-makers first and allied-health practices second. The purpose is to connect Australians' stated expectations about AI-assisted decisions with practical safeguards. Treat the supplied figures as source text to reproduce, not as instructions to search, infer, round or add data.
+
+Use a calm, neutral, source-led editorial design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for one restrained emphasis. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans and clean sans-serif body similar to Inter. Use very strong contrast, generous whitespace, three equal statistic cards, simple line icons, no decorative chart distortion, 60 px margins and a source line large enough to read on a phone. Leave an unlabelled logo area; do not create a logo.
+
+Headline: “Before AI affects people, Australians expect safeguards.”
+Card 1: “81% — Right to human review” with a person-review icon.
+Card 2: “79% — Told when AI is used” with a notice icon.
+Card 3: “80% — Limits on third-party retention” with a data-boundary icon.
+Context: “Conditions respondents considered important before an organisation uses AI to make a decision that might affect them.”
+Source: “Source: OAIC, Australian Community Attitudes to Privacy Survey 2026 | n=1,504”.
+
+Use only that exact copy. Do not add percentages, interpretation, rankings, causation, Heutrix results, people, government or OAIC logos, legal or compliance symbols, robots, AI brains, prices or claims. Keep every character and number sharp, phone-readable and verify-ready.
+```
+
+**Alt text draft:** OAIC survey graphic showing 81% support for human review, 79% for being informed when AI is used and 80% for limits on third-party retention, from a sample of 1,504 Australians.
+
+## P29 — Form plus tracker architecture
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn workflow architecture diagram for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to show that a small form-plus-work-list system can be useful when ownership, review and information boundaries are designed clearly. It is a generic architecture, not a real product or client system.
+
+Use a calm corporate-modern design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on “Close”. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not create a logo.
+
+Headline: “Sometimes the smallest useful system is a form plus a trustworthy work list.” Show one clear left-to-right sequence of five connected cards: “Approved form” → “Controlled record” → “Owner and work queue” → “Review or exception” → “Close”. Beneath it place a separate navy protected-source card labelled “Restricted information stays in the approved source system”, linked only where needed with a thin dotted line. Along the bottom add equal chips “Access”, “Retention”, “Maintenance”.
+
+Use only that exact visible copy. Do not show participant, patient, worker or clinical fields, people, vendor logos, platform names, fake screenshots, NDIS branding, compliance marks, prices, results, robots, AI brains or holograms. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Architecture diagram showing an approved form creating a controlled record, owner work queue, review or exception and deliberate close, with restricted information kept separately.
+
+## P32 — Definition of done
+
+**Format:** Six images. Submit the full prompt six times, changing only `TARGET PAGE` from 1 to 6.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a six-page LinkedIn checklist for Heutrix, an Australian workflow-improvement business. The audience is operations leaders at disability support providers first and allied-health practices second. The purpose is to help them define deliberate closure rather than allowing unfinished work to disappear. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for a confirmed close state. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, accessible checkbox and line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Pair every status colour with a label or icon. Add a target-matching page marker. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “Done is a decision, not a disappearing row.” Show an open item reaching a clear close gate.
+- Page 2: “Allowed closure outcomes”. List “Completed”, “Declined”, “Withdrawn”, “Waiting until a defined date”, “Moved to another approved workflow”. Add “Stopped being looked at is not a closure outcome.”
+- Page 3: “Who can close it?” Show “Authorised role”, “Decision”, “Timestamp”.
+- Page 4: “What is the minimum record?” Fields “Outcome”, “Reason”, “Decision owner”, “Date”. Add “Synthetic fields”.
+- Page 5: “What must happen next?” Fields “Communication”, “Onward action”, “Retention or review”.
+- Page 6: “Outcome allowed?”, “Closer authorised?”, “Minimum record complete?”, “Communication sent?”, “Ongoing action moved?” End with “If done is not defined, real work and abandoned work share the same status.”
+
+Use only the target-page copy and page marker. Do not add names, records, client examples, personal information, legal or compliance claims, software logos, prices, results, robots or futuristic imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Six-page definition-of-done checklist covering allowed closure outcomes, authorised closers, minimum records, communication and onward action.
+
+## P34 — Workflow-first method graphic
+
+**Format:** One image. This is deliberately a method graphic, not a founder portrait.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn method graphic for H-E-U-T-R-I-X, an Australian business that improves operational workflows using practical systems and safe AI where appropriate. The primary audience is decision-makers at Australian disability support providers; allied-health practices are secondary. The purpose is to support an approved anonymised Heutrix delivery post by explaining the method without founder imagery, client identity, source material, outcome metrics or unverified claims.
+
+Use a calm corporate-modern “quiet power” design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only at the final technology choice. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans, a clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple original line icons, 8 px cards, 1 px borders, subtle navy shadows and 60 px margins. Leave an unlabelled logo area; do not create a logo.
+
+Headline: “Workflow first. Technology second.” Show one bounded workflow line through six checkpoints in this exact order: “People”, “Information”, “Decisions”, “Handovers”, “Risks”, “Technology choice”. Use navy and teal for the first five; use mint only for “Technology choice”. After the last checkpoint show six equal decision chips: “Simplify”, “Clarify”, “Track”, “Automate”, “Build”, “No build”. Supporting line: “Technology is useful only when it makes real work more reliable.” Footer: “Method used in anonymised Heutrix delivery”.
+
+Use only that exact visible copy. Do not show a founder, portrait, person, team, client identity, service recipient, source screenshot, record, role title, experience claim, testimonial, result, price, logo, robot, AI brain, circuit or futuristic interface. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Workflow-first method used in anonymised Heutrix delivery, showing people, information, decisions, handovers and risks assessed before the technology choice.
+
+## P35 — What happens on a 20-minute workflow fit call
+
+**Format:** Five images. This static document replaces the native-video dependency. Submit the full prompt five times, changing only `TARGET PAGE` from 1 to 5.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a five-page LinkedIn explainer for H-E-U-T-R-I-X, an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to reduce uncertainty about a 20-minute workflow fit call without using a founder presenter, synthetic person or fabricated interaction. The call is a high-level fit conversation and does not require sensitive records. Do not create a contact sheet, collage, video frame or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the next-step card. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple workflow and conversation line icons with no people, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not invent a logo.
+
+Render the selected page:
+- Page 1: “What happens on a 20-minute workflow fit call?” Add “A general description of the workflow is enough.”
+- Page 2: “Start with the workflow”. Questions: “Where does it start and end?”, “Who uses it?”, “What makes it slow, inconsistent or hard to see?”
+- Page 3: “Keep the conversation high level”. Questions: “What systems are involved?”, “Is sensitive information likely to be involved?”, “What would a useful improvement look like?” Add “Do not send participant, worker, patient or confidential records.”
+- Page 4: “The smallest useful next step”. Show equal paths “Heutrix Diagnostics”, “Heutrix Workflow Transformation”, “Heutrix AI Guardrails”, “Later review”, “No project”. Do not make one path look guaranteed.
+- Page 5: “Clarity, not pressure.” Add “Until direct scheduling and lead routing are tested, use the Heutrix Page pathway.” Add the action label “Request my 20-minute call”.
+
+Use only the exact copy assigned to the target page and its page marker. Do not add booking links, people, founders, avatars, client data, prices, results, testimonials, guarantees, software brands, robots or AI imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Five-page explainer describing the high-level questions asked on a 20-minute Heutrix workflow fit call and the possible next steps, including no project.
+
+## P37 — Synthetic allied-health referral walkthrough
+
+**Format:** Eight images. Submit the full prompt eight times, changing only `TARGET PAGE` from 1 to 8.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of an eight-page LinkedIn referral workflow walkthrough for Heutrix. Heutrix is an Australian workflow-improvement business; the audience for this post is allied-health practice owners and operations leaders. The purpose is to demonstrate operational workflow questions with a fictional referral, not to show a client workflow, clinical model or result. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the selected next action or close state. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, clean workflow symbols, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add “Synthetic example — not a client workflow or clinical model” and a target-matching page marker on every page. Use the fictional identifier “R-014” only. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “One synthetic referral, from arrival to close.” Show a seven-stage path and “R-014”.
+- Page 2: “Arrival — What starts the record, and how do we avoid parallel copies?”
+- Page 3: “Initial review — What information is needed for the next operational step?”
+- Page 4: “Waiting — Who owns missing information, and when is it reviewed again?”
+- Page 5: “Decision and action — Who records the operational outcome, and what happens next?”
+- Page 6: “Exception — What happens when the normal path cannot continue?”
+- Page 7: “Close — Which outcomes are allowed, what is communicated and what counts as done?”
+- Page 8: “Seven questions that design the operating process”. List “Trigger”, “Information”, “Owner”, “Review date”, “Decision”, “Exception”, “Close”. Footer “Clinical judgement and professional obligations remain with the appropriate qualified people.”
+
+Use only the target-page copy, required label, R-014 and page marker. Do not add names, diagnoses, clinical notes, contact details, real dates, people, medical imagery, professional logos, outcomes, metrics, prices, robots or futuristic interfaces. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Eight-page synthetic allied-health referral walkthrough covering arrival, review, waiting, decision, exception and closure without clinical information.
+
+## P39 — Synthetic Heutrix Diagnostics sample
+
+**Format:** Four images. Submit the full prompt four times, changing only `TARGET PAGE` from 1 to 4.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a four-page synthetic Heutrix Diagnostics sample for LinkedIn. H-E-U-T-R-I-X is an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to show what a decision-ready output should help a buyer decide without imitating a real client report or claiming delivered work. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the recommended next decision. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, report-like structure, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add “Synthetic sample — not client work” and a target-matching page marker on every page. Use the fictional workflow title “Missing-information follow-up”. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “Current-state snapshot”. Boundary “Request received” to “Information confirmed or item closed”. Show three generic role lanes and visible waiting points.
+- Page 2: “Ranked bottlenecks and dependencies”. Use columns “Bottleneck”, “Why it matters”, “Evidence needed”, “Priority”. Use exactly these rows: “Different definitions of complete | Conflicting follow-up | Compare current rules | High”; “Exception owner unclear | Work waits without a decision | Confirm current decision path | High”; “Trigger data inconsistent | Automation may fire incorrectly | Review a non-sensitive sample | Medium”.
+- Page 3: “Future-state principles”. Cards “One approved rule”, “Named exception owner”, “Visible next action”, “Minimal information copying”.
+- Page 4: “Decision-ready next steps”. Options “Clarify process only”, “Run a manual baseline”, “Reassess a scoped build”. Add “No-go condition: do not automate until the rule and trigger data are stable.”
+
+Use only the target-page copy, required label, workflow title, specified table text and page marker. Do not add an organisation, real data, numerical savings, results, client logo, price, timeline, people, robots or futuristic imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Four-page synthetic Heutrix Diagnostics sample showing a current-state workflow, ranked bottlenecks, future-state principles and decision-ready next steps.
+
+## P40 — AI use-case register template
+
+**Format:** Three images. Submit the full prompt three times, changing only `TARGET PAGE` from 1 to 3.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a three-page LinkedIn AI use-case register template for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is small teams at disability support providers first and allied-health practices second. The purpose is to help them record the purpose, approved tool and account, information boundary, accountable review and decision without storing copies of sensitive prompts. It is an operational template, not legal, privacy, security or clinical advice. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for a clearly labelled approved state. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple register and human-review icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “An AI use-case register your team can maintain.” Add “Track the use, information, reviewer and decision — not copies of sensitive prompts.”
+- Page 2: “Minimum fields”. Group: “Purpose” — “Use-case name”, “Purpose”, “People affected”; “Tool and information” — “Approved tool/account”, “Information involved”, “Input/output location”; “Accountability” — “Business owner”, “Human reviewer”, “Review criteria”; “Decision” — “Approved / Conditional / Prohibited”, “Decision date”, “Next review date”.
+- Page 3: “Synthetic sample row”. Use exactly “Generic meeting agenda | Approved workspace account | Non-sensitive instructions only | Operations lead | Check accuracy and tone | Approved | Review in 90 days”. Add “Reassess if the tool, data, purpose or consequence changes.” Footer “Template only — adapt with qualified privacy, legal, security and professional advice where required.”
+
+Use only the target-page copy and page marker. Do not add real prompts, names, personal, health or client information, tool logos, screenshots, compliance ticks, guarantees, legal conclusions, robots, AI brains or holograms. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Three-page AI use-case register template showing minimum fields and one synthetic low-risk sample row.
+
+## P42 — Human-review checklist for AI-assisted admin
+
+**Format:** Three images. Submit the full prompt three times, changing only `TARGET PAGE` from 1 to 3.
+
+```text
+TARGET PAGE: 1
+
+Create exactly one page—the TARGET PAGE only—of a three-page LinkedIn human-review checklist for Heutrix. Heutrix is an Australian workflow-improvement business. The audience is decision-makers and operational staff at disability support providers first and allied-health practices second. The purpose is to show that accountable review requires explicit accuracy, information-handling, authority and escalation checks. It is an operational template, not legal or clinical advice and not sufficient for every AI use case. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on a labelled approved final record. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, very strong contrast, generous whitespace, large accessible empty checkboxes, a human-review line icon with no face, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page:
+- Page 1: “Human review is not clicking accept.” Add “Define the test before the tool is used.” Show a reviewer checkpoint between “AI-assisted draft” and “Approved final record”.
+- Page 2: “Review the output”. Checklist “Facts accurate?”, “Anything important missing?”, “Names, dates, amounts and references correct?”, “Sources checked?”, “Tone appropriate?”, “Certainty not overstated?”
+- Page 3: “Review the control”. Checklist “Information handled through an approved process?”, “Qualified person still makes the important decision?”, “Final version stored correctly?”, “Reviewer has authority to reject?”, “Error or near miss recorded or escalated where required?” Footer “Operational template — not legal or clinical advice.”
+
+Use only the target-page copy and page marker. Do not tick the boxes, imply universal sufficiency, show real people or records, personal or health information, software logos, compliance seals, guarantees, robots, AI faces, brains or circuits. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Three-page checklist covering output accuracy, source checking, information handling, accountable decisions, storage and reviewer authority for AI-assisted administration.
+
+## P46 — Heutrix Diagnostics offer card
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn offer card for H-E-U-T-R-I-X, an Australian workflow-improvement business. The audience is decision-makers at disability support providers first and allied-health practices second. The purpose is to make Heutrix Diagnostics easy to assess as a paid, fixed-scope decision engagement without publishing an exact price, duration or result claim.
+
+Use a precise corporate-modern design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on one closing chip. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, two balanced columns, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not generate a logo.
+
+Product label: “Heutrix Diagnostics”. Headline: “A paid, fixed-scope decision engagement.” Left title “Use it when” with “The priority is unclear”, “The workflow boundary is unclear”, “The feasible solution is unclear”. Right title “Leave with” with “Defined problem”, “Current-state map”, “Ranked bottlenecks”, “Feasible options”, “Decision-ready brief”. Footer chips: “No build may be the answer” and “Implementation scoped separately”.
+
+Use only that exact visible copy. Do not add a price, duration, discount, package tier, Launch Partner language, implementation inclusion, client, testimonial, result, guarantee, person, software brand, robot or futuristic imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Heutrix Diagnostics offer card explaining when the engagement is useful and the decision outputs it provides, with implementation scoped separately.
+
+## P48 — 30-day workflow improvement experiment
+
+**Format:** One image.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn one-page experiment template for Heutrix, an Australian workflow-improvement business. The audience is operational teams at disability support providers first and allied-health practices second. The purpose is to help them test one bounded workflow change over 30 days using a baseline, a limited test and an explicit decision. This is a planning template, not a promised delivery timeline or result.
+
+Use a calm corporate-modern design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the final decision block. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, strong contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Show a subtle circular review arrow but preserve top-to-bottom reading order. Leave an unlabelled logo area; do not create a logo.
+
+Title: “A controlled 30-day workflow experiment”. Four stacked blocks:
+“Week 1 — Observe” with “Boundary, baseline, people”.
+“Week 2 — Design” with “Choose one change”.
+“Week 3 — Test” with “Limited group, exceptions, unintended effects”.
+“Week 4 — Decide” with “Keep, change, expand or stop”.
+Add four blank labelled fields: “Owner”, “Baseline”, “Change”, “Decision”. Footer: “Use approved information handling. Do not place sensitive information in a new test tool without approval.”
+
+Use only that exact copy. Do not fill blank fields, add metrics, savings, results, guarantees, people, real data, tools, logos, robots or futuristic imagery. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Four-week workflow experiment template moving from observation and design to testing and a keep, change, expand or stop decision.
+
+## P50 — Optional image fallback for the native poll
+
+**Primary decision:** Use LinkedIn's native poll. No image is required. Use this fallback only if the publisher deliberately changes P50 into an image-led question post; do not invent poll results.
+
+```text
+Create exactly one original 1080 × 1350 px (4:5 portrait) LinkedIn question card for H-E-U-T-R-I-X, an Australian workflow-improvement business. The primary audience is decision-makers at Australian disability support providers. The purpose is to learn which practical workflow field guide would be most useful next without collecting confidential examples.
+
+Use a calm corporate-modern editorial design with near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only on the small call-to-action. Use a bold geometric sans-serif heading similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple line icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Leave an unlabelled logo area; do not invent a logo.
+
+Headline: “Which workflow should we unpack next?” Show four equal answer cards with exact labels “Intake and service start”, “Reporting preparation”, “Evidence and documents”, “AI use and human review”. Footer: “Choose the closest theme. Keep sensitive details out of comments.”
+
+Use only that exact visible copy. Do not show people, participants, workers, patients, records, a LinkedIn interface, fake vote counts, percentages, results, NDIS or government branding, client logos, robots or futuristic imagery. Do not visually imply one option is already winning. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Question card asking which workflow Heutrix should unpack next, with intake and service start, reporting preparation, evidence and documents, and AI use and human review as options.
+
+## P52 — Conditional campaign-review document
+
+**Format:** Four images. Do not generate final artwork until 18 actual campaign weeks have run and every bracketed field below has been replaced with verified information from the measurement log. Submit the full completed prompt four times, changing only `TARGET PAGE` from 1 to 4.
+
+```text
+TARGET PAGE: 1
+
+VERIFIED CAMPAIGN DATES: [replace before generation]
+VERIFIED TOPIC 1: [replace before generation]
+VERIFIED TOPIC 2: [replace before generation]
+VERIFIED TOPIC 3: [replace before generation]
+VERIFIED PRIMARY-AUDIENCE SIGNAL: [replace before generation]
+VERIFIED MOST-USEFUL TOPIC: [replace before generation]
+VERIFIED HIGH-LEVEL AUDIENCE QUESTION: [replace before generation]
+VERIFIED THEME TO DEEPEN: [replace before generation]
+VERIFIED FORMAT OR HOOK CHANGE: [replace before generation]
+VERIFIED ITEM TO STOP: [replace before generation]
+VERIFIED CTA, OR “NONE”: [replace before generation]
+
+If any bracketed placeholder remains, do not generate an image and do not invent a replacement. Ask for the missing verified campaign information.
+
+After every placeholder is replaced, create exactly one page—the TARGET PAGE only—of a four-page LinkedIn campaign review for H-E-U-T-R-I-X, an Australian workflow-improvement business whose launch content primarily serves disability support provider decision-makers and secondarily serves allied-health practices. The purpose is to report measured editorial learning after 18 actual campaign weeks, not to manufacture proof, demand or results. Do not create a contact sheet, collage or multiple images.
+
+Make the page 1080 × 1350 px, 4:5 portrait. Use near-white #F8FAFC, deep slate navy #1E293B, slate #334155, border grey #E2E8F0, teal #14B8A6 and mint #10B981 only for the next editorial decision. Use geometric sans-serif headings similar to Plus Jakarta Sans, clean sans-serif body similar to Inter, high contrast, generous whitespace, simple editorial icons, 8 px cards, 1 px borders, subtle shadows and 60 px margins. Add a target-matching page marker. Leave an unlabelled logo area; do not create a logo.
+
+Render the selected page using the verified values above:
+- Page 1: “What 18 weeks of workflow-first publishing taught us.” Show VERIFIED CAMPAIGN DATES and a simple timeline; no confetti.
+- Page 2: “What we published”. Show the three verified topic cards only.
+- Page 3: “The strongest useful signals”. Show VERIFIED PRIMARY-AUDIENCE SIGNAL, VERIFIED MOST-USEFUL TOPIC and VERIFIED HIGH-LEVEL AUDIENCE QUESTION. Add “Source: Internal LinkedIn campaign measurement log”.
+- Page 4: “What changes next”. Show VERIFIED THEME TO DEEPEN, VERIFIED FORMAT OR HOOK CHANGE and VERIFIED ITEM TO STOP. Add “One workflow. One accountable owner. One practical next step.” Add the verified CTA only when it is not “NONE”.
+
+Use only the target-page exact headings, completed verified values, required source line, closing line, permitted CTA and page marker. Do not add metrics, interpretations, testimonials, audience demand, results, clients, prices, people, robots or decorative hype. Keep every word sharp and phone-readable.
+```
+
+**Alt text draft:** Four-page campaign review covering verified topics, useful audience signals, editorial lessons and the next decision after 18 actual weeks.
+
+## Final prompt and asset verification
+
+Before approving any visual, confirm:
+
+- the full fenced prompt was used without relying on a shared prefix or previous chat context;
+- document prompts were run once per page and each output is a single 4:5 page, not a contact sheet;
+- the post ID, headline, product name, audience and CTA match the current weekly file;
+- every visible word, number, punctuation mark and page marker is correct;
+- no exact public price, unverified capability, founder claim, client result, business detail or extra label was introduced;
+- every synthetic or illustrative label is prominent on every relevant page;
+- P27's primary OAIC source was rechecked on publication day;
+- P52 contains verified campaign evidence and no remaining placeholders;
+- text is readable at phone size, contrast is sufficient and meaning is not communicated by colour alone;
+- the approved logo and final brand tokens were applied manually;
+- alt text describes the information conveyed rather than merely the design; and
+- exported files contain no hidden real records, reference images, metadata or sensitive information.

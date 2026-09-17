@@ -1,0 +1,17 @@
+# Proof register
+
+**Status reconciled 13 September 2026:** Resource release authority is the [lead-magnet register](../../06-marketing/lead-magnets/README.md); case-study evidence and publication boundaries remain in the Marketing proof sources. A sample promotional no-build illustration is not a complete approved Diagnostics operating output.
+
+| Proof item | Type | Client permission or synthetic label | Claim supported | Reviewer | Status |
+|---|---|---|---|---|---|
+| Sample Diagnostic output | Synthetic/sample | Required | Deliverable quality and decision value |  | To create |
+| Sample workflow map and acceptance evidence | Synthetic/sample | Required | Delivery method and handover quality |  | To create |
+| Workflow Bottleneck Scorecard | Heutrix-created starter resource | JD approved version 1.0 website release, 3 September 2026; synthetic example labelled | Prioritisation method and evidence-confidence discipline only | JD | Version 1.0 approved for website release; not client proof; tracking remains unapproved |
+| Enquiry-to-Service-Start Visibility Starter Kit | Heutrix-created starter resource | JD approved version 1.0 website release, 3 September 2026; synthetic example labelled | Minimum visibility fields, review rhythm and safe testing method only | JD | Version 1.0 approved for website release; not client proof; tracking remains unapproved |
+| AI Guardrails Staff Starter Pack | Heutrix-created starter resource | JD approved version 1.0 website release, 3 September 2026; synthetic examples labelled | Use-case screening, information boundaries and accountable review method only | JD | Version 1.0 approved for website release; not client proof; tracking remains unapproved |
+| Founder trust layer | First-party evidence | Bounded summaries and origin approved 5 September 2026; expanded claims/images require separate permission | Approved concise experience descriptions only; not operational authority | Janith | Partly approved: use the [recorded summaries](../../00-control/VERIFIED-FACTS.md#approved-public-founder-summaries--5-september-2026); no portraits, credentials or expanded biography inferred |
+| Anonymised Heutrix case-study collection | Delivered Heutrix work; 15 case studies across four disability support providers | Janith approved publication on 5 September 2026; providers remain unnamed | Delivered workflow design and implementation, practical operation, client-feedback-supported outcomes for cases 3, 4, 6, 8 and 9, and structurally estimated ranges elsewhere | Janith | Approved current anonymised narratives and qualified ranges, 5 September 2026; evidence limitations retained |
+| Case-study client feedback | Client feedback recorded by the owner | Do not publish identity, verbatim feedback or identifying context without separate permission | Practical operation and adoption; selected approximate outcomes | Janith | Incorporated as supporting evidence; not a public testimonial or independent audit |
+| Client testimonial | Real client | Written permission required | Verbatim approved wording only |  | None verified |
+
+Never convert starter resources, illustrative examples, downloads, unrelated operating knowledge or unverified prior work into a Heutrix client result. Use the controlled [case-study evidence map](../../06-marketing/case-studies-and-assets/SOURCE-EVIDENCE-MAP.md) for the current proof and claim boundaries.

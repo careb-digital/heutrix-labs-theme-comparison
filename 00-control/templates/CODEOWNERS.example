@@ -1,0 +1,18 @@
+# INACTIVE EXAMPLE. Replace handles with verified users/teams with appropriate access.
+# Copy to .github/CODEOWNERS only after assignments and handles are confirmed.
+# Last matching rule wins. Multiple owners on one rule do not require all approvals.
+# * @MERGE_COORDINATOR
+# /01-company/ @COMPANY_OWNER
+# /02-market-and-offers/ @OFFERS_OWNER
+# /03-sales/ @SALES_OWNER
+# /04-delivery/ @DELIVERY_OWNER
+# /05-legal-privacy-risk/ @LEGAL_PRIVACY_OWNER
+# /06-marketing/ @MARKETING_OWNER
+# /07-finance/ @FINANCE_OWNER
+# /08-client-project-template/ @DELIVERY_OWNER
+# /apps/website/ @WEBSITE_MAINTAINER
+# /apps/internal-reports/ @MERGE_COORDINATOR
+# /00-control/ @MERGE_COORDINATOR
+# /README.md @MERGE_COORDINATOR
+# /AGENTS.md @MERGE_COORDINATOR
+# /.github/ @MERGE_COORDINATOR

@@ -1,0 +1,418 @@
+{
+  "checked_on": "2026-09-15",
+  "page": "Heutrix Labs",
+  "company_id": "123474001",
+  "account": "Janith Dharmasinghe",
+  "queue_url": "https://www.linkedin.com/company/123474001/admin?share=true&view=management&actorCompanyId=123474001",
+  "four_week_start": "2026-09-21",
+  "four_week_end": "2026-10-18",
+  "final_post_date": "2026-10-16",
+  "cadence": "Monday, Wednesday, Friday at 08:15 Australia/Sydney",
+  "campaign_entries": 12,
+  "queue_entries": 13,
+  "new_entries_created": 11,
+  "extra_existing_entry": {
+    "id": "P01",
+    "date": "2026-09-18",
+    "time": "08:15",
+    "timezone": "AEST",
+    "owner_instruction": "Keep both P01 entries"
+  },
+  "posts": [
+    {
+      "id": "P01",
+      "date": "2026-09-21",
+      "time": "08:15",
+      "timezone": "AEST",
+      "format": "image",
+      "title": "When important work disappears between people and systems",
+      "evidence": "Existing scheduled preview verified"
+    },
+    {
+      "id": "P02",
+      "date": "2026-09-23",
+      "time": "08:15",
+      "timezone": "AEST",
+      "format": "document",
+      "title": "Before buying another tool, answer five workflow questions",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P03",
+      "date": "2026-09-25",
+      "time": "08:15",
+      "timezone": "AEST",
+      "format": "text",
+      "title": "Seven signs a workflow depends on memory",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P04",
+      "date": "2026-09-28",
+      "time": "08:15",
+      "timezone": "AEST",
+      "format": "text",
+      "title": "Participant intake rarely breaks in one dramatic moment",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P05",
+      "date": "2026-09-30",
+      "time": "08:15",
+      "timezone": "AEST",
+      "format": "image",
+      "title": "“Starting soon” is not a service-commencement status",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P06",
+      "date": "2026-10-02",
+      "time": "08:15",
+      "timezone": "AEST",
+      "format": "document",
+      "title": "Illustrative: the best automation decision was not to build",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P07",
+      "date": "2026-10-05",
+      "time": "08:15",
+      "timezone": "AEDT",
+      "format": "document",
+      "title": "Three problems. Three Heutrix starting points.",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P08",
+      "date": "2026-10-07",
+      "time": "08:15",
+      "timezone": "AEDT",
+      "format": "document",
+      "title": "A workflow is not transformed when the build goes live",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P09",
+      "date": "2026-10-09",
+      "time": "08:15",
+      "timezone": "AEDT",
+      "format": "text",
+      "title": "What your team should own at handover",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P10",
+      "date": "2026-10-12",
+      "time": "08:15",
+      "timezone": "AEDT",
+      "format": "text",
+      "title": "Five questions before staff use AI at work",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P11",
+      "date": "2026-10-14",
+      "time": "08:15",
+      "timezone": "AEDT",
+      "format": "document",
+      "title": "Can staff classify a proposed AI task?",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    },
+    {
+      "id": "P12",
+      "date": "2026-10-16",
+      "time": "08:15",
+      "timezone": "AEDT",
+      "format": "text",
+      "title": "Removing the name does not automatically make an AI prompt safe",
+      "evidence": "Exact composer date checked, Schedule submitted, Post scheduled confirmation, final queue date verified"
+    }
+  ],
+  "publication_status": "Scheduled, not published",
+  "verification_scope": "All 13 date/time entries visible after expanding the final queue; P01 copies identified in existing previews; P02-P12 prepared with existing reviewed copy and matching assets. P05 alt text saved. Native document titles and selected filenames checked. October scheduler previews showed Australian Eastern Daylight Time.",
+  "brand_refresh": {
+    "checked_on": "2026-09-16",
+    "page_display_name": "Heutrix",
+    "queue_entries": 13,
+    "replaced_entries": 8,
+    "image_entries": [
+      "P01 2026-09-18",
+      "P01 2026-09-21",
+      "P05 2026-09-30"
+    ],
+    "document_entries": [
+      "P02",
+      "P06",
+      "P07",
+      "P08",
+      "P11"
+    ],
+    "text_entries_unchanged": [
+      "P03",
+      "P04",
+      "P09",
+      "P10",
+      "P12"
+    ],
+    "verification": "Each replacement used Edit post, retained existing caption and date, and returned Post scheduled confirmation. Final expanded queue contains all 13 original dates at 08:15; document titles and page counts 5,4,4,4,6 verified. P01 and P05 alt text saved. No immediate publication.",
+    "uploaded_sha256": {
+      "images\\P01.png": "9a3d6b421321e9ae478716898c7aba4a4df9d702913a705dc79ddb1b60f70bb5",
+      "images\\P05.png": "88af2b17de7bded89a142ce1a843e7b909d0a1085bcd189d557835629f8762fa",
+      "documents\\P02.pdf": "a62e76e70de051a787f4709baa0d57bbebfbeea2e66df4d701d8624a501d7003",
+      "documents\\P06.pdf": "c6064b72344c60c82f788a3340b7591ffab4f5c7bcd2734367caf001455345de",
+      "documents\\P07.pdf": "7e90c1d13abae82c667550719a832dcc68298f7c71a5c368c9e66fc042b4388a",
+      "documents\\P08.pdf": "4773926e25f912037213aa52c1d597b62abe093a106701b8d9d05515530b32ad",
+      "documents\\P11.pdf": "f7677a9f9b54e7607d22a0e3c059cfa4ee1bafa9f6b71aa2ba489161c076b3fe"
+    }
+  },
+  "alignment_refresh": {
+    "checked_on": "2026-09-16",
+    "page_display_name": "Heutrix",
+    "replaced_entries": [
+      "P02",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P11"
+    ],
+    "confirmation": "Each replacement returned LinkedIn Post scheduled. Existing captions, document titles and original dates/times retained. P05 original alternative text restored and verified after reopening the saved post. No immediate publication.",
+    "uploaded_sha256": {
+      "images/P05.png": "23472590236480771fa5c825695719e4d93ff46d0e862bf012c2990465e33fc7",
+      "documents/P02.pdf": "fe4da172a1716acc121f8426cbaae0aa47371fa36973eec5d0944d0c561dfd82",
+      "documents/P06.pdf": "f8df1ec69592aa469fcb21e8191c8845e24d4a80cc5b110af68defab87825778",
+      "documents/P07.pdf": "6964bc531030b8f410376990bda25ffcce2375b9af4103da6f41273787d5aa65",
+      "documents/P08.pdf": "3533e52963ce2f1de2f8acd4b1a1db8974d068023d41033228eb0c5c7dfc2403",
+      "documents/P11.pdf": "5fbc70fe211a16138ba71f4b17d5917f9565267f2a804e2bd58e0f1de014526e"
+    },
+    "final_queue": [
+      {
+        "schedule": "Preview of the scheduled post that will be published on Mon September 21, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": null,
+        "pageCount": null,
+        "mediaIds": [
+          "D5622AQFQe2a5bE5zoQ"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Wed September 23, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": "Five questions before choosing another tool",
+        "pageCount": "5 pages",
+        "mediaIds": [
+          "D561FAQGFiWha6-Ka8A"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Fri September 25, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": null,
+        "pageCount": null,
+        "mediaIds": []
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Mon September 28, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": null,
+        "pageCount": null,
+        "mediaIds": []
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Wed September 30, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": null,
+        "pageCount": null,
+        "mediaIds": [
+          "D5622AQEw7MyZKuphFQ"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Fri October 2, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": "Illustrative: when no build is the useful decision",
+        "pageCount": "4 pages",
+        "mediaIds": [
+          "D561FAQGUzUwgEKRkqA"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Mon October 5, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": "Three Heutrix starting points",
+        "pageCount": "4 pages",
+        "mediaIds": [
+          "D561FAQEKB8oBIFeS_Q"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Wed October 7, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": "Workflow Transformation: four delivery stages",
+        "pageCount": "4 pages",
+        "mediaIds": [
+          "D561FAQH4zDveZaxS-g"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Fri October 9, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": null,
+        "pageCount": null,
+        "mediaIds": []
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Mon October 12, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": null,
+        "pageCount": null,
+        "mediaIds": []
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Wed October 14, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": "AI use: approved, prohibited or review required",
+        "pageCount": "6 pages",
+        "mediaIds": [
+          "D561FAQHOEXj5Mtd74w"
+        ]
+      },
+      {
+        "schedule": "Preview of the scheduled post that will be published on Fri October 16, 2026 at 8:15 AM, click to see detail view",
+        "documentTitle": "Guidance on privacy and the use of commercially available AI products",
+        "pageCount": null,
+        "mediaIds": []
+      }
+    ],
+    "queue_entries": 12,
+    "queue_observation": "The live queue began at 21 September before this update and contains 12 campaign posts through 16 October. The previously recorded extra P01 on 18 September was already absent when opened; this task did not remove or recreate it."
+  },
+  "typography_refresh": {
+    "date": "2026-09-16",
+    "attachment_ids": [
+      "P02",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P11"
+    ],
+    "confirmation": "LinkedIn returned Post scheduled. for all six replacements.",
+    "captions_dates_times_retained": true,
+    "document_titles_retained": true,
+    "P05_alt_text_reopened_and_verified": true,
+    "uploaded_sha256": {
+      "images/P05.png": "b71c5e4bb8a6ae18b2c020958745e9c14e50fe75b0dc88aa064069d1f5b8c537",
+      "documents/P02.pdf": "471b430794a14fd8c2b3fe9fad01c98d0468bd48aef8182857eba5de55654c68",
+      "documents/P06.pdf": "06c599d5a5eda82b7c1fde288826799dbc3453d51ff19f9f1dc6924f58a95138",
+      "documents/P07.pdf": "abb7d03874c844712d0afb419591601b025c212c3237068f8ee76940c337d4ce",
+      "documents/P08.pdf": "b946f3030acdbd752ab071774e98c01a8d22760964ab23545823b11e860670c1",
+      "documents/P11.pdf": "0111a1ba0e102c01ec26179bb23b24becec4043ace7eddc95625ef36f65b4922"
+    },
+    "final_queue": [
+      {
+        "id": "P01",
+        "schedule": "Preview of the scheduled post that will be published on Mon September 21, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": [
+          {
+            "alt": "Heutrix launch graphic: Workflow first. Technology second. Make the next action clear. A conceptual illustration shows disconnected blank cards joining a clear teal path.",
+            "media_id": "D5622AQFQe2a5bE5zoQ"
+          }
+        ]
+      },
+      {
+        "id": "P02",
+        "schedule": "Preview of the scheduled post that will be published on Wed September 23, 2026 at 8:15 AM, click to see detail view",
+        "pages": "5",
+        "media": [
+          {
+            "alt": "",
+            "media_id": "D561FAQH05pUdAn52Tw"
+          }
+        ]
+      },
+      {
+        "id": "P03",
+        "schedule": "Preview of the scheduled post that will be published on Fri September 25, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": []
+      },
+      {
+        "id": "P04",
+        "schedule": "Preview of the scheduled post that will be published on Mon September 28, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": []
+      },
+      {
+        "id": "P05",
+        "schedule": "Preview of the scheduled post that will be published on Wed September 30, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": [
+          {
+            "alt": "ILLUSTRATIVE OPERATING VIEW. Starting soon is not a status. Vague: Almost ready. Starting soon. Useful: Owner, status, next action, review date. Accountable: A named person confirms readiness. Not compliance or service-readiness assurance.",
+            "media_id": "D5622AQGZscG172_TNw"
+          }
+        ]
+      },
+      {
+        "id": "P06",
+        "schedule": "Preview of the scheduled post that will be published on Fri October 2, 2026 at 8:15 AM, click to see detail view",
+        "pages": "4",
+        "media": [
+          {
+            "alt": "",
+            "media_id": "D561FAQEKShkJvmwdFA"
+          }
+        ]
+      },
+      {
+        "id": "P07",
+        "schedule": "Preview of the scheduled post that will be published on Mon October 5, 2026 at 8:15 AM, click to see detail view",
+        "pages": "4",
+        "media": [
+          {
+            "alt": "",
+            "media_id": "D561FAQGG11uCEojkgQ"
+          }
+        ]
+      },
+      {
+        "id": "P08",
+        "schedule": "Preview of the scheduled post that will be published on Wed October 7, 2026 at 8:15 AM, click to see detail view",
+        "pages": "4",
+        "media": [
+          {
+            "alt": "",
+            "media_id": "D561FAQFEfMRfk0rqnw"
+          }
+        ]
+      },
+      {
+        "id": "P09",
+        "schedule": "Preview of the scheduled post that will be published on Fri October 9, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": []
+      },
+      {
+        "id": "P10",
+        "schedule": "Preview of the scheduled post that will be published on Mon October 12, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": []
+      },
+      {
+        "id": "P11",
+        "schedule": "Preview of the scheduled post that will be published on Wed October 14, 2026 at 8:15 AM, click to see detail view",
+        "pages": "6",
+        "media": [
+          {
+            "alt": "",
+            "media_id": "D561FAQFlpZgs6nswsg"
+          }
+        ]
+      },
+      {
+        "id": "P12",
+        "schedule": "Preview of the scheduled post that will be published on Fri October 16, 2026 at 8:15 AM, click to see detail view",
+        "pages": null,
+        "media": [
+          {
+            "alt": "",
+            "media_id": "D5627AQFtfv5siaTfaA"
+          }
+        ]
+      }
+    ],
+    "queue_entries": 12,
+    "immediate_publication": false
+  }
+}

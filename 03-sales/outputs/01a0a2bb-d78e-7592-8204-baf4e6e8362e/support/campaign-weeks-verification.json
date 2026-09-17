@@ -1,0 +1,25 @@
+{
+  "verified_on": "2026-09-15",
+  "native_sheet_url": "https://docs.google.com/spreadsheets/d/1Er5bZt5C-YCW3jdQR-MbQvlxnYe67VyyyXo5-JdaCwA/edit",
+  "sheet": "Weekly measures",
+  "baseline_week": "2026-09-14",
+  "campaign_week_starts": [
+    "2026-09-21",
+    "2026-09-28",
+    "2026-10-05",
+    "2026-10-12"
+  ],
+  "extended_range": "G6:G41",
+  "copied_formulas_verified": 29,
+  "review_options": [
+    "Not reviewed",
+    "Baseline confirmed",
+    "Reviewed"
+  ],
+  "baseline_research": 10,
+  "baseline_contacts": 0,
+  "activity_and_prospects_unchanged": true,
+  "new_column_matches_existing_width": true,
+  "google_render_checked_at_zoom": "100%",
+  "formula_errors": []
+}

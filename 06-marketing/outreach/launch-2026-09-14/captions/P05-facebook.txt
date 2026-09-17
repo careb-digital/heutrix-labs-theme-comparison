@@ -1,0 +1,9 @@
+Illustrative operating view — not compliance or service-readiness assurance.
+
+“Starting soon” leaves too much unanswered. A practical commencement view shows the owner, what is complete, what is waiting and who makes the readiness decision under the provider’s process.
+
+A green cell does not make that decision. A named person does.
+
+Ready means ______, and ______ confirms it.
+
+#DisabilitySupport #WorkflowImprovement

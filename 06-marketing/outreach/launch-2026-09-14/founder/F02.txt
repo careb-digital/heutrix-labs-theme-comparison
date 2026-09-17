@@ -1,0 +1,11 @@
+A useful question for the next intake handover: what does the next person need to act without asking for the backstory?
+
+Owner. Current status. What is missing. Next action. Review date.
+
+These fields do not replace a provider’s approved records or decisions. They make the operational handover easier to examine.
+
+At Heutrix, this is why we begin with the workflow before talking about tools. If the ownership or exception rule is unclear, a new reminder may simply repeat the ambiguity.
+
+What would you check first? Please keep examples general.
+
+#DisabilityProviders #ServiceOperations

@@ -1,0 +1,30 @@
+Illustrative Heutrix application—not a client result.
+
+The request sounds straightforward:
+
+“Can we automate reminders for missing information?”
+
+In this illustrative scenario, Heutrix Diagnostics identifies three problems:
+
+- different teams disagree about what “complete” means;
+- nobody owns the exception decision; and
+- the data needed to trigger the reminder is not recorded consistently.
+
+Automating now would send conflicting reminders faster.
+
+The more useful first move is no build:
+
+1. Agree one decision rule.
+2. Name the person who approves exceptions.
+3. Run a short baseline using non-sensitive operational data.
+4. Reassess whether automation is still justified.
+
+That is what good diagnosis should do: compare process clarification, a manual control, a lightweight workflow and automation—then recommend the smallest option supported by the evidence.
+
+The value is the decision, even when the answer is “not yet”.
+
+Save this question for the next automation request:
+
+Is the rule stable enough to automate?
+
+#HeutrixDiagnostics #DisabilitySupport #WorkflowDesign

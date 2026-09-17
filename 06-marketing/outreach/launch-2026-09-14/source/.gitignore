@@ -1,0 +1,4 @@
+.deps/
+.fonts/
+__pycache__/
+scratch/

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Heutrix Labs">
+  <rect width="64" height="64" rx="16" fill="#091426"/>
+  <path d="M17 16h8v12h14V16h8v32h-8V36H25v12h-8V16Z" fill="#6ffbbe"/>
+</svg>

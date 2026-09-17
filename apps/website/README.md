@@ -1,6 +1,6 @@
 # Heutrix website application
 
-Work here: D:/AI Information Heirarchy/Heutrix/apps/website. The former heutrix-labs/comparison folder is historical evidence only.
+Website work moved on 12 September 2026 to [Heutrix/heutrix-website](https://github.com/Heutrix/heutrix-website), locally at `D:/AI Information Heirarchy/heutrix-website`. [The first import PR](https://github.com/Heutrix/heutrix-website/pull/1) was approved by the owner and merged as `3cff6d936c0bcc5829f29510ca1a1c2d8504d0be`. Carry out all subsequent website implementation and deployment work in that repository. This directory is the preserved migration source; the notes below describe its pre-migration state. The website is deployed and verified at https://heutrix-website.heutrix.workers.dev, Worker version `307e09de-179a-414f-be56-c4adf80b02ec`.
 
 The original-theme implementation and its uncommitted improvements were reconciled on 8 September 2026. [Integration record](../../06-marketing/changes/2026-09-08-workspace-integration.md) documents scope, retained assets and conflicts. Root [working instructions](../../AGENTS.md) apply.
 
@@ -10,9 +10,14 @@ Run npm ci, npm run build, npm test and npm run check from this directory. On Wi
 ## Current content and behaviour
 Three products: Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails. Disability providers are primary; allied health secondary. No public prices. [CTA guide](CTA-STYLE-GUIDE.md) controls website labels. The site displays three illustrative examples; the [authoritative proof register](../../06-marketing/case-studies-and-assets/PROOF-ASSET-REGISTER.md) separately retains the 15 approved anonymised cases.
 
-The contact/referral flow prepares an email draft to hello@heutrix.com.au. Visitors must send it. No delivery or booking confirmation is claimed. [Google connection contract](GOOGLE-ENQUIRIES.md) remains deferred. [Interactive resources](LEAD-MAGNETS.md) remain ungated; six existing download files were retained. Their hashes are in content/download-manifest.json.
+The local contact/referral flow now retains draft review and then sends to the supplied Formspree endpoint. [Form audit, implementation and verification](FORMSPREE.md) document the change and the required account/delivery check. This integration is not yet deployed. [Google connection contract](GOOGLE-ENQUIRIES.md) remains deferred. [Interactive resources](LEAD-MAGNETS.md) remain ungated; six existing download files were retained. Their hashes are in content/download-manifest.json.
 
 ## Sources and release boundary
 [Page copy](../../06-marketing/website-copy/README.md), [offer decisions](../../00-control/DECISIONS.md), [resource release](../../06-marketing/lead-magnets/RELEASE-MANIFEST.md), [launch gates](../../00-control/LAUNCH-BOARD.md).
 
 wrangler.jsonc retains the imported original-theme Worker target. The reconciled homepage and owner-directed presentation follow-up were deployed and verified on 9 September 2026 at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `e7c5e57c-d3c8-4e5c-a344-aac43c7a99ea`. The former destination README is preserved in the import archive. Deployment does not close the separate lead-handling, legal, privacy, analytics or outreach gates.
+
+## Local Scorecard review
+
+Branch: `scorecard-journey-refinements`. Preview: http://127.0.0.1:4173/resources/workflow-bottleneck-scorecard. The canonical site preserves the existing theme, homepage and Formspree changes. This journey refinement is not deployed. See [interactive resource behaviour and verification](LEAD-MAGNETS.md) and the [CTA guide](CTA-STYLE-GUIDE.md).
+

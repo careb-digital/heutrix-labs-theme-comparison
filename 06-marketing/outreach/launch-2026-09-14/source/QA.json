@@ -1,0 +1,197 @@
+{
+  "date": "2026-09-16",
+  "posts": 12,
+  "facebook_adaptations": 12,
+  "founder_posts": 4,
+  "images": {
+    "Heutrix-avatar.png": [
+      1024,
+      1024
+    ],
+    "Heutrix-banner.png": [
+      1512,
+      256
+    ],
+    "P01.png": [
+      1122,
+      1402
+    ],
+    "P02.png": [
+      1080,
+      1350
+    ],
+    "P03.png": [
+      1080,
+      1350
+    ],
+    "P04.png": [
+      1080,
+      1350
+    ],
+    "P05.png": [
+      1080,
+      1350
+    ],
+    "P06.png": [
+      1080,
+      1350
+    ],
+    "P07.png": [
+      1080,
+      1350
+    ],
+    "P08.png": [
+      1080,
+      1350
+    ],
+    "P09.png": [
+      1080,
+      1350
+    ],
+    "P10.png": [
+      1080,
+      1350
+    ],
+    "P11.png": [
+      1080,
+      1350
+    ],
+    "P12.png": [
+      1080,
+      1350
+    ]
+  },
+  "pdf_pages": {
+    "P02.pdf": 5,
+    "P06.pdf": 4,
+    "P07.pdf": 4,
+    "P08.pdf": 4,
+    "P11.pdf": 6
+  },
+  "total_pdf_pages": 23,
+  "local_links_checked": 172,
+  "failures": [],
+  "visual_review": "14 September: all 12 post images and all 23 PDF page exports visually inspected in six review sheets; P12 also inspected at full size. P07 image and four-page PDF revised; all other publication artwork retained. P07 additionally rendered with Poppler without error.",
+  "browser_review": "14 September: updated publishing desk opened and showed all 12 posts, 5 document title controls, platform instructions and Sachin/Rochelle/Janith founder assignments. Further filter/screenshot interaction stalled and returned a tool timeout; no successful new mobile or clipboard check is claimed. Earlier 13 September layout results are retained separately. Static link/copy-target checks passed.",
+  "delivery_evidence": "Current website repository: live Formspree acceptance and owner-confirmed receipt on 12 September. No repeat test in this task.",
+  "publication_status": "P01-P12 scheduled 21 September-16 October 2026. The 16 September alignment refresh verified 12 campaign entries; the historically recorded extra P01 on 18 September was already absent. See scheduling-verification.json for browser evidence; this file checker does not query the live queue. No publication claimed.",
+  "community_posts": 4,
+  "requested_resource_replies": 3,
+  "pdf_sha256": {
+    "P02.pdf": "471b430794a14fd8c2b3fe9fad01c98d0468bd48aef8182857eba5de55654c68",
+    "P06.pdf": "06c599d5a5eda82b7c1fde288826799dbc3453d51ff19f9f1dc6924f58a95138",
+    "P07.pdf": "abb7d03874c844712d0afb419591601b025c212c3237068f8ee76940c337d4ce",
+    "P08.pdf": "b946f3030acdbd752ab071774e98c01a8d22760964ab23545823b11e860670c1",
+    "P11.pdf": "0111a1ba0e102c01ec26179bb23b24becec4043ace7eddc95625ef36f65b4922"
+  },
+  "active_launch_channel": "Heutrix Labs Page 123474001; Janith account/composer access verified 15 September 2026.",
+  "deferred_channels": "Facebook deferred by owner. Founder sequence: Sachin, Rochelle, Janith; F04 unassigned reserve.",
+  "caption_characters": {
+    "P01": {
+      "linkedin": 1495,
+      "facebook": 598
+    },
+    "P02": {
+      "linkedin": 1320,
+      "facebook": 484
+    },
+    "P03": {
+      "linkedin": 1015,
+      "facebook": 462
+    },
+    "P04": {
+      "linkedin": 1359,
+      "facebook": 576
+    },
+    "P05": {
+      "linkedin": 1095,
+      "facebook": 419
+    },
+    "P06": {
+      "linkedin": 1079,
+      "facebook": 457
+    },
+    "P07": {
+      "linkedin": 1640,
+      "facebook": 716
+    },
+    "P08": {
+      "linkedin": 1194,
+      "facebook": 531
+    },
+    "P09": {
+      "linkedin": 1041,
+      "facebook": 378
+    },
+    "P10": {
+      "linkedin": 1164,
+      "facebook": 658
+    },
+    "P11": {
+      "linkedin": 1352,
+      "facebook": 696
+    },
+    "P12": {
+      "linkedin": 811,
+      "facebook": 578
+    }
+  },
+  "browser_review_13_september": "Final desktop and 390px mobile layout reviewed. Week filter shows three posts; 74 copy controls and 27 separate message panels verified. Copy button reports success; clipboard contents were not independently verified. Live enquiry and intake planner pages opened correctly; no form submitted.",
+  "content_review": "All 12 LinkedIn and 12 Facebook captions reviewed against approved offers, audience, factual boundaries and campaign strategy. Paid Diagnostics/free fit-call distinction, illustrative boundaries, Facebook standalone copy and AI resource CTA refined.",
+  "owner_decision_14_september": {
+    "linkedin_admin_url": "https://www.linkedin.com/company/123474001/admin/dashboard/",
+    "initial_publisher": "Sachin",
+    "founder_order": [
+      "Sachin",
+      "Rochelle",
+      "Janith"
+    ],
+    "facebook": "deferred",
+    "F04": "optional reserve; author unassigned"
+  },
+  "live_destination_review": "14 September: contact, Scorecard, intake planner and AI Guardrails Check returned HTTP 200; all four also opened in browser with correct page content. No form submitted. OAIC AI guidance and LinkedIn scheduling help reopened. Actual LinkedIn Page admin/composer verification stopped at sign-in.",
+  "alignment_review": {
+    "date": "2026-09-16",
+    "image_assets_visually_reviewed": 15,
+    "corrected_post_images": 11,
+    "post_number_baselines_verified": 40,
+    "document_number_baselines_verified": 49,
+    "png_pixel_comparisons": 37,
+    "changes_confined_to_number_column": true,
+    "copy_unchanged": true,
+    "remaining_local_visual_issues": [],
+    "scheduled_attachments_updated": true,
+    "scheduled_attachment_ids": [
+      "P02",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P11"
+    ]
+  },
+  "typography_review": {
+    "date": "2026-09-16",
+    "post_images_reviewed": 11,
+    "document_pages_reviewed": 23,
+    "rendered_layouts_checked": 34,
+    "number_heading_matches": 45,
+    "headline_size": 68,
+    "row_heading_and_number_size": 34,
+    "body_size": 30,
+    "number_font": "Plus Jakarta Sans 750",
+    "equal_digit_cell_width": 23,
+    "duplicate_numbering_removed": true,
+    "equal_card_heights_within_each_page": true,
+    "remaining_visual_issues": [],
+    "scheduled_attachment_ids": [
+      "P02",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P11"
+    ],
+    "scheduled_attachments_updated": true
+  }
+}

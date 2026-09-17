@@ -1,0 +1,32 @@
+“We need a new system” is often the first proposed solution.
+
+It should be the sixth question.
+
+Before choosing software, automation or AI, answer these five:
+
+1. Trigger: what starts the work?
+2. Owner: who is accountable for the next action?
+3. Information: what is needed, and where should it live?
+4. Exception: what happens when the normal path breaks?
+5. Finish: what does done mean, and who confirms it?
+
+If those answers are unclear, new technology can make the confusion move faster.
+
+The smallest useful improvement may be:
+
+- one agreed handover;
+- a controlled status and next-action view;
+- a simpler form;
+- one stable automation;
+- a lightweight internal tool; or
+- no build at all.
+
+That is the Heutrix principle: improve the workflow before adding technology.
+
+If several workflows are competing for attention, use the free Workflow Bottleneck Scorecard to assess one at a time. The interactive tool suggests a next step from the friction, evidence and readiness you report. The accompanying PDF guide and workbook help you compare workflows. No email address is required.
+
+Get the Scorecard: https://heutrix-website.heutrix.workers.dev/resources/workflow-bottleneck-scorecard
+
+A self-assessment is a starting point, not a verified business case.
+
+#WorkflowDesign #DisabilityProviders #DigitalOperations

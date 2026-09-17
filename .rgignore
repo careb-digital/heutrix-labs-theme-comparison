@@ -1,0 +1,37 @@
+# Search noise only: does not change Git tracking, access permissions or explicit reads.
+# Use an explicit path / --no-ignore when historical or generated evidence is required.
+**/.git/
+**/node_modules/
+**/node_modules
+**/.python-libs/
+**/.python-packages/
+**/.notebook-deps/
+**/__pycache__/
+**/.cache/
+**/.next/
+**/.vinext/
+**/.wrangler/
+**/dist/
+**/dist-ssr/
+**/tmp/
+**/_build/
+**/_qa/
+**/QA/
+**/analysis-output/
+**/._*
+**/.DS_Store
+**/.superseded-*/
+90-research-and-audits/
+99-archive/
+apps/internal-reports/
+**/package-lock.json
+**/*.pdf
+**/*.png
+**/*.webp
+**/*.jpg
+**/*.jpeg
+**/*.zip
+**/*.tar.gz
+**/*.xlsx
+**/*.docx
+**/*.pptx

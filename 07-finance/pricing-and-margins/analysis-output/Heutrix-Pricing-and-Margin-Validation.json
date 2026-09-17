@@ -1,0 +1,417 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-02T09:47:46.052Z",
+  "check_count": 82,
+  "checks": [
+    {
+      "name": "tested hourly rates",
+      "passed": true,
+      "detail": "[80,100,140]"
+    },
+    {
+      "name": "rate sensitivity row count",
+      "passed": true,
+      "detail": "18 rows"
+    },
+    {
+      "name": "annual sensitivity row count",
+      "passed": true,
+      "detail": "9 rows"
+    },
+    {
+      "name": "80/h Heutrix Diagnostics cost",
+      "passed": true,
+      "detail": "900 vs 900"
+    },
+    {
+      "name": "80/h Heutrix Diagnostics required price",
+      "passed": true,
+      "detail": "2571.43 vs 2571.4285714285716"
+    },
+    {
+      "name": "80/h Heutrix Workflow Transformation — Standard cost",
+      "passed": true,
+      "detail": "4600 vs 4600"
+    },
+    {
+      "name": "80/h Heutrix Workflow Transformation — Standard required price",
+      "passed": true,
+      "detail": "13142.86 vs 13142.857142857143"
+    },
+    {
+      "name": "80/h Heutrix Workflow Transformation — Visibility cost",
+      "passed": true,
+      "detail": "5600 vs 5600"
+    },
+    {
+      "name": "80/h Heutrix Workflow Transformation — Visibility required price",
+      "passed": true,
+      "detail": "16000 vs 16000.000000000002"
+    },
+    {
+      "name": "80/h Heutrix AI Guardrails cost",
+      "passed": true,
+      "detail": "2700 vs 2700"
+    },
+    {
+      "name": "80/h Heutrix AI Guardrails required price",
+      "passed": true,
+      "detail": "7714.29 vs 7714.285714285715"
+    },
+    {
+      "name": "80/h Heutrix Workflow Transformation — Expanded cost",
+      "passed": true,
+      "detail": "9500 vs 9500"
+    },
+    {
+      "name": "80/h Heutrix Workflow Transformation — Expanded required price",
+      "passed": true,
+      "detail": "27142.86 vs 27142.857142857145"
+    },
+    {
+      "name": "80/h Stabilisation / support plan cost",
+      "passed": true,
+      "detail": "370 vs 370"
+    },
+    {
+      "name": "80/h Stabilisation / support plan required price",
+      "passed": true,
+      "detail": "1480 vs 1480"
+    },
+    {
+      "name": "100/h Heutrix Diagnostics cost",
+      "passed": true,
+      "detail": "1100 vs 1100"
+    },
+    {
+      "name": "100/h Heutrix Diagnostics required price",
+      "passed": true,
+      "detail": "3142.86 vs 3142.857142857143"
+    },
+    {
+      "name": "100/h Heutrix Workflow Transformation — Standard cost",
+      "passed": true,
+      "detail": "5600 vs 5600"
+    },
+    {
+      "name": "100/h Heutrix Workflow Transformation — Standard required price",
+      "passed": true,
+      "detail": "16000 vs 16000.000000000002"
+    },
+    {
+      "name": "100/h Heutrix Workflow Transformation — Visibility cost",
+      "passed": true,
+      "detail": "6800 vs 6800"
+    },
+    {
+      "name": "100/h Heutrix Workflow Transformation — Visibility required price",
+      "passed": true,
+      "detail": "19428.57 vs 19428.57142857143"
+    },
+    {
+      "name": "100/h Heutrix AI Guardrails cost",
+      "passed": true,
+      "detail": "3300 vs 3300"
+    },
+    {
+      "name": "100/h Heutrix AI Guardrails required price",
+      "passed": true,
+      "detail": "9428.57 vs 9428.57142857143"
+    },
+    {
+      "name": "100/h Heutrix Workflow Transformation — Expanded cost",
+      "passed": true,
+      "detail": "11500 vs 11500"
+    },
+    {
+      "name": "100/h Heutrix Workflow Transformation — Expanded required price",
+      "passed": true,
+      "detail": "32857.14 vs 32857.14285714286"
+    },
+    {
+      "name": "100/h Stabilisation / support plan cost",
+      "passed": true,
+      "detail": "450 vs 450"
+    },
+    {
+      "name": "100/h Stabilisation / support plan required price",
+      "passed": true,
+      "detail": "1800 vs 1800"
+    },
+    {
+      "name": "140/h Heutrix Diagnostics cost",
+      "passed": true,
+      "detail": "1500 vs 1500"
+    },
+    {
+      "name": "140/h Heutrix Diagnostics required price",
+      "passed": true,
+      "detail": "4285.71 vs 4285.714285714286"
+    },
+    {
+      "name": "140/h Heutrix Workflow Transformation — Standard cost",
+      "passed": true,
+      "detail": "7600 vs 7600"
+    },
+    {
+      "name": "140/h Heutrix Workflow Transformation — Standard required price",
+      "passed": true,
+      "detail": "21714.29 vs 21714.285714285717"
+    },
+    {
+      "name": "140/h Heutrix Workflow Transformation — Visibility cost",
+      "passed": true,
+      "detail": "9200 vs 9200"
+    },
+    {
+      "name": "140/h Heutrix Workflow Transformation — Visibility required price",
+      "passed": true,
+      "detail": "26285.71 vs 26285.714285714286"
+    },
+    {
+      "name": "140/h Heutrix AI Guardrails cost",
+      "passed": true,
+      "detail": "4500 vs 4500"
+    },
+    {
+      "name": "140/h Heutrix AI Guardrails required price",
+      "passed": true,
+      "detail": "12857.14 vs 12857.142857142859"
+    },
+    {
+      "name": "140/h Heutrix Workflow Transformation — Expanded cost",
+      "passed": true,
+      "detail": "15500 vs 15500"
+    },
+    {
+      "name": "140/h Heutrix Workflow Transformation — Expanded required price",
+      "passed": true,
+      "detail": "44285.71 vs 44285.71428571429"
+    },
+    {
+      "name": "140/h Stabilisation / support plan cost",
+      "passed": true,
+      "detail": "610 vs 610"
+    },
+    {
+      "name": "140/h Stabilisation / support plan required price",
+      "passed": true,
+      "detail": "2440 vs 2440"
+    },
+    {
+      "name": "80/h Year 1 annual direct cost",
+      "passed": true,
+      "detail": "79460"
+    },
+    {
+      "name": "80/h Year 1 selected revenue",
+      "passed": true,
+      "detail": "238700"
+    },
+    {
+      "name": "80/h Year 1 gross margin floor",
+      "passed": true,
+      "detail": "0.6671"
+    },
+    {
+      "name": "80/h Year 1 positive operating contribution",
+      "passed": true,
+      "detail": "104240"
+    },
+    {
+      "name": "80/h Year 2 annual direct cost",
+      "passed": true,
+      "detail": "140460"
+    },
+    {
+      "name": "80/h Year 2 selected revenue",
+      "passed": true,
+      "detail": "428800"
+    },
+    {
+      "name": "80/h Year 2 gross margin floor",
+      "passed": true,
+      "detail": "0.6724"
+    },
+    {
+      "name": "80/h Year 2 positive operating contribution",
+      "passed": true,
+      "detail": "203340"
+    },
+    {
+      "name": "80/h Year 3 annual direct cost",
+      "passed": true,
+      "detail": "205580"
+    },
+    {
+      "name": "80/h Year 3 selected revenue",
+      "passed": true,
+      "detail": "633400"
+    },
+    {
+      "name": "80/h Year 3 gross margin floor",
+      "passed": true,
+      "detail": "0.6754"
+    },
+    {
+      "name": "80/h Year 3 positive operating contribution",
+      "passed": true,
+      "detail": "307820"
+    },
+    {
+      "name": "100/h Year 1 annual direct cost",
+      "passed": true,
+      "detail": "96700"
+    },
+    {
+      "name": "100/h Year 1 selected revenue",
+      "passed": true,
+      "detail": "286800"
+    },
+    {
+      "name": "100/h Year 1 gross margin floor",
+      "passed": true,
+      "detail": "0.6628"
+    },
+    {
+      "name": "100/h Year 1 positive operating contribution",
+      "passed": true,
+      "detail": "135100"
+    },
+    {
+      "name": "100/h Year 2 annual direct cost",
+      "passed": true,
+      "detail": "170900"
+    },
+    {
+      "name": "100/h Year 2 selected revenue",
+      "passed": true,
+      "detail": "515000"
+    },
+    {
+      "name": "100/h Year 2 gross margin floor",
+      "passed": true,
+      "detail": "0.6682"
+    },
+    {
+      "name": "100/h Year 2 positive operating contribution",
+      "passed": true,
+      "detail": "259100"
+    },
+    {
+      "name": "100/h Year 3 annual direct cost",
+      "passed": true,
+      "detail": "250100"
+    },
+    {
+      "name": "100/h Year 3 selected revenue",
+      "passed": true,
+      "detail": "760500"
+    },
+    {
+      "name": "100/h Year 3 gross margin floor",
+      "passed": true,
+      "detail": "0.6711"
+    },
+    {
+      "name": "100/h Year 3 positive operating contribution",
+      "passed": true,
+      "detail": "390400"
+    },
+    {
+      "name": "140/h Year 1 annual direct cost",
+      "passed": true,
+      "detail": "131180"
+    },
+    {
+      "name": "140/h Year 1 selected revenue",
+      "passed": true,
+      "detail": "394500"
+    },
+    {
+      "name": "140/h Year 1 gross margin floor",
+      "passed": true,
+      "detail": "0.6675"
+    },
+    {
+      "name": "140/h Year 1 positive operating contribution",
+      "passed": true,
+      "detail": "208320"
+    },
+    {
+      "name": "140/h Year 2 annual direct cost",
+      "passed": true,
+      "detail": "231780"
+    },
+    {
+      "name": "140/h Year 2 selected revenue",
+      "passed": true,
+      "detail": "708500"
+    },
+    {
+      "name": "140/h Year 2 gross margin floor",
+      "passed": true,
+      "detail": "0.6729"
+    },
+    {
+      "name": "140/h Year 2 positive operating contribution",
+      "passed": true,
+      "detail": "391720"
+    },
+    {
+      "name": "140/h Year 3 annual direct cost",
+      "passed": true,
+      "detail": "339140"
+    },
+    {
+      "name": "140/h Year 3 selected revenue",
+      "passed": true,
+      "detail": "1046500"
+    },
+    {
+      "name": "140/h Year 3 gross margin floor",
+      "passed": true,
+      "detail": "0.6759"
+    },
+    {
+      "name": "140/h Year 3 positive operating contribution",
+      "passed": true,
+      "detail": "587360"
+    },
+    {
+      "name": "active website offers below 60% at $100/h",
+      "passed": true,
+      "detail": "Heutrix Diagnostics: -0.1579; Heutrix Workflow Transformation — Standard: -1.24; Heutrix Workflow Transformation — Visibility: -0.9429; Heutrix AI Guardrails: -0.8333; Heutrix Workflow Transformation — Expanded: -1.5556"
+    },
+    {
+      "name": "active website projects are loss-making at $100/h",
+      "passed": true,
+      "detail": "Heutrix Diagnostics: -0.1579; Heutrix Workflow Transformation — Standard: -1.24; Heutrix Workflow Transformation — Visibility: -0.9429; Heutrix AI Guardrails: -0.8333; Heutrix Workflow Transformation — Expanded: -1.5556"
+    },
+    {
+      "name": "original forecast COGS preserved",
+      "passed": true,
+      "detail": "69500, 123000, 180600"
+    },
+    {
+      "name": "$100 scale-safe COGS recalculated",
+      "passed": true,
+      "detail": "96700, 170900, 250100"
+    },
+    {
+      "name": "report contains native chart",
+      "passed": true,
+      "detail": "1 charts"
+    },
+    {
+      "name": "report contains annual rate table",
+      "passed": true,
+      "detail": "offer-table, market-table, sensitivity-table, annual-rate-table, ceiling-table, annual-table, guardrail-table"
+    },
+    {
+      "name": "snapshot is ready",
+      "passed": true,
+      "detail": "ready"
+    }
+  ]
+}

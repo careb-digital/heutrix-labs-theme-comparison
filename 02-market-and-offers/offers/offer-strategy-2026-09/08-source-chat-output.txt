@@ -1,0 +1,891 @@
+
+# Heutrix Offer Architecture
+
+Heutrix has three distinct offers built around three different client needs:
+
+**Heutrix Diagnostics** — work out what is worth fixing and what to do next.
+
+**Heutrix Workflow Transformation** — improve and implement a workflow that has already been identified as worth fixing.
+
+**Heutrix AI Guard** — establish clear, controlled and appropriate use of AI across the organisation.
+
+The offers can work together, but they do not require one another. The right starting point depends on how clearly the organisation already understands the problem it needs to solve.
+
+---
+
+# 1. Heutrix Diagnostics
+
+## Core positioning
+
+**Identify what is worth fixing — and define the sensible next step.**
+
+Heutrix Diagnostics is for organisations that know something in their operations could work better, but do not want to invest in a solution before understanding the real problem.
+
+It provides a structured assessment of a workflow, operational bottleneck or improvement opportunity and turns it into a practical recommendation.
+
+**PRICING REQUIRES CONFIRMATION**
+
+---
+
+## Ideal customer situation
+
+Heutrix Diagnostics is a good starting point when:
+
+- a process feels slower or more manual than it should be
+- staff are repeatedly entering, checking or moving the same information
+- important work depends too heavily on spreadsheets, inboxes or individual staff knowledge
+- management can see an operational problem but is unsure of its root cause
+- several possible improvements are competing for attention
+- the organisation is considering automation, integration, reporting or AI but does not yet know what is worthwhile
+- a workflow has grown organically and has never been reviewed end to end
+- the organisation wants an independent view before committing to implementation
+
+---
+
+## Primary problem
+
+### You can see the friction. The harder question is what is actually worth fixing.
+
+Operational problems are rarely isolated.
+
+A slow process may be caused by duplicated data entry, unclear handovers, system limitations, missing information, unnecessary approvals or several small issues working together.
+
+Starting with a tool or technology before understanding that workflow can create more complexity rather than less.
+
+Heutrix Diagnostics starts with the workflow itself.
+
+---
+
+## Promised outcome
+
+### Leave with clarity on what should change, why it matters and what to do next.
+
+At the end of the Diagnostic, you should have a clearer understanding of:
+
+- where the workflow is creating unnecessary effort or risk
+- what is causing the problem
+- which improvements are likely to have the greatest practical value
+- what should be addressed now, later or not at all
+- the sensible next step for the organisation
+
+The objective is not to recommend the most technology.
+
+It is to recommend the right amount of change.
+
+---
+
+## What the service is
+
+### A structured review of a specific workflow or operational problem.
+
+Heutrix examines how the work currently happens, where the friction occurs and what a better version could look like.
+
+The Diagnostic considers people, process, information and technology together rather than treating software as the starting point.
+
+Where technology could help, Heutrix may identify opportunities involving automation, dashboards, forms, integrations, lightweight applications or appropriate AI use.
+
+These are possible components of a solution — not the objective of the Diagnostic itself.
+
+---
+
+## How it works
+
+### 1. Define the problem
+
+We agree on the workflow, bottleneck or operational question that needs to be investigated.
+
+### 2. Understand the current workflow
+
+Heutrix reviews how the work happens today, including the people involved, systems used, information exchanged and major handoffs.
+
+### 3. Find the friction
+
+We identify unnecessary steps, duplication, delays, manual work, information gaps, control weaknesses and other constraints.
+
+### 4. Assess improvement opportunities
+
+Potential changes are considered according to practical value, effort, dependencies and organisational fit.
+
+### 5. Recommend the next step
+
+You receive a clear view of what Heutrix believes is worth changing and the most sensible way to proceed.
+
+---
+
+## What the client receives
+
+Depending on the scope of the Diagnostic, this may include:
+
+- a documented view of the current workflow
+- identified bottlenecks and root causes
+- key operational risks or dependencies observed during the review
+- improvement opportunities
+- prioritised recommendations
+- a proposed future-state workflow
+- identification of potential implementation components
+- recommended next steps
+- an implementation pathway where further work is justified
+
+Recommendations may include process changes alone or a combination of process changes and components such as:
+
+- forms
+- automations
+- dashboards
+- integrations
+- lightweight applications
+- appropriate AI-enabled steps
+
+A recommendation does not automatically mean Heutrix believes additional technology is required.
+
+---
+
+## What Heutrix needs from the client
+
+A successful Diagnostic normally requires:
+
+- a clearly identified area or problem to investigate
+- access to relevant staff who understand the workflow
+- reasonable access to existing process information
+- examples of the forms, spreadsheets, reports or systems involved
+- honest information about what is and is not working
+- someone who can answer operational questions and clarify decisions
+
+The client does not need to prepare a perfect process map before starting.
+
+Understanding the real workflow is part of the Diagnostic.
+
+---
+
+## Explicitly out of scope
+
+Unless separately agreed, Heutrix Diagnostics does **not** include:
+
+- implementation of the recommended solution
+- building automations, dashboards, integrations, forms or applications
+- replacing core business systems
+- organisation-wide transformation
+- ongoing IT support or system administration
+- extensive data cleansing or migration
+- legal, regulatory or compliance certification
+- cybersecurity auditing or penetration testing
+- guarantees that every identified improvement will justify implementation
+
+The purpose of the Diagnostic is to determine what should happen next — including when the sensible answer is to make only a small change or take no further action.
+
+---
+
+## Likely objections
+
+### “We already know what the problem is.”
+
+You may. The Diagnostic is most valuable when the cause, priority or best solution is still uncertain.
+
+If the workflow and required improvement are already sufficiently clear, Heutrix may recommend moving directly to Workflow Transformation rather than adding an unnecessary assessment stage.
+
+### “Why not just start automating?”
+
+Because automating an inefficient process usually preserves the inefficiency.
+
+The Diagnostic helps determine what should be simplified, removed or redesigned before technology is introduced.
+
+### “We don't want a large consulting exercise.”
+
+Neither do we.
+
+The Diagnostic is focused on a defined operational problem rather than producing a broad transformation strategy for the entire organisation.
+
+### “Will you recommend your own services?”
+
+Where Heutrix can appropriately implement the recommendation, we can explain that option.
+
+You are not required to proceed with Heutrix, and the Diagnostic should still leave you with a useful direction if you choose another path.
+
+---
+
+## FAQ
+
+### Is Heutrix Diagnostics the same as the introductory conversation?
+
+No.
+
+The **20-minute introductory conversation is free** and is used to understand what you are trying to improve and whether Heutrix is likely to be relevant.
+
+**Heutrix Diagnostics is a paid engagement** involving structured investigation, analysis and recommendations.
+
+### Do we need to know exactly what needs fixing before we start?
+
+No.
+
+You should be able to identify the area causing concern, but finding the underlying causes and deciding what is worth changing is part of the Diagnostic.
+
+### Does every Diagnostic lead to a Workflow Transformation?
+
+No.
+
+The recommendation may be to change a process internally, make a smaller improvement, use an existing system differently, undertake further investigation or proceed with implementation.
+
+### Can the Diagnostic identify opportunities for automation or AI?
+
+Yes.
+
+Automation, integration, dashboards, AI and other technologies may form part of the recommendation where they make practical sense.
+
+### Does the Diagnostic include implementation?
+
+No.
+
+Implementation is separate. Where Heutrix is the appropriate implementation partner, the next engagement may be a Heutrix Workflow Transformation or, for AI governance requirements, Heutrix AI Guard.
+
+---
+
+## Primary CTA
+
+### See what Heutrix can improve
+
+**Supporting microcopy:**
+
+Start with a free 20-minute introductory conversation. We will discuss the operational problem you are trying to solve and whether a Heutrix Diagnostic is the right next step.
+
+---
+
+## Next step after completion
+
+A Diagnostic should end with a decision, not another open-ended analysis phase.
+
+The recommended next step may be:
+
+- make an internal process change
+- use an existing system differently
+- collect further information before acting
+- leave the workflow unchanged
+- proceed with a Heutrix Workflow Transformation
+- address AI governance through Heutrix AI Guard
+- implement the recommendation through another provider
+
+Where Heutrix Workflow Transformation is recommended, the Diagnostic becomes the foundation for defining the implementation scope.
+
+---
+
+# 2. Heutrix Workflow Transformation
+
+## Core positioning
+
+**Improve an important workflow — then make the improvement work in practice.**
+
+Heutrix Workflow Transformation is for organisations that have identified a workflow worth improving and want to move from recommendation to implementation.
+
+Heutrix redesigns the workflow and implements the practical changes required to make it simpler, more reliable and easier to manage.
+
+**PRICING REQUIRES CONFIRMATION**
+
+---
+
+## Ideal customer situation
+
+Heutrix Workflow Transformation is appropriate when:
+
+- a specific workflow has already been identified as a priority
+- the organisation understands the problem well enough to act
+- a Heutrix Diagnostic has recommended implementation
+- a process relies on excessive manual administration
+- information is repeatedly copied between systems
+- staff are working around limitations with spreadsheets, email or manual tracking
+- handovers regularly cause delays or missed information
+- management lacks useful visibility over an important workflow
+- an existing process needs to be redesigned before further growth
+- the organisation wants an operational improvement implemented rather than another strategy document
+
+---
+
+## Primary problem
+
+### Knowing what should improve is different from making the improvement work.
+
+Many organisations can identify inefficient processes.
+
+The difficulty is turning the desired improvement into a workflow that works with the organisation's people, systems, information and operating requirements.
+
+That may require changing the process itself, connecting existing systems, removing unnecessary steps or introducing carefully selected supporting technology.
+
+Heutrix Workflow Transformation takes responsibility for moving from identified problem to implemented improvement.
+
+---
+
+## Promised outcome
+
+### A better workflow that has been designed around how your organisation actually operates.
+
+The objective is to reduce unnecessary operational friction while improving the consistency, visibility or reliability of the workflow.
+
+Depending on the problem, that could mean:
+
+- less repetitive administration
+- fewer manual handoffs
+- less duplicated data entry
+- clearer responsibilities
+- faster movement of information
+- better operational visibility
+- fewer opportunities for information to be missed
+- a workflow that is easier for staff to follow
+- more appropriate use of the systems the organisation already has
+
+The exact outcome is defined around the workflow being transformed.
+
+---
+
+## What the service is
+
+### A scoped workflow improvement and implementation engagement.
+
+Heutrix takes an identified operational workflow, designs a more effective future state and implements the agreed changes.
+
+The solution is built around the problem rather than around a predetermined technology.
+
+Some transformations may require primarily process changes.
+
+Others may use implementation components such as:
+
+- automation
+- digital forms
+- dashboards
+- system integrations
+- structured data flows
+- alerts and notifications
+- lightweight internal applications
+- carefully controlled AI-enabled functions
+
+These components support the workflow. They are not separate Heutrix products competing for attention.
+
+---
+
+## How it works
+
+### 1. Confirm the workflow and outcome
+
+We establish the workflow being improved, the problem being solved and what a successful result should look like.
+
+Where a Heutrix Diagnostic has already been completed, its findings provide the starting point.
+
+### 2. Design the improved workflow
+
+Heutrix defines how the work should operate, including key steps, responsibilities, information flows and system interactions.
+
+### 3. Define the implementation
+
+We determine which changes are required and which implementation components are justified.
+
+### 4. Build and configure
+
+Heutrix implements the agreed workflow changes and supporting components.
+
+### 5. Test with the real workflow
+
+The solution is tested against practical scenarios rather than considered complete simply because the technology functions.
+
+### 6. Introduce the new workflow
+
+The improved workflow is prepared for operational use with appropriate documentation and handover.
+
+### 7. Review
+
+We assess whether the transformed workflow is operating as intended and identify any sensible refinements.
+
+---
+
+## What the client receives
+
+Deliverables depend on the agreed transformation, but may include:
+
+- redesigned workflow
+- documented future-state process
+- configured workflow components
+- automation of agreed repetitive steps
+- digital forms or information capture
+- dashboards or operational reporting
+- system integrations
+- alerts or notifications
+- lightweight internal applications
+- defined roles and handoffs
+- testing and validation
+- implementation documentation
+- staff guidance relevant to the transformed workflow
+- handover information
+- agreed post-implementation review
+
+The final solution should contain only the components required to improve the workflow.
+
+---
+
+## What Heutrix needs from the client
+
+Successful implementation normally requires:
+
+- a clearly identified workflow and desired outcome
+- an internal owner for the transformation
+- timely access to relevant staff
+- access to the systems, information and documentation required for the agreed scope
+- appropriate permissions or technical cooperation where systems need to be connected
+- timely decisions when workflow choices require client approval
+- participation in testing
+- feedback from the people who will actually use the improved workflow
+
+Heutrix can design and implement the transformation, but operational decisions that belong to the organisation remain the client's responsibility.
+
+---
+
+## Explicitly out of scope
+
+Unless specifically included in the agreed scope, Workflow Transformation does **not** include:
+
+- transformation of every workflow in the organisation
+- unlimited changes outside the defined workflow
+- replacement of major core platforms
+- ongoing managed IT services
+- general helpdesk support
+- unrelated website or software development
+- extensive historical data remediation
+- legal or regulatory certification
+- cybersecurity penetration testing
+- indefinite post-launch development
+- deploying AI into workflows without appropriate consideration of its risks and controls
+
+Where a new requirement materially changes the agreed workflow or implementation, it should be treated as a separate scope decision rather than quietly expanding the project.
+
+---
+
+## Likely objections
+
+### “We already have software for this.”
+
+That is common.
+
+The issue is often not the absence of software but the way work moves between people, information and existing systems.
+
+Heutrix first looks at whether your current tools can support a better workflow before assuming another platform is needed.
+
+### “We don't want to replace our systems.”
+
+A Workflow Transformation does not assume system replacement.
+
+Where practical, the preference is to improve the workflow around the organisation's existing technology and introduce new components only where they add sufficient value.
+
+### “Will implementation disrupt the team?”
+
+Some involvement is necessary, particularly during discovery, decisions and testing.
+
+The transformation should be designed to reduce operational burden rather than introduce unnecessary change for its own sake.
+
+### “Is this just automation?”
+
+No.
+
+Automation may be one component.
+
+A successful transformation may also involve removing steps, clarifying responsibilities, improving information capture, changing handovers or configuring existing systems differently.
+
+### “Can we start here without doing Diagnostics first?”
+
+Yes.
+
+If the problem, workflow and desired outcome are already sufficiently clear, a separate Diagnostic should not be required simply for process.
+
+---
+
+## FAQ
+
+### Do we need to complete Heutrix Diagnostics first?
+
+Not always.
+
+Diagnostics is useful where the problem or best direction is still uncertain. If the workflow and required improvement are already clear enough to scope responsibly, Heutrix may recommend moving directly to Workflow Transformation.
+
+### What types of workflow can Heutrix improve?
+
+Heutrix focuses on operational workflows where people, information, process and technology intersect.
+
+For disability service providers, examples could include administrative workflows, referrals, onboarding, internal approvals, information collection, reporting and other recurring operational processes.
+
+Suitability is established before implementation begins.
+
+### Are dashboards, automations and integrations separate Heutrix products?
+
+No.
+
+They are possible components of a Workflow Transformation.
+
+Heutrix selects components according to what the workflow requires rather than selling technology independently of the operational problem.
+
+### Will Heutrix build custom software?
+
+A transformation may sometimes justify a lightweight application or custom workflow component.
+
+Heutrix Workflow Transformation is not positioned as general custom software development. Any build exists to support the agreed workflow outcome.
+
+### What happens after implementation?
+
+Heutrix completes an agreed handover and review process.
+
+Further improvements can then be considered based on how the workflow performs in practice.
+
+---
+
+## Primary CTA
+
+### Talk to Heutrix
+
+**Supporting microcopy:**
+
+If you already know which workflow needs to improve, tell us where the friction is. We can determine whether it is ready for a Workflow Transformation or whether more investigation is needed first.
+
+---
+
+## Next step after completion
+
+Once the workflow is operating successfully, the organisation should move into normal ownership rather than remaining permanently dependent on a transformation project.
+
+The next step may be to:
+
+- operate and monitor the improved workflow
+- make minor refinements based on real usage
+- measure the operational impact
+- identify another high-value workflow for improvement
+- conduct a Diagnostic on a less-understood problem
+- establish AI controls through AI Guard if AI use becomes relevant
+
+The purpose of Workflow Transformation is to deliver an operational improvement that can be used — not to create an endless implementation program.
+
+---
+
+# 3. Heutrix AI Guard
+
+## Core positioning
+
+**Use AI with clear boundaries, appropriate controls and organisational oversight.**
+
+Heutrix AI Guard is for organisations that are already using AI, expect staff to begin using it or want to introduce AI without allowing adoption to develop without appropriate oversight.
+
+The engagement helps the organisation establish how AI should — and should not — be used.
+
+**PRICING REQUIRES CONFIRMATION**
+
+---
+
+## Ideal customer situation
+
+Heutrix AI Guard is appropriate when:
+
+- staff are already using tools such as generative AI without a consistent organisational approach
+- management is unsure what information employees may be entering into AI systems
+- different teams are adopting AI independently
+- the organisation wants to enable appropriate AI use without allowing uncontrolled adoption
+- leadership wants clear boundaries before introducing AI more broadly
+- existing policies do not adequately address AI
+- the organisation needs a practical way to distinguish lower-risk and higher-risk AI use
+- staff need clear guidance on what requires human review or approval
+- an AI-enabled workflow is being considered and governance needs to be established first
+
+---
+
+## Primary problem
+
+### AI adoption can happen faster than organisational controls.
+
+Employees can begin using AI tools within minutes.
+
+That creates useful opportunities, but it can also create uncertainty around:
+
+- what information can be entered
+- which tools may be used
+- what AI should be allowed to produce
+- when human review is required
+- who is responsible for approving new use cases
+- how AI-generated work should be checked
+- where AI should not be used at all
+
+Simply banning AI can push usage out of sight.
+
+Allowing unrestricted use creates a different set of risks.
+
+AI Guard is designed to establish a practical middle ground.
+
+---
+
+## Promised outcome
+
+### A clearer organisational approach to AI: what is allowed, what requires control and what should not be used.
+
+The organisation should leave AI Guard with a practical framework for managing AI use rather than relying on informal individual judgement.
+
+That may include greater clarity around:
+
+- approved and unapproved uses
+- information handling
+- human oversight
+- accountability
+- tool selection
+- approval of new use cases
+- staff responsibilities
+- escalation of higher-risk uses
+
+The purpose is controlled adoption — not AI adoption for its own sake.
+
+---
+
+## What the service is
+
+### A practical AI governance and responsible-use engagement.
+
+Heutrix reviews how AI is currently being used or how the organisation intends to use it and helps establish appropriate organisational controls.
+
+The engagement focuses on turning broad concerns about AI into rules and practices staff can actually understand and follow.
+
+AI Guard is not simply an AI policy document.
+
+The objective is to establish a usable operating framework around AI use.
+
+---
+
+## How it works
+
+### 1. Understand current and intended AI use
+
+Heutrix identifies where AI is already being used, which tools are involved and where future adoption is being considered.
+
+### 2. Identify areas requiring control
+
+We examine use cases according to factors such as the information involved, operational importance, degree of human oversight and potential consequences of incorrect output.
+
+### 3. Define appropriate boundaries
+
+The organisation establishes clearer rules around acceptable use, restricted use and situations requiring additional approval.
+
+### 4. Establish practical controls
+
+Heutrix helps define how new tools and use cases should be assessed, approved, reviewed and monitored.
+
+### 5. Provide staff guidance
+
+The organisation receives practical guidance intended to make appropriate AI use understandable to the people expected to follow it.
+
+### 6. Establish the next stage
+
+Where appropriate AI opportunities remain, the organisation can then consider implementation from a controlled starting point.
+
+---
+
+## What the client receives
+
+Depending on scope, AI Guard may include:
+
+- review of existing AI usage
+- identification of current or foreseeable AI use cases
+- AI use categorisation
+- acceptable-use guidance
+- restricted or prohibited-use guidance
+- information-handling principles
+- human-review requirements
+- responsibility and approval pathways
+- AI tool assessment criteria
+- AI use-case assessment process
+- AI register or inventory structure
+- staff-facing guidance
+- management guidance
+- recommendations for implementing controlled AI use
+- priorities for future review
+
+The objective is to provide controls the organisation can actually operate rather than a policy that is filed and forgotten.
+
+---
+
+## What Heutrix needs from the client
+
+AI Guard normally requires:
+
+- management involvement
+- visibility of known AI tools and use cases
+- participation from relevant operational staff
+- information about existing technology and policies
+- examples of how staff currently use or want to use AI
+- input from the people responsible for privacy, security, compliance or governance where relevant
+- organisational decisions on matters that require management approval
+
+Heutrix can help structure the decisions and controls, but responsibility for organisational policy and risk acceptance remains with the client.
+
+---
+
+## Explicitly out of scope
+
+Unless specifically agreed, AI Guard does **not** provide:
+
+- legal advice
+- regulatory certification
+- a guarantee of compliance with every applicable law or standard
+- cybersecurity penetration testing
+- a guarantee that AI-related risk can be eliminated
+- continuous monitoring of every employee's AI activity
+- general managed IT services
+- unrestricted deployment of autonomous AI systems
+- development of large custom AI products
+- replacement of human professional judgement
+- a promise that every organisation should adopt AI
+
+Where specialist legal, cybersecurity, privacy or regulatory advice is required, the organisation should obtain that advice from an appropriately qualified provider.
+
+---
+
+## Likely objections
+
+### “We don't use much AI yet.”
+
+That can be the best time to establish boundaries.
+
+It is generally easier to introduce an organisational approach before inconsistent habits and tools become embedded.
+
+### “Why not just ban AI?”
+
+A prohibition may be appropriate for particular uses, but organisation-wide bans do not necessarily prevent employees from experimenting with readily available tools.
+
+AI Guard is designed to determine where AI can be used appropriately and where stronger restrictions are justified.
+
+### “We already have an AI policy.”
+
+A policy is useful if it translates into practical decisions.
+
+AI Guard looks beyond the existence of a document to questions such as how tools are approved, how use cases are assessed, what staff understand and where human oversight is required.
+
+### “Does AI Guard make AI risk-free?”
+
+No.
+
+No governance framework can remove every risk associated with AI.
+
+The objective is to make AI use more deliberate, visible and controlled.
+
+### “Will Heutrix tell us which AI tools to buy?”
+
+Tool selection can form part of the engagement where relevant, but AI Guard starts with appropriate use and organisational controls rather than a software purchasing exercise.
+
+---
+
+## FAQ
+
+### Is AI Guard an AI implementation service?
+
+Not primarily.
+
+AI Guard establishes the framework within which AI can be used appropriately.
+
+Where an approved AI opportunity subsequently requires workflow implementation, that work may be suitable for a Heutrix Workflow Transformation.
+
+### Is this only for organisations already using AI?
+
+No.
+
+AI Guard can be used before broader adoption to establish expectations and controls early.
+
+### Will this stop staff from using AI?
+
+The objective is not to prohibit useful technology unnecessarily.
+
+It is to make clear which uses are acceptable, which require additional controls and which should not occur.
+
+### Does AI Guard cover privacy and compliance?
+
+AI Guard can help identify where these considerations affect AI use and incorporate appropriate operational controls.
+
+It does not replace specialist legal, privacy, regulatory or cybersecurity advice.
+
+### Can AI Guard help us identify useful AI opportunities?
+
+Yes, but opportunities are considered within the organisation's governance boundaries.
+
+AI Guard should not become a justification for deploying AI where the operational value is weak or the risk is inappropriate.
+
+### What if an approved AI use case needs to be implemented?
+
+If the opportunity involves changing an operational workflow, Heutrix can assess whether it should proceed as a Workflow Transformation.
+
+---
+
+## Primary CTA
+
+### Talk to Heutrix
+
+**Supporting microcopy:**
+
+If AI is already appearing in your organisation — or you want to introduce it deliberately — talk to Heutrix about establishing a practical approach to controlled AI use.
+
+---
+
+## Next step after completion
+
+AI Guard should leave the organisation capable of managing AI more deliberately.
+
+The next step may be to:
+
+- adopt the agreed AI controls internally
+- maintain the AI register or approval process
+- review emerging use cases against the framework
+- update controls as technology and organisational use change
+- investigate an approved AI opportunity through Heutrix Diagnostics
+- implement an approved AI-enabled workflow through Workflow Transformation
+- obtain specialist legal, privacy or cybersecurity advice where required
+
+AI governance should continue as an organisational capability rather than being treated as a one-time policy exercise.
+
+---
+
+# How the Three Offers Fit Together
+
+## When the problem is unclear
+
+**Heutrix Diagnostics**
+
+> What is actually worth fixing?
+
+Investigate the workflow, identify the cause and decide the sensible next step.
+
+---
+
+## When the problem is clear
+
+**Heutrix Workflow Transformation**
+
+> How do we make this workflow work better?
+
+Redesign the identified workflow and implement the changes required to improve it.
+
+---
+
+## When AI needs organisational boundaries
+
+**Heutrix AI Guard**
+
+> How should we use AI appropriately?
+
+Establish clear rules, controls and oversight before AI adoption becomes uncontrolled.
+
+---
+
+# Offer Boundary Summary
+
+| | Heutrix Diagnostics | Heutrix Workflow Transformation | Heutrix AI Guard |
+|---|---|---|---|
+| **Primary question** | What should we fix? | How do we fix this workflow? | How should we control AI use? |
+| **Primary activity** | Investigation and recommendation | Redesign and implementation | Governance and controls |
+| **Starting point** | Problem or opportunity is not sufficiently understood | Workflow and desired improvement are reasonably clear | AI is being used or considered |
+| **Primary output** | Prioritised direction and sensible next step | Improved, implemented workflow | Practical AI operating framework |
+| **Technology role** | Potential solution component | Used where justified to support the workflow | Controlled according to appropriate use |
+| **Implementation included?** | No | Yes, within agreed scope | Governance implementation; not general workflow/software development |
+| **Natural next step** | Internal action, Transformation or AI Guard | Operate, measure and improve | Govern, review and selectively implement approved AI uses |
+| **Pricing** | PRICING REQUIRES CONFIRMATION | PRICING REQUIRES CONFIRMATION | PRICING REQUIRES CONFIRMATION |
+
+# Final Positioning Principle
+
+Heutrix should not sell dashboards, automations, forms, integrations, AI or lightweight applications as disconnected technology products.
+
+The customer should buy an **outcome**:
+
+**Understand the problem. Improve the workflow. Control the use of AI.**
+
+Technology is introduced only when it helps achieve one of those outcomes.

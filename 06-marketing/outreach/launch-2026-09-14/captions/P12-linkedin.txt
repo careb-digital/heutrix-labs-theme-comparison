@@ -1,0 +1,13 @@
+Removing the name does not automatically remove identification risk.
+
+In a small team or unusual situation, the remaining context may still identify a person.
+
+The OAIC recommends avoiding personal information, particularly sensitive information, in publicly available generative AI tools as a matter of best practice.
+
+Before an administrative AI use proceeds, check its purpose, information, approved tool and settings, access, retention and accountable reviewer.
+
+Use non-sensitive or synthetic information while assessing an idea, and obtain qualified advice where needed.
+
+Read the OAIC guidance: https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products
+
+#PrivacyAware #ResponsibleAI #DisabilitySupport

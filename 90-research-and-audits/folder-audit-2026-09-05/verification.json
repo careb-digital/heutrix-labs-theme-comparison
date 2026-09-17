@@ -1,0 +1,81 @@
+{
+  "activeMarkdownFiles": 227,
+  "localPathLinksChecked": 491,
+  "broken": [],
+  "splitPreservation": [
+    {
+      "source": "03-sales/fit-call/SALES-PROCESS-SPECIFICATION.md",
+      "sections": 14,
+      "exactReconstruction": true,
+      "indexCharacters": 1818,
+      "originalCharacters": 56422,
+      "maxSectionCharacters": 9116
+    },
+    {
+      "source": "06-marketing/website-copy/founder-trust-layer.md",
+      "sections": 9,
+      "exactReconstruction": true,
+      "indexCharacters": 1213,
+      "originalCharacters": 41482,
+      "maxSectionCharacters": 12754
+    },
+    {
+      "source": "06-marketing/linkedin/2026-launch/06_Visual_Generation_Prompts.md",
+      "sections": 30,
+      "exactReconstruction": true,
+      "indexCharacters": 4058,
+      "originalCharacters": 74392,
+      "maxSectionCharacters": 7845
+    }
+  ],
+  "protectedAssetsChecked": 217,
+  "modifiedAssets": [],
+  "archivedSourcesChecked": 34,
+  "archiveFailures": [],
+  "reading": [
+    {
+      "folder": "01-company",
+      "beforeBackgroundCharacters": 57503,
+      "afterBackgroundCharacters": 4887,
+      "reductionPercent": 92
+    },
+    {
+      "folder": "02-market-and-offers",
+      "beforeBackgroundCharacters": 57649,
+      "afterBackgroundCharacters": 5208,
+      "reductionPercent": 91
+    },
+    {
+      "folder": "03-sales",
+      "beforeBackgroundCharacters": 57418,
+      "afterBackgroundCharacters": 4969,
+      "reductionPercent": 91
+    },
+    {
+      "folder": "04-delivery",
+      "beforeBackgroundCharacters": 57276,
+      "afterBackgroundCharacters": 5049,
+      "reductionPercent": 91
+    },
+    {
+      "folder": "05-legal-privacy-risk",
+      "beforeBackgroundCharacters": 57295,
+      "afterBackgroundCharacters": 4999,
+      "reductionPercent": 91
+    },
+    {
+      "folder": "06-marketing",
+      "beforeBackgroundCharacters": 60090,
+      "afterBackgroundCharacters": 5128,
+      "reductionPercent": 91
+    },
+    {
+      "folder": "07-finance",
+      "beforeBackgroundCharacters": 58667,
+      "afterBackgroundCharacters": 5327,
+      "reductionPercent": 91
+    }
+  ],
+  "failures": [],
+  "scope": "Character counts measure required repository background only, not billed tokens; target content, conversation, tools, skills and reasoning are excluded."
+}

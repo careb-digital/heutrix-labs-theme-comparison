@@ -1,0 +1,11 @@
+Go live is not the finish line.
+
+Heutrix Workflow Transformation follows Diagnose, Triage, Build and Handover: understand the workflow, design responsibilities and acceptance, implement and test, then guide the team and transfer ownership.
+
+These stages sit within implementation; a separate Heutrix Diagnostics purchase is optional.
+
+The improvement may use a clearer process or existing systems. New software is only one option.
+
+One bounded non-clinical workflow, within a written scope.
+
+#DisabilitySupport #WorkflowImprovement

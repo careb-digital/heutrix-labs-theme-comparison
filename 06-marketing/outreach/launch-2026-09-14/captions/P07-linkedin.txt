@@ -1,0 +1,25 @@
+You should not need to diagnose your own problem before speaking with a workflow specialist.
+
+Bring the operating tension. The right starting point depends on the decision in front of you.
+
+“Several workflows are messy. We do not know what to fix first.”
+
+Heutrix Diagnostics is a paid, standalone decision product: agree a focused investigation boundary, understand the current workflow and compare sensible options. Leave with a decision-ready implementation brief, including no build where that is the useful answer.
+
+“One important workflow is clear. It needs to work better.”
+
+Start with Heutrix Workflow Transformation, our primary implementation service: redesign, implement, test and hand over one bounded non-clinical workflow. The improvement may be a clearer process, better use of existing systems or a scoped build.
+
+“Staff are using AI, but our boundaries and review rules are unclear.”
+
+Start with Heutrix AI Guardrails: define approved, conditional and prohibited uses, information boundaries, accountable review and practical staff guidance.
+
+These are independent starting points. You do not need to buy Diagnostics before Workflow Transformation or AI Guardrails.
+
+And sometimes the right next step is no Heutrix project.
+
+One high-level problem is enough for a free, 20-minute, no-obligation workflow fit call. It helps identify a suitable next step; paid Diagnostics is scoped separately. No process map, technical brief or sensitive information is needed. A time is agreed after your request.
+
+Talk to Heutrix: https://heutrix-website.heutrix.workers.dev/contact
+
+#DisabilitySupport #WorkflowImprovement #ResponsibleAI

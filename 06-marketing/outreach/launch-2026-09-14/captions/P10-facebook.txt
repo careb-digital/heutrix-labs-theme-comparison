@@ -1,0 +1,10 @@
+Before AI supports an administrative task, make five things clear: the approved use, information boundaries, tool and settings, human reviewer, and where the final version belongs.
+
+An approved account alone does not answer all five. Start narrow and use non-sensitive or synthetic inputs while assessing an idea.
+
+Keep a person accountable for the final output and the decision it supports.
+
+Try the free AI Guardrails Staff Starter Pack. No email required. It supports a review; it does not approve AI use or replace qualified advice.
+https://heutrix-website.heutrix.workers.dev/resources/ai-guardrails-staff-starter-pack
+
+#DisabilitySupport #ResponsibleAI

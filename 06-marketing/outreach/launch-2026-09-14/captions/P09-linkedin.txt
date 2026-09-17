@@ -1,0 +1,23 @@
+If only the consultant understands the new workflow, handover has not happened.
+
+Before a project closes, the client should know:
+
+- who owns the workflow;
+- how staff complete the normal path;
+- how exceptions are handled and escalated;
+- where status and next action are recorded;
+- who administers the agreed system;
+- which access, licence and vendor dependencies remain;
+- how the workflow was tested;
+- what the known limitations are; and
+- what is maintenance, a defect or a future change.
+
+The agreed accounts, access and available configuration or export artefacts should be client-controlled at handover where the written scope and third-party platform allow it.
+
+Documentation should not be a screenshot archive. It should help the next responsible person operate and maintain the workflow without reconstructing the project from memory.
+
+Before your next implementation, ask one question:
+
+What will our team be able to run, explain and maintain when the project ends?
+
+#WorkflowHandover #DisabilitySupport #OperationalResilience

@@ -1,0 +1,21 @@
+A workflow is not transformed when the build goes live.
+
+The team still needs to test it, understand it and take ownership.
+
+Heutrix Workflow Transformation follows four stages:
+
+Diagnose — understand the current workflow, its boundary and the baseline or baseline plan. This is part of implementation; it does not require a separate Diagnostics purchase.
+
+Triage — agree the future state, responsibilities, dependencies, controls and written acceptance criteria.
+
+Build — implement the smallest useful improvement and test it with the people who will use it. That can mean changing the process or configuring existing systems; new software is only one option.
+
+Handover — guide and train the team, transfer agreed access and documentation, and make ownership, maintenance and limitations clear.
+
+Mapping and design happen before implementation. Testing happens before acceptance. Handover makes the improvement usable beyond the project.
+
+The result is one bounded non-clinical workflow implemented, tested and handed over, within a written scope.
+
+Save the four stages for the next time “go live” is treated as the finish line.
+
+#WorkflowTransformation #DisabilityProviders #ServiceOperations

@@ -1,0 +1,46 @@
+# Founder collaboration
+**Effective:** 5 September 2026 — folder setup requested by Janith.  
+**Merge coordinator:** Janith, confirmed in this task. Folder owners remain unassigned by instruction; use the [central role register](../01-company/founders-and-roles/ROLE-REGISTER.md) for all assignments.
+
+## Start a piece of work
+1. Open the Heutrix repository root and read its [README](../README.md), [shared instructions](../AGENTS.md), [decisions](DECISIONS.md), [facts](VERIFIED-FACTS.md), [launch board](LAUNCH-BOARD.md) and [risks](RISKS-AND-BLOCKERS.md).
+2. Read the relevant folder README and [dependency map](DEPENDENCIES.md). Use the indicated current sources; drafts and historical reports do not override approved decisions.
+3. Coordinate a bounded task with Janith while folder owners are unassigned. An unassigned folder is available for allocated work, not a grant to change shared policy without review.
+4. Use a separate clone on each founder's computer. Start a short branch from the current shared `main`; keep the repository root and shared context available even when working on one folder. Do not create seven separate repositories or work in the same checkout simultaneously.
+5. Copy [CHANGE-BRIEF.md](templates/CHANGE-BRIEF.md) into that folder's `changes/YYYY-MM-DD-short-topic.md` when starting work. Record the author, base commit, intended files, dependencies, acceptance criteria and native-file reservation if relevant. The folder's `changes/README.md` is its task index.
+6. Make the change in the existing subject folders. Do not create personal copies of the strategy or company facts. Ask Janith to route a proposed shared decision to the affected people.
+
+The original folder migration is still a local uncommitted change. Complete the [shared rollout checklist](COLLABORATION-SETUP.md) before other founders clone a remote. Do not assume the remote already contains this setup.
+
+## What belongs where
+- Current operating sources stay in their subject folders.
+- Dated change briefs describe work; they are never authoritative business rules.
+- Review requests contain changes, evidence and sign-off.
+- Approved cross-workstream decisions go in [DECISIONS.md](DECISIONS.md); factual evidence in [VERIFIED-FACTS.md](VERIFIED-FACTS.md); readiness and blockers in their existing registers.
+- Research and superseded assets keep their current historical homes. Do not mass-move existing assets merely to create identical subfolders.
+- [Client project structure](../08-client-project-template/README.md) is a template. Live client or other prohibited sensitive data stays outside this repository in an approved system.
+
+## Review and merge
+1. Refresh from shared `main` daily during active work and again before requesting integration. Resolve new source decisions before continuing dependent work.
+2. Aim to submit a completed, bounded change within one to three working days. Use a draft review request for larger work; share dependencies early.
+3. Complete the [review template](../.github/pull_request_template.md). Link related briefs and list affected folders, tests, approvals and any missing evidence.
+4. Routine edits within current policy need a reviewer other than the author. Changes to scope, prices, timelines, claims, terms, acceptance or data handling also need explicit approval from the affected responsible people, routed by Janith while owners are unassigned.
+5. Janith checks source precedence, integration and the [merge checklist](templates/MERGE-CHECKLIST.md), then coordinates integration into `main`. If Janith authored the change, another named reviewer must review it; no self-approval. Review evidence can be recorded manually when platform enforcement is unavailable.
+6. Mark the brief Merged with the merged commit/review reference, update the relevant registers, and have dependent founders refresh. Target review within two business days; if unavailable, agree an alternate reviewer with Janith. Silence is not approval.
+7. Revert an incorrect integrated change through a reviewed corrective change and re-run the affected checks. Do not overwrite whole folders or reset other founders' history.
+
+A merge coordinates repository changes. It does not approve publishing, pricing, contract use, client onboarding or a new storage system; their existing gates still apply.
+
+## Native files and generated outputs
+Reserve a Word, Excel or PowerPoint file in [FILE-EDIT-REGISTER.md](FILE-EDIT-REGISTER.md) before editing. A reservation becomes active only when Janith acknowledges it in the shared record. One editor may hold a given native file; others provide comments. Do not assume a private branch reservation excludes someone working elsewhere. Before handoff, validate the native file and its exports, record release checks and have Janith release the reservation.
+
+PDFs, ZIPs, rendered images and distribution files derive from a named source. Rebuild rather than independently editing two masters. Follow the [resource manifest](../06-marketing/lead-magnets/RELEASE-MANIFEST.md) for website resources and the finance workstream's applicable audit for models. Ordinary Git merging cannot reliably combine competing Office content.
+
+## AI-assisted work
+Provide the [task brief](templates/CHANGE-BRIEF.md), repository root, current shared rules and relevant source paths. Direct the assistant to work within the recorded task boundary, preserve unrelated changes, and return a changed-file list, checks and unresolved decisions. Important decisions must be written into the repository; another founder cannot depend on access to private chats. Folder-level guides supplement the root rules.
+
+## If someone must use an exported folder
+Prefer a full clone. For an exception, include root guidance, shared controls, the assigned folder and all required dependency sources, preserving relative paths. Record the base commit, date and included paths in the brief. Shared context copies are reference-only. Return changed files with the brief to a separate review location. Janith compares the original base, returned files and latest master and integrates only the reconciled changes. Never replace the master with the returned folder. Exports and selected-folder views are not access controls.
+
+## Technical references
+Git explains [branching and conflict resolution](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging). Optional [selected-folder checkout](https://git-scm.com/docs/git-sparse-checkout) reduces visible files, not permissions. GitHub [code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) route reviews; [branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) requires separate platform configuration and supported plan features.

@@ -1,0 +1,3 @@
+# Release recommendation
+
+The narrative, page structure and low-claim interim wording are ready for founder review and now align with the three-product offer and evidence-refreshed case studies. Publication remains blocked until the founders approve their names and biographies, adopt the named-delivery-lead practice, verify company/service-area details, name the fit-call owner and backup, operationalise the lead and scheduling path, and supply approved avatar assets. Case-study claims have documented evidence boundaries, but the prepared proof modules must remain out of public output until final claim, confidentiality and owner approval is recorded; the source organisation must remain unnamed.

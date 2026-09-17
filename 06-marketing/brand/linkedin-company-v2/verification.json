@@ -1,0 +1,235 @@
+{
+  "originalPackUnchanged": true,
+  "originalPackHashes": [
+    {
+      "file": "banners-2026-09\\source\\build.cjs",
+      "sha256": "b5c5f30bf3a5153855348bc1d725e6f26ac6f3a8e0cb799c2dbaad26edc06afe"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-facebook-cover-navy.png",
+      "sha256": "e1ce45321e94713b618f6bcf9128df295d279ef65365a51ea634f9c5a49a292d"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-facebook-cover-light.png",
+      "sha256": "89bbfb895c4ede256fd2e1a7ec37e545dcea0eba1e2415786c764bb8b4fd3001"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-linkedin-profile-navy.png",
+      "sha256": "d0f78a434a5a7d6935319daca581c224412290e6e47e8e4948172051964653b1"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-linkedin-profile-light.png",
+      "sha256": "e5e690d9545f88e14d47a00ba17e80e035b95c49cf96fbdd18f91591461e060f"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-linkedin-company-navy.png",
+      "sha256": "85ceb07603426a2491e4242f75695d1f13b84246bbd9d2c1e3b9ad71258a6d62"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-linkedin-company-light.png",
+      "sha256": "c8f62a748f9886ef1374bace59c400a6b3688b6e21300648e7410579892a0467"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-google-sites-header-navy.png",
+      "sha256": "fb87cf08bfc23b6510cb57cd591bed1847983e4a9508d7e27c07a078ab500b77"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-google-sites-header-light.png",
+      "sha256": "f9dd5db3795882246d8b1d8ae329ed734861bc8edfd60e7f9be20cd5609707e6"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-email-signature-navy.png",
+      "sha256": "a4215b6e9dda2169f15c0837b7e50cf8e783b11d499b4731fe4e7a98a036f7f1"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-email-signature-light.png",
+      "sha256": "d97e800c53882437d69573817c34f7c92c2eae15bbccd0f1c058260195c96914"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-meet-background-navy.png",
+      "sha256": "ab48a6fadcf4f37747230666b22d5bacd94b304dc93074889497b3c78e88ff8c"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-meet-background-light.png",
+      "sha256": "0c151f72907029262593f0b61e35f4777843e5a45f79a048ab0a99a13a738019"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-universal-wide-navy.png",
+      "sha256": "579441568ba6c369b41ca1e056412649899356b35e2c82cb9ddf3b044e435582"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-universal-wide-light.png",
+      "sha256": "ff2e835ea0e09e2b19ba28850a0ee67025e82b7cdd99c55b9b834a93a6894d11"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-presentation-header-navy.png",
+      "sha256": "a37d15c616d57a95ba665e7d673faf736e2d77a71d338c6eb6951821f0ce5cae"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-presentation-header-light.png",
+      "sha256": "7d9e23d15988bf3ddc117798989761314982913f1fcb41b5864262985360814d"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-social-landscape-navy.png",
+      "sha256": "c9f2be098776cbd4e4f5a968edff1db6efe81e8a9872d30a51069f49deeb55ec"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-social-landscape-light.png",
+      "sha256": "31e60253bc546ec287ee0418b356c5d2f3125255d611c842c18977f7075ebc6b"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-google-workspace-logo.png",
+      "sha256": "f9e3c1b0cad9edde74acc5fd79f329113eb8f758ec6a1712d6ea1669a1413146"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-profile-avatar-1024.png",
+      "sha256": "55c94e330753f1bc2b2d61565ef44a1280584bcfcf5eefd43cf455870c84cd45"
+    },
+    {
+      "file": "banners-2026-09\\png\\heutrix-profile-avatar-dark-1024.png",
+      "sha256": "e9865dd97d73aace38e1d3245cedd833ebb951f61a83dad35a297dbc244d2901"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-facebook-cover-navy.svg",
+      "sha256": "6ba9fd1f993499aed4e2d1a6f24ca9f30a82e4c8437f107e103594939cf66b1d"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-facebook-cover-light.svg",
+      "sha256": "6575960825552641aab2d735b922662e6d587ff54472dabff0cb7149c0331a48"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-linkedin-profile-navy.svg",
+      "sha256": "61d0cc8512347c46520ce0058ae655153fef1d2e075ea6c458c17c19c56d6882"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-linkedin-profile-light.svg",
+      "sha256": "170dccee3ea45096ece4776066a5a38abfeba8e6dc75e9a7dea31974673b3407"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-linkedin-company-navy.svg",
+      "sha256": "d40bd74c8413f70e0b6845a7937994edee8638f56795492b003ccae97a7bf5b5"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-linkedin-company-light.svg",
+      "sha256": "d4af9679e0a54c01549fcb782929aa2833699988d0900e67a23412f813425955"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-google-sites-header-navy.svg",
+      "sha256": "53edcadf9c8e1a69f2775565c6da083a3fb026fada9ce639692570b63afa00c1"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-google-sites-header-light.svg",
+      "sha256": "35ffc17b751aa5d192b6d8fee4c4ddb5a5ff4d42510f0f708d32c9a969375c0b"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-email-signature-navy.svg",
+      "sha256": "900d15049c2b521ad7dc4e7ca8284acf6324e084bc966c7999586d4e23b23b72"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-email-signature-light.svg",
+      "sha256": "cf9153e7a4f84eabcdb3d0b3d91fab60ef7f005d8db9eb1ef80ded1c9d731a52"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-meet-background-navy.svg",
+      "sha256": "b42ac96257577c9722118c17b88905f6b2bbd797d879837e27f8bac5a35a0480"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-meet-background-light.svg",
+      "sha256": "8636117af5788786cb0eea87c2b4b72f00d1efbf96999a462788a0a6b7b259a2"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-universal-wide-navy.svg",
+      "sha256": "42aea2757bc44b34d6718cc1b8fbff51d8921037bf347f742df6492870ed2170"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-universal-wide-light.svg",
+      "sha256": "87a971f9712a299fa0dfcd18d072e25156b20c77be62a302a840389704307487"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-presentation-header-navy.svg",
+      "sha256": "c85b24b3f9a3b2ca21f71ae474a2bdfde1bf9d4226dbe5f3c703d3db71a3fb65"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-presentation-header-light.svg",
+      "sha256": "2ef1961d666cb23fbd47770c5c7df589f031ecaffc5ab847aa73c72070d4d2d0"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-social-landscape-navy.svg",
+      "sha256": "480e1fd9aeeaa82322179981459975b5e48a095ec4de009f8f7f08ebeaccb4eb"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-social-landscape-light.svg",
+      "sha256": "ecaaaf9e058cd6a2b34ef3ea6077e29e5ae7876d3515944219e410ee6683c48a"
+    },
+    {
+      "file": "banners-2026-09\\svg\\heutrix-google-workspace-logo.svg",
+      "sha256": "0884a1d8fdc00dc7f9e6c54c9c8332b5d5dc54a7170092fee7a28236ef7b9e0c"
+    },
+    {
+      "file": "banners-2026-09\\manifest.json",
+      "sha256": "98d5465d46e875a41ea0eced5648ea433255087695f0152ff638dcb32c94dcdd"
+    },
+    {
+      "file": "banners-2026-09\\preview.html",
+      "sha256": "035d59e0af34a358ff601f4cabdf26440ded2c9bcbe0073b8ea794d229c2d8dc"
+    },
+    {
+      "file": "banners-2026-09\\contact-sheet.png",
+      "sha256": "211c41ac4c3e58c1491b7f53f3a68df5a895b1147873a8e3eaabf2bceaeac9cd"
+    },
+    {
+      "file": "banners-2026-09\\README.md",
+      "sha256": "454a0c79115b6e66780551cafffcd18053cee662dfb01141f58d6be557962928"
+    }
+  ],
+  "exports": [
+    {
+      "file": "png\\heutrix-linkedin-company-navy-centred-1512x256.png",
+      "width": 1512,
+      "height": 256,
+      "bytes": 21747
+    },
+    {
+      "file": "jpg\\heutrix-linkedin-company-navy-centred-1512x256.jpg",
+      "width": 1512,
+      "height": 256,
+      "bytes": 51064
+    },
+    {
+      "file": "png\\heutrix-linkedin-company-navy-compact-1512x256.png",
+      "width": 1512,
+      "height": 256,
+      "bytes": 19244
+    },
+    {
+      "file": "jpg\\heutrix-linkedin-company-navy-compact-1512x256.jpg",
+      "width": 1512,
+      "height": 256,
+      "bytes": 43500
+    },
+    {
+      "file": "png\\heutrix-linkedin-company-light-centred-1512x256.png",
+      "width": 1512,
+      "height": 256,
+      "bytes": 21889
+    },
+    {
+      "file": "jpg\\heutrix-linkedin-company-light-centred-1512x256.jpg",
+      "width": 1512,
+      "height": 256,
+      "bytes": 52481
+    },
+    {
+      "file": "png\\heutrix-linkedin-company-light-compact-1512x256.png",
+      "width": 1512,
+      "height": 256,
+      "bytes": 19133
+    },
+    {
+      "file": "jpg\\heutrix-linkedin-company-light-compact-1512x256.jpg",
+      "width": 1512,
+      "height": 256,
+      "bytes": 44495
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "pack": "Heutrix Legal Launch Review Pack",
+  "version": "2.2 review draft",
+  "prepared_date": "2026-09-13",
+  "status": "Internal review only. Insurance and commercial decisions remain pending; no client release approval inferred.",
+  "changes": "Yellow highlighting for pending wording and missing fields; exact [Placeholder] markers; separate D01–D22 work-through register. Confirmed company particulars retained. Prior packs preserved.",
+  "verification": {
+    "word_documents": 11,
+    "pdf_documents": 11,
+    "pdf_pages": 80,
+    "visual_review": "All 80 Microsoft Word PDF pages reviewed as rendered contact sheets after the header logo update.",
+    "text_comparison": "Documents 01–10 have no missing body-text tokens; six memorandum extraction word-splitting artefacts verified visually.",
+    "placeholder_highlighting": "Every literal [Placeholder] in document body XML has explicit highlighting. Legacy bracket completion markers and underscore blanks removed.",
+    "decision_coverage": "D01–D22 each present once as a register entry; confirmed, pending, conditional and deferred distinctions preserved.",
+    "local_pack_links_checked": 51,
+    "structure_check": "PASS: 7 workstream guides, 43 required files, 338 local links/headings.",
+    "zip_integrity": "CRC and every bundled file hash verified.",
+    "limits": "Preparation checks do not establish legal review, business approval, insurance, approved systems or operator rehearsal.",
+    "brand_preservation": "All 11 document bodies retain their exact pre-refresh document.xml. The selected logo is embedded in headers."
+  },
+  "placeholder_counts": {
+    "00_Heutrix_Launch_Readiness_Memo.docx": 0,
+    "01_Heutrix_Client_Services_Agreement.docx": 34,
+    "02_Heutrix_Diagnostics_Order_Form.docx": 42,
+    "03_Heutrix_Statement_of_Work.docx": 119,
+    "04_Heutrix_Mutual_Confidentiality_Agreement.docx": 19,
+    "05_Heutrix_Project_Control_Forms.docx": 173,
+    "06_Heutrix_Project_Privacy_and_Notices.docx": 30,
+    "07_Heutrix_Website_Policy_Reference.docx": 0,
+    "08_Heutrix_Launch_SOPs.docx": 0,
+    "09_Heutrix_Approval_Decisions.docx": 41,
+    "10_Heutrix_Pending_Decisions_Register.docx": 135
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 11901,
+      "sha256": "bd74809a496483c0316e47ce281bd8a6f3d1c78ebfc5fd4ecc2e51dc50e53941"
+    },
+    {
+      "path": "Word/00_Heutrix_Launch_Readiness_Memo.docx",
+      "bytes": 665272,
+      "sha256": "969cfafa25350cccb8b457b39fc71ca7fcd28c9e320a384af618d9f3d019bebf"
+    },
+    {
+      "path": "Word/01_Heutrix_Client_Services_Agreement.docx",
+      "bytes": 122144,
+      "sha256": "2d2cb7035ea9afa6faac8f97bc6c1991e81cd933b9ef783ac102456d6c2573b5"
+    },
+    {
+      "path": "Word/02_Heutrix_Diagnostics_Order_Form.docx",
+      "bytes": 114879,
+      "sha256": "4973ed9a0401872cb9da29c2d348dc442a714df068b0282100b0c4e75e297d25"
+    },
+    {
+      "path": "Word/03_Heutrix_Statement_of_Work.docx",
+      "bytes": 115085,
+      "sha256": "7b7953f2c858fd2977b02374396c9061f1843c2df6b21d53c72aa23666c83192"
+    },
+    {
+      "path": "Word/04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+      "bytes": 113594,
+      "sha256": "8880d9a8c75da5341a11f079c628e84f29f0872cb2c092cc35c584a04f1b5422"
+    },
+    {
+      "path": "Word/05_Heutrix_Project_Control_Forms.docx",
+      "bytes": 117728,
+      "sha256": "7c158eb6d30e14d3c153478a9a34d39552302525ab902025e01dab5f1b72d537"
+    },
+    {
+      "path": "Word/06_Heutrix_Project_Privacy_and_Notices.docx",
+      "bytes": 113936,
+      "sha256": "f652a897a57ca0eaef232d66ae9102b3a4098934216b8d3f40f5da6dedadb0c6"
+    },
+    {
+      "path": "Word/07_Heutrix_Website_Policy_Reference.docx",
+      "bytes": 111069,
+      "sha256": "807cd289316114a212176814d827281301c80ad96330e4b08b42df580a1b2203"
+    },
+    {
+      "path": "Word/08_Heutrix_Launch_SOPs.docx",
+      "bytes": 119270,
+      "sha256": "e2f671f7d784645b9c0521e887703dbd11b41075bd90c37dbca708f7253e2bbe"
+    },
+    {
+      "path": "Word/09_Heutrix_Approval_Decisions.docx",
+      "bytes": 116944,
+      "sha256": "7ff355f81fb5c5b7e9c8eaa94585b9486f3c6e4e224252bebb726069b84d61ee"
+    },
+    {
+      "path": "Word/10_Heutrix_Pending_Decisions_Register.docx",
+      "bytes": 116443,
+      "sha256": "55dcee1661ff3edfe6bbbfd87c302c3bbc408e8ca3cff94f683e300f2f688d19"
+    },
+    {
+      "path": "PDF/00_Heutrix_Launch_Readiness_Memo.pdf",
+      "bytes": 109696,
+      "sha256": "4074eab0c2844e6f8850893b243688a5a392b32a92d6ec66618c807186214e7b",
+      "pages": 3
+    },
+    {
+      "path": "PDF/01_Heutrix_Client_Services_Agreement.pdf",
+      "bytes": 303522,
+      "sha256": "ad2a59ecdf93d69e6dafbcba9daa91104895bed5ad2d9c5b292632f7347f5d4c",
+      "pages": 12
+    },
+    {
+      "path": "PDF/02_Heutrix_Diagnostics_Order_Form.pdf",
+      "bytes": 269852,
+      "sha256": "60c6c71a37595bd52211e647dfa47b7643c2878f13e29c1d00097671440581f4",
+      "pages": 5
+    },
+    {
+      "path": "PDF/03_Heutrix_Statement_of_Work.pdf",
+      "bytes": 286119,
+      "sha256": "21130195f2b4b1ca8bcf649cdccf82a5ef9c01248a5cb799e28c28ecc1a81d01",
+      "pages": 6
+    },
+    {
+      "path": "PDF/04_Heutrix_Mutual_Confidentiality_Agreement.pdf",
+      "bytes": 250001,
+      "sha256": "c70ac4df25f8af45f0a15f61055837be3625086574b337780080d34e446abc34",
+      "pages": 3
+    },
+    {
+      "path": "PDF/05_Heutrix_Project_Control_Forms.pdf",
+      "bytes": 307537,
+      "sha256": "7f177dd1aa7e29a7044ccdf01f3deaa802534f485dfadc022a99aba7845abcb3",
+      "pages": 13
+    },
+    {
+      "path": "PDF/06_Heutrix_Project_Privacy_and_Notices.pdf",
+      "bytes": 217940,
+      "sha256": "f6bb11dd44fc5c153191fc04f561930215aac6153b69e9daf592e707c3a2b5e8",
+      "pages": 3
+    },
+    {
+      "path": "PDF/07_Heutrix_Website_Policy_Reference.pdf",
+      "bytes": 197604,
+      "sha256": "4c907f4ebf9eb3085e465cc1537a49f2fd621fba3404720a7b643922131a51e7",
+      "pages": 1
+    },
+    {
+      "path": "PDF/08_Heutrix_Launch_SOPs.pdf",
+      "bytes": 257502,
+      "sha256": "0e38500087b6dab514efbefb372a23c5142811023c950faa3fbfe9da26a4fd30",
+      "pages": 7
+    },
+    {
+      "path": "PDF/09_Heutrix_Approval_Decisions.pdf",
+      "bytes": 268161,
+      "sha256": "68564e88b5aac8a4c8a96ca06c37a21cda705ca8d9ff2d3f041c475854444506",
+      "pages": 5
+    },
+    {
+      "path": "PDF/10_Heutrix_Pending_Decisions_Register.pdf",
+      "bytes": 270187,
+      "sha256": "5774cbf2c70145a8199dece939e7ccaaf4ca3267e55e421d60f44a74b0743d67",
+      "pages": 12
+    },
+    {
+      "path": "source/06_Project_Privacy_and_Notices.md",
+      "bytes": 9482,
+      "sha256": "51e59f76f3649994064cf75e99b7d21c44e8b8826447e8a54cd359907b6baf88"
+    },
+    {
+      "path": "source/07_Website_Policy_Reference.md",
+      "bytes": 2308,
+      "sha256": "e57bfaa047deac8ab2edd43d36b2e1718ac49bf8b72e0bec1cd7bacb2c655a3c"
+    },
+    {
+      "path": "source/08_Launch_SOPs.md",
+      "bytes": 24895,
+      "sha256": "f7b1b047d4c9760851dabc16663eaf42259aee549f105a00ca6226f38db4567b"
+    },
+    {
+      "path": "source/09_Approval_Decisions.md",
+      "bytes": 17951,
+      "sha256": "12af1b007bf3ce39a7b541456136d707c2b635bf7fbbc23257eb735fefdef3d6"
+    },
+    {
+      "path": "source/10_Pending_Decisions_Register.md",
+      "bytes": 24096,
+      "sha256": "071c37d213333cb348c7ac50a3db8f0aca1da31e2644f59b29cfe2a234ecc951"
+    },
+    {
+      "path": "source/build_pack.py",
+      "bytes": 35205,
+      "sha256": "eb7f72fbf2233e75b6387c7449601ea2a31c37916a75aa6b67b277221cc209f1"
+    },
+    {
+      "path": "source/mark_placeholders.py",
+      "bytes": 4723,
+      "sha256": "06f79124c93f0e6958635a0d1b839b23f62ff313d360b9474878f0d62dd1fee2"
+    },
+    {
+      "path": "source/reconciliation-changes.json",
+      "bytes": 29237,
+      "sha256": "52e5ed3ef108f94ccd042944e51ae5598609809972003e859dd88a8130363cfb"
+    },
+    {
+      "path": "source/placeholder-counts.json",
+      "bytes": 544,
+      "sha256": "ee474438be5a33dfd25684a5ffed830d0580caa6ea1741633d66ff7f4e6b5f89"
+    },
+    {
+      "path": "source/brand-verification.json",
+      "bytes": 1358,
+      "sha256": "0c1b53fffce3e62829d98e499e970d42ffdd31d2ee40ef8615558d7d9b5467d3"
+    }
+  ],
+  "source_dependencies": "Reconciliation requires preserved v1 masters and the selected legal memorandum template in their original locations. This ZIP is not a standalone build environment.",
+  "exclusions": [
+    "earlier packs",
+    "QA images and temporary files",
+    "client records and signatures",
+    "credentials"
+  ],
+  "manifest_hash_note": "Manifest and enclosing ZIP excluded from the hash list to avoid circular hashes.",
+  "brand_refresh_date": "2026-09-16"
+}

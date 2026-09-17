@@ -1,0 +1,38 @@
+{
+  "verified_date": "2026-09-15",
+  "account": "hello@heutrix.com.au",
+  "folder_url": "https://drive.google.com/drive/folders/1Z08mRSvuUwICz8ISi-Fv6ZLqCB6tIW-p",
+  "native_sheet_url": "https://docs.google.com/spreadsheets/d/1Er5bZt5C-YCW3jdQR-MbQvlxnYe67VyyyXo5-JdaCwA/edit",
+  "sharing": "Private only to me; no sharing changes made",
+  "placement": "My Drive / Heutrix \u2014 Live Records / Outreach",
+  "native_ui_checks": [
+    "All three sheets visually inspected at 100%",
+    "OutreachEvents and ProviderResearch native table controls visible",
+    "Baseline 10 researched and 0 contacts; future weeks blank",
+    "Ten research rows Ready with count 1 and permission None; next row blank",
+    "Janith and Rochelle call windows and both folder links read back",
+    "Drive identifies Google Sheets file inside Outreach"
+  ],
+  "export_checks": {
+    "tables": [
+      {
+        "ref": "A7:V257",
+        "displayName": "OutreachEvents",
+        "name": "OutreachEvents",
+        "id": "2"
+      },
+      {
+        "ref": "B6:L16",
+        "displayName": "ProviderResearch",
+        "name": "ProviderResearch",
+        "id": "1"
+      }
+    ],
+    "activity_formulas": 750,
+    "weekly_formulas": 118,
+    "activity_validations": 8,
+    "stored_formula_errors": 0,
+    "frozen_panes_preserved": true
+  },
+  "limits": "No actual outreach or consent events entered; full CRM integrations not configured."
+}

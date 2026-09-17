@@ -1,0 +1,64 @@
+# Decision register
+
+Use this register for decisions that affect more than one workstream. Link the evidence and record the date and owner. “Proposed” is not approval.
+
+## Founder collaboration — 5 September 2026
+
+The user requested implementation of the founder collaboration folder structure. Adopt the [local collaboration workflow](COLLABORATION.md), shared source map and reviewed integration approach. Janith explicitly confirmed that **Janith coordinates merges** and **no folder owner names should be assigned yet**. The [role register](../01-company/founders-and-roles/ROLE-REGISTER.md#folder-ownership) records this limited authority. Remote publication, account handles, protections and shared-clone rollout remain in the [setup checklist](COLLABORATION-SETUP.md); this decision does not approve unrelated business policies or change existing launch gates.
+
+## Confirmed strategic decisions
+
+| Decision | Status | Source |
+|---|---|---|
+| Australian disability support providers are the primary launch segment. | Confirmed | [Offer decision document](../02-market-and-offers/offers/offer-strategy-2026-09/01-offer-decision-document.md) |
+| Allied health practices are a secondary launch segment. | Confirmed | [Offer decision document](../02-market-and-offers/offers/offer-strategy-2026-09/01-offer-decision-document.md) |
+| GP clinics are a future segment and should not appear as a launch audience. | Confirmed | [Offer decision document](../02-market-and-offers/offers/offer-strategy-2026-09/01-offer-decision-document.md) |
+| The public architecture is Diagnostics, Workflow Transformation and AI Guardrails. | Confirmed | [Offer decision document](../02-market-and-offers/offers/offer-strategy-2026-09/01-offer-decision-document.md) |
+| Workflow Transformation is the primary implementation product. | Confirmed | [Offer decision document](../02-market-and-offers/offers/offer-strategy-2026-09/01-offer-decision-document.md) |
+| Public prices are excluded from the launch website. Approval of commercial assumptions controls internal quoting, not public publication. | Confirmed 3 September 2026 | [Pricing policy](../02-market-and-offers/pricing/PRICING-POLICY.md) |
+| Pricing will not be a public website page, navigation item or CTA. Commercial terms will be confirmed privately in a written scope after fit is established. | Confirmed 3 September 2026 | Heutrix team direction recorded in the website refinement task and [website copy pack](../06-marketing/website-copy/README.md) |
+| The three ungated lead magnets will be integrated into the website journey and matched to the relevant problem/product path. | Confirmed for copy, information architecture and version 1.0 website release on 3 September 2026 | [Website copy pack](../06-marketing/website-copy/README.md) and [lead-magnet release gate](../06-marketing/lead-magnets/README.md) |
+| The approved end state is a directly bookable 20-minute workflow fit call. Until the scheduler and lead destination are live and tested, public copy uses “See where Heutrix can help” and the form uses “Request my 20-minute call”. | Confirmed direction; implementation open | [Fit-call and sales-process specification](../03-sales/fit-call/SALES-PROCESS-SPECIFICATION.md) |
+| Delivery is remote, with onsite work only where the agreed scope requires it. | Confirmed at this level | [Owner validation register](../02-market-and-offers/offers/offer-strategy-2026-09/05-owner-validation-register.md) |
+| The 15 anonymised case studies in the marketing proof collection document solutions delivered by Heutrix. Heutrix was operating as a business when the work was completed; the absence of formal proprietary-limited-company registration at the time does not change the delivery attribution. | Confirmed 4 September 2026 | Direct owner decision and [source evidence map](../06-marketing/case-studies-and-assets/SOURCE-EVIDENCE-MAP.md) |
+| The case-study drafts may use approximate quantitative ranges to communicate operating scale and efficiency. Cases 3, 4, 6, 8 and 9 use approximate outcomes supported by client feedback; other ranges are grounded in the delivered workflow structure. None may be presented as an audited or exact outcome measurement. | Confirmed 4 September 2026 | Direct owner direction and [approximate metric basis](../06-marketing/case-studies-and-assets/SOURCE-EVIDENCE-MAP.md#approximate-metric-basis) |
+
+## Decisions required before outreach
+
+**Proposed for Janith’s review — 5 September 2026:** [Market-fit evaluation](../02-market-and-offers/ideal-client/MARKET-FIT-EVALUATION-2026-09-05.md) recommends narrowing disability-provider prospecting to funded, high-volume workflows and comparing selected allied health groups and accounting firms after outreach readiness. The approved disability-primary/allied-health-secondary strategy remains in force. Acceptance: Janith records the sourcing profile, test allocation and decision thresholds; evidence from paid delivery and acquisition economics is reviewed before changing market priority. Current prices and margin rules remain provisional.
+
+| Decision | Owner | Status | Required evidence or output |
+|---|---|---|---|
+| Public trading name and relationship between “Heutrix” and “Heutrix Labs”. | Janith | Open | One approved naming rule used across site, contracts and accounts. |
+| Founder name, role, biography, portrait and permitted experience claims. | Janith | Open | Approved trust-layer copy and image. |
+| Monitored sales email, phone, enquiry owner, fit-call owner and backup. | Janith | Open | Published contact matrix and tested routing. |
+| Calendar platform, availability, cancellation and rescheduling rules. | Janith | Open | Working booking path and operating instructions. |
+| CRM/pipeline system and minimum reporting fields. | Janith | Open | Configured pipeline with test lead. |
+| Which tools and integrations Heutrix can credibly offer now. | Janith | Open | Approved capability register with limitations. |
+| Which proof artefact may be published first. | Janith | Open | One permissioned Heutrix case study or an approved, clearly labelled synthetic/sample asset. |
+| JD owns the final review and boundary review for the version 1.0 website-integrated lead magnets. | Janith | Confirmed 3 September 2026 for website release; unapproved analytics remain excluded | Approved release row in the [lead-magnet register](../06-marketing/lead-magnets/README.md), matching source/distribution hashes and six tested downloads. |
+
+## Decisions required before onboarding
+
+| Decision | Owner | Status | Required evidence or output |
+|---|---|---|---|
+| Legal entity particulars, ABN, GST status, address and signing authority. | Janith | Open | Verified register and approved contract particulars. |
+| Insurance cover and statements that may be made about it. | Janith | Open | Current certificates and approved wording. |
+| Internal price bands, loaded cost, margin floor and exception authority. | Janith | Open | Signed-off pricing rule linked to the current model. |
+| Payment, cancellation, pause, late-payment and final-handover rules. | Janith and legal adviser | Open | Approved commercial schedule. |
+| Approved storage, collaboration, credential, ticketing and communication systems. | Janith | Open | Approved-systems register. |
+| Project data collection, access, retention, deletion and incident process. | Janith and legal adviser | Open | Approved data-handling standard. |
+| Delivery capacity, start condition, acceptance authority, defect, change and stabilisation rules. | Janith | Open | Approved delivery standard and templates. |
+| Ownership/licensing of source, reusable methods and client-specific deliverables. | Janith and legal adviser | Open | Approved IP and handover wording. |
+
+## Change log
+
+| Date | Decision | Owner | Affected areas |
+|---|---|---|---|
+| 2026-09-04 | Align the full marketing workstream to the evidence-refreshed case studies. Prepare gated website proof modules and LinkedIn posts P16 and P34; keep allied-health examples synthetic and prohibit identifying source material or testimonial treatment of client feedback. | Janith | Marketing copy, brand voice, outreach, LinkedIn and website proof placement |
+| 2026-09-04 | Refresh the 15 Heutrix case studies using client feedback on practical operation and selected approximate outcomes. Cases 3, 4, 6, 8 and 9 now use client-feedback-supported ranges; other efficiencies remain structural estimates. | Janith | Case-study copy, proof registers, founder trust layer and launch controls |
+| 2026-09-04 | Confirm the 15 anonymised case-study angles as solutions delivered by Heutrix while it was operating as a business, irrespective of its formal proprietary-limited-company registration status at the time. Publication permission, evidence limits and confidentiality gates remain separate. | Janith | Marketing proof, case-study attribution and launch proof planning |
+| 2026-09-03 | Approve version 1.0 of the three website-integrated lead magnets for public website release. JD is recorded as both review owner and boundary reviewer. This approval does not activate unapproved analytics or close unrelated legal, lead-handling or proof gates. | Janith | Website resources, release manifest, deployment and public-origin QA |
+| 2026-09-03 | Remove pricing as a public website page, navigation item and CTA; integrate the three ungated lead magnets into the relevant website journeys. Public resource release still requires the recorded owner and boundary checks. | Heutrix team | Website copy, website application, navigation, redirects, resources and release QA |
+| 2026-09-03 | Rebase the finance model using owner-supplied consultant rates of $80–$100/hour and offshore developer fees of $30–$35/hour. Treat the currency, GST/contractor treatment, price points and offshore controls as provisional until separately approved. | Janith | Finance, pricing, delivery, privacy and security |
+| 2026-09-02 | Adopt the launch-oriented repository structure and preserve historical materials separately from live control records. | Workspace implementation | Entire repository |

@@ -1,0 +1,138 @@
+[
+  [
+    "F01",
+    "P0",
+    "Complete the primary conversion handoff",
+    "/contact; /refer; all commercial CTAs",
+    "The live form stops at a reviewed email draft. No calendar is visible. A visitor must open an email app and send manually; the site cannot confirm receipt or a booking. The reserved endpoint rejects GET (405); local canonical handler explicitly returns 503 for POST. No POST was made in this audit.",
+    "Production-conversion blocker, deliberately deferred in the earlier task—not a claim that the current draft flow is broken. Connect the agreed enquiry/booking destination, verify receipt, failure and retry handling, and show success only after delivery. Preserve the truthful draft fallback until then."
+  ],
+  [
+    "F02",
+    "P1",
+    "Repair the AI Guard section link",
+    "/services#heutrix-ai-guardrails",
+    "The decision table links to #heutrix-ai-guardrails; the live target is id=\"heutrix-ai-guard\". The link cannot scroll to the offer.",
+    "Point the link at the current ID and preserve a legacy alias if old links must work. Keep the working /ai-guardrails route and enquiry service parameter compatible."
+  ],
+  [
+    "F03",
+    "P1",
+    "Repair the reporting-example journey",
+    "/ — pressure point 5",
+    "“Explore a reporting example” goes through /case-studies/power-bi-invoice-reconciliation (301) to /case-studies, whose three examples cover onboarding, payment reminders and action follow-up.",
+    "Use an accurate destination/label or publish an explicitly illustrative reporting example. Do not restore an unverified old client narrative."
+  ],
+  [
+    "F04",
+    "P1",
+    "Reinforce the disability-provider ICP",
+    "Shared footer; /services; /ai-guardrails; /allied-health; /about; /privacy-and-data-handling",
+    "The homepage leads with disability providers, but equal audience language survives in Services and AI Guard meta descriptions. Shared footer copy and navigation continually promote allied health; the homepage gives it a second audience card.",
+    "Make disability service providers the consistent primary audience in shared copy and metadata. Keep allied health only as an explicitly secondary comparable-workflow audience if still intended. Historical allied-health experience is not itself conflicting positioning."
+  ],
+  [
+    "F05",
+    "P1",
+    "Add attributable evidence of who delivers the work",
+    "/; /about; /case-studies and details",
+    "Three examples are honestly illustrative, but no verified client result or testimonial is presented. About refers to a founding team and first-hand operating experience without naming people or explaining attributable roles and credentials.",
+    "Add verified, consented founder/team background and eventually a substantiated provider case with baseline, scope, result and limitations. Keep illustrative examples labelled until evidence exists."
+  ],
+  [
+    "F06",
+    "P1",
+    "Resolve the platform-replacement contradiction",
+    "/ — “Will this replace our existing systems?”; /faq; /services; /disability-providers",
+    "Homepage answer begins “Not necessarily” and allows “replacement” subject to scope. Dedicated FAQ says Heutrix does not replace the core practice/client/case-management system; provider H1 makes the same promise.",
+    "Distinguish changes to peripheral workflow tools from replacement of the provider’s core platform, then use the same boundary across these pages."
+  ],
+  [
+    "F07",
+    "P1",
+    "Make the scorecard promise match the chosen format",
+    "/services; /faq; /allied-health; /resources/workflow-bottleneck-scorecard",
+    "Resource cards promise comparison of up to 12 workflows. “Get the Scorecard” opens a one-workflow assessment, which explicitly says it does not compare every workflow. The workbook supports comparison.",
+    "Explain online single-workflow check versus downloadable multi-workflow scorecard before the CTA. Make the recommended first action unambiguous."
+  ],
+  [
+    "F08",
+    "P1",
+    "Give downloaded resources a route back to Heutrix",
+    "All three PDF guides and three workbooks",
+    "Each PDF ends with “Talk to Heutrix” but contains no link annotations or contact URL/email in extracted text. Workbook cell/hyperlink inspection also found no contact link. Branding and service bridges do not create an actionable enquiry path offline.",
+    "Add a visible canonical contact URL and clickable link to each guide and workbook, alongside the actual 20-minute introductory-conversation wording. Keep resources ungated."
+  ],
+  [
+    "F09",
+    "P1",
+    "Clarify website-specific information handling",
+    "/privacy-and-data-handling; /contact; /refer",
+    "The privacy page describes project principles and the email-draft mechanism. It does not clearly explain what happens to business enquiry emails once received, retention, service providers, or a specific privacy-request process. The resources paragraph refers to an “approved lead record” despite the draft-only site flow.",
+    "Describe the actual website/email handling and contact process separately from project controls; align it with the future connection when enabled. This is a content-completeness finding, not a legal compliance determination."
+  ],
+  [
+    "F10",
+    "P2",
+    "Finish terminology and CTA cleanup",
+    "/ expanded FAQ; every HTML noscript fallback; /faq timing answer; homepage carousel; example detail endings",
+    "“free consultation” remains in the homepage FAQ answer and common noscript text. The FAQ timing answer calls the service “AI Guardrails”. Carousel says “Find your workflow bottleneck”; example endings say “start the workflow scorecard” instead of the approved resource CTA.",
+    "Use introductory conversation and Heutrix AI Guard for the paid offer; standardise resource conversion actions to Get the Scorecard. Retain descriptive “AI guardrails” for controls, the free pack and compatible URLs."
+  ],
+  [
+    "F11",
+    "P2",
+    "Reduce repetition and density",
+    "/services; /case-studies; example details; shared footer",
+    "Services repeats the three-product proposition before extensive lists; the case hub shows the same three examples as featured cards and a filtered list; detail pages repeat the illustrative warning twice near the top. Service boundaries recur in page bodies, legal pages and every footer.",
+    "Keep the short comparison, move detailed evaluation content into scannable sections, consolidate the three-example listing, and retain one clear evidence label and proportionate boundary copy."
+  ],
+  [
+    "F12",
+    "P2",
+    "Improve route metadata and search presentation",
+    "All routes; especially three example details",
+    "Each route has a title, description, same-origin canonical and social fields. All three example descriptions are identical. All share one social image and there is no JSON-LD in rendered pages. Page body content is absent from the raw HTML shell.",
+    "Write distinct descriptive example summaries, consider truthful Organisation/WebSite structured data and page-specific share images, and assess prerendering for content accessibility and crawler resilience. Do not change the canonical origin."
+  ],
+  [
+    "F13",
+    "P2",
+    "Reduce initial enquiry effort",
+    "/contact; /refer",
+    "Contact requires name, email, organisation, role, sector, workflow size, message, timing, decision context and two checkboxes before a draft can be reviewed; optional fields include tools and preferred time. Service choice is hidden and appears in the draft.",
+    "Review which qualification fields are necessary before a first conversation; show the selected service context and allow correction. Add a response expectation only if operations can meet it."
+  ],
+  [
+    "F14",
+    "P2",
+    "Align resource names and microcopy",
+    "Resource promotions, /resources and three tool routes; /privacy-and-data-handling",
+    "“Visibility Starter Kit” becomes “Planner”; “Staff Starter Pack” becomes “Check”. These are related formats, but the relation is not always explicit. Privacy copy says “a introductory conversation”; copy feedback refers to a connected form that is not currently present.",
+    "Give each resource family one name with clear Online assessment / PDF guide / Workbook format labels. Fix grammar and remove dormant-integration wording from current-flow messages."
+  ],
+  [
+    "F15",
+    "P2",
+    "Keep internal legacy content from returning",
+    "Canonical source components, not live routes",
+    "Unused Contact/Services/FAQ/Hero/Methodology component files contain Workflow Diagnostic, Workflow Automation Sprint and broad practice-led copy. Those terms were not found in the fetched production bundle apart from the separately documented free-consultation phrase.",
+    "After the public fixes, archive/remove or clearly mark inactive components and add content checks that cover active copy, expanded states, HTML fallback and downloads. Do not classify unused source as a live-site defect."
+  ],
+  [
+    "F16",
+    "P2",
+    "Measure real conversions",
+    "Primary and resource journeys",
+    "No first-party conversion event implementation was identified in canonical source searches. Draft review, an email-link click, delivered enquiry and confirmed booking are different outcomes; actual delivery cannot currently be confirmed by this site.",
+    "When the handoff is connected, define minimal events for CTA, assessment completion, resource download, enquiry acceptance and confirmed booking. Do not report draft preparation as a lead received. Analytics backend/dashboard configuration was not audited."
+  ],
+  [
+    "F17",
+    "P2",
+    "Improve evaluation detail without adding promises",
+    "/services; /faq",
+    "Services explains written scope and fees being agreed, and FAQ gives conditional 2–4 week Workflow Transformation timing. There is no public investment range, named delivery responsibility or concise example of the Diagnostics output.",
+    "Consider a redacted/synthetic deliverable sample and clearer participation requirements. Publish investment guidance only if commercially settled; lack of a price table is not a production blocker."
+  ]
+]

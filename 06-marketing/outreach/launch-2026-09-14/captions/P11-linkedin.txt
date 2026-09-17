@@ -1,0 +1,31 @@
+Illustrative decision framework.
+
+Your AI policy is tested when a staff member asks:
+
+“Can I use it for this?”
+
+A practical answer needs three clear pathways.
+
+Approved
+
+The task, tool, information boundaries, output use and human-review step have been assessed and recorded.
+
+Prohibited
+
+The use sits outside the organisation’s boundary—for example, entering personal or sensitive information into an unapproved public AI tool, or allowing AI to make an important decision without accountable human judgement.
+
+Conditional / review required
+
+The idea may have value, but a question about purpose, information, settings, access, retention, consequence or reviewer still needs an answer.
+
+An unassessed use stays in review. A conditional decision must state what has to be resolved before use can proceed.
+
+That third pathway matters. It gives staff somewhere safe to take a useful idea without assuming every new use is allowed—or forcing experimentation underground.
+
+A short, maintained use-case register is more useful than a long policy nobody can apply.
+
+Take one proposed administrative task and ask: which pathway is it in, who decided and when is it reviewed again? Use non-sensitive or synthetic information during assessment.
+
+This is general operational guidance, not legal or privacy advice.
+
+#AIGovernance #DisabilityProviders #HumanReview

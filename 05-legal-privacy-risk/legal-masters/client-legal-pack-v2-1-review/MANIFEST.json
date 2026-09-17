@@ -1,0 +1,187 @@
+{
+  "pack": "Heutrix Legal Launch Review Pack",
+  "version": "2.1 review draft",
+  "prepared_date": "2026-09-13",
+  "intended_launch_date": "2026-09-14",
+  "packaged_at_utc": "2026-09-13T12:03:12+00:00",
+  "status": "Prepared for controlled review. Client issue and signature are not approved.",
+  "owner_update": "Owner-supplied business/notices address and authorised directors incorporated from 00-control/DECISIONS.md. Insurance and commercial decisions remain pending. Formal notice email, execution method and other release approvals are unresolved.",
+  "approval_record": "Word/09_Heutrix_Approval_Decisions.docx and the live legal review register",
+  "scope": "Ten new review documents and matching PDFs. Existing v1 masters and older ZIPs are unchanged historical drafts. Website policy approval is separate.",
+  "verification": {
+    "word_documents": 10,
+    "pdf_documents": 10,
+    "pdf_pages": 58,
+    "pdf_export": "Microsoft Word read-only export of the final masters; installed Word used because the bundled LibreOffice renderer was unavailable.",
+    "visual_review": "All 58 current PDF pages rendered with Poppler and inspected in labelled page contact sheets; updated company particulars and memorandum content checked visually.",
+    "text_comparison": "Documents 01-09 have no missing body-text tokens. The memorandum has five extraction word-splitting artefacts, verified visually as present; no content omission identified.",
+    "structure_check": "PASS: 7 workstream guides, 43 required files, 336 local links/headings.",
+    "affected_local_links_checked": 57,
+    "public_policy_availability": {
+      "checked_at_utc": "2026-09-13T02:27:00Z",
+      "method": "HTTP HEAD; availability check only",
+      "urls": {
+        "https://heutrix-website.heutrix.workers.dev/privacy-and-data-handling": 200,
+        "https://heutrix-website.heutrix.workers.dev/terms-of-use": 200
+      }
+    },
+    "zip_integrity": "CRC and every bundled file hash verified during packaging.",
+    "limits": "Preparation checks do not establish legal review, owner approval, approved systems, insurance, staff rehearsal or client-start authority."
+  },
+  "package_exclusions": [
+    "old packs and ZIPs",
+    "client or signed records",
+    "credentials",
+    "browser profiles",
+    "QA screenshots and temporary rendering files"
+  ],
+  "source_dependencies": "The reconciliation script requires preserved v1 Word masters and the selected legal-memorandum template in their original locations. This ZIP is not a standalone build environment.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10425,
+      "sha256": "e6f58e4659fd9e20a0cf8e7d7ef1d850f44f1f0affaae34b0c57767001302a57"
+    },
+    {
+      "path": "Word/00_Heutrix_Launch_Readiness_Memo.docx",
+      "bytes": 594232,
+      "sha256": "f36cc5f7b541fc816b9cc1876b8e2da4fa0b94e716e145f6cb1f151a06ae4a02"
+    },
+    {
+      "path": "Word/01_Heutrix_Client_Services_Agreement.docx",
+      "bytes": 50938,
+      "sha256": "b038729567a9d7a87649d2c31c2a1175e472906e6edb1ef9655b8b66f92a19e9"
+    },
+    {
+      "path": "Word/02_Heutrix_Diagnostics_Order_Form.docx",
+      "bytes": 43710,
+      "sha256": "35fc2b429ff9b01fdf8c17904d9115ce2f0e3b5e745ad3655c003766b0cac222"
+    },
+    {
+      "path": "Word/03_Heutrix_Statement_of_Work.docx",
+      "bytes": 43921,
+      "sha256": "f64a7d8201113402ddcebc328c9a1fcbf4e7c11d08cccb6fffb526356d9e30f2"
+    },
+    {
+      "path": "Word/04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+      "bytes": 42477,
+      "sha256": "0dfa427a3ac243ed7e784267fc51a171a8af29e5c69e8ace69843d6eeba648d0"
+    },
+    {
+      "path": "Word/05_Heutrix_Project_Control_Forms.docx",
+      "bytes": 46487,
+      "sha256": "2e6e4b43a03954d0c6391512bc7fa9c4b0d9f8434fdc04a4fa59cd05a608d18d"
+    },
+    {
+      "path": "Word/06_Heutrix_Project_Privacy_and_Notices.docx",
+      "bytes": 42779,
+      "sha256": "559109f6f9f6664823ca84e7d111019a83ffc2b4782f92165cc16ce33162a599"
+    },
+    {
+      "path": "Word/07_Heutrix_Website_Policy_Reference.docx",
+      "bytes": 40059,
+      "sha256": "2181b1fa92b7dc3917fefb8eaaa08cf08e84bc6d7ae591e62eb3d3499755e904"
+    },
+    {
+      "path": "Word/08_Heutrix_Launch_SOPs.docx",
+      "bytes": 48219,
+      "sha256": "1a190a941d17241ab217d14c275035cf9681641e05c0a1a2f8fff1bc49fa47ec"
+    },
+    {
+      "path": "Word/09_Heutrix_Approval_Decisions.docx",
+      "bytes": 45711,
+      "sha256": "ded3563b1cd502476972aaed30f0ab5d0db8bf0121d07612d34ce8fc51ca17da"
+    },
+    {
+      "path": "PDF/00_Heutrix_Launch_Readiness_Memo.pdf",
+      "bytes": 102135,
+      "sha256": "3ed6a1cade6d59984f77affc9471addb76d47c84a5acf3c31f1cb5ff07d20928",
+      "pages": 3
+    },
+    {
+      "path": "PDF/01_Heutrix_Client_Services_Agreement.pdf",
+      "bytes": 294620,
+      "sha256": "cb7016230fb39ae9305913ca95a0bdfe0922743646e2572152b87933804da6d6",
+      "pages": 12
+    },
+    {
+      "path": "PDF/02_Heutrix_Diagnostics_Order_Form.pdf",
+      "bytes": 260431,
+      "sha256": "da3dbd14b56b22ea2bb60e45abc9cf90dbcad70620d4256da45756e1fd58dd1c",
+      "pages": 5
+    },
+    {
+      "path": "PDF/03_Heutrix_Statement_of_Work.pdf",
+      "bytes": 276070,
+      "sha256": "cdfc128960c573d6ccd98aa5f11a0fe4edad179340c4eff4b636162cbb533490",
+      "pages": 6
+    },
+    {
+      "path": "PDF/04_Heutrix_Mutual_Confidentiality_Agreement.pdf",
+      "bytes": 241387,
+      "sha256": "a2b1cb0d293b97575ca563eef1f1ddd1e70617c331d618e1ccf24d846616318d",
+      "pages": 3
+    },
+    {
+      "path": "PDF/05_Heutrix_Project_Control_Forms.pdf",
+      "bytes": 295277,
+      "sha256": "35e55666bc14ae486a8bea4d891ed3251e3836e06bcee9e27278f7ecc6e53361",
+      "pages": 13
+    },
+    {
+      "path": "PDF/06_Heutrix_Project_Privacy_and_Notices.pdf",
+      "bytes": 208994,
+      "sha256": "69cc553f46e93a4a96075c18b5c9b0413fabf96f6d8f9e38e4441cfeb3481459",
+      "pages": 3
+    },
+    {
+      "path": "PDF/07_Heutrix_Website_Policy_Reference.pdf",
+      "bytes": 190799,
+      "sha256": "ca7eeb69a351cc7afa30934890826de9c161dc38a546ee66f3b2d20349f671f4",
+      "pages": 1
+    },
+    {
+      "path": "PDF/08_Heutrix_Launch_SOPs.pdf",
+      "bytes": 250146,
+      "sha256": "e17d21d960bcdd3601ea416c9d4abbd50d8dddb4b5b753035c08196dc9294ed1",
+      "pages": 7
+    },
+    {
+      "path": "PDF/09_Heutrix_Approval_Decisions.pdf",
+      "bytes": 257931,
+      "sha256": "7ef24358c36e45b38c481f8d8eaa66635f895dff70dd8dd1fffbdc7600480ec4",
+      "pages": 5
+    },
+    {
+      "path": "source/06_Project_Privacy_and_Notices.md",
+      "bytes": 8942,
+      "sha256": "29dda77658e2598fce5a0287e5f4d2602d0d031ee0375315602d7fe91f1c52d5"
+    },
+    {
+      "path": "source/07_Website_Policy_Reference.md",
+      "bytes": 2308,
+      "sha256": "e57bfaa047deac8ab2edd43d36b2e1718ac49bf8b72e0bec1cd7bacb2c655a3c"
+    },
+    {
+      "path": "source/08_Launch_SOPs.md",
+      "bytes": 24895,
+      "sha256": "cffc1d0199db2fcd666ae01a0bffc9fa0d0bf6b708ec9a1461eed373b0808b33"
+    },
+    {
+      "path": "source/09_Approval_Decisions.md",
+      "bytes": 17213,
+      "sha256": "7827732ceab16a460f9c5730fccd73ac90ceefb8eed8c529f0841b92ea0044e7"
+    },
+    {
+      "path": "source/build_pack.py",
+      "bytes": 34590,
+      "sha256": "6ae54b9e0989f337257285745f95048e38b2494bda5ec35669ea506da999f918"
+    },
+    {
+      "path": "source/reconciliation-changes.json",
+      "bytes": 29237,
+      "sha256": "d572c6e719c4ae284de0faa753e1793878d871df4e18bf9376ab2a3d0522ce14"
+    }
+  ],
+  "manifest_hash_note": "The manifest and enclosing ZIP are excluded from the manifest hash list to avoid a circular hash."
+}

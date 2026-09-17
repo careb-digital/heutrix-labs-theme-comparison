@@ -1,0 +1,9 @@
+Illustrative application — not a client result.
+
+A request to automate reminders may first need a clearer rule. If teams disagree about complete, exceptions have no owner and trigger data is inconsistent, automation can repeat the confusion.
+
+A useful first step is to agree the rule, name the decision owner and check a non-sensitive baseline. Then reassess whether to build.
+
+Is the rule stable enough to automate?
+
+#DisabilitySupport #WorkflowImprovement

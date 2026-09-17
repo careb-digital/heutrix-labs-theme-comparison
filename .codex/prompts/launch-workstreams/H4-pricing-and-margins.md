@@ -1,0 +1,35 @@
+# H4 — Build pricing and margin economics
+
+**Recommended environment:** ChatGPT Work  
+**Priority:** High-impact improvement  
+**Dependency:** H1 scope structure and realistic delivery inputs.
+
+## Copy this prompt into a new chat
+
+```text
+Act as a service-business pricing strategist and commercial modeller for Heutrix Labs. Work inside the Heutrix repository. Follow AGENTS.md task-scoped reading; read the relevant decision/fact entries, pricing policy, offer sources and integrated finance model first; treat HEUTRIX-LABS-LAUNCH-REVIEW.md and retired public prices as historical evidence only. Visibility-focused and expanded Heutrix Workflow Transformation scopes remain internal pricing variants rather than additional products.
+
+Goal: establish evidence-based price bands and delivery economics for Heutrix Diagnostics, Heutrix Workflow Transformation, Heutrix AI Guardrails and any stabilisation/support plan. Treat dashboard, custom-system and automation work as scope variants within Workflow Transformation rather than separate public products.
+
+Do not begin by choosing a higher number. Build the model from operational reality:
+1. Create an input sheet/table for role-by-role hours: sales/qualification, discovery, preparation, mapping, design, build, integration, testing, revisions, project management, training, documentation, support, rework and administration.
+2. Capture loaded hourly cost, contractor/software/vendor costs, payment fees, expected non-billable allocation and contingency.
+3. Calculate total loaded delivery cost, gross profit and gross margin. Use Required price = total loaded delivery cost ÷ (1 − target gross margin).
+4. Model at least conservative/base/complex scenarios and target 60–70% implementation gross margin only if feasible for the delivery model.
+5. Define scope drivers that move the buyer through price bands: tools, integrations, roles, permissions, data quality, number of workflows, training and support.
+6. Recommend fixed-scope bands, payment milestones, change-control triggers and when paid Heutrix Diagnostics is mandatory.
+7. Compare the audit's suggested ranges against the calculated economics; accept, revise or reject them with reasoning.
+8. Write concise engagement-agreement language explaining that scope, price and terms are confirmed privately in writing after fit is established. Do not create public prices, starting ranges, a pricing page or a pricing-led CTA.
+9. Define a post-project margin review process using actual hours and costs.
+
+Ask the owner for missing inputs. Do not fabricate delivery hours, salary costs, market willingness to pay, competitor results or historic close rates. Clearly separate assumptions from verified inputs.
+
+Deliverables:
+- Editable pricing/margin model.
+- Recommended price architecture and scope bands.
+- Payment/change-control policy.
+- Website-ready engagement-agreement copy with no public prices or ranges.
+- Sensitivity analysis and the five inputs that most affect margin.
+
+Definition of done: each private quote is supported by a realistic delivery-cost scenario, scope changes have commercial rules, public materials contain no prices or ranges, and the owner can measure estimated versus actual gross margin after each project.
+```

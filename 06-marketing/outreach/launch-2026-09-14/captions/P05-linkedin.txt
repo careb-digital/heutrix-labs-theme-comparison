@@ -1,0 +1,29 @@
+Illustrative operating view — not compliance or service-readiness assurance.
+
+“Starting soon” is not a service-commencement status.
+
+Neither is “almost ready”.
+
+Those phrases hide the decisions an accountable person still needs to make.
+
+A practical commencement view should show, at an appropriate level:
+
+- the intended start date;
+- the current owner;
+- what is complete;
+- what is still waiting;
+- the next action and review date;
+- any exception requiring a decision; and
+- who confirms readiness under the provider’s approved process.
+
+The workflow should not infer readiness from a green cell or a completed checklist. A named person still makes the accountable decision.
+
+Nor does every sensitive record need to be copied into the view. Often the operating layer needs only enough controlled information to show what happens next.
+
+Before the next commencement, finish this sentence:
+
+Ready means ______, and ______ confirms it.
+
+If the team completes the sentence differently, the issue is bigger than a missing reminder.
+
+#DisabilityProviders #ServiceCommencement #OperationalReadiness

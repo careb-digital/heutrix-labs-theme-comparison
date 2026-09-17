@@ -1,0 +1,10 @@
+An intake can move through several people while its next action stays unclear.
+
+At each handover, make five things visible at an appropriate level: owner, status, what is missing, next action and review date. Sensitive records can remain in the approved source system.
+
+Where does someone have to reconstruct the story? Use only general examples in the comments.
+
+Try the free Enquiry-to-Service-Start Visibility Starter Kit. No email required:
+https://heutrix-website.heutrix.workers.dev/resources/enquiry-to-service-start-starter-kit
+
+#DisabilitySupport #WorkflowImprovement

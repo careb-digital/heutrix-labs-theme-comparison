@@ -1,12 +1,14 @@
 ---
 page: Home
 route: /
-status: deployed
-updated: 2026-09-09
+status: local revision — awaiting review
+updated: 2026-09-12
 seo_title: Heutrix Labs | Workflow Improvement for Disability Providers
 ---
 
 # Homepage copy
+
+**12 September audience and outcome revision — local, not published:** The audience, product and operational outcome wording below align with the local changes in `D:/AI Information Heirarchy/heutrix-website`. Earlier deployment details below describe the previous release; the preserved `apps/website/` files are historical migration sources.
 
 Current homepage copy, aligned with the [9 September execution brief](implementation-prompts/heutrix-homepage-execution-prompt-2026-09-08.md). Implemented in [RefinedPages.jsx](../../apps/website/src/RefinedPages.jsx) and [homepageContent.js](../../apps/website/src/homepageContent.js); the six cards remain in [WorkflowPressurePoints.jsx](../../apps/website/src/components/WorkflowPressurePoints.jsx). Shared pages, resources and manual email-draft delivery are unchanged. The current version was deployed and verified on 9 September 2026 at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `e7c5e57c-d3c8-4e5c-a344-aac43c7a99ea`. This homepage release does not close the separate outreach, onboarding or integration gates.
 
@@ -14,11 +16,11 @@ Team section revised on 9 September 2026 using owner-supplied copy: collective c
 
 Evidence: [approved reporting case](../case-studies-and-assets/09-power-bi-invoice-reconciliation.md), [publication and claim limits](../case-studies-and-assets/PROOF-ASSET-REGISTER.md), and [approved short founder summaries](../../00-control/VERIFIED-FACTS.md#approved-public-founder-summaries--5-september-2026). Owner-directed 9 September follow-up removes the homepage photograph, its generated-image label, the auxiliary synthetic-data sentence and the separate proof callout. The workflow demonstration remains labelled “Illustrative view”; the approved case-study wording and attribution to client feedback are unchanged.
 
-Operational improvement for disability service providers
+For disability-provider owners and operations leaders
 
-## Build a disability service business that runs better as it grows.
+## Know what is waiting — and who acts next.
 
-Heutrix helps Australian disability service providers, including NDIS providers, improve the non-clinical workflows around their existing systems — with clearer ownership, less administrative friction and better visibility as the organisation grows.
+Heutrix helps owners and operations leaders of Australian disability support providers tackle intake, reporting and handover work that depends on repeated chasing. We define the next action, its owner and review point in one agreed workflow.
 
 [Talk to Heutrix](/contact)
 
@@ -54,7 +56,7 @@ Make the owner, next action and due date visible from the first enquiry to the s
 
 Define what “ready” means, who checks it and when the next person takes over.
 
-[Explore an onboarding example](/case-studies/quickbooks-onboarding-and-access)
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard?workflow=onboarding)
 
 03 / Tracking & follow-through
 
@@ -64,7 +66,7 @@ Define what “ready” means, who checks it and when the next person takes over
 
 Give each follow-up an owner, a due date and a review step, with a clear path for exceptions.
 
-[Explore a follow-through example](/case-studies/incident-actions-and-closure)
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard?workflow=action-tracking)
 
 04 / Operational visibility
 
@@ -74,7 +76,7 @@ Give each follow-up an owner, a due date and a review step, with a clear path fo
 
 Start with one recurring bottleneck. Identify the missing information and the decision it needs to support.
 
-[Get the Scorecard](/resources/workflow-bottleneck-scorecard)
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard)
 
 05 / Reporting preparation
 
@@ -84,9 +86,9 @@ Start with one recurring bottleneck. Identify the missing information and the de
 
 Agree the source inputs, review steps and exception checks before building another report.
 
-The assessment checks one workflow. Select Operational reporting to check your reporting workflow.
+Operational reporting is preselected. You can change it in the assessment.
 
-[Check your reporting workflow](/resources/workflow-bottleneck-scorecard)
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard?workflow=reporting)
 
 06 / AI use & human review
 
@@ -106,29 +108,27 @@ How Heutrix helps
 
 ## Start with the problem you need to solve.
 
-Whether you need clarity on what is slowing the organisation down, improvements to a specific workflow, or stronger controls around AI use, Heutrix provides a clear path forward.
-
 ### Heutrix Diagnostics
 
-Find what is holding operations back.
+Decide which bottleneck to address first.
 
-A standalone paid engagement that maps the workflow, ranks bottlenecks and feasible options, and produces an implementation brief to support the next decision — including when not to build.
+When teams disagree about where work stalls, this standalone paid engagement maps the workflow and ranks feasible options. The implementation brief gives you a basis for deciding what to change — including when not to build.
 
 [View Diagnostics](/services#heutrix-diagnostics)
 
 ### Heutrix Workflow Transformation
 
-Improve how critical work gets done.
+Give the next action an owner.
 
-Map, redesign, configure or build, and test one clearly defined non-clinical workflow in approved systems, with clear ownership, staff guidance and a maintainable handover.
+When work depends on repeated status checks, we redesign, configure or build and test one non-clinical workflow in approved systems. Staff can see what is waiting, who acts next and when to escalate.
 
 [View Transformations](/services#heutrix-workflow-transformation)
 
 ### Heutrix AI Guardrails
 
-Establish controlled and appropriate AI use.
+Know when to use AI, review or stop.
 
-A paid, fixed-scope governance engagement for commercially available AI tools: approved, conditional and prohibited uses, information boundaries, accountable human review, escalation and practical staff guidance.
+When AI-use rules are unclear, this paid, fixed-scope engagement documents approved, conditional and prohibited uses, information boundaries, human review and escalation. Staff have guidance for deciding when to proceed, seek review or stop.
 
 [View AI Guardrails](/ai-guardrails)
 
@@ -164,7 +164,7 @@ Implement the simplest suitable improvement in approved systems. Test normal wor
 
 ### Handover
 
-Guide the team, document the workflow and agree ownership, maintenance and support boundaries.
+Walk the receiving team through the agreed workflow and administrator guidance, including unresolved items, maintenance responsibilities and support boundaries.
 
 ---
 
@@ -182,25 +182,23 @@ An Australian disability support provider reviewed contractor invoices and Quick
 
 Why Heutrix
 
-## Operational improvement built around how your organisation actually works.
+## What changes in the day-to-day work?
 
-Disability service providers do not need more technology for its own sake. They need workflows that are easier to operate, easier to understand and better equipped to support growth.
+### Know who acts next
 
-### Workflow before technology
+When follow-up sits between roles, an agreed owner, next action and due point give staff a place to act without first asking who is responsible.
 
-Recommendations begin with the operational problem, not a predetermined platform or tool.
+### Find what is waiting
 
-### Built around your organisation
+When updates are scattered, an agreed status view separates waiting, overdue and ready-for-review work so managers can find the items that need attention.
 
-Improvements reflect your existing team, systems, responsibilities and operating environment.
+### Handle the exception
 
-### Practical implementation
+When information is missing or a task cannot proceed, a defined exception and escalation path shows staff where to send it for a decision.
 
-Heutrix goes beyond identifying problems by helping turn better ways of working into operational reality.
+### Complete a usable handover
 
-### Designed for sustainable improvement
-
-The objective is not simply to fix today's bottleneck, but to create stronger foundations for the organisation as it grows.
+When a workflow depends on one person's memory, tested steps, staff guidance and administrator notes give the receiving team instructions for operating and maintaining it.
 
 ---
 
@@ -208,7 +206,9 @@ What happens next
 
 ## A clear path from conversation to improvement.
 
-You do not need to know which Heutrix service you need before getting in touch.
+Start with recurring administrative friction, an accountable workflow owner and staff who can help map and test a better way of working. You do not need to choose a Heutrix service first.
+
+Our primary focus is disability providers. We also work with allied health practices facing comparable referral, reporting or document workflow problems.
 
 ### Introductory conversation — free
 
@@ -235,9 +235,9 @@ Free 20-minute introductory conversation · No obligation · Diagnostics are quo
 
 Free workflow scorecard
 
-## Where is operational friction slowing you down?
+## See what is slowing this workflow down
 
-Use the online Workflow Bottleneck Scorecard to assess one recurring non-clinical workflow. Review the friction, evidence, feasibility and control questions, then get a practical next step to discuss with your team.
+Use the online Workflow Bottleneck Scorecard to assess one recurring non-clinical workflow. Answer 10 required questions across 3 steps and see your result immediately. Save practical actions for your team without booking a call.
 
 - Review manual effort, handovers, delay, rework and visibility.
 
@@ -251,11 +251,11 @@ Use the online Workflow Bottleneck Scorecard to assess one recurring non-clinica
 
 The online assessment checks one workflow. To compare up to 12 workflows, use the downloadable scorecard workbook.
 
-[Get the Scorecard](/resources/workflow-bottleneck-scorecard)
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard)
 
 [Get the Guide](/downloads/workflow-bottleneck-scorecard-guide.pdf)
 
-[Get the Template](/downloads/workflow-bottleneck-scorecard.xlsx)
+[Download the Excel Workbook](/downloads/workflow-bottleneck-scorecard.xlsx)
 
 Free · No email address required · No consultation required
 
@@ -337,9 +337,11 @@ We will use a free 20-minute introductory conversation to understand the situati
 
 [Talk to Heutrix](/contact)
 
-[Get the Scorecard](/resources/workflow-bottleneck-scorecard)
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard)
 
 Free 20-minute introductory conversation · No obligation · Heutrix Diagnostics is a separate paid engagement.
 
 The contact page helps you prepare an email request. Review and send it in your email app; a time is then agreed separately.
 
+
+Scorecard journey update: expose **Start the Scorecard** in the hero alongside the general conversation and process paths. Use the [current resource journey](resources.md#scorecard-journey--11-september-2026) for the 10-question, three-step online flow, workbook distinction and contextual entry labels.

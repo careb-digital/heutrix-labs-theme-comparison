@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "quickbooks-onboarding-and-access",
+    "title": "Worker onboarding with a clear finish line",
+    "category": "Onboarding",
+    "number": 1,
+    "metric": "Illustrative workflow example; no client result claimed.",
+    "body": "> **Illustrative workflow example.** This describes a possible approach, not a completed client project or a promised outcome.\n\n## Where work gets stuck\n\nAn account invitation can be sent while access, guidance or handover tasks are still incomplete.\n\n## A possible improvement\n\nAgree what ready means for each role. Track the invitation, acceptance, approved permissions and handover separately. Keep the approved worker record in its existing system.\n\n## What to test\n\nTest a normal start, an unaccepted invitation, incorrect permissions and a delayed start. Give each exception an owner and a next action.\n\n## How to assess progress\n\nTrack incomplete starts, repeated follow-ups and time spent clarifying ownership before and after an agreed change. Agree the measures before implementation; no time saving or financial result is assumed.\n\n## Scope and limits\n\nThe details depend on the provider's systems, permissions and responsibilities. This is operational guidance, not a clinical, legal or regulatory judgement.\n\n[Explore Heutrix Workflow Transformation](/services#heutrix-workflow-transformation) or [Start the Scorecard](/resources/workflow-bottleneck-scorecard?workflow=onboarding)."
+  },
+  {
+    "slug": "pay-cycle-reminders-and-access",
+    "title": "Payment reminders with a clear next action",
+    "category": "Financial operations",
+    "number": 2,
+    "metric": "Illustrative workflow example; no client result claimed.",
+    "body": "> **Illustrative workflow example.** This describes a possible approach, not a completed client project or a promised outcome.\n\n## Where work gets stuck\n\nA reminder may arrive without the file, instructions or contact a worker needs to act.\n\n## A possible improvement\n\nAgree the payment preparation steps and responsibilities. Link to the approved information location, explain the required action and route questions to a named role.\n\n## What to test\n\nTest missing information, an inaccessible link, a disputed item and a late response. Keep payment approvals with the authorised people.\n\n## How to assess progress\n\nCompare repeated questions, missing inputs and unresolved exceptions using an agreed baseline. Agree the measures before implementation; no time saving or financial result is assumed.\n\n## Scope and limits\n\nThe details depend on the provider's systems, permissions and responsibilities. This is operational guidance, not a clinical, legal or regulatory judgement.\n\n[Explore Heutrix Workflow Transformation](/services#heutrix-workflow-transformation) or [Start the Scorecard](/resources/workflow-bottleneck-scorecard?workflow=payment)."
+  },
+  {
+    "slug": "incident-actions-and-closure",
+    "title": "Follow-up actions with visible ownership",
+    "category": "Incident management & shift notes",
+    "number": 3,
+    "metric": "Illustrative workflow example; no client result claimed.",
+    "body": "> **Illustrative workflow example.** This describes a possible approach, not a completed client project or a promised outcome.\n\n## Where work gets stuck\n\nAn action recorded in meeting notes can become difficult to find or follow through.\n\n## A possible improvement\n\nRecord the action, accountable owner, due date and review point in an approved operational view. Link to the authorised record without duplicating sensitive details.\n\n## What to test\n\nTest overdue actions, an absent owner and an action needing escalation. Closure should require the appropriate person to review the outcome.\n\n## How to assess progress\n\nCheck overdue actions, unassigned work and time spent finding the current status. Agree the measures before implementation; no time saving or financial result is assumed.\n\n## Scope and limits\n\nThe details depend on the provider's systems, permissions and responsibilities. This is operational guidance, not a clinical, legal or regulatory judgement.\n\n[Explore Heutrix Workflow Transformation](/services#heutrix-workflow-transformation) or [Start the Scorecard](/resources/workflow-bottleneck-scorecard?workflow=action-tracking)."
+  }
+]

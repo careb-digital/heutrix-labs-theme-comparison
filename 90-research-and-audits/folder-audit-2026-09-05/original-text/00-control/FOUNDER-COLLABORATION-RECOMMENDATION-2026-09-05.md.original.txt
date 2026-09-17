@@ -1,0 +1,149 @@
+# Founder ownership and folder integration recommendation
+
+**Date:** 5 September 2026  
+**Prepared for:** Janith and the Heutrix founders  
+**Status:** Recommendation for consideration; no ownership, repository settings or business rules changed.
+
+## Recommendation
+
+**Yes: the seven business folders can be developed by separate founders and integrated into the master. Retain the existing seven-folder structure inside one shared Heutrix repository. Give each folder one accountable owner, a backup and explicit review boundaries.** A founder can own more than one folder.
+
+Each founder should have their own working copy of the whole repository, make a bounded change on a short-lived branch, and submit that change for review and integration into `main`. A branch is a proposed version of the repository, not a separate business or permanent departmental master. Integrate completed changes regularly rather than waiting until an entire department is “finished”.
+
+The seven areas are suitable ownership boundaries but are not independent businesses. Shared decisions about customers, offers, prices, promises and information handling must remain coordinated. A technically successful merge does not establish business consistency.
+
+## What the inspection established
+
+| Finding | Evidence | Consequence |
+|---|---|---|
+| The seven operating areas already have sensible boundaries. | [Workspace map](../README.md), workstream READMEs and [content map](CONTENT-MAP.md). | Preserve their names and numbering; a wholesale reorganisation adds little value. |
+| A central authority layer already exists. | [Instructions](../AGENTS.md), [decisions](DECISIONS.md), [facts](VERIFIED-FACTS.md), [launch board](LAUNCH-BOARD.md) and [risks](RISKS-AND-BLOCKERS.md). | Extend existing controls instead of making seven copies of company strategy. |
+| The folder migration is not committed in the inspected local repository. | Local `main` is at `0a9cdfc`, dated 4 August 2026; 39 files are tracked. The new numbered folders, root guidance and `apps/` appear untracked, with the former website paths marked deleted. | A clone of the current local committed history would miss the new hierarchy. Establish a reviewed baseline before distributing founder work. This does not establish the current remote server state. |
+| Two remote destinations are configured. | `origin`: `careb-digital/heutrix-labs`; `upstream`: `shashaneRanasinghe/heutrix-labs`. | Nominate one authoritative collaboration destination and check its latest history before rollout. Remote names alone do not establish company ownership or authority. |
+| Operational ownership is partly populated, not approved. | [Role register](../01-company/founders-and-roles/ROLE-REGISTER.md) lists Shashane, Rochelle, Janith and Sachin, but every status remains Open; several owners are “Whole Team”. It also uses “Sashane” for the website role. | Confirm names, individual accountability, backups and delegated authority. Do not silently infer founder folder assignments from these entries. |
+| Registers already disagree about readiness. | The launch board ticks enquiry/call/backup ownership as complete, while the role register is Open and the risks register still says ownership is unnamed. | Reconcile evidence and status before using the launch board as a shared baseline. |
+| Sales depends on material outside its folder. | [Sales README](../03-sales/README.md) points to a detailed journey in Marketing; [fit-call guidance](../03-sales/fit-call/README.md) does likewise. A fit-call playbook also sits in the Delivery pack. | Agree a single current Sales operating source and link its consumers to it. |
+| Native documents and release copies need coordinated changes. | [Diagnostics pack status](../04-delivery/diagnostics/README.md) records obsolete native content; [Finance README](../07-finance/README.md) selects a current workbook; the [resource manifest](../06-marketing/lead-magnets/RELEASE-MANIFEST.md) links reviewed outputs to website copies. | File ownership, approval status and source/export consistency matter as much as folder placement. |
+| Historical report apps contain nested repositories. | Both `.git` locations were present under `apps/internal-reports/`; their [README](../apps/internal-reports/README.md) documents the unresolved history decision. | Deliberately preserve or separately archive their histories before adding the hierarchy to the parent repository. Do not create another seven nested repositories. |
+
+The inspection covered local structure, Git state, root instructions, control registers, all seven workstream READMEs and selected dependency/release records. It did not re-audit native document contents, remote permissions, remote branch state or live business systems. Native-content findings above are attributed to the existing review records.
+
+## Recommended structure
+
+```text
+Heutrix/
+  README.md                          Start here and navigation
+  AGENTS.md                          Shared working instructions
+  00-control/                        Shared decisions, facts, status and risks
+  01-company/                        Company owner
+  02-market-and-offers/               Market and offer owner
+  03-sales/                          Sales owner
+  04-delivery/                       Delivery owner
+  05-legal-privacy-risk/              Legal/privacy/risk coordinator
+  06-marketing/                      Marketing owner
+  07-finance/                        Finance owner
+  08-client-project-template/        Delivery-owned; joint review
+  apps/                             Named application maintainers
+  tools/                            Existing tool structure
+  90-research-and-audits/             Evidence and historical analysis
+  99-archive/                        Superseded material
+```
+
+The shared business master should be `Heutrix/`, not the parent `AI Information Heirarchy` folder, which also contains other businesses and personal-context files. Founder work should not depend on private instructions or conversations outside the shared repository.
+
+Keep existing subject subfolders. Add only the following lightweight collaboration structure:
+
+- Expand each workstream `README.md` with owner, backup, permitted decisions, authoritative sources, dependencies, current masters, approval status and definition of done.
+- Extend the existing company role register with folder ownership and integration responsibility; avoid maintaining a second conflicting people register.
+- Add one `00-control/COLLABORATION.md` containing the agreed workflow and cross-folder review rules, once adopted.
+- Add `00-control/DEPENDENCIES.md` as a compact index of which source controls each shared business rule and which areas consume it. Link to the rule; do not duplicate its wording.
+- Keep proposals in review requests. If a change needs a longer explanation, use a dated `changes/` note inside the responsible workstream, marked Proposed and linked from the review request. Do not create empty process folders everywhere.
+- Optionally add workstream instructions for specialised checks, explicitly subordinate to the shared root rules. These instructions guide work; they do not enforce access permissions.
+
+Avoid personal folders such as `Janith-final/` and `Rochelle-copy/` inside the master. Organise by business purpose and use version history to identify contributors.
+
+## Ownership and shared decisions
+
+The following are proposed roles, not approved assignments of people.
+
+| Folder | Owner's responsibility | Changes requiring coordination |
+|---|---|---|
+| `01-company` | Verified identity, roles, approved systems and readiness evidence. | Entity or signing details: Legal and Finance; public identity: Marketing; system changes: affected users and Privacy. |
+| `02-market-and-offers` | Customer definition, positioning, offer scope and pricing policy. | Product, scope or price rules: Sales, Delivery, Finance and Legal; public promises: Marketing. |
+| `03-sales` | Qualification, pipeline rules, fit calls, proposals and follow-up. | Delivery commitments: Delivery; fees: Finance/Offers; contract terms: Legal; public lead journey: Marketing/app maintainer. |
+| `04-delivery` | Methods, templates, capacity assumptions, acceptance and handover. | Scope/timelines: Sales/Offers; costs: Finance; acceptance/IP/data rules: Legal. |
+| `05-legal-privacy-risk` | Controlled drafts, review evidence and operating data standards. | Affected operating owners and the appropriately qualified adviser where required by existing gates. Folder ownership does not confer legal approval. |
+| `06-marketing` | Brand, campaigns, public copy, proof and resources. | Claims: source owner; offer statements: Offers; collection/analytics: Sales and Privacy; website changes: app maintainer. |
+| `07-finance` | Model assumptions, budget, economics and proposed commercial controls. | Effort/capacity: Delivery; pricing: Offers/Sales; payment/tax/entity assumptions: relevant company/adviser owners. |
+
+Nominate Janith as the initial integration coordinator **for consideration**, with a named backup. The coordinator manages cross-folder consistency and escalation. Routine changes within approved policy can be reviewed by the relevant owner or backup without requiring every founder to approve every file.
+
+“Whole Team” can describe consultation, but each decision needs one accountable decision-maker and a recorded approval route. Set a proposed two-business-day review target; use the backup when the primary reviewer is unavailable. Silence is not approval.
+
+## Preserve coherence through authoritative sources
+
+Use the existing source precedence in `AGENTS.md`. A newer draft or research recommendation does not override a dated approved decision.
+
+| Shared subject | Authoritative home | Main consumers |
+|---|---|---|
+| Approved strategic decisions and factual claims | `00-control/DECISIONS.md` and `VERIFIED-FACTS.md` | All seven areas |
+| Identity and operating accountability | `01-company` verified records | Legal, Sales, Finance, Marketing |
+| Offer scope and pricing policy | `02-market-and-offers` | Sales, Delivery, Finance, Marketing, Legal |
+| Cost, effort and margin assumptions | Current model identified by `07-finance/README.md` | Offers, Sales, Delivery |
+| Qualification and sales-to-delivery handoff | `03-sales` operating masters, once reconciled | Marketing, Delivery, Legal |
+| Delivery method and acceptance criteria | `04-delivery`, consistent with approved terms | Sales, Legal, Finance |
+| Contract and data-handling rules | Approved records in `05-legal-privacy-risk` | All affected operating areas |
+| Public wording and approved evidence use | `06-marketing` current copy and proof registers | Website and campaigns |
+
+Specifically, reconcile the mixed Sales journey document: put the operating process under Sales, retain page copy under Marketing, and leave a clear pointer at the former location. Extract or reissue the current fit-call master from the legacy Delivery pack as part of its existing reconciliation work. Update all links and the move manifest if paths change. This is proposed work, not a move performed in this assessment.
+
+At the start of work, each founder or AI assistant should read the latest shared controls, their workstream README and the relevant dependencies. Record the base commit, objective, permitted edit area and acceptance criteria in the task brief. A source outside the workstream can be consulted without creating a private replacement. Missing or conflicting context should become a linked question or proposed decision.
+
+## How independent work returns to the master
+
+1. **Start from the shared baseline.** Each founder has a separate local clone. Avoid simultaneous work in the same checkout or a cloud-synchronised `.git` directory.
+2. **Create one branch per bounded outcome.** For example, a Delivery acceptance-checklist change and a Sales qualification-guide change can proceed simultaneously. Branch names can identify workstream and outcome; no permanent founder branches are needed.
+3. **Read the current shared rules and identify dependencies.** State whether the change affects scope, pricing, claims, terms, data or another team's inputs.
+4. **Work within ownership boundaries.** Include a requested cross-folder change in the same reviewed package or a linked dependency. Do not silently change another area's promises.
+5. **Synchronise daily while active and before integration.** Bring current `main` changes into the working branch. If a shared rule changed, revise the work before review.
+6. **Submit a review request.** Include the problem, changed files, impacted areas, source decisions, checks, open questions and any replacement exports. Small completed changes should usually return within one to three working days, not after weeks of isolation.
+7. **Review content and compatibility.** Obtain relevant owner review plus explicit affected-owner approval for changes to shared business rules. Resolve conflicts with the source owner; never blindly choose “mine” or “theirs”.
+8. **Merge into `main` and refresh everyone.** Record approved decisions and readiness changes in the same coordinated package. Other founders update before continuing dependent work. Preserve the previous version in history so a faulty change can be reverted and revalidated.
+
+Git supports branching, merging and explicit conflict resolution, but different files can merge cleanly while contradicting each other. The business review above remains necessary. [Git branching and merging documentation](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
+
+For example, if Delivery proposes fewer stabilisation days, Sales must assess its promises, Legal must assess acceptance/defect wording and Finance must assess effort assumptions. Keep the proposal clearly marked until agreed; integrate the related approved updates together. An internal merge does not itself approve public publication, quoting or use of draft contracts.
+
+## File types and checks
+
+- **Markdown and code:** review the difference and resolve both text conflicts and business inconsistencies.
+- **Word, Excel and PowerPoint:** allocate one editor per native file at a time. Other founders supply comments or change requests. Where simultaneous coauthoring is needed, select an approved document platform and one canonical native master, then import reviewed releases into the repository. Do not maintain competing live masters.
+- **PDFs, ZIPs and generated outputs:** rebuild from the designated source; check that the reviewed native version and all distribution copies agree. Never resolve competing workbook versions by assuming Git can combine their cells or formulas. Git's binary merge treatment leaves resolution to the user. [Git attributes documentation](https://git-scm.com/docs/gitattributes).
+- **Validation:** check relative links after moves; verify changed documents and exports; run the existing finance audit for model changes; build the website for application changes and test affected journeys. Repeat the lead-magnet manifest checks after rebuilding resources.
+- **Sensitive records:** follow the existing repository prohibition on real client, participant, worker, credential and other sensitive data. Keep live client work outside Git; store only permitted templates and safe references here. A proposed collaboration workflow does not approve a new storage system.
+
+## Repository controls and alternatives
+
+Configure a private shared destination if confidentiality requires it, confirm founder access, protect `main`, and require reviewed changes. Add `.github/CODEOWNERS` with real authorised account names for the seven folders and shared controls. Include ownership of `AGENTS.md`, `00-control`, `08-client-project-template`, `apps/` and the ownership file itself. Availability of protection features depends on the GitHub plan and repository visibility; these settings were not inspected. [GitHub protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+
+CODEOWNERS routes reviews; it is not a folder access restriction. Listing several owners on a matching rule does not require every one to approve. Preserve explicit affected-owner sign-off for shared decisions and configure additional enforcement where available. [GitHub code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+
+| Approach | Assessment for Heutrix |
+|---|---|
+| One repository, separate founder clones, short branches | **Recommended.** Shared history, preserved relative paths and coordinated cross-folder changes. |
+| One repository with selected-folder checkout | Optional later for focus. Include root guidance, controls and all required dependencies. It reduces the visible working files, not repository permissions, and omitted links may be unavailable locally. [Git sparse checkout](https://git-scm.com/docs/git-sparse-checkout). |
+| Seven separate repositories | Feasible but not recommended now. Requires separately versioned shared rules, coordinated releases and additional link/dependency management. Consider when actual access separation, outside contributors or independent product lifecycles justify it. |
+| Copy folders out and copy them back later | Suitable only as a controlled exception. No reliable automatic integration of divergent copies; replacement can lose intervening work. |
+
+If a founder must work with an exported folder, include a dated shared-context snapshot, base commit, path manifest and dependency list. Mark context copies reference-only. Return changed files and a change log to a staging location, then compare base, returned work and current master. Reconcile manually and validate before integration; never replace the entire master folder wholesale. A ZIP alone cannot guarantee a seamless merge.
+
+## Practical rollout
+
+1. Preserve the current workspace and histories. Review the uncommitted migration, ignored files and sensitive-content boundaries. Compare the selected remote history, resolve the nested report-repository treatment and create a reviewed baseline containing the new hierarchy. Do not blindly stage the entire working directory.
+2. Confirm the authoritative remote, `main` integration route, seven owners/backups and coordinator. Reconcile the contradictory ownership/readiness records and name spelling.
+3. Complete the workstream README contracts and shared dependency index. Identify the current native master for every actively edited pack/model and its editor.
+4. Configure access and review controls, then have each founder clone the same baseline. Check that required source files and links are present.
+5. Pilot two bounded changes in Sales and Delivery. Include one deliberate shared-policy dependency so the pilot tests business coherence as well as merging. Use synthetic material.
+6. Accept the setup when both founders can refresh, review and integrate changes without lost work; affected-owner sign-off is recorded; links and relevant checks pass; exports match sources; and no unapproved business rule appears as current truth. Then extend the same routine to all seven areas.
+
+The essential improvement is accountable ownership with frequent integration and explicit shared rules. The existing top-level folder design can support it without being rebuilt.

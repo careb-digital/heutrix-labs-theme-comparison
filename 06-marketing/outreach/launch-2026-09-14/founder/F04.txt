@@ -1,0 +1,9 @@
+“Can I use AI for this?” is a task-level question.
+
+A useful answer needs more than the name of an approved product. It needs the information boundary, intended output, settings, reviewer and decision about whether that use is allowed.
+
+At Heutrix, we treat accountable human review as part of the workflow. An unassessed idea stays in review while the open questions are resolved.
+
+Use non-sensitive or synthetic information during assessment. Keep professional decisions with the people accountable for them.
+
+#ResponsibleAI #DisabilitySupport

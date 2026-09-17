@@ -1,0 +1,106 @@
+# Heutrix workspace instructions
+
+These instructions apply to the entire repository unless a more specific `AGENTS.md` or `AGENTS.override.md` is added closer to a task.
+
+## Mission
+
+Move Heutrix from launch preparation to a state where it can responsibly reach out to prospective customers, qualify opportunities, contract and onboard suitable paid work, deliver it consistently and learn from the result.
+
+Optimise for the next verified business outcome, not document volume.
+
+## Read before changing material
+
+1. Read `README.md`.
+2. Read `00-control/LAUNCH-BOARD.md`, `DECISIONS.md`, `VERIFIED-FACTS.md` and `RISKS-AND-BLOCKERS.md`.
+3. Read the relevant workstream README and the latest dated source material.
+4. Read `00-control/COLLABORATION.md`, `00-control/DEPENDENCIES.md` and the folder ownership section of `01-company/founders-and-roles/ROLE-REGISTER.md`.
+5. Check `git status --short` and preserve unrelated or pre-existing changes.
+
+## Source precedence
+
+When sources conflict, use this order:
+
+1. a direct, dated decision from Janith;
+2. the current verified public, contractual or operating asset;
+3. a recent approved strategy or operating document;
+4. older notes, research, audits or generated reports;
+5. an AI recommendation or inference; and
+6. an external result that has not been adopted.
+
+Do not promote a recommendation into a business fact. Record unresolved conflicts in `00-control/DECISIONS.md` or `00-control/RISKS-AND-BLOCKERS.md`.
+
+## Business facts and positioning
+
+- Heutrix improves operational workflows using practical systems and safe AI where appropriate.
+- Use a workflow-first, technology-second approach.
+- The primary launch segment is Australian disability support providers.
+- Allied health practices are the secondary launch segment.
+- GP clinics are a future segment, not a launch segment.
+- The offer architecture is Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails.
+- Workflow Transformation is the primary implementation product.
+- Do not publish a pricing page, public price, starting range, pricing navigation item or pricing CTA. Keep fees private in the written post-fit scope; owner approval of the pricing and margin model controls quoting, not public publication.
+- Use Australian English and a direct, practical, privacy-aware voice.
+
+## Claims and safety boundaries
+
+- Do not imply legal, privacy, clinical, registration, audit, compliance or regulatory advice or outcomes.
+- Do not promise integrations, supported systems, time savings, revenue, adoption, uninterrupted services or compliance without verified evidence and a written scope.
+- Clearly label synthetic and illustrative examples; never present them as client outcomes.
+- Do not invent clients, testimonials, credentials, entity details, insurance, addresses, team members or delivery capacity.
+- Treat legal documents as drafts until the legal readiness and review registers say they are approved for use.
+
+## Information handling
+
+- Never add real client, participant, worker, health, credential, payment or other sensitive information to this repository.
+- Use synthetic or appropriately de-identified data for builds, demonstrations and acceptance tests.
+- Keep secrets in approved environment or credential systems, never in Markdown, source code, spreadsheets or committed `.env` files.
+- Confirm approved storage, collaboration, access, retention and deletion arrangements before onboarding real work.
+- The `08-client-project-template/` directory is a reusable structure only. Create live client work in an owner-approved secure location outside this Git repository.
+
+## File placement
+
+- Current launch control and cross-workstream truth: `00-control/`.
+- Company identity and readiness evidence: `01-company/`.
+- Market, positioning, offers and pricing policy: `02-market-and-offers/`.
+- Lead handling and commercial process: `03-sales/`.
+- Delivery assets and methods: `04-delivery/`.
+- Legal, privacy, risk and review evidence: `05-legal-privacy-risk/`.
+- Public messaging and campaign assets: `06-marketing/`.
+- Financial models and assumptions: `07-finance/`.
+- Application code: `apps/`.
+- Historical or superseded input: `90-research-and-audits/` or `99-archive/`.
+
+Do not create new loose files at the repository root unless they govern the whole workspace.
+
+## Change discipline
+
+- Update the relevant control register when a change confirms a fact, closes a risk or makes an owner decision.
+- Add dates, owners, evidence links and acceptance criteria to launch-critical work.
+- Keep source, draft, approved and issued artefacts visibly distinct.
+- Prefer links to the authoritative source instead of duplicating copy.
+- If changing public copy, check the active website and the website copy pack together.
+- If changing prices, scope, timelines, warranties or data handling, review the offer, legal, sales, delivery and finance implications together.
+- Preserve nested Git repositories under `apps/internal-reports/` until the owner chooses whether to keep, archive or consolidate their histories.
+
+## Founder task boundaries
+
+- Janith coordinates merges. Folder owners remain unassigned until recorded in the central role register; do not infer assignments from operational roles.
+- Start a bounded change brief from `00-control/templates/CHANGE-BRIEF.md` in the workstream's `changes/` folder and maintain its index. Record source decisions, base commit, affected paths, checks and review evidence.
+- Keep shared business context in the repository. Do not rely on private chats or parent-folder personal context as shared authority.
+- Reserve native Office masters through `00-control/FILE-EDIT-REGISTER.md` before editing. A private branch reservation is not an active lock.
+- Route changes to shared scope, prices, timelines, claims, terms or data handling through affected-person review and Janith's integration workflow. Routine work already allocated within approved rules should proceed without repeated permission requests.
+- The current Sales process text master is `03-sales/fit-call/SALES-PROCESS-SPECIFICATION.md`; the former Marketing file is a pointer and the legacy Delivery native pack remains quarantined.
+- Do not describe local templates as enforced remote permissions or assume the uncommitted folder migration exists in a founder's remote clone.
+
+## Verification
+
+For website changes, work in `apps/website/` and run `npm.cmd run build`. Test the lead form and key routes in a browser when changing conversion or navigation behaviour.
+
+For document or model changes, verify the native file and rendered/exported version where applicable. Re-run the relevant audit tool stored beside the finance workstream when changing a financial model.
+
+Before finishing:
+
+- confirm moved or renamed paths are reflected in navigation and links;
+- check `git status --short`;
+- report tests performed and any test that could not be run; and
+- state remaining owner decisions rather than guessing.

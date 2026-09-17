@@ -1,0 +1,29 @@
+# Change brief: TITLE
+Copy into the responsible folder's `changes/YYYY-MM-DD-short-topic.md`. Replace the fields below before work. This template is not a live task.
+
+- Status: Draft / In progress / In review / Merged / Cancelled
+- Author:
+- Accountable folder: 
+- Folder owner: reference the central role register; while unassigned, record Janith's task allocation.
+- Date:
+- Base commit and branch:
+- Review request / task reference:
+- Outcome and why it matters:
+- Files expected to change:
+- Files consulted as shared context:
+- Native-file reservation (if needed):
+- Related work / dependencies:
+
+## Current authority and proposed change
+Link the controlling decision, fact, source and version. Explain the before/after behaviour. Mark any new business rule Proposed; do not imply approval.
+
+## Affected areas
+List consumers, reviewers needed, coordinated updates and any areas checked that need no change.
+
+## Acceptance criteria
+- [ ] Concrete outcome:
+- [ ] Relevant source and dependent assets agree.
+- [ ] Applicable native/export, link, model or application checks pass.
+
+## Handoff
+Changed files; checks and actual results; unresolved decisions; affected-owner sign-off (name, date, evidence); Janith's integration reference; merged commit/date or cancellation reason.

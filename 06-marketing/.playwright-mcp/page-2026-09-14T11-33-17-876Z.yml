@@ -1,0 +1,345 @@
+- generic [ref=e3]:
+  - link "Skip to main content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - button "Open navigation" [ref=e8] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e9]: menu
+      - link "Heutrix Labs" [ref=e10] [cursor=pointer]:
+        - /url: /
+  - main [active] [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: For disability-provider owners and operations leaders
+          - heading "Know what is waiting — and who acts next." [level=1] [ref=e17]
+          - paragraph [ref=e18]: Heutrix helps owners and operations leaders of Australian disability support providers tackle intake, reporting and handover work that depends on repeated chasing. We define the next action, its owner and review point in one agreed workflow.
+          - generic [ref=e19]:
+            - link "Talk to Heutrix" [ref=e20] [cursor=pointer]:
+              - /url: /contact
+            - link "See How It Works" [ref=e24] [cursor=pointer]:
+              - /url: /#heutrix-method
+          - paragraph [ref=e27]: Start with a free 20-minute introductory conversation. No obligation.
+          - paragraph [ref=e31]:
+            - text: Prefer to explore one workflow first?
+            - link "Start the Scorecard" [ref=e32] [cursor=pointer]:
+              - /url: /resources/workflow-bottleneck-scorecard
+            - text: 10 questions · 3 steps · Immediate result · No email required
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: A clearer working day
+            - generic [ref=e43]: Illustrative view
+          - generic "Example workflow" [ref=e44]:
+            - button "Intake" [pressed] [ref=e45] [cursor=pointer]
+            - button "Onboarding" [ref=e46] [cursor=pointer]
+            - button "Reporting" [ref=e47] [cursor=pointer]
+          - generic [ref=e48]:
+            - generic [ref=e49]: Work in progress
+            - generic [ref=e50]: Owner / next action
+          - generic [ref=e51]:
+            - strong [ref=e55]: Enquiry received
+            - generic [ref=e56]:
+              - generic [ref=e57]: Intake lead
+              - generic [ref=e58]: Confirm next step
+          - generic [ref=e59]:
+            - strong [ref=e63]: Documents requested
+            - generic [ref=e64]:
+              - generic [ref=e65]: Coordinator
+              - generic [ref=e66]: Follow up on missing item
+          - generic [ref=e67]:
+            - strong [ref=e72]: Ready for review
+            - generic [ref=e73]:
+              - generic [ref=e74]: Service lead
+              - generic [ref=e75]: Review commencement
+      - region [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: The work between the systems
+            - heading "Does this sound familiar?" [level=2] [ref=e80]
+            - paragraph [ref=e81]: Even capable teams lose visibility when important work is spread across memory, inboxes, spreadsheets and manual reminders.
+            - link "Explore Services" [ref=e82] [cursor=pointer]:
+              - /url: /services
+          - region "Workflow pressure points" [ref=e86]:
+            - 'article "1 of 6: Intake & follow-up" [ref=e88]':
+              - generic [ref=e89]: 01 / Intake & follow-up
+              - heading "Intake, referral or enquiry follow-up handled differently by different people" [level=3] [ref=e94]
+              - generic [ref=e95]:
+                - generic [ref=e96]: A clearer next step
+                - paragraph [ref=e99]: Make the owner, next action and due date visible from the first enquiry to the service-start decision.
+              - link "Take the Intake Assessment" [ref=e100] [cursor=pointer]:
+                - /url: /resources/enquiry-to-service-start-starter-kit
+            - generic [ref=e104]:
+              - button "Previous pressure point" [ref=e105] [cursor=pointer]
+              - navigation "Choose a pressure point" [ref=e108]:
+                - button "1. Intake & follow-up" [ref=e109] [cursor=pointer]
+                - button "2. Onboarding & handovers" [ref=e111] [cursor=pointer]
+                - button "3. Tracking & follow-through" [ref=e113] [cursor=pointer]
+                - button "4. Operational visibility" [ref=e115] [cursor=pointer]
+                - button "5. Reporting preparation" [ref=e117] [cursor=pointer]
+                - button "6. AI use & human review" [ref=e119] [cursor=pointer]
+              - generic [ref=e121]: 01 / 06
+              - button "Next pressure point" [ref=e122] [cursor=pointer]
+              - button "Pause automatic rotation" [ref=e125] [cursor=pointer]
+      - generic [ref=e130]:
+        - generic [ref=e132]:
+          - paragraph [ref=e133]: How Heutrix helps
+          - heading "Start with the problem you need to solve." [level=2] [ref=e134]
+        - generic [ref=e135]:
+          - article [ref=e136]:
+            - heading "Heutrix Diagnostics" [level=3] [ref=e142]
+            - paragraph [ref=e143]: Decide which bottleneck to address first.
+            - paragraph [ref=e144]: When teams disagree about where work stalls, this standalone paid engagement maps the workflow and ranks feasible options. The implementation brief gives you a basis for deciding what to change — including when not to build.
+            - link "View Diagnostics" [ref=e145] [cursor=pointer]:
+              - /url: /services#heutrix-diagnostics
+          - article [ref=e149]:
+            - heading "Heutrix Workflow Transformation" [level=3] [ref=e154]
+            - paragraph [ref=e155]: Give the next action an owner.
+            - paragraph [ref=e156]: When work depends on repeated status checks, we redesign, configure or build and test one non-clinical workflow in approved systems. Staff can see what is waiting, who acts next and when to escalate.
+            - link "View Transformations" [ref=e157] [cursor=pointer]:
+              - /url: /services#heutrix-workflow-transformation
+          - article [ref=e161]:
+            - heading "Heutrix AI Guardrails" [level=3] [ref=e165]
+            - paragraph [ref=e166]: Know when to use AI, review or stop.
+            - paragraph [ref=e167]: When AI-use rules are unclear, this paid, fixed-scope engagement documents approved, conditional and prohibited uses, information boundaries, human review and escalation. Staff have guidance for deciding when to proceed, seek review or stop.
+            - link "View AI Guardrails" [ref=e168] [cursor=pointer]:
+              - /url: /ai-guardrails
+        - paragraph [ref=e172]: Three independent entry points. When the workflow and dependencies are clear, you can start directly with Workflow Transformation. AI Guardrails can also be engaged directly.
+        - link "Explore Services" [ref=e173] [cursor=pointer]:
+          - /url: /services
+        - paragraph [ref=e177]: Not sure where to begin? The introductory conversation can help determine the appropriate next step.
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - paragraph [ref=e182]: Workflow first
+          - heading "Improve the workflow before choosing the solution." [level=2] [ref=e183]
+          - paragraph [ref=e184]: Heutrix starts by understanding how work moves through your organisation — the people, decisions, information and points where work slows down. The next step may be a simpler process, a scoped implementation or a recommendation not to build.
+          - link "See How We Help" [ref=e185] [cursor=pointer]:
+            - /url: /about
+          - paragraph [ref=e189]: Technology supports the solution. It does not define the problem.
+        - list [ref=e190]:
+          - listitem [ref=e191]:
+            - generic [ref=e192]: "01"
+            - generic [ref=e193]:
+              - heading "Diagnose" [level=3] [ref=e194]
+              - paragraph [ref=e195]: Understand the operational problem, workflow, ownership and gaps. Where deeper investigation is needed, Heutrix Diagnostics is a separate paid engagement.
+          - listitem [ref=e196]:
+            - generic [ref=e197]: "02"
+            - generic [ref=e198]:
+              - heading "Triage" [level=3] [ref=e199]
+              - paragraph [ref=e200]: Prioritise bottlenecks, dependencies and risks. Agree a useful next step, scope and success measures.
+          - listitem [ref=e201]:
+            - generic [ref=e202]: "03"
+            - generic [ref=e203]:
+              - heading "Build" [level=3] [ref=e204]
+              - paragraph [ref=e205]: Implement the simplest suitable improvement in approved systems. Test normal work, permissions and exception paths, with accountable human review.
+          - listitem [ref=e206]:
+            - generic [ref=e207]: "04"
+            - generic [ref=e208]:
+              - heading "Handover" [level=3] [ref=e209]
+              - paragraph [ref=e210]: Walk the receiving team through the agreed workflow and administrator guidance, including unresolved items, maintenance responsibilities and support boundaries.
+      - generic [ref=e212]:
+        - generic [ref=e214]:
+          - paragraph [ref=e215]: In practice
+          - heading "A clearer way to investigate reporting discrepancies." [level=2] [ref=e216]
+        - article [ref=e217]:
+          - generic [ref=e218]:
+            - heading "Bringing invoices and time records into one review workflow" [level=3] [ref=e219]
+            - paragraph [ref=e220]: An Australian disability support provider reviewed contractor invoices and QuickBooks time records in separate sources. Heutrix aligned the reporting model and delivered a cloud-connected Power BI reconciliation report so reviewers could filter the same information and investigate differences in one place. Client feedback supported approximately 1–2 hours less reconciliation and investigation effort per discrepancy.
+            - link "View Transformations" [ref=e221] [cursor=pointer]:
+              - /url: /services#heutrix-workflow-transformation
+      - generic [ref=e226]:
+        - paragraph [ref=e227]: Why Heutrix
+        - heading "What changes in the day-to-day work?" [level=2] [ref=e228]
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - heading "Know who acts next" [level=3] [ref=e231]
+            - paragraph [ref=e232]: When follow-up sits between roles, an agreed owner, next action and due point give staff a place to act without first asking who is responsible.
+          - generic [ref=e233]:
+            - heading "Find what is waiting" [level=3] [ref=e234]
+            - paragraph [ref=e235]: When updates are scattered, an agreed status view separates waiting, overdue and ready-for-review work so managers can find the items that need attention.
+          - generic [ref=e236]:
+            - heading "Handle the exception" [level=3] [ref=e237]
+            - paragraph [ref=e238]: When information is missing or a task cannot proceed, a defined exception and escalation path shows staff where to send it for a decision.
+          - generic [ref=e239]:
+            - heading "Complete a usable handover" [level=3] [ref=e240]
+            - paragraph [ref=e241]: When a workflow depends on one person's memory, tested steps, staff guidance and administrator notes give the receiving team instructions for operating and maintaining it.
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - paragraph [ref=e246]: WHAT HAPPENS NEXT
+          - heading "A clear path to practical improvement." [level=2] [ref=e247]
+          - paragraph [ref=e248]: Start with recurring administrative friction, an accountable workflow owner and staff who can help map and test a better way of working. You do not need to choose a Heutrix service first.
+          - paragraph [ref=e249]: Our primary focus is disability providers. We also work with allied health practices facing comparable referral, reporting or document workflow problems.
+          - link "Talk to Heutrix" [ref=e251] [cursor=pointer]:
+            - /url: /contact
+        - list [ref=e255]:
+          - listitem [ref=e256]:
+            - generic [ref=e257]: "01"
+            - generic [ref=e258]:
+              - heading "Start with a conversation" [level=3] [ref=e259]
+              - paragraph [ref=e260]: Free · 20 minutes
+              - paragraph [ref=e261]: Tell us about your organisation, what is getting in the way and what you would like to improve. We will explore whether Heutrix can help.
+              - paragraph [ref=e262]: This is an introduction, not a diagnostic assessment.
+          - listitem [ref=e263]:
+            - generic [ref=e264]: "02"
+            - generic [ref=e265]:
+              - heading "Understand your options" [level=3] [ref=e266]
+              - paragraph [ref=e267]: We explain the most suitable approach and what it involves. That may mean a closer assessment, improving a defined workflow or establishing clearer controls around AI use.
+          - listitem [ref=e268]:
+            - generic [ref=e269]: "03"
+            - generic [ref=e270]:
+              - heading "Get clarity where needed" [level=3] [ref=e271]
+              - paragraph [ref=e272]: Optional · Paid
+              - paragraph [ref=e273]: Heutrix Diagnostics maps the workflow, prioritises bottlenecks and assesses possible solutions. You receive a practical implementation brief that remains useful even without a further engagement.
+          - listitem [ref=e274]:
+            - generic [ref=e275]: "04"
+            - generic [ref=e276]:
+              - heading "Put the plan into action" [level=3] [ref=e277]
+              - paragraph [ref=e278]: When workflow implementation is the right next step, we agree the scope, responsibilities, timing and fee in writing. We then improve the agreed non-clinical workflow, with testing, practical guidance and handover.
+      - generic [ref=e281]:
+        - generic [ref=e282]:
+          - paragraph [ref=e283]: Free workflow scorecard
+          - heading "See what is slowing this workflow down" [level=2] [ref=e284]
+          - paragraph [ref=e285]: Use the online Workflow Bottleneck Scorecard to assess one recurring non-clinical workflow. Answer 10 required questions across 3 steps and see your result immediately. Save practical actions for your team without booking a call.
+          - list [ref=e286]:
+            - listitem [ref=e287]: Review manual effort, handovers, delay, rework and visibility.
+            - listitem [ref=e288]: Check how strong the evidence is and whether a change is feasible.
+            - listitem [ref=e289]: Identify control questions that need attention before implementation.
+            - listitem [ref=e290]: Save an action plan or discuss the selected result with Heutrix.
+        - generic [ref=e291]:
+          - heading "Workflow Bottleneck Scorecard" [level=3] [ref=e292]
+          - paragraph [ref=e293]: The online assessment checks one workflow. To compare up to 12 workflows, use the downloadable scorecard workbook.
+          - link "Start the Scorecard" [ref=e294] [cursor=pointer]:
+            - /url: /resources/workflow-bottleneck-scorecard
+          - generic [ref=e298]:
+            - link "Get the Guide" [ref=e299] [cursor=pointer]:
+              - /url: /downloads/workflow-bottleneck-scorecard-guide.pdf
+            - link "Download the Excel Workbook" [ref=e304] [cursor=pointer]:
+              - /url: /downloads/workflow-bottleneck-scorecard.xlsx
+          - paragraph [ref=e309]: Free · No email address required · No consultation required
+          - paragraph [ref=e310]: A general starting point, not a paid Diagnostic or approval to implement a change. Keep information general and non-sensitive.
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - generic [ref=e314]:
+            - paragraph [ref=e315]: The team behind Heutrix
+            - heading "We have seen operational problems from both sides." [level=2] [ref=e316]
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: Heutrix grew from first-hand experience inside disability services and from the work of designing, delivering and building systems that improve how organisations operate.
+            - paragraph [ref=e319]: Our four founders bring together provider operations, workflow implementation, project delivery, analytics and engineering. Together, that gives Heutrix the ability to understand the operational problem first, determine what actually needs to change, and then carry that improvement through to implementation.
+            - link "About Heutrix" [ref=e320] [cursor=pointer]:
+              - /url: /about
+        - generic [ref=e324]:
+          - generic [ref=e325]:
+            - heading "Provider Operations" [level=3] [ref=e326]
+            - paragraph [ref=e327]: Understanding how disability services actually work — from administration and service delivery to the operational pressures behind the workflow.
+          - generic [ref=e328]:
+            - heading "Workflow Improvement" [level=3] [ref=e329]
+            - paragraph [ref=e330]: Turning fragmented or inefficient processes into clearer, more consistent ways of working.
+          - generic [ref=e331]:
+            - heading "Delivery & Data" [level=3] [ref=e332]
+            - paragraph [ref=e333]: Structuring change, measuring what matters and ensuring improvements translate into operational outcomes.
+          - generic [ref=e334]:
+            - heading "Engineering & Integration" [level=3] [ref=e335]
+            - paragraph [ref=e336]: Building the automation, integrations and systems needed to support the improved workflow.
+      - generic [ref=e338]:
+        - generic [ref=e339]:
+          - generic [ref=e340]:
+            - paragraph [ref=e341]: Common questions
+            - heading "Before you talk to Heutrix." [level=2] [ref=e342]
+          - generic [ref=e343]:
+            - group [ref=e344]:
+              - generic "Do we need to know exactly what needs fixing?" [ref=e345] [cursor=pointer]
+            - group [ref=e348]:
+              - generic "Is the 20-minute introductory conversation a Heutrix Diagnostic?" [ref=e349] [cursor=pointer]
+            - group [ref=e352]:
+              - generic "Will Heutrix recommend replacing our existing systems?" [ref=e353] [cursor=pointer]
+            - group [ref=e356]:
+              - generic "Do you only help with technology problems?" [ref=e357] [cursor=pointer]
+            - group [ref=e360]:
+              - generic "Do we need to undertake a Diagnostic before working with Heutrix?" [ref=e361] [cursor=pointer]
+            - group [ref=e364]:
+              - generic "What happens during the introductory conversation?" [ref=e365] [cursor=pointer]
+        - link "Talk to Heutrix" [ref=e369] [cursor=pointer]:
+          - /url: /contact
+        - paragraph [ref=e373]: Start with a free 20-minute introductory conversation.
+      - generic [ref=e375]:
+        - paragraph [ref=e376]: Start with a conversation
+        - heading "What could work better in your organisation?" [level=2] [ref=e377]
+        - paragraph [ref=e378]: If manual processes, disconnected workflows or limited operational visibility are making your organisation harder to run, start by showing us where the friction is.
+        - paragraph [ref=e379]: We will use a free 20-minute introductory conversation to understand the situation and determine whether Heutrix can help.
+        - generic [ref=e380]:
+          - link "Talk to Heutrix" [ref=e381] [cursor=pointer]:
+            - /url: /contact
+          - link "Start the Scorecard" [ref=e385] [cursor=pointer]:
+            - /url: /resources/workflow-bottleneck-scorecard
+        - paragraph [ref=e389]: Free 20-minute introductory conversation · No obligation · Heutrix Diagnostics is a separate paid engagement.
+        - paragraph [ref=e390]: The contact page helps you prepare an email request. Review and send it in your email app; a time is then agreed separately.
+  - contentinfo [ref=e391]:
+    - generic [ref=e392]:
+      - generic [ref=e393]:
+        - generic [ref=e394]:
+          - link "Heutrix Labs" [ref=e395] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e396]: Heutrix Labs helps Australian disability support providers—and selected allied health practices—diagnose operational friction, transform one bounded workflow and put practical AI guardrails in place.
+        - generic [ref=e397]:
+          - navigation [ref=e398]:
+            - heading "Services" [level=2] [ref=e399]
+            - list [ref=e400]:
+              - listitem [ref=e401]:
+                - link "Services" [ref=e402] [cursor=pointer]:
+                  - /url: /services
+              - listitem [ref=e403]:
+                - link "Heutrix Diagnostics" [ref=e404] [cursor=pointer]:
+                  - /url: /services#heutrix-diagnostics
+              - listitem [ref=e405]:
+                - link "Heutrix Workflow Transformation" [ref=e406] [cursor=pointer]:
+                  - /url: /services#heutrix-workflow-transformation
+              - listitem [ref=e407]:
+                - link "Heutrix AI Guardrails" [ref=e408] [cursor=pointer]:
+                  - /url: /services#heutrix-ai-guardrails
+          - navigation [ref=e409]:
+            - heading "Who we help" [level=2] [ref=e410]
+            - list [ref=e411]:
+              - listitem [ref=e412]:
+                - link "Disability Providers" [ref=e413] [cursor=pointer]:
+                  - /url: /disability-providers
+              - listitem [ref=e414]:
+                - link "Allied Health" [ref=e415] [cursor=pointer]:
+                  - /url: /allied-health
+          - navigation [ref=e416]:
+            - heading "Explore" [level=2] [ref=e417]
+            - list [ref=e418]:
+              - listitem [ref=e419]:
+                - link "Workflow examples" [ref=e420] [cursor=pointer]:
+                  - /url: /case-studies
+              - listitem [ref=e421]:
+                - link "Resources" [ref=e422] [cursor=pointer]:
+                  - /url: /resources
+              - listitem [ref=e423]:
+                - link "About" [ref=e424] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e425]:
+                - link "FAQ" [ref=e426] [cursor=pointer]:
+                  - /url: /faq
+        - generic [ref=e427]:
+          - paragraph [ref=e428]: Bring one workflow that should not be this hard.
+          - link "Talk to Heutrix" [ref=e429] [cursor=pointer]:
+            - /url: /contact
+          - paragraph [ref=e430]: "Assess one workflow online: 10 questions, 3 steps and an immediate result. Free, with no email required."
+          - link "Start the Scorecard" [ref=e431] [cursor=pointer]:
+            - /url: /resources/workflow-bottleneck-scorecard
+      - generic [ref=e432]:
+        - navigation "Legal" [ref=e433]:
+          - list [ref=e434]:
+            - listitem [ref=e435]:
+              - link "Privacy and Data Handling" [ref=e436] [cursor=pointer]:
+                - /url: /privacy-and-data-handling
+            - listitem [ref=e437]:
+              - link "Terms of Use" [ref=e438] [cursor=pointer]:
+                - /url: /terms-of-use
+            - listitem [ref=e439]:
+              - link "Website Disclaimer" [ref=e440] [cursor=pointer]:
+                - /url: /website-disclaimer
+        - generic [ref=e441]:
+          - paragraph [ref=e442]: Website disclaimer
+          - paragraph [ref=e443]: Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails are operational services. Heutrix Labs does not provide official audit certification, legal advice, clinical advice, NDIS registration readiness, mock audits or regulatory approval.
+        - paragraph [ref=e444]: Heutrix Labs is operated by Heutrix Pty Ltd · ABN 64 702 109 662
+        - paragraph [ref=e445]: © 2026 Heutrix Pty Ltd. All rights reserved.

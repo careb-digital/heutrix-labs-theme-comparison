@@ -1,0 +1,327 @@
+[
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "A SOW may add or change terms for that project. If documents conflict, the order is: the SOW's Special Conditions; the SOW; an expressly activated Data Handling or AI Schedule; this agreement. A purchase order is administrative only and does not amend these terms unless both parties sign the amendment.",
+    "after": "A SOW may add project-specific terms. A variation to this agreement must identify the clause changed and be signed by authorised representatives. Subject to non-excludable law, the order for an expressly agreed inconsistency is: signed Special Conditions identifying the variation; signed SOW; activated data or AI schedule; this agreement. A general scope description does not override an express data prohibition or approve AI. A purchase order is administrative only unless both parties sign an amendment."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Heutrix provides operational workflow, system and controlled AI support. Unless a SOW expressly says otherwise and Heutrix has the required qualified capability, the Services do not include legal, tax, financial, employment, clinical, medical, regulatory, official audit, NDIS registration, compliance assurance or medical-device advice or services.",
+    "after": "Heutrix provides Heutrix Diagnostics, Heutrix Workflow Transformation and Heutrix AI Guardrails for non-clinical operational work. Services exclude legal, tax, financial, employment, clinical, medical, regulatory, official audit, NDIS registration readiness, mock audit, compliance assurance, certification and medical-device advice. This pack does not establish capability or authority to provide regulated services."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "The Client will review each Deliverable against the Acceptance Criteria within five business days, or another period stated in the SOW. It will accept the Deliverable or provide specific reasons and evidence of non-conformity. Heutrix will correct a material non-conformity within a reasonable agreed period and resubmit it.",
+    "after": "The Client will review each Deliverable against the Acceptance Criteria within [APPROVE review period] business days as stated in the SOW, and give written acceptance or specific evidence of non-conformity. Heutrix will correct an in-scope material non-conformity within a reasonable agreed period and resubmit it. The SOW states included refinement rounds and the separate defect procedure."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "If the Client does not respond within the review period after a reminder, the Deliverable is treated as accepted for project administration and invoicing only. This does not waive latent defects, warranties, consumer guarantees or rights that cannot legally be excluded.",
+    "after": "If the Client does not respond by the agreed review date, Heutrix will remind the Client and escalate to the nominated decision-maker. Silence does not constitute acceptance. The parties will agree the resulting schedule and any properly payable milestone under the signed SOW. Acceptance does not waive latent defects, express warranties, consumer guarantees or non-excludable rights."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "The Client will pay the fees and approved expenses stated in the SOW. Unless the SOW says otherwise, invoices are due within seven calendar days.",
+    "after": "The Client will pay only the fees and approved expenses in the signed SOW. Payment milestones, invoice triggers, advance payments and the due period of [APPROVE payment period] calendar days must be completed before signature. No public price, automatic Diagnostics fee credit or unapproved expense is incorporated."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Amounts are exclusive of GST. GST is payable only where Heutrix is registered or required to be registered for GST and issues a valid tax invoice. If an adjustment event occurs, the parties will make the corresponding adjustment after a valid adjustment note.",
+    "after": "The SOW must state the base fee, any lawfully payable GST and total payable. The verified 8 September 2026 record states Heutrix is not currently registered for GST. Recheck status before issue: do not add GST or label an invoice a tax invoice while not registered. If registration or a taxable supply treatment changes, apply the reviewed contractual adjustment and valid invoice requirements; no automatic tax uplift is approved by this draft."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "The Client may dispute an invoice in good faith by giving reasons within five business days. It must pay the undisputed amount by the due date. The parties will work promptly to resolve the disputed part. Heutrix may recover reasonable external debt-recovery costs caused by an undisputed overdue amount, to the extent permitted by law.",
+    "after": "The Client may dispute an invoice in good faith by giving reasons promptly, using the process and response period [APPROVE] stated in the SOW. It must pay the undisputed amount by the due date. The parties will work promptly to resolve the disputed part. Any recovery costs or interest require an expressly agreed, legally reviewed and proportionate term; none is added by default."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "The SOW must select the Deliverable IP model. If it does not, the Client owns the project-specific Deliverables on full payment, excluding Heutrix Background Materials and third-party materials. Heutrix assigns to the Client its rights in those project-specific Deliverables on full payment and will sign reasonable documents to confirm the assignment, at the Client's cost if more than administrative.",
+    "after": "The SOW must select and fully describe the Deliverable IP model before signature. No model is selected by default. Where the SOW selects client ownership, Heutrix assigns its rights in project-specific Deliverables on the agreed payment condition, excluding Background Materials and third-party materials. The scope identifies source/editable exports and any further assignment steps and costs."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "These obligations continue for five years after disclosure, and for trade secrets and Personal Information for as long as the information remains protected by law or confidential in nature.",
+    "after": "These obligations continue for [APPROVE confidentiality survival period] after disclosure, and for trade secrets and Personal Information for as long as the information remains protected by law or confidential in nature."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "The parties will minimise Personal Information and use synthetic, de-identified or redacted information where reasonably practicable. Personal Information must not be placed in website forms, ordinary project messages, public AI services or unapproved repositories.",
+    "after": "The parties will minimise Personal Information and use synthetic or appropriately de-identified examples where practicable. Client records, sensitive information and credentials must not be placed in public enquiry forms, ordinary project messages, public AI services or unapproved repositories. Basic business-contact details may use the approved enquiry route under the published website policy."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "For all claims arising from an affected SOW, each party's aggregate general liability is capped at the greater of two times the fees paid or payable under that SOW and AUD 10,000.",
+    "after": "For all claims arising from an affected SOW, each party's aggregate general liability is capped at [APPROVE general cap basis and amount]. Complete the reviewed cap in the final agreement before signature; no amount is selected by this draft."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "For claims arising from breach of confidentiality, privacy or security obligations, or the IP indemnity, each party's aggregate liability is capped at the greater of four times the fees paid or payable under the affected SOW and AUD 50,000.",
+    "after": "For claims arising from breach of confidentiality, privacy or security obligations, or the IP indemnity, each party's aggregate liability is capped at [APPROVE higher cap basis and amount]. Review scope, exclusions and insurance alignment before signature."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Each party will maintain insurance required by law and any insurance expressly stated in the SOW. Before Services involving production access or Personal Information begin, the SOW must state the verified Heutrix insurance types and limits, or record the Client's informed acceptance that a specified cover is not held. Evidence of stated cover will be provided on reasonable request.",
+    "after": "Each party will maintain insurance required by law and any insurance expressly agreed in the SOW. Before commencement, record Heutrix's verified applicable cover and approval evidence. A client acknowledgment of missing cover does not replace Heutrix's insurance review and onboarding gate. Provide evidence of stated cover through a restricted channel on reasonable request."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Heutrix may suspend only the affected Services if an undisputed amount remains overdue five business days after written notice, or if continuing would create a material security, privacy, safety or legal risk. Heutrix must give reasons, limit the suspension, preserve Client Data and restore Services promptly when the issue is resolved. The Client is not charged for avoidable delay caused by an unjustified suspension.",
+    "after": "Heutrix may suspend only the affected Services if an undisputed amount remains overdue after the written notice and cure period of [APPROVE] business days, or continuing creates a material security, privacy, safety or legal risk. Give reasons, limit suspension, preserve Client Data and restore Services promptly when the issue is resolved. No charge arises for avoidable delay caused by an unjustified suspension. Specific pause, reschedule and restart effects must be agreed in the SOW."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Either party may terminate this agreement or an affected SOW for material breach not cured within 10 business days after written notice, immediately for an incurable material breach, or where the other party becomes insolvent to the extent permitted by law.",
+    "after": "Either party may terminate this agreement or an affected SOW for material breach not cured within [APPROVE breach cure period] business days after written notice, immediately for an incurable material breach, or where the other party becomes insolvent to the extent permitted by law."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Either party may terminate a SOW for convenience on 10 business days' notice unless the SOW states a different notice period. The Client must pay for conforming Services performed and disclosed unavoidable commitments up to termination. Heutrix must refund prepaid amounts for Services not performed and provide reasonable handover of completed paid work.",
+    "after": "Either party may terminate a SOW for convenience on [APPROVE notice period] business days' notice. The Client pays for conforming Services performed and approved unavoidable commitments up to termination. Heutrix refunds prepaid amounts for Services not performed and provides reasonable handover of completed paid work. Review the cancellation/refund calculation and any agreed exceptions before issue."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "A notice must be sent to the notice email in the signing block or the latest replacement notified in writing. A notice is received when the sender's system records successful transmission, unless sent after 5:00 pm or on a non-business day in the recipient's location, in which case it is received at 9:00 am on the next business day.",
+    "after": "A notice must be sent to the verified notice email and address stated in the signing particulars, or a replacement notified in writing. Record an acknowledgment or other reliable evidence of receipt; a bounced message is not receipt. Apply [APPROVE receipt and business-hours rule] in the final agreement. Ordinary project communications do not change the notice particulars or confer signing authority."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Use only the approved Client tenant or Heutrix workspace identified in the SOW. The approved platform categories are Google Workspace and Microsoft 365/SharePoint; exact applications and settings must still be approved.",
+    "after": "Use only the exact Client tenant or Heutrix workspace approved for the data class in the SOW and form A. No platform category, including Google Workspace or Microsoft 365/SharePoint, is approved merely by this draft. Record applications, administrators, settings, locations and vendor approval."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "Heutrix will notify the Client without undue delay and, where practicable, within 24 hours after becoming aware of a Security Incident affecting Client Data. Initial notice may be incomplete and will be updated as facts become available.",
+    "after": "Heutrix will notify the Client without undue delay after becoming aware of a Security Incident affecting Client Data, and within the expressly agreed notification period [APPROVE maximum and trigger] where applicable. Meet any faster legal obligation. Initial notice may be incomplete and must be updated as facts become available."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "At the earlier of instruction, access expiry or project close, Heutrix will return agreed Client Data and securely delete remaining copies within 30 days, except where law requires retention. Residual backup copies will remain protected and be deleted through the normal cycle, targeted not to exceed 90 days. The handover form records completion and any exception.",
+    "after": "At a lawful instruction, access expiry or project close, Heutrix will return agreed Client Data and apply the approved category-specific retention/deletion schedule. The SOW and form A must state working-copy deletion, lawful retention/holds, backup expiry, responsible person and verification method. Retained copies remain protected. Form E records completion and any exception; no fixed deletion period is implied."
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "________________________________  COMPLETE BEFORE ISSUE",
+    "after": "ABN 64 702 109 662 | ACN 702 109 662"
+  },
+  {
+    "document": "01_Heutrix_Client_Services_Agreement.docx",
+    "before": "1.0 | 1 August 2026",
+    "after": "2.0 review draft | 13 September 2026"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Workflow Diagnostic",
+    "after": "Heutrix Diagnostics"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "One workflow. A clear current-state view. A practical next step.",
+    "after": "Standalone paid workflow investigation and decision support"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "One remote structured discovery workshop of up to 90 minutes with up to four Client participants.",
+    "after": "Discovery interviews/workshops: [APPROVE number, duration, format and included participants in the written scope]."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Review of up to five relevant documents or 50 pages in total, using redacted, de-identified or synthetic material unless separately approved.",
+    "after": "Document/evidence review: [APPROVE document or page limit and evidence depth], using synthetic or appropriately de-identified material unless a separate lawful data authorisation is approved."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "One remote findings presentation of up to 60 minutes.",
+    "after": "Findings readout: [APPROVE number, duration, format and audience]."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "The Client has five business days to accept the draft or give specific reasons it does not meet these criteria. One consolidated reasonable correction round is included. New scope or preference changes require a Change Request.",
+    "after": "The Client has [APPROVE review period] business days to accept the deliverable in writing or provide evidence against the criteria. Included correction/refinement rounds: [APPROVE]. New scope or preference changes require a signed Change Request. Silence is not acceptance under this draft."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "The workflow is sufficiently narrow to cover in one workshop and starts and ends at the points recorded below.",
+    "after": "The workflow is bounded by the start/end points below and can be investigated within the approved discovery effort."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "The Client provides agreed documents and participant availability within five business days after payment.",
+    "after": "The Client provides agreed safe documents and attendee availability by [COMPLETE agreed input date]."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Fixed fee: AUD 950 plus GST if Heutrix is registered or required to be registered for GST. The fee is invoiced in advance and due within seven calendar days. Work begins after cleared payment and receipt of required inputs.",
+    "after": "Private fixed fee: AUD [APPROVE fee]. GST treatment and total payable: [COMPLETE verified treatment and total]. Approved invoice milestones, due dates and payment/start condition: [COMPLETE]. No payment is requested under this review draft."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "The fixed fee covers only the Included Services and one correction round. Extra work proceeds only under a signed Change Request. Approved travel or third-party costs are not included and cannot be incurred without written Client approval.",
+    "after": "The fixed fee covers the completed Included Services and approved correction rounds only. Extra work and third-party or travel costs require prior written approval through a signed Change Request. Diagnostics is standalone paid work; no later purchase or automatic fee credit is required."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "The Client-owned Deliverable model in the CSA applies: on full payment, the Client owns the project-specific maps and report, excluding Heutrix Background Materials and third-party materials. The Client receives the embedded licence described in the CSA.",
+    "after": "Select the reviewed IP model before signature: [APPROVE client ownership / defined licence / other reviewed arrangement]. Identify the maps/report, editable formats, embedded Background Materials and third-party rights. The selected CSA/SOW terms apply; no IP model is selected by this blank order."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Heutrix Pty Ltd | ACN / ABN: ______________________________",
+    "after": "Heutrix Pty Ltd | ABN 64 702 109 662 | ACN 702 109 662"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "AUD 950 plus GST, if GST is lawfully payable",
+    "after": "AUD [APPROVE fee] | [COMPLETE lawful GST treatment and total]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Heutrix Client Services Agreement v1.0, dated 1 August 2026",
+    "after": "Heutrix Client Services Agreement v2.0 review draft, dated 13 September 2026; replace with exact approved issue version before signature"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Within 10 business days of inputs",
+    "after": "[COMPLETE agreed report target]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Within 5 business days of draft",
+    "after": "[COMPLETE agreed readout target]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Before commencement, following a valid invoice",
+    "after": "[APPROVE milestone, due date and start condition]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "10 business days after payment and receipt of agreed inputs",
+    "after": "[COMPLETE target and approved start prerequisites]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Client-controlled Google Workspace / SharePoint / other: ____________________",
+    "after": "[APPROVE exact system, tenant and evidence reference]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Not approved unless required for an approved redacted document",
+    "after": "Not approved unless specifically authorised in form A with a secure storage and deletion plan"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "No Client Confidential Information or Client Data in AI. Public/general research only unless a signed AI approval is attached.",
+    "after": "No AI use is approved unless an applicable signed form B is attached."
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "Return/delete project Client Data within 30 days after acceptance, subject to lawful retention and backup cycle",
+    "after": "[APPROVE category-specific return, retention, deletion, backup expiry and verification]"
+  },
+  {
+    "document": "02_Heutrix_Diagnostics_Order_Form.docx",
+    "before": "HEUTRIX  |  Workflow Diagnostic Order Form\tCONFIDENTIAL",
+    "after": "HEUTRIX  |  Heutrix Diagnostics Order Form\tCONFIDENTIAL"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "For workflow builds, visibility builds, Safe AI packs and tailored internal systems",
+    "after": "For Heutrix Workflow Transformation and Heutrix AI Guardrails"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "[  ] Client-owned Deliverables. The CSA default applies on full payment, excluding Heutrix Background Materials and third-party materials.",
+    "after": "[  ] Client-owned Deliverables. Complete the assignment/payment trigger and source/editable formats; exclude identified Background Materials and third-party materials. No default selection applies."
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "[  ] AI limited to public/general research with no Client Data or Confidential Information.",
+    "after": "[  ] Public/general research only, with no Client Data or Confidential Information; attach completed form B identifying the approved tool, settings and reviewer."
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Heutrix Pty Ltd | ACN / ABN: ______________________________",
+    "after": "Heutrix Pty Ltd | ABN 64 702 109 662 | ACN 702 109 662"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Heutrix Client Services Agreement v1.0, dated 1 August 2026",
+    "after": "Heutrix Client Services Agreement v2.0 review draft, dated 13 September 2026; replace with exact approved issue version before signature"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Five business days unless stated here: ____________________",
+    "after": "[APPROVE review period in business days]"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Amount ex GST",
+    "after": "Amount before any lawful GST"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Total fees ex GST",
+    "after": "Total fee before any lawful GST"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Payable only if Heutrix is registered or required to be registered and issues a valid tax invoice",
+    "after": "[COMPLETE verified GST status, any lawful GST and total payable; current source records non-registration]"
+  },
+  {
+    "document": "03_Heutrix_Statement_of_Work.docx",
+    "before": "Client requirement / accepted gap",
+    "after": "Client requirement and Heutrix approval reference"
+  },
+  {
+    "document": "04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+    "before": "The parties will avoid exchanging identifiable patient, participant, worker or other sensitive information during preliminary discussions. If Personal Information is genuinely required, the parties will first document the lawful purpose, authority, minimum data, approved channel, access, retention and deletion arrangements.",
+    "after": "The parties will avoid exchanging identifiable patient, participant, worker or other sensitive information during preliminary discussions. This NDA does not authorise that exchange. If Personal Information is necessary, pause and obtain a separately approved lawful handling arrangement before collection. Applicable Privacy Law means privacy and health-records laws binding on the relevant party or handling."
+  },
+  {
+    "document": "04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+    "before": "On request or when discussions end, the receiving party will stop using and return or securely delete Confidential Information within 10 business days, except for a copy required by law or automatic backups not reasonably accessible. Retained copies remain protected and are not used for another purpose.",
+    "after": "On request or when discussions end, stop using and return or securely delete Confidential Information within [APPROVE NDA return/deletion period] business days, subject to lawful retention or a documented protected backup exception. Record the exception, responsible person and review/expiry date. Retained copies remain protected and cannot be used for another purpose."
+  },
+  {
+    "document": "04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+    "before": "This agreement applies to disclosures made for three years after the Effective date. The confidentiality and use restrictions continue for five years after each disclosure. For trade secrets and Personal Information, they continue for as long as the information remains confidential or protected by law.",
+    "after": "This agreement applies to disclosures made for [APPROVE NDA disclosure term] after the Effective date. Confidentiality and use restrictions continue for [APPROVE NDA survival period] after each disclosure; trade secrets and Personal Information remain protected for as long as confidential or protected by law."
+  },
+  {
+    "document": "04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+    "before": "Heutrix Pty Ltd | ACN / ABN: ______________________________",
+    "after": "Heutrix Pty Ltd | ABN 64 702 109 662 | ACN 702 109 662"
+  },
+  {
+    "document": "04_Heutrix_Mutual_Confidentiality_Agreement.docx",
+    "before": "1.0 | 1 August 2026",
+    "after": "2.0 review draft | 13 September 2026"
+  },
+  {
+    "document": "05_Heutrix_Project_Control_Forms.docx",
+    "before": "Heutrix Pty Ltd | ACN / ABN: ______________________________",
+    "after": "Heutrix Pty Ltd | ABN 64 702 109 662 | ACN 702 109 662"
+  },
+  {
+    "document": "05_Heutrix_Project_Control_Forms.docx",
+    "before": "1.0 | 1 August 2026",
+    "after": "2.0 review draft | 13 September 2026"
+  },
+  {
+    "document": "05_Heutrix_Project_Control_Forms.docx",
+    "before": "Fees ex GST",
+    "after": "Fee change before any lawful GST"
+  },
+  {
+    "document": "04",
+    "before": "The agreement is governed by Victoria, Australia. The parties submit to Victorian courts. It may be signed electronically and in counterparts.",
+    "after": "The agreement is governed by the laws of Victoria, Australia. The parties submit to Victorian courts. It may be signed electronically and in counterparts."
+  },
+  {
+    "document": "05",
+    "before": "Index includes forms A-E",
+    "after": "Index includes forms A-G, including privacy requests and incidents"
+  }
+]

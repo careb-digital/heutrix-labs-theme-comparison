@@ -1,0 +1,11 @@
+Three problems. Three independent Heutrix starting points.
+
+Heutrix Diagnostics: a paid, standalone investigation when you are unsure what to fix first.
+Heutrix Workflow Transformation: our primary implementation product for one bounded non-clinical workflow, including testing and handover.
+Heutrix AI Guardrails: administrative AI-use boundaries and review are unclear.
+
+A free, 20-minute, no-obligation fit conversation helps identify the next step. Paid work is scoped separately. Describe one problem at a high level, without personal or confidential information. A time is agreed after your request.
+
+Talk to Heutrix: https://heutrix-website.heutrix.workers.dev/contact
+
+#DisabilitySupport #WorkflowImprovement
