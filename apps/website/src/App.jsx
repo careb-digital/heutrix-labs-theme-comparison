@@ -972,13 +972,9 @@ function ResourcesPage() {
         eyebrow="Free, ungated starter resources"
         title="Work through the problem before you buy anything."
         actions={(
-          <DownloadLink
-            href={resources[0].guideHref}
-            resourceId={resources[0].id}
-            format="pdf"
-          >
+          <ButtonLink href={ctas.scorecard.href}>
             Start the Scorecard
-          </DownloadLink>
+          </ButtonLink>
         )}
       >
         <p>
@@ -986,8 +982,8 @@ function ResourcesPage() {
           prioritise one workflow, make enquiry-to-service-start work visible or put first AI-use boundaries in place.
         </p>
         <p>
-          You can download the complete guides and working files without submitting an email address. Each resource is
-          useful on its own and explains when a template is no longer enough.
+          Start with the online scorecard, or use the problem-specific planner and AI check. Results, guides and working
+          files are available without submitting an email address.
         </p>
       </PageHero>
 

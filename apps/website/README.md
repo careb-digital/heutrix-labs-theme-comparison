@@ -1,6 +1,6 @@
 # Heutrix website application
 
-Website work moved on 12 September 2026 to [Heutrix/heutrix-website](https://github.com/Heutrix/heutrix-website), locally at `D:/AI Information Heirarchy/heutrix-website`. [The first import PR](https://github.com/Heutrix/heutrix-website/pull/1) was approved by the owner and merged as `3cff6d936c0bcc5829f29510ca1a1c2d8504d0be`. Carry out all subsequent website implementation and deployment work in that repository. This directory is the preserved migration source; the notes below describe its pre-migration state. The website is deployed and verified at https://heutrix-website.heutrix.workers.dev, Worker version `307e09de-179a-414f-be56-c4adf80b02ec`.
+This directory is the canonical website application as of the 17 September 2026 owner direction. The owner requested deployment of the scorecard hierarchy after local verification; live publication is verified separately. Earlier import and deployment details below remain historical evidence and do not establish the state of this revision.
 
 The original-theme implementation and its uncommitted improvements were reconciled on 8 September 2026. [Integration record](../../06-marketing/changes/2026-09-08-workspace-integration.md) documents scope, retained assets and conflicts. Root [working instructions](../../AGENTS.md) apply.
 

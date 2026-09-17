@@ -8,7 +8,7 @@ const pressurePoints = [
     title: 'Intake, referral or enquiry follow-up handled differently by different people',
     next: 'Make the owner, next action and due date visible from the first enquiry to the service-start decision.',
     href: '/resources/enquiry-to-service-start-starter-kit',
-    action: 'Take the Intake Assessment',
+    action: 'Open the Planner',
   },
   {
     label: 'Onboarding & handovers',
@@ -44,7 +44,7 @@ const pressurePoints = [
     title: 'AI tools being used informally without clear rules for privacy, review or suitable use',
     next: 'Check the proposed task, information boundaries and accountable human review before using AI in the workflow.',
     href: '/resources/ai-guardrails-staff-starter-pack',
-    action: 'Check AI Guardrails',
+    action: 'Start the AI Check',
     note: 'A free screening tool, not the paid AI Guardrails engagement or an approval to use AI.',
   },
 ];

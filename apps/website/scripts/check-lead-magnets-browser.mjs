@@ -26,7 +26,11 @@ try {
     await page.goto(origin + '/');
     assert.ok(await page.locator('a[href="/resources/workflow-bottleneck-scorecard"]').count() >= 1, 'Homepage must lead into an interactive tool');
     await page.goto(origin + '/resources');
-    assert.equal(await page.locator('.lm-tool-card').getByRole('link', {name: /^(Start the Scorecard|Take the Assessment)$/}).count(), 3);
+    assert.equal(await page.locator('.lm-tool-card-primary').count(), 1);
+    assert.match(await page.locator('.lm-tool-card-primary').innerText(), /Recommended first step[\s\S]*10 required questions across 3 steps[\s\S]*No email required/i);
+    for (const [name, href] of [['Start the Scorecard', '/resources/workflow-bottleneck-scorecard'], ['Open the Planner', '/resources/enquiry-to-service-start-starter-kit'], ['Start the AI Check', '/resources/ai-guardrails-staff-starter-pack']]) {
+      assert.equal(await page.locator('.lm-tool-card').getByRole('link', {name, exact: true}).getAttribute('href'), href);
+    }
     assert.equal(await page.locator('a[download]').count(), 6);
     await shot('resources');
     await page.locator('.lm-tool-card').getByRole('link', {name: 'Start the Scorecard', exact: true}).click();

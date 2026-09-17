@@ -1,6 +1,10 @@
-# Current CTA and enquiry behaviour — 11 September 2026
+# Current CTA and enquiry behaviour — 17 September 2026
 
 The canonical original-theme site uses **Start the Scorecard** for the online one-workflow assessment (10 required questions across 3 steps, with an immediate result). **Download the Excel Workbook** names the separate comparison workbook for up to 12 workflows. General conversation links use **Talk to Heutrix**; assessment results use **Discuss My Result**. **Save My Action Plan** is prominent above the result. Other resources retain their guide and template actions.
+
+The 17 September hierarchy revision makes the scorecard the primary free homepage and Resources-hub pathway. The Resources hub still sends enquiry/intake problems to **Open the Planner** and AI-use problems to **Start the AI Check**. Supporting PDF and Excel files remain secondary, ungated links. The owner requested deployment after local verification. This copy record is not deployment evidence or a new resource release.
+
+17 September technical verification passed with `npm run build`, `npm test` (29 tests), `npm run check` against the local Worker (20 routes and six unchanged download hashes), `scripts/check-lead-magnets-browser.mjs`, `scripts/check-scorecard-journey-browser.mjs` and `scripts/check-homepage-browser.mjs`. The checks covered the required contextual entry, keyboard and mobile use, contact-back retention, refresh clearing, no browser storage and no assessment submission. Live publication remains a separate check.
 
 The local enquiry flow uses **Review My Enquiry** (or **Review My Referral**) followed by **Send Enquiry** (or **Send Referral**). The reviewed request is sent to Formspree only on that explicit send action. The integration is not yet deployed; see [the form audit and delivery notes](FORMSPREE.md). Resource results and downloads remain ungated, and summary inclusion remains optional. The Google connection remains deferred. **Send My Scorecard** is reserved for actual scorecard delivery, and **Choose a Time** for a connected calendar.
 

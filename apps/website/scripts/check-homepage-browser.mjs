@@ -7,12 +7,12 @@ await mkdir(output,{recursive:true});
 const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const errors=[],results=[];
 const destinations=[
- ['Take the Intake Assessment','/resources/enquiry-to-service-start-starter-kit','See where enquiries stall.','Check the handovers in your intake process'],
- ['Explore an onboarding example','/case-studies/quickbooks-onboarding-and-access','Worker onboarding with a clear finish line','Illustrative workflow example'],
- ['Explore a follow-through example','/case-studies/incident-actions-and-closure','Follow-up actions with visible ownership','Illustrative workflow example'],
- ['Get the Scorecard','/resources/workflow-bottleneck-scorecard','Find the workflow worth improving first.','Assess one recurring workflow'],
- ['Check your reporting workflow','/resources/workflow-bottleneck-scorecard','Find the workflow worth improving first.','Operational reporting'],
- ['Check AI Guardrails','/resources/ai-guardrails-staff-starter-pack','Give AI use a clear review path.','Screen one administrative use case']
+ ['Open the Planner','/resources/enquiry-to-service-start-starter-kit','See where enquiries stall.','Check the handovers in your intake process'],
+ ['Start the Scorecard','/resources/workflow-bottleneck-scorecard?workflow=onboarding','See what is slowing this workflow down','Worker onboarding'],
+ ['Start the Scorecard','/resources/workflow-bottleneck-scorecard?workflow=action-tracking','See what is slowing this workflow down','Document and action tracking'],
+ ['Start the Scorecard','/resources/workflow-bottleneck-scorecard','See what is slowing this workflow down','Assess one workflow'],
+ ['Start the Scorecard','/resources/workflow-bottleneck-scorecard?workflow=reporting','See what is slowing this workflow down','Operational reporting'],
+ ['Start the AI Check','/resources/ai-guardrails-staff-starter-pack','Give AI use a clear review path.','Screen one administrative use case']
 ];
 try {
  for(const width of [1440,768,390,320]) {
@@ -25,6 +25,11 @@ try {
   assert.ok(!/Anonymised Heutrix delivery|Synthetic example|no client or participant records|Illustrative AI-generated image/i.test(requestedRemovals),'Requested homepage labels are absent');
   const sections=await page.locator('.r-home > section').evaluateAll(nodes=>nodes.map(n=>n.id||n.className));
   assert.deepEqual(sections,['r-hero','problem','home-offers','heutrix-method','home-proof','home-why','home-engagement','home-scorecard','home-team','home-faq','home-final']);
+  const hero=page.locator('.r-hero');
+  assert.equal(await hero.getByRole('link',{name:'Start the Scorecard',exact:true}).getAttribute('href'),'/resources/workflow-bottleneck-scorecard');
+  assert.equal(await hero.getByRole('link',{name:'Talk to Heutrix',exact:true}).getAttribute('href'),'/contact');
+  assert.equal(await hero.getByRole('link',{name:'See How It Works',exact:true}).getAttribute('href'),'./#heutrix-method'.replace('./','/'));
+  assert.match(await hero.innerText(),/10 required questions across 3 steps, with an immediate result\. No email required\./);
   for(const name of ['Intake','Onboarding','Reporting']){await page.getByRole('button',{name,exact:true}).click();assert.equal(await page.getByRole('button',{name,exact:true}).getAttribute('aria-pressed'),'true');assert.equal(await page.locator('.r-workflow-row').count(),3);}
   await page.getByRole('button',{name:'Intake',exact:true}).click();
   await page.screenshot({path:`${output}/${width}-full.png`,fullPage:true});
@@ -36,7 +41,7 @@ try {
    const link=page.locator('.pressure-card a');assert.equal((await link.innerText()).trim(),destinations[i][0]);assert.equal(await link.getAttribute('href'),destinations[i][1]);
    assert.ok(Math.abs((await page.locator('.pressure-stage').boundingBox()).height-stageHeight)<2,'stable card height');
    const card=await page.locator('.pressure-card').boundingBox(),box=await link.boundingBox();assert.ok(box.x>=card.x&&box.x+box.width<=card.x+card.width+1&&box.y+box.height<=card.y+card.height,'CTA fits card');
-   if(width===1440){const target=await context.newPage();await target.goto(origin+destinations[i][1]);await target.locator('h1').waitFor();assert.equal((await target.locator('h1').innerText()).trim(),destinations[i][2]);assert.ok((await target.locator('main').textContent()).includes(destinations[i][3]));if(i===4)assert.equal(await target.locator('select').first().inputValue(),'');await target.close();}
+   if(width===1440){const target=await context.newPage();await target.goto(origin+destinations[i][1]);await target.locator('h1').waitFor();assert.equal((await target.locator('h1').innerText()).trim(),destinations[i][2]);assert.ok((await target.locator('main').textContent()).includes(destinations[i][3]));if(i===4)assert.equal(await target.locator('select').first().inputValue(),'Operational reporting');await target.close();}
   }
   await page.locator('.pressure-navigation button').nth(2).click();await page.locator('.pressure-card[aria-label^="3 of 6"]').waitFor();await page.locator('#problem').screenshot({style:'#main-header { visibility: hidden; }',path:`${output}/${width}-problem.png`});
   await page.getByRole('button',{name:'Next pressure point',exact:true}).click();await page.locator('.pressure-card[aria-label^="4 of 6"]').waitFor();
@@ -53,7 +58,7 @@ try {
  const context=await browser.newContext({viewport:{width:1440,height:1000}});const page=await context.newPage();await page.goto(origin+'/#problem');await page.locator('.pressure-card').waitFor();await page.locator('.pressure-carousel').scrollIntoViewIfNeeded();await page.mouse.move(0,0);
  await page.locator('.pressure-card a').focus();const active=await page.locator('.pressure-card').getAttribute('aria-label');await page.waitForTimeout(8500);assert.equal(await page.locator('.pressure-card').getAttribute('aria-label'),active,'Focus pauses rotation');
  await page.getByRole('button',{name:'Pause automatic rotation'}).click();await page.locator('#pressure-title').click();await page.mouse.move(0,0);await page.waitForTimeout(8500);assert.equal(await page.locator('.pressure-card').getAttribute('aria-label'),active,'Manual pause');
- await page.getByRole('button',{name:'Resume automatic rotation'}).click();await page.locator('#pressure-title').click();await page.mouse.move(0,0);await page.waitForTimeout(8500);assert.notEqual(await page.locator('.pressure-card').getAttribute('aria-label'),active,'Resume rotates');
+ await page.getByRole('button',{name:'Resume automatic rotation'}).click();await page.locator('#pressure-title').click();await page.mouse.move(0,0);await page.waitForFunction(previous=>document.querySelector('.pressure-card')?.getAttribute('aria-label')!==previous,active,{timeout:11000});
  await page.goto(origin+'/');const links=await page.locator('.r-home a').evaluateAll(nodes=>[...new Set(nodes.map(n=>n.getAttribute('href')))]);
  for(const href of links){if(href.startsWith('/downloads/')){assert.equal((await context.request.get(origin+href)).status(),200);continue;}await page.goto(origin+href);await page.locator('h1').waitFor();assert.ok(!/not found/i.test(await page.locator('h1').innerText()));if(href.includes('#'))assert.equal(await page.locator('#'+href.split('#')[1]).count(),1);}
  await page.goto(origin+'/contact?service=heutrix-ai-guardrails');assert.equal(await page.locator('[name="service"]').inputValue(),'heutrix-ai-guardrails');

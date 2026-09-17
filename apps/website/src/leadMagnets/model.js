@@ -88,7 +88,7 @@ export function screenAi(answers) {
 }
 
 export const tools = [
-  { id: 'workflow-bottleneck-scorecard', title: 'Workflow Bottleneck Scorecard', promise: 'See what is slowing this workflow down', intro: 'Assess one workflow: 10 questions across 3 steps, with an immediate result after the final answer. No email required.', icon: 'workflow', evaluate: scoreWorkflow, steps: ['Choose the workflow', 'Understand the friction', 'Check readiness'] },
+  { id: 'workflow-bottleneck-scorecard', title: 'Workflow Bottleneck Scorecard', promise: 'See what is slowing this workflow down', intro: 'Assess one workflow: 10 required questions across 3 steps, with an immediate result after the final answer. No email required.', icon: 'workflow', evaluate: scoreWorkflow, steps: ['Choose the workflow', 'Understand the friction', 'Check readiness'] },
   { id: 'enquiry-to-service-start-starter-kit', title: 'Enquiry-to-Service-Start Planner', promise: 'See where enquiries stall.', intro: 'Check the handovers in your intake process and leave with a starter map your team can discuss.', icon: 'map', evaluate: planIntake, steps: ['Your starting point', 'Review the handovers'] },
   { id: 'ai-guardrails-staff-starter-pack', title: 'AI Guardrails Check', promise: 'Give AI use a clear review path.', intro: 'Screen one administrative use case and see which controls need attention before the team proceeds.', icon: 'shield', evaluate: screenAi, steps: ['Choose the use case', 'Information and authority', 'Human review'] },
 ];

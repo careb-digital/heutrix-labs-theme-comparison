@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { resources } from '../siteContent';
+import { ctas, resources } from '../siteContent';
 
 export default function Checklist() {
   const scorecard = resources[0];
@@ -22,6 +22,13 @@ export default function Checklist() {
           <div className="flex flex-col gap-md sm:flex-row sm:flex-wrap">
             <a
               className="inline-flex items-center justify-center gap-sm rounded-xl border border-secondary-fixed bg-secondary-fixed px-lg py-md font-headline-sm text-[18px] leading-6 text-on-secondary-fixed shadow-md transition-opacity hover:opacity-95"
+              href={ctas.scorecard.href}
+            >
+              <span>{ctas.scorecard.label}</span>
+              <span className="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_forward</span>
+            </a>
+            <a
+              className="inline-flex items-center justify-center gap-sm rounded-xl border border-white bg-transparent px-lg py-md font-headline-sm text-[18px] leading-6 text-white transition-colors hover:bg-white hover:text-primary"
               href={scorecard.guideHref}
               download
               data-resource-id={scorecard.id}
@@ -37,7 +44,7 @@ export default function Checklist() {
               data-resource-id={scorecard.id}
               data-resource-format="xlsx"
             >
-              <span>Get the Template</span>
+              <span>Download the Excel Workbook</span>
               <span className="material-symbols-outlined text-[20px]" aria-hidden="true">table_view</span>
             </a>
           </div>

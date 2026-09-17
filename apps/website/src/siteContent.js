@@ -43,7 +43,7 @@ export const routes = [
     label: 'Resources',
     seoTitle: 'Free Workflow Tools and AI Guardrails Templates | Heutrix Labs',
     metaDescription:
-      'Download practical, ungated workflow prioritisation, enquiry-to-service-start visibility and AI guardrails starter resources from Heutrix Labs.'
+      'Start the free online Workflow Bottleneck Scorecard, or use practical enquiry-to-service-start and AI guardrails tools from Heutrix Labs. No email required.'
   },
   {
     path: '/about',

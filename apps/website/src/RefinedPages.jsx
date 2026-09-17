@@ -1,7 +1,7 @@
 import React, {useState, lazy, Suspense} from 'react';
-import {ArrowUpRight, ArrowRight, Check, Layers3, ScanLine, ShieldCheck, FileDown, ChevronDown, Mail, Clock3, CheckCircle2, Circle} from 'lucide-react';
+import {ArrowUpRight, ArrowRight, Check, Layers3, ScanLine, ShieldCheck, FileDown, ChevronDown, Mail, CheckCircle2, Circle} from 'lucide-react';
 const ArticleMarkdown = lazy(() => import('./ArticleMarkdown'));
-import {faqs} from './siteContent';
+import {ctas} from './siteContent';
 import cases from './caseStudies.json';
 import WorkflowPressurePoints from './components/WorkflowPressurePoints';
 import {homeOffers, homeMethod, homeWhy, homeEngagement, homeCapabilities, homeFaqs} from './homepageContent';
@@ -22,9 +22,9 @@ export function RefinedHome(){return <div className="r-page r-home">
     <div className="r-hero-copy"><Eyebrow>Operational improvement for disability service providers</Eyebrow>
       <h1>Build a disability service business that <span>runs better as it grows.</span></h1>
       <p className="r-lead">Heutrix helps Australian disability service providers, including NDIS providers, improve the non-clinical workflows around their existing systems — with clearer ownership, less administrative friction and better visibility as the organisation grows.</p>
-      <div className="r-actions"><LinkButton/><a href="/#heutrix-method" className="r-text-link">See How It Works <ArrowRight size={18} aria-hidden="true"/></a></div>
-      <p className="r-micro"><Clock3 size={14} aria-hidden="true"/>Start with a free 20-minute introductory conversation. No obligation.</p>
-      <p className="r-micro">Prefer to explore one workflow first? <a className="r-text-link" href="/resources/workflow-bottleneck-scorecard">Start the Scorecard <ArrowRight size={16}/></a><br/>10 questions · 3 steps · Immediate result · No email required</p>
+      <div className="r-actions"><LinkButton href={ctas.scorecard.href}>{ctas.scorecard.label}</LinkButton><a href={ctas.fitCall.href} className="r-text-link">{ctas.fitCall.label} <ArrowRight size={18} aria-hidden="true"/></a></div>
+      <p className="r-micro home-scorecard-summary"><strong>Assess one workflow online.</strong> 10 required questions across 3 steps, with an immediate result. No email required.</p>
+      <p className="r-micro">Want to understand the approach first? <a className="r-text-link" href="/#heutrix-method">See How It Works <ArrowRight size={16} aria-hidden="true"/></a></p>
     </div>
     <div className="r-hero-visual"><WorkflowView/></div>
   </div></section>

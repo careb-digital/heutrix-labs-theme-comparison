@@ -11,6 +11,10 @@
 }
 
 .lm-panel h2[tabindex],.lm-field input{scroll-margin-top:120px}
+
+/* Resource hierarchy: the scorecard is the recommended general entry point; sector-specific tools remain distinct. */
+.lm-intro{max-width:760px}.lm-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lm-tool-card-primary{grid-column:1/-1;background:var(--highlight);border-color:var(--action);box-shadow:0 8px 22px rgb(var(--color-dark) / .07)}.lm-tool-card p{flex:none}.lm-tool-copy{flex:1}.lm-tool-card-primary .lm-tool-copy{max-width:820px}.lm-tool-kicker{display:inline-flex!important;width:max-content;max-width:100%;padding:6px 10px;border-radius:999px;background:var(--card);color:var(--action)!important;font-size:11px!important;font-weight:700;letter-spacing:.08em;line-height:1.4!important;text-transform:uppercase}.lm-page .lm-resource-name{margin-bottom:8px;color:var(--dark);font-weight:700}.lm-tool-card .r-button{align-self:flex-start}
+@media(max-width:1000px){.lm-tool-grid{grid-template-columns:1fr}.lm-tool-card,.lm-tool-card-primary{display:flex;grid-column:auto}.lm-tool-card .r-download-links{grid-column:auto}}
 .lm-page [data-cta-entry]{scroll-margin-top:110px;outline:none}
 
 /* Keep the pending enquiry action readable even while the pointer remains over it. */

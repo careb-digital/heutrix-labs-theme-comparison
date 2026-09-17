@@ -6,15 +6,35 @@ import {useLeadContext} from './LeadContext';
 import {copyText, downloadText} from './integrations';
 
 const icons = {workflow: Layers3, map: Route, shield: ShieldCheck};
+const promotions = [
+  {
+    problem: "I don't know what workflow to fix first.",
+    action: 'Start the Scorecard',
+    guide: 'Read the scoring guide',
+    workbook: 'Compare workflows in Excel',
+  },
+  {
+    problem: 'Our enquiry or intake process is difficult to track.',
+    action: 'Open the Planner',
+    guide: 'Read the field guide',
+    workbook: 'Use the Excel tracker',
+  },
+  {
+    problem: "Staff are already using AI and we don't have clear rules.",
+    action: 'Start the AI Check',
+    guide: 'Read the staff guide',
+    workbook: 'Use the Excel register',
+  },
+];
 export function ResourceHub() {
   return <div className="r-page lm-page"><section className="r-section r-page-hero"><div className="r-container">
-    <p className="r-eyebrow">Free tools · practical next steps</p><h1>Start with a<br/><span>clearer picture.</span></h1>
-    <p className="r-lead lm-intro">Work through one operational question. Get a useful result, save it for your team, or bring it to a conversation with Heutrix.</p>
-    <p>No account needed. Your answers stay in this tab’s memory unless you choose to share a summary.</p>
-    <div className="lm-tool-grid">{tools.map((tool, i) => {const Icon = icons[tool.icon]; return <article className="lm-tool-card" key={tool.id}>
-      <div className="lm-tool-icon"><Icon size={25}/><span>0{i + 1}</span></div><h2>{tool.title}</h2><p>{tool.intro}{i === 0 && ' The separate Excel workbook compares up to 12 workflows.'}</p>
-      <a className="r-button" href={`/resources/${tool.id}`}>{i === 0 ? 'Start the Scorecard' : 'Take the Assessment'} <ArrowRight size={17}/></a>
-      <div className="r-download-links"><a href={resources[i].guideHref} download>Get the Guide</a><a href={resources[i].workbookHref} download>{i === 0 ? 'Download the Excel Workbook' : 'Get the Template'}</a></div>
+    <p className="r-eyebrow">Free tools · practical next steps</p><h1>Start with the problem.<br/><span>Choose one clear next step.</span></h1>
+    <p className="r-lead lm-intro">Choose the operational problem that sounds most familiar. Each pathway starts with an interactive check and gives you a practical result to save or discuss with your team.</p>
+    <p>No account or email address is required. Your answers stay in this tab’s memory unless you choose to share a summary.</p>
+    <div className="lm-tool-grid">{tools.map((tool, i) => {const Icon = icons[tool.icon]; const promotion = promotions[i]; return <article className={`lm-tool-card ${i === 0 ? 'lm-tool-card-primary' : ''}`} key={tool.id}>
+      <div className="lm-tool-icon"><Icon size={25} aria-hidden="true"/><span>0{i + 1}</span></div><div className="lm-tool-copy">{i === 0 && <p className="lm-tool-kicker">Recommended first step</p>}<h2>{promotion.problem}</h2><p className="lm-resource-name">{tool.title}</p><p>{tool.intro}{i === 0 && ' The separate Excel workbook compares up to 12 workflows.'}</p></div>
+      <a className="r-button" href={`/resources/${tool.id}`}>{promotion.action} <ArrowRight size={17} aria-hidden="true"/></a>
+      <div className="r-download-links"><a href={resources[i].guideHref} download>{promotion.guide}</a><a href={resources[i].workbookHref} download>{promotion.workbook}</a></div>
     </article>})}</div>
     <p className="r-evidence">These tools support operational thinking. They are not tailored advice, organisational approval or an assurance of compliance.</p>
   </div></section></div>;

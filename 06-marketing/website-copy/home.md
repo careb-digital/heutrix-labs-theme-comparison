@@ -1,32 +1,34 @@
 ---
 page: Home
 route: /
-status: local revision — awaiting review
-updated: 2026-09-12
+status: deployment authorised — live verification tracked separately
+updated: 2026-09-17
 seo_title: Heutrix Labs | Workflow Improvement for Disability Providers
 ---
 
 # Homepage copy
 
-**12 September audience and outcome revision — local, not published:** The audience, product and operational outcome wording below align with the local changes in `D:/AI Information Heirarchy/heutrix-website`. Earlier deployment details below describe the previous release; the preserved `apps/website/` files are historical migration sources.
+**17 September scorecard hierarchy revision:** The online Workflow Bottleneck Scorecard is the primary free acquisition path on the homepage. **Talk to Heutrix** remains the commercial conversation action. The owner requested deployment after local verification; a successful build, merge or deploy command is not a substitute for live route verification. The source below aligns with the canonical application in `apps/website/`; earlier deployment details describe the previous release.
 
-Current homepage copy, aligned with the [9 September execution brief](implementation-prompts/heutrix-homepage-execution-prompt-2026-09-08.md). Implemented in [RefinedPages.jsx](../../apps/website/src/RefinedPages.jsx) and [homepageContent.js](../../apps/website/src/homepageContent.js); the six cards remain in [WorkflowPressurePoints.jsx](../../apps/website/src/components/WorkflowPressurePoints.jsx). Shared pages, resources and manual email-draft delivery are unchanged. The current version was deployed and verified on 9 September 2026 at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `e7c5e57c-d3c8-4e5c-a344-aac43c7a99ea`. This homepage release does not close the separate outreach, onboarding or integration gates.
+The page is implemented in [RefinedPages.jsx](../../apps/website/src/RefinedPages.jsx) and [homepageContent.js](../../apps/website/src/homepageContent.js); the six problem cards remain in [WorkflowPressurePoints.jsx](../../apps/website/src/components/WorkflowPressurePoints.jsx). The earlier 9 September version was deployed and verified at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `e7c5e57c-d3c8-4e5c-a344-aac43c7a99ea`. The 17 September change does not alter that historical release record or close separate outreach, onboarding or integration gates.
 
 Team section revised on 9 September 2026 using owner-supplied copy: collective capability cards replace homepage founder names. The About Heutrix link points to `/about`.
 
 Evidence: [approved reporting case](../case-studies-and-assets/09-power-bi-invoice-reconciliation.md), [publication and claim limits](../case-studies-and-assets/PROOF-ASSET-REGISTER.md), and [approved short founder summaries](../../00-control/VERIFIED-FACTS.md#approved-public-founder-summaries--5-september-2026). Owner-directed 9 September follow-up removes the homepage photograph, its generated-image label, the auxiliary synthetic-data sentence and the separate proof callout. The workflow demonstration remains labelled “Illustrative view”; the approved case-study wording and attribution to client feedback are unchanged.
 
-For disability-provider owners and operations leaders
+Operational improvement for disability service providers
 
-## Know what is waiting — and who acts next.
+## Build a disability service business that runs better as it grows.
 
-Heutrix helps owners and operations leaders of Australian disability support providers tackle intake, reporting and handover work that depends on repeated chasing. We define the next action, its owner and review point in one agreed workflow.
+Heutrix helps Australian disability service providers, including NDIS providers, improve the non-clinical workflows around their existing systems — with clearer ownership, less administrative friction and better visibility as the organisation grows.
+
+[Start the Scorecard](/resources/workflow-bottleneck-scorecard)
 
 [Talk to Heutrix](/contact)
 
-[See How It Works](/#heutrix-method)
+Assess one workflow online. 10 required questions across 3 steps, with an immediate result. No email required.
 
-Start with a free 20-minute introductory conversation. No obligation.
+Want to understand the approach first? [See How It Works](/#heutrix-method)
 
 ---
 
@@ -46,7 +48,7 @@ Even capable teams lose visibility when important work is spread across memory, 
 
 Make the owner, next action and due date visible from the first enquiry to the service-start decision.
 
-[Take the Intake Assessment](/resources/enquiry-to-service-start-starter-kit)
+[Open the Planner](/resources/enquiry-to-service-start-starter-kit)
 
 02 / Onboarding & handovers
 
@@ -100,7 +102,7 @@ Check the proposed task, information boundaries and accountable human review bef
 
 A free screening tool, not the paid AI Guardrails engagement or an approval to use AI.
 
-[Check AI Guardrails](/resources/ai-guardrails-staff-starter-pack)
+[Start the AI Check](/resources/ai-guardrails-staff-starter-pack)
 
 ---
 
@@ -344,4 +346,4 @@ Free 20-minute introductory conversation · No obligation · Heutrix Diagnostics
 The contact page helps you prepare an email request. Review and send it in your email app; a time is then agreed separately.
 
 
-Scorecard journey update: expose **Start the Scorecard** in the hero alongside the general conversation and process paths. Use the [current resource journey](resources.md#scorecard-journey--11-september-2026) for the 10-question, three-step online flow, workbook distinction and contextual entry labels.
+Scorecard journey update: **Start the Scorecard** is the primary free homepage action. **Talk to Heutrix** remains the commercial action, and **See How It Works** remains the process path. Use the [current resource journey](resources.md#scorecard-journey--11-september-2026) for the 10-question, three-step online flow, workbook distinction and contextual entry labels.

@@ -1,7 +1,7 @@
 # Interactive resources
 ## Current website integration — 17 September 2026
 
-The canonical public-site implementation is maintained in the separate `heutrix-website` repository. The workspace `apps/website/` directory is preserved migration source, not the publication target. The Resources copy below is synchronised with the canonical application. Existing resource files, URLs, evidence limits and legal boundaries remain unchanged.
+The canonical implementation is maintained in `apps/website/`. The owner requested deployment of this 17 September hierarchy revision after local verification; live publication is verified separately. The Resources copy below is synchronised with that application. Existing resource files, URLs, scoring rules, evidence limits and legal boundaries remain unchanged.
 
 
 Route: `/resources`.
@@ -10,7 +10,7 @@ Route: `/resources`.
 
 Choose the operational problem that sounds most familiar. Each pathway starts with an interactive check and gives you a practical result to save or discuss with your team.
 
-No account needed. Your answers stay in this tab's memory unless you choose to share a summary.
+No account or email address is required. Your answers stay in this tab's memory unless you choose to share a summary.
 
 ### I don't know what workflow to fix first.
 
@@ -36,7 +36,7 @@ Assess whether sensible organisational AI guardrails are in place. Give staff a 
 **Primary action:** Start the AI Check  
 **Optional supporting downloads:** Read the staff guide · Use the Excel register
 
-These tools support operational thinking. They are not tailored advice, organisational approval or an assurance of compliance. Rules, handoffs and tests are documented in `LEAD-MAGNETS.md` in the canonical `heutrix-website` repository.
+These tools support operational thinking. They are not tailored advice, organisational approval or an assurance of compliance. Rules, handoffs and tests are documented in [`apps/website/LEAD-MAGNETS.md`](../../apps/website/LEAD-MAGNETS.md).
 
 ## Scorecard journey — 11 September 2026
 
