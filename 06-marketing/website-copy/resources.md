@@ -1,7 +1,7 @@
 # Interactive resources
 ## Current website integration — 17 September 2026
 
-The canonical implementation is maintained in `apps/website/`. The owner requested deployment of this 17 September hierarchy revision after local verification; live publication is verified separately. The Resources copy below is synchronised with that application. Existing resource files, URLs, scoring rules, evidence limits and legal boundaries remain unchanged.
+The canonical implementation is maintained in `apps/website/`. The 17 September hierarchy revision was deployed and live-verified at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `c24bdd9d-095b-440e-bc6c-8d5dbfc41c67`. The Resources copy below is synchronised with that application. Existing resource files, URLs, scoring rules, evidence limits and legal boundaries remain unchanged.
 
 
 Route: `/resources`.

@@ -1,6 +1,6 @@
 # Heutrix website application
 
-This directory is the canonical website application as of the 17 September 2026 owner direction. The owner requested deployment of the scorecard hierarchy after local verification; live publication is verified separately. Earlier import and deployment details below remain historical evidence and do not establish the state of this revision.
+This directory is the canonical website application as of the 17 September 2026 owner direction. The scorecard hierarchy was deployed and live-verified at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `c24bdd9d-095b-440e-bc6c-8d5dbfc41c67`. Earlier import and deployment details below remain historical evidence and do not establish the state of this revision.
 
 The original-theme implementation and its uncommitted improvements were reconciled on 8 September 2026. [Integration record](../../06-marketing/changes/2026-09-08-workspace-integration.md) documents scope, retained assets and conflicts. Root [working instructions](../../AGENTS.md) apply.
 

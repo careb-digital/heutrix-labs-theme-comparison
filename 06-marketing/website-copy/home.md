@@ -1,14 +1,14 @@
 ---
 page: Home
 route: /
-status: deployment authorised — live verification tracked separately
+status: deployed and live-verified
 updated: 2026-09-17
 seo_title: Heutrix Labs | Workflow Improvement for Disability Providers
 ---
 
 # Homepage copy
 
-**17 September scorecard hierarchy revision:** The online Workflow Bottleneck Scorecard is the primary free acquisition path on the homepage. **Talk to Heutrix** remains the commercial conversation action. The owner requested deployment after local verification; a successful build, merge or deploy command is not a substitute for live route verification. The source below aligns with the canonical application in `apps/website/`; earlier deployment details describe the previous release.
+**17 September scorecard hierarchy revision:** The online Workflow Bottleneck Scorecard is the primary free acquisition path on the homepage. **Talk to Heutrix** remains the commercial conversation action. The revision was deployed and live-verified at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `c24bdd9d-095b-440e-bc6c-8d5dbfc41c67`. The source below aligns with the canonical application in `apps/website/`; earlier deployment details describe the previous release.
 
 The page is implemented in [RefinedPages.jsx](../../apps/website/src/RefinedPages.jsx) and [homepageContent.js](../../apps/website/src/homepageContent.js); the six problem cards remain in [WorkflowPressurePoints.jsx](../../apps/website/src/components/WorkflowPressurePoints.jsx). The earlier 9 September version was deployed and verified at https://heutrix-labs-original-theme.janith.workers.dev/ as Cloudflare Worker version `e7c5e57c-d3c8-4e5c-a344-aac43c7a99ea`. The 17 September change does not alter that historical release record or close separate outreach, onboarding or integration gates.
 
